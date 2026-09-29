@@ -3,157 +3,206 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Guía en español de las mejores herramientas de inteligencia artificial para principiantes: ranking, filtros por precio y nivel, recomendador y fecha de revisión en cada ficha.">
-<meta property="og:title" content="Brújula IA — qué inteligencia artificial usar">
+<title>Cualia · ¿Qué IA uso para esto?</title>
+<meta name="description" content="Cualia es una guía en español para elegir inteligencia artificial: 240 herramientas con ranking, filtros por precio y nivel, recomendaciones según lo que quieras hacer y fecha de revisión en cada ficha.">
+<meta property="og:title" content="Cualia · ¿Qué IA uso para esto?">
 <meta property="og:description" content="240 IAs revisadas cada semana, con ranking, filtros y recomendaciones para quien empieza.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%234B3FC4'/%3E%3Cpath d='M50 16 62 50 50 84 38 50Z' fill='%23fff'/%3E%3C/svg%3E">
-<title>Brújula IA · Qué IA usar para cada cosa</title>
+<meta name="theme-color" content="#5B3FD9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235B3FD9'/%3E%3Ctext x='50' y='70' font-family='Arial Black,Arial' font-size='60' font-weight='900' text-anchor='middle' fill='%23fff'%3Ec%3C/text%3E%3Ccircle cx='74' cy='28' r='9' fill='%23FFC94A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-/* Layout: un fichero de biblioteca — cada IA es una ficha con su sello de fecha; pestañas arriba, contenido en una columna ancha que se vuelve rejilla en escritorio. */
+/* Layout: una guía tipo FilmAffinity — cabecera con marca, pestañas, y fichas con icono, nota grande y secciones etiquetadas. Una columna en móvil, rejilla en escritorio. */
 :root{
-  --paper:#F1F3F6; --card:#FFFFFF; --ink:#141A23; --muted:#5A6475; --rule:#D8DDE5;
-  --stamp:#4B3FC4; --stamp-soft:#E7E4FB; --marker:#F3D55B; --marker-ink:#3A2F00;
-  --ok:#1F7A4D; --ok-soft:#DDF1E6; --warn:#9A5B00; --warn-soft:#FBEBD2;
-  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-  --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
-  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --bg:#F4F5F9; --card:#FFFFFF; --ink:#11151C; --ink-2:#2E3746; --muted:#667085; --rule:#E1E4EC;
+  --accent:#5B3FD9; --accent-ink:#FFFFFF; --accent-soft:#ECE8FD; --gold:#FFC94A;
+  --ok:#157347; --ok-soft:#DCF3E6; --warn:#8A5300; --warn-soft:#FCEBCF; --mark:#FFF1BF; --mark-ink:#4A3800;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --shadow:0 1px 2px rgba(17,21,28,.06),0 4px 16px rgba(17,21,28,.05);
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --paper:#0F1319; --card:#171C25; --ink:#E7EBF2; --muted:#9AA4B5; --rule:#2A3140;
-  --stamp:#A49CFF; --stamp-soft:#262248; --marker:#D6B83E; --marker-ink:#1C1600;
-  --ok:#6BD49E; --ok-soft:#15301F; --warn:#F0B35A; --warn-soft:#33260F; color-scheme:dark } }
+  --bg:#0D1016; --card:#161A22; --ink:#F1F3F8; --ink-2:#C9CFDB; --muted:#8C95A6; --rule:#272D39;
+  --accent:#9C88FF; --accent-ink:#0D1016; --accent-soft:#231D45; --gold:#E9B63B;
+  --ok:#6FD6A0; --ok-soft:#12291D; --warn:#F2B55C; --warn-soft:#30230E; --mark:#3A3212; --mark-ink:#F7E4A0;
+  --shadow:none; color-scheme:dark } }
 :root[data-theme="dark"]{
-  --paper:#0F1319; --card:#171C25; --ink:#E7EBF2; --muted:#9AA4B5; --rule:#2A3140;
-  --stamp:#A49CFF; --stamp-soft:#262248; --marker:#D6B83E; --marker-ink:#1C1600;
-  --ok:#6BD49E; --ok-soft:#15301F; --warn:#F0B35A; --warn-soft:#33260F; color-scheme:dark }
+  --bg:#0D1016; --card:#161A22; --ink:#F1F3F8; --ink-2:#C9CFDB; --muted:#8C95A6; --rule:#272D39;
+  --accent:#9C88FF; --accent-ink:#0D1016; --accent-soft:#231D45; --gold:#E9B63B;
+  --ok:#6FD6A0; --ok-soft:#12291D; --warn:#F2B55C; --warn-soft:#30230E; --mark:#3A3212; --mark-ink:#F7E4A0;
+  --shadow:none; color-scheme:dark }
 
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:0 64px}
-a{color:var(--stamp)}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink-2);font-family:var(--f-body);font-size:16px;line-height:1.55}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:16px}
+a{color:var(--accent)}
 button,input,select,textarea{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--stamp);outline-offset:2px;border-radius:6px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
 
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
-.brand{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;padding-block:14px 8px}
-.brand h1{font-family:var(--f-display);font-weight:800;font-size:clamp(26px,5vw,34px);letter-spacing:-.02em;margin:0;line-height:1}
-.brand h1 .needle{display:inline-block;color:var(--stamp);transform:rotate(-18deg);margin-right:4px}
-.fresh{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.02em}
+/* Jerarquía de texto */
+h1,h2,h3,h4{color:var(--ink);font-family:var(--f-display);margin:0;text-wrap:balance;line-height:1.15}
+.h-page{font-size:clamp(28px,6vw,42px);font-weight:800;letter-spacing:-.025em}
+.h-section{font-size:clamp(20px,3.6vw,26px);font-weight:800;letter-spacing:-.015em}
+.label{font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lede{font-size:17px;color:var(--muted);max-width:62ch;margin:8px 0 0}
+.small{font-size:13px;color:var(--muted)}
+
+/* Cabecera */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px 6px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.logo-mark{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;position:relative;flex:0 0 auto}
+.logo-mark b{font-family:var(--f-display);font-weight:800;font-size:24px;color:var(--accent-ink);line-height:1;margin-top:-3px}
+.logo-mark i{position:absolute;top:5px;right:5px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.logo-word{font-family:var(--f-display);font-weight:800;font-size:26px;letter-spacing:-.03em;line-height:1}
+.logo-word span{color:var(--accent)}
+.fresh{font-family:var(--f-mono);font-size:11px;color:var(--muted);text-align:right;line-height:1.4}
 .fresh b{color:var(--ink)}
-nav.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-block:0 8px}
+nav.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-block:4px 10px}
 nav.tabs::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;border:1px solid transparent;background:none;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:700;color:var(--muted)}
-.tab[aria-selected="true"]{background:var(--ink);color:var(--paper)}
-.tab:hover:not([aria-selected="true"]){border-color:var(--rule);color:var(--ink)}
+.tab{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);padding:8px 16px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15px;color:var(--ink-2)}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 
-section.view{padding-top:24px}
-.lede{max-width:65ch;color:var(--muted);margin:0 0 20px}
-h2{font-family:var(--f-display);font-weight:700;font-size:clamp(22px,4vw,28px);letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
-h3{font-family:var(--f-display);font-weight:700;font-size:19px;margin:0;text-wrap:balance}
-.eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+main{padding-block:28px 72px}
+section.view > header{margin-bottom:22px}
+
+/* Buscador hero */
+.ask{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:8px;box-shadow:var(--shadow);max-width:720px}
+.ask input{flex:1 1 220px;min-width:0;border:0;background:transparent;padding:10px 10px;font-size:17px;color:var(--ink)}
+.ask input:focus{outline:none}
+.btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:11px 20px;font-weight:700;cursor:pointer;font-size:16px}
+.btn:hover{filter:brightness(1.08)}
+.ideas{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.idea{background:transparent;border:1px dashed color-mix(in srgb,var(--accent) 45%,var(--rule));border-radius:999px;padding:6px 12px;font-size:14px;cursor:pointer;color:var(--ink-2)}
+.idea:hover{background:var(--accent-soft);color:var(--ink)}
+@media (max-width:640px){.ideas{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-bottom:4px}.ideas::-webkit-scrollbar{display:none}.idea{flex:0 0 auto;font-size:13px;padding:5px 11px}.reco-panel .ideas{margin-inline:-18px;padding-inline:18px}}
+
+/* Iconos de IA */
+.ico{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
+.ico img{width:32px;height:32px;object-fit:contain}
+.ico.sm{width:36px;height:36px;border-radius:9px}
+.ico.sm img{width:24px;height:24px}
+.ico.mono{background:var(--mono-bg,#5B3FD9);border-color:transparent}
+.ico.mono span{font-family:var(--f-display);font-weight:800;color:#fff;font-size:20px}
+.ico.sm.mono span{font-size:15px}
 
 /* Ranking */
-.rank-list{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--rule)}
-.rank-row{display:grid;grid-template-columns:2.6rem 1fr auto;gap:12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--rule);cursor:pointer}
-.rank-row:hover{background:var(--card)}
-.rank-pos{font-family:var(--f-display);font-weight:800;font-size:24px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
-.rank-row:nth-child(-n+3) .rank-pos{color:var(--stamp)}
+.split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start;margin-top:36px}
+@media (max-width:860px){.split{grid-template-columns:1fr;gap:32px}}
+.block-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+.rank-list{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--rule);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.rank-row{display:grid;grid-template-columns:2rem 36px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--rule);cursor:pointer}
+.rank-row:first-child{border-top:0}
+.rank-row:hover{background:var(--accent-soft)}
+.rank-pos{font-family:var(--f-display);font-weight:800;font-size:18px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.rank-row:nth-child(-n+3) .rank-pos{color:var(--accent)}
 .rank-main{min-width:0}
-.rank-main .nm{font-weight:700}
-.rank-main .sub{font-size:14px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.score{font-family:var(--f-mono);font-weight:700;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:8px}
-.meter{width:64px;height:6px;border-radius:3px;background:var(--rule);overflow:hidden}
-.meter i{display:block;height:100%;background:var(--stamp)}
-.split{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
-.podiums{display:grid;gap:18px}
-.podium{border-top:2px solid var(--ink);padding-top:10px}
-.podium ol{margin:8px 0 0;padding-left:1.4em;display:grid;gap:4px}
-.podium li button{background:none;border:0;padding:0;cursor:pointer;text-align:left;font-weight:700;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
-.podium li span{color:var(--muted);font-size:14px}
-@media (max-width:820px){.split{grid-template-columns:1fr}}
+.rank-name{font-weight:700;color:var(--ink);font-size:16px;line-height:1.25}
+.rank-sub{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nota{font-family:var(--f-display);font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
+.nota-chip{min-width:44px;text-align:center;padding:4px 8px;border-radius:10px;background:var(--accent-soft);color:var(--ink);font-family:var(--f-display);font-weight:800;font-size:17px;font-variant-numeric:tabular-nums}
+.podiums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:520px){.podiums{grid-template-columns:1fr}}
+.podium{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+.podium h3{font-size:17px;font-weight:800;margin-bottom:10px}
+.podium ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.podium li button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.podium li .pn{font-weight:700;color:var(--ink);font-size:15px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.podium li .pp{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
 
 /* Filtros */
-.filters{display:grid;gap:12px;margin-bottom:18px}
-.search{width:100%;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--card)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.chips .lbl{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-right:4px;min-width:5.5em}
-.chip{border:1px solid var(--rule);background:var(--card);padding:6px 12px;border-radius:999px;cursor:pointer;font-size:14px}
-.chip[aria-pressed="true"]{background:var(--stamp);border-color:var(--stamp);color:var(--card)}
+.filters{display:grid;gap:14px;margin-bottom:20px;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+.search{width:100%;padding:12px 14px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);font-size:16px;color:var(--ink)}
+.frow{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:10px;align-items:start}
+@media (max-width:520px){.frow{grid-template-columns:1fr;gap:6px}}
+.frow .label{padding-top:8px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--rule);background:var(--bg);padding:6px 12px;border-radius:999px;cursor:pointer;font-size:14px;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--bg);color:var(--ink)}
 .count{font-size:14px;color:var(--muted);margin:0 0 12px}
-select.sort{padding:6px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--card)}
 
 /* Fichas */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
 @media (max-width:400px){.grid{grid-template-columns:1fr}}
-.ficha{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:10px;min-width:0;
-  background-image:linear-gradient(var(--card),var(--card)),repeating-linear-gradient(transparent 0 27px,var(--rule) 27px 28px)}
-.ficha::before{content:"";position:absolute;left:0;right:0;top:44px;border-top:1px solid color-mix(in srgb,var(--stamp) 45%,transparent)}
-.ficha-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;min-height:30px}
-.ficha-head .who{min-width:0}
-.ficha-head .co{font-size:13px;color:var(--muted)}
-.sello{flex:0 0 auto;font-family:var(--f-mono);font-size:10px;line-height:1.25;text-transform:uppercase;letter-spacing:.06em;color:var(--stamp);border:1.5px solid var(--stamp);border-radius:4px;padding:3px 6px;transform:rotate(3deg);text-align:center;opacity:.9}
-.sello b{display:block;font-size:12px}
-.ficha p{margin:0}
+.ficha{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0;box-shadow:var(--shadow)}
+.f-head{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center}
+.f-title{font-size:20px;font-weight:800;letter-spacing:-.01em}
+.f-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.f-score{display:grid;justify-items:center;gap:2px}
+.f-score .nota-chip{font-size:20px;min-width:52px;padding:6px 8px}
+.f-score small{font-family:var(--f-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.f-desc{margin:0;font-size:16px;color:var(--ink);line-height:1.5}
+.f-sec{display:grid;gap:4px}
+.f-sec p{margin:0;font-size:15px}
+.ejemplos{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 0;padding:0;list-style:none}
+.ejemplos li{font-size:13px;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:3px 9px;color:var(--ink-2)}
+.novedad{margin:0;font-size:14px;background:var(--mark);color:var(--mark-ink);padding:8px 10px;border-radius:10px}
+.novedad b{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-right:4px}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
-.pill{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--paper);border:1px solid var(--rule)}
-.pill.gratis{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
-.pill.verif{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
+.pill{font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--rule);color:var(--ink-2)}
+.pill.gratis,.pill.verif{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
 .pill.orient{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
-.para{font-size:14px;color:var(--muted)}
-.ejemplos{font-size:14px;margin:0;padding-left:1.1em}
-.novedad{font-size:14px;background:color-mix(in srgb,var(--marker) 38%,transparent);padding:6px 8px;border-radius:3px}
-.novedad b{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
-.ficha-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:8px;border-top:1px dashed var(--rule);font-size:14px}
-.ficha-foot a{font-weight:700;text-decoration:none}
-.ficha-foot a:hover{text-decoration:underline}
+.f-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
+.f-date{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.02em}
+.f-date b{color:var(--ink)}
+.f-link{font-weight:700;text-decoration:none;font-size:14px;padding:7px 12px;border-radius:10px;background:var(--accent-soft);color:var(--ink)}
+.f-link:hover{background:var(--accent);color:var(--accent-ink)}
+.f-price{font-size:13px;color:var(--muted)}
 .ficha.flash{animation:flash 1.4s ease-out}
-@keyframes flash{0%{box-shadow:0 0 0 4px var(--stamp)}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes flash{0%{box-shadow:0 0 0 4px var(--accent)}100%{box-shadow:var(--shadow)}}
 
 /* Recomendador */
-.reco-box{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px;display:grid;gap:14px;margin-bottom:20px}
-.reco-box textarea{width:100%;min-height:84px;padding:12px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);resize:vertical}
-.btn{background:var(--ink);color:var(--paper);border:0;border-radius:999px;padding:10px 20px;font-weight:700;cursor:pointer;justify-self:start}
-.ideas{display:flex;flex-wrap:wrap;gap:6px}
-.idea{background:none;border:1px dashed var(--rule);border-radius:999px;padding:5px 11px;font-size:14px;cursor:pointer;color:var(--muted)}
-.idea:hover{color:var(--ink);border-color:var(--ink)}
-.why{font-size:14px;color:var(--stamp);font-weight:700}
-.reco-intro{margin:0 0 12px}
+.reco-panel{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;display:grid;gap:14px;box-shadow:var(--shadow);margin-bottom:24px}
+.reco-panel textarea{width:100%;min-height:76px;padding:12px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);resize:vertical;font-size:16px;color:var(--ink)}
+.reco-head{margin:0 0 6px}
+.reco-note{margin:0 0 16px;color:var(--muted);max-width:65ch}
+.why{margin:0;font-size:15px;color:var(--ink);background:var(--accent-soft);border-radius:10px;padding:10px 12px}
+.why b{color:var(--accent)}
+.reco-card{display:grid;gap:8px;min-width:0;align-content:start}
 
 /* Consejos */
 .tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.tips li{border-top:2px solid var(--ink);padding-top:10px}
-.tips h3{font-size:17px;margin-bottom:4px}
-.tips p{margin:0;color:var(--muted);font-size:15px}
-.glosario{margin-top:32px;max-width:70ch}
-.glosario dt{font-weight:700;margin-top:10px}
-.glosario dd{margin:0;color:var(--muted)}
+.tips li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.tips h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.tips p{margin:0;font-size:15px}
+.glosario{margin-top:36px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 28px}
+.glosario div{padding:12px 0;border-top:1px solid var(--rule)}
+.glosario dt{font-weight:700;color:var(--ink);font-size:16px}
+.glosario dd{margin:2px 0 0;font-size:15px}
 
 /* Novedades */
-.log{list-style:none;padding:0;margin:0;border-left:2px solid var(--rule);display:grid;gap:14px;max-width:72ch}
-.log li{padding-left:16px;position:relative}
-.log li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--stamp)}
-.log time{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:block}
+.log{list-style:none;padding:0;margin:0;display:grid;gap:10px;max-width:760px}
+.log li{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:start}
+.log time{font-family:var(--f-mono);font-size:11px;color:var(--muted);display:block}
+.log .lt{font-weight:700;color:var(--ink)}
+.log p{margin:2px 0 0;font-size:15px}
 
-.empty{padding:40px 0;color:var(--muted);max-width:60ch}
-.note{font-size:13px;color:var(--muted);margin-top:28px;max-width:75ch}
+.empty{padding:28px 0;color:var(--muted);max-width:60ch}
+footer.note{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-block:20px 40px;margin-top:40px}
+footer.note p{max-width:78ch;margin:0 0 8px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 </style>
 </head>
 <body>
-
 <header class="top">
-  <div class="wrap" style="padding-block:0">
-    <div class="brand">
-      <h1><span class="needle" aria-hidden="true">➶</span>Brújula IA</h1>
+  <div class="wrap">
+    <div class="bar">
+      <a class="logo" href="#ranking" aria-label="Cualia, inicio">
+        <span class="logo-mark" aria-hidden="true"><b>c</b><i></i></span>
+        <span class="logo-word">Cual<span>ia</span></span>
+      </a>
       <div class="fresh" id="fresh">Cargando fichas…</div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Secciones">
-      <button class="tab" role="tab" id="t-ranking" data-v="ranking" aria-selected="true">Ranking</button>
-      <button class="tab" role="tab" id="t-explorar" data-v="explorar" aria-selected="false">Explorar</button>
+      <button class="tab" role="tab" id="t-ranking" data-v="ranking" aria-selected="true">Inicio</button>
+      <button class="tab" role="tab" id="t-explorar" data-v="explorar" aria-selected="false">Catálogo</button>
       <button class="tab" role="tab" id="t-reco" data-v="reco" aria-selected="false">¿Cuál uso?</button>
       <button class="tab" role="tab" id="t-consejos" data-v="consejos" aria-selected="false">Consejos</button>
       <button class="tab" role="tab" id="t-novedades" data-v="novedades" aria-selected="false">Novedades</button>
@@ -162,69 +211,99 @@ html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{dis
 </header>
 
 <main class="wrap">
+  <!-- INICIO -->
   <section class="view" id="v-ranking">
-    <h2>Las IAs que más merecen la pena ahora</h2>
-    <p class="lede">Una guía para quien no sabe por dónde empezar. Cada ficha lleva su sello con la fecha en que se revisó por última vez. La puntuación valora calidad, facilidad de uso y precio.</p>
+    <header>
+      <div class="label">Guía de inteligencia artificial para empezar</div>
+      <h1 class="h-page" style="margin-top:6px">¿Qué IA uso para esto?</h1>
+      <p class="lede">Dinos qué quieres hacer y te decimos qué herramienta usar. 240 IAs revisadas cada semana, con su precio, su dificultad y la fecha de la última revisión.</p>
+      <form class="ask" id="askForm">
+        <input id="askTxt" type="text" placeholder="Ej.: quiero hacer una canción para un cumpleaños" aria-label="¿Qué quieres hacer?">
+        <button class="btn" type="submit">Recomiéndame</button>
+      </form>
+      <div class="ideas" id="ideasHome"></div>
+    </header>
+
     <div class="split">
       <div>
-        <div class="eyebrow" style="margin-bottom:8px">Ranking general · top 25</div>
-        <ol class="rank-list" id="rankList"><li class="empty">Cargando el ranking…</li></ol>
+        <div class="block-title"><h2 class="h-section">Ranking general</h2><span class="small">Top 25 por puntuación</span></div>
+        <ol class="rank-list" id="rankList"><li class="empty" style="padding:20px">Cargando el ranking…</li></ol>
       </div>
       <div>
-        <div class="eyebrow" style="margin-bottom:8px">Las tres mejores de cada campo</div>
+        <div class="block-title"><h2 class="h-section">Lo mejor de cada campo</h2></div>
         <div class="podiums" id="podiums"></div>
       </div>
     </div>
   </section>
 
+  <!-- CATÁLOGO -->
   <section class="view" id="v-explorar" hidden>
-    <h2>Explorar el catálogo</h2>
-    <p class="lede">Filtra por lo que quieres hacer, lo que quieres gastar y tu experiencia. Toca una ficha para visitar la web.</p>
+    <header>
+      <div class="label">Catálogo completo</div>
+      <h1 class="h-page" style="margin-top:6px">Todas las IAs</h1>
+      <p class="lede">Filtra por campo, precio y dificultad.</p>
+    </header>
     <div class="filters">
-      <input class="search" id="q" type="search" placeholder="Busca por nombre o tarea: «subtítulos», «logo», «podcast»…" aria-label="Buscar">
-      <div class="chips" id="fCat"><span class="lbl">Campo</span></div>
-      <div class="chips" id="fPrecio"><span class="lbl">Precio</span></div>
-      <div class="chips" id="fNivel"><span class="lbl">Nivel</span></div>
-      <div class="chips"><span class="lbl">Orden</span>
+      <input class="search" id="q" type="search" placeholder="Busca por nombre o tarea: subtítulos, logo, podcast…" aria-label="Buscar">
+      <div class="frow"><span class="label">Campo</span><div class="chips" id="fCat"></div></div>
+      <div class="frow"><span class="label">Precio</span><div class="chips" id="fPrecio"></div></div>
+      <div class="frow"><span class="label">Nivel</span><div class="chips" id="fNivel"></div></div>
+      <div class="frow"><span class="label">Orden</span><div>
         <select class="sort" id="sort" aria-label="Ordenar">
           <option value="nota">Mejor puntuación</option>
           <option value="nombre">Nombre (A–Z)</option>
           <option value="fecha">Revisadas más recientemente</option>
-        </select>
-      </div>
+        </select></div></div>
     </div>
     <p class="count" id="count"></p>
     <div class="grid" id="grid"></div>
   </section>
 
+  <!-- RECOMENDADOR -->
   <section class="view" id="v-reco" hidden>
-    <h2>¿Qué quieres hacer?</h2>
-    <p class="lede">Cuéntalo con tus palabras y te sugiero tres opciones adecuadas a tu presupuesto y experiencia.</p>
-    <form class="reco-box" id="recoForm">
-      <label for="recoTxt" class="eyebrow">Tu objetivo</label>
-      <textarea id="recoTxt" placeholder="Ej.: quiero hacer una canción para el cumpleaños de mi madre"></textarea>
-      <div class="ideas" id="ideas"></div>
-      <div class="chips" id="rPrecio"><span class="lbl">Presupuesto</span></div>
-      <div class="chips" id="rNivel"><span class="lbl">Experiencia</span></div>
-      <button class="btn" type="submit">Recomiéndame</button>
+    <header>
+      <div class="label">Recomendador</div>
+      <h1 class="h-page" style="margin-top:6px">¿Qué quieres hacer?</h1>
+      <p class="lede">Escríbelo con tus palabras. Te proponemos las tres herramientas que mejor encajan, adaptadas a tu presupuesto y experiencia.</p>
+    </header>
+    <form class="reco-panel" id="recoForm">
+      <label for="recoTxt" class="label">Tu objetivo</label>
+      <textarea id="recoTxt" placeholder="Ej.: quiero aprender a programar desde cero"></textarea>
+      <div class="ideas" id="ideas" style="margin-top:0"></div>
+      <div class="frow"><span class="label">Presupuesto</span><div class="chips" id="rPrecio"></div></div>
+      <div class="frow"><span class="label">Experiencia</span><div class="chips" id="rNivel"></div></div>
+      <div><button class="btn" type="submit">Recomiéndame</button></div>
     </form>
-    <div id="recoOut"></div>
+    <div id="recoOut" aria-live="polite"></div>
   </section>
 
+  <!-- CONSEJOS -->
   <section class="view" id="v-consejos" hidden>
-    <h2>Consejos para empezar</h2>
-    <p class="lede">Lo que conviene saber antes de ponerse a probar herramientas.</p>
+    <header>
+      <div class="label">Para empezar con buen pie</div>
+      <h1 class="h-page" style="margin-top:6px">Consejos</h1>
+      <p class="lede">Lo que conviene saber antes de ponerse a probar herramientas.</p>
+    </header>
     <ul class="tips" id="tips"></ul>
+    <h2 class="h-section" style="margin-top:44px">Glosario básico</h2>
     <dl class="glosario" id="glosario"></dl>
   </section>
 
+  <!-- NOVEDADES -->
   <section class="view" id="v-novedades" hidden>
-    <h2>Novedades y cambios</h2>
-    <p class="lede">Lo que ha cambiado en el panorama y en las fichas en cada revisión.</p>
+    <header>
+      <div class="label">Actualidad</div>
+      <h1 class="h-page" style="margin-top:6px">Novedades</h1>
+      <p class="lede">Lo que ha cambiado en las IAs y en el catálogo en cada revisión semanal.</p>
+    </header>
     <ul class="log" id="log"><li>Cargando…</li></ul>
   </section>
 
-  <p class="note">Precios orientativos, pueden variar por país y cambian a menudo. Las fichas marcadas «verificado» se contrastaron con fuentes en su última revisión; las marcadas «orientativo» están pendientes de comprobar en detalle. Brújula IA no tiene relación comercial con ninguna de estas empresas.</p>
+  <footer class="note">
+    <p><b>Cómo puntuamos.</b> La nota (0–100) combina calidad, facilidad de uso y relación calidad-precio. Es una valoración editorial de Cualia.</p>
+    <p>Los precios son orientativos: varían por país y cambian a menudo. «Verificado» indica que la ficha se contrastó con fuentes en su última revisión; «orientativo», que está pendiente de comprobar en detalle.</p>
+    <p>Cualia no tiene relación comercial con ninguna de estas empresas. Los logotipos pertenecen a sus propietarios y se muestran solo para identificar cada herramienta.</p>
+  </footer>
 </main>
 
 <script>
@@ -237,77 +316,90 @@ const NIVEL = {1:"Fácil",2:"Intermedio",3:"Avanzado"};
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm = s => String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
 
-let CATS = [];      // [{id, nombre, desc, claves, orden, herramientas}]
-let ALL = [];       // herramientas planas con cat
-let META = {};
-let LOG = [];
+let CATS = [], ALL = [], META = {}, LOG = [];
+const byName = new Map();
 const st = {q:"", cat:null, precio:null, nivel:null, sort:"nota", rPrecio:"cualquiera", rNivel:"cualquiera"};
 
+/* ---------- Iconos ---------- */
+const PALETA = ["#5B3FD9","#0E7C66","#C2410C","#1D4ED8","#9D174D","#4D7C0F","#7C3AED","#B45309","#0F766E","#BE123C"];
+function monoColor(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))>>>0; return PALETA[h%PALETA.length]; }
+function icono(h, small){
+  const cls = "ico"+(small?" sm":"");
+  const letra = esc((h.nombre||"?").trim()[0].toUpperCase());
+  const col = monoColor(h.nombre||"");
+  if(!h.dominio) return `<span class="${cls} mono" style="--mono-bg:${col}" aria-hidden="true"><span>${letra}</span></span>`;
+  const src = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(h.dominio)}&sz=128`;
+  return `<span class="${cls}" aria-hidden="true"><img src="${src}" alt="" loading="lazy" width="32" height="32"
+    onerror="this.parentNode.classList.add('mono');this.parentNode.style.setProperty('--mono-bg','${col}');this.outerHTML='<span>${letra}</span>'"></span>`;
+}
+
 /* ---------- Pestañas ---------- */
-function showView(v){
+const VIEWS = ["ranking","explorar","reco","consejos","novedades"];
+function showView(v, scroll=true){
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.v===v));
   document.querySelectorAll("section.view").forEach(s => s.hidden = s.id !== "v-"+v);
-  try{ localStorage.setItem("brujula-tab", v); }catch(e){}
+  try{ localStorage.setItem("cualia-tab", v); }catch(e){}
+  if(scroll) window.scrollTo({top:0});
 }
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => showView(t.dataset.v)));
-(() => { const h = location.hash.slice(1); let v = ["ranking","explorar","reco","consejos","novedades"].includes(h) ? h : null;
-  if(!v){ try{ v = localStorage.getItem("brujula-tab"); }catch(e){} }
-  if(v && document.getElementById("v-"+v)) showView(v); })();
+(() => { const h = location.hash.slice(1); let v = VIEWS.includes(h) ? h : null;
+  if(!v){ try{ v = localStorage.getItem("cualia-tab"); }catch(e){} }
+  if(v && VIEWS.includes(v)) showView(v,false); })();
+$(".logo").addEventListener("click", e => { e.preventDefault(); showView("ranking"); });
 
 /* ---------- Ficha ---------- */
 function ficha(h){
   const dias = diasDesde(h.actualizado);
-  const estado = h.verificado ? `<span class="pill verif" title="Contrastado con fuentes en la última revisión">✓ verificado</span>` : `<span class="pill orient" title="Pendiente de comprobar en detalle">orientativo</span>`;
+  const estado = h.verificado ? `<span class="pill verif" title="Contrastado con fuentes en la última revisión">✓ Verificado</span>` : `<span class="pill orient" title="Pendiente de comprobar en detalle">Orientativo</span>`;
   return `<article class="ficha" id="f-${esc(h.id)}">
-    <div class="ficha-head">
-      <div class="who"><h3>${esc(h.nombre)}</h3><div class="co">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
-      <div class="sello" title="Fecha de la última revisión de esta ficha">Revisado<b>${fecha(h.actualizado)}</b>${dias>30?"<span>revisar</span>":""}</div>
+    <div class="f-head">
+      ${icono(h)}
+      <div style="min-width:0"><h3 class="f-title">${esc(h.nombre)}</h3><div class="f-sub">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
+      <div class="f-score" title="Nota de Cualia (0–100)"><span class="nota-chip">${h.nota}</span><small>nota</small></div>
     </div>
-    <div class="tags">
-      <span class="pill ${h.precio==='gratis'?'gratis':''}">${PRECIO[h.precio]||h.precio}</span>
-      <span class="pill">${NIVEL[h.nivel]||""}</span>${estado}
+    <div class="tags"><span class="pill ${h.precio==='gratis'?'gratis':''}">${PRECIO[h.precio]||esc(h.precio)}</span><span class="pill">${NIVEL[h.nivel]||""}</span>${estado}</div>
+    <p class="f-desc">${esc(h.desc)}</p>
+    <div class="f-sec"><span class="label">Ideal para</span><p>${esc(h.para)}</p></div>
+    ${h.ejemplos?.length ? `<div class="f-sec"><span class="label">Ejemplos de uso</span><ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
+    ${h.novedad ? `<p class="novedad"><b>Novedad</b>${esc(h.novedad)}</p>` : ""}
+    <div class="f-sec"><span class="label">Precio</span><p class="f-price" style="color:var(--ink-2)">${esc(h.precioTxt)}</p></div>
+    <div class="f-foot">
+      <span class="f-date" title="Fecha de la última revisión de esta ficha">Revisado el <b>${fecha(h.actualizado)}</b>${dias>30?" · pendiente de revisar":""}</span>
+      ${h.web ? `<a class="f-link" href="${esc(h.web)}" target="_blank" rel="noopener">Visitar web ↗</a>` : ""}
     </div>
-    <p>${esc(h.desc)}</p>
-    <p class="para"><b>Para:</b> ${esc(h.para)}</p>
-    ${h.ejemplos?.length ? `<ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul>` : ""}
-    ${h.novedad ? `<p class="novedad"><b>Novedad</b> ${esc(h.novedad)}</p>` : ""}
-    <div class="ficha-foot">
-      <span class="score" title="Puntuación de Brújula IA (0–100)"><span class="meter"><i style="width:${h.nota}%"></i></span>${h.nota}</span>
-      <span style="color:var(--muted)">${esc(h.precioTxt)}</span>
-    </div>
-    ${h.web ? `<a href="${esc(h.web)}" target="_blank" rel="noopener" style="font-weight:700;font-size:14px">Visitar web ↗</a>` : ""}
   </article>`;
 }
 
-/* ---------- Ranking ---------- */
+/* ---------- Inicio ---------- */
 function renderRanking(){
   const top = [...ALL].sort((a,b)=>b.nota-a.nota).slice(0,25);
   $("#rankList").innerHTML = top.map((h,i)=>`<li class="rank-row" data-id="${esc(h.id)}" tabindex="0">
-    <span class="rank-pos">${i+1}</span>
-    <div class="rank-main"><div class="nm">${esc(h.nombre)}</div><div class="sub">${esc(h.catNombre)} · ${PRECIO[h.precio]} · revisado ${fecha(h.actualizado)}</div></div>
-    <span class="score"><span class="meter"><i style="width:${h.nota}%"></i></span>${h.nota}</span></li>`).join("");
+    <span class="rank-pos">${i+1}</span>${icono(h,true)}
+    <div class="rank-main"><div class="rank-name">${esc(h.nombre)}</div><div class="rank-sub">${esc(h.catNombre)} · ${PRECIO[h.precio]}</div></div>
+    <span class="nota-chip">${h.nota}</span></li>`).join("");
   $("#podiums").innerHTML = CATS.map(c=>{
-    const t = [...c.herramientas].sort((a,b)=>b.nota-a.nota).slice(0,3);
-    return `<div class="podium"><h3>${esc(c.nombre)}</h3><ol>${t.map(h=>`<li><button data-id="${esc(h.id)}">${esc(h.nombre)}</button> <span>· ${PRECIO[h.precio]}</span></li>`).join("")}</ol></div>`;
+    const t = [...c.herramientas].map(h=>({...h,catNombre:c.nombre})).sort((a,b)=>b.nota-a.nota).slice(0,3);
+    return `<div class="podium"><h3>${esc(c.nombre)}</h3><ol>${t.map(h=>`<li><button data-id="${esc(h.id)}">${icono(h,true)}<span class="pn">${esc(h.nombre)}</span><span class="pp">${PRECIO[h.precio]}</span></button></li>`).join("")}</ol></div>`;
   }).join("");
 }
 function irAFicha(id){
   const h = ALL.find(x=>x.id===id); if(!h) return;
-  st.q=""; $("#q").value=""; st.cat=h.cat; st.precio=null; st.nivel=null; syncChips(); renderGrid(); showView("explorar");
+  st.q=""; $("#q").value=""; st.cat=h.cat; st.precio=null; st.nivel=null; syncChips(); renderGrid(); showView("explorar",false);
   requestAnimationFrame(()=>{ const el=document.getElementById("f-"+id); if(el){ el.scrollIntoView({block:"center",behavior:"smooth"}); el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); } });
 }
-document.addEventListener("click", e=>{ const b=e.target.closest("[data-id]"); if(b && (b.classList.contains("rank-row")||b.closest(".podium")||b.closest("#recoOut .rank-row"))) irAFicha(b.dataset.id); });
+document.addEventListener("click", e=>{ const b=e.target.closest(".rank-row,.podium [data-id]"); if(b) irAFicha(b.dataset.id); });
 document.addEventListener("keydown", e=>{ if(e.key==="Enter"){ const b=e.target.closest?.(".rank-row"); if(b) irAFicha(b.dataset.id); } });
 
-/* ---------- Explorar ---------- */
-function chipRow(el, items, key, stateObj=st){
-  el.querySelectorAll(".chip").forEach(c=>c.remove());
+/* ---------- Catálogo ---------- */
+function chipRow(el, items, key){
+  el.innerHTML = "";
+  const toggle = !key.startsWith("r");
   items.forEach(([val,label])=>{
     const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=label; b.dataset.val=val;
-    b.setAttribute("aria-pressed", String(stateObj[key]===val));
-    b.addEventListener("click",()=>{ stateObj[key] = (stateObj[key]===val && !key.startsWith("r")) ? null : val; syncChips(); if(!key.startsWith("r")) renderGrid(); });
+    b.addEventListener("click",()=>{ st[key] = (toggle && st[key]===val) ? null : val; syncChips(); if(toggle) renderGrid(); });
     el.appendChild(b);
   });
+  syncChips();
 }
 function syncChips(){
   [["#fCat","cat"],["#fPrecio","precio"],["#fNivel","nivel"],["#rPrecio","rPrecio"],["#rNivel","rNivel"]].forEach(([sel,k])=>{
@@ -327,66 +419,236 @@ function renderGrid(){
 let qt; $("#q").addEventListener("input", e=>{ clearTimeout(qt); qt=setTimeout(()=>{ st.q=e.target.value; renderGrid(); },150); });
 $("#sort").addEventListener("change", e=>{ st.sort=e.target.value; renderGrid(); });
 
-/* ---------- Recomendador ---------- */
-const IDEAS = ["Hacer una canción para un cumpleaños","Quitar el fondo de una foto","Resumir mis apuntes para un examen","Crear la web de mi negocio","Subtitular un vídeo para Instagram","Hacer una presentación para el trabajo","Leer un PDF en voz alta","Aprender a programar"];
-function recomendar(txt){
-  const t = norm(txt); const palabras = t.split(/[^a-zñ0-9]+/).filter(w=>w.length>2);
-  const catScore = CATS.map(c=>{ const cl=norm(c.claves+" "+c.nombre+" "+c.desc); let s=0; palabras.forEach(w=>{ if(cl.includes(w.slice(0,Math.max(4,w.length-2)))) s+=2; }); return {c,s}; });
-  const best = catScore.filter(x=>x.s>0).sort((a,b)=>b.s-a.s);
-  const cats = best.length ? best.slice(0,2).map(x=>x.c.id) : ["chat"];
-  let pool = ALL.filter(h=>cats.includes(h.cat));
-  const okPrecio = h => st.rPrecio==="cualquiera" || (st.rPrecio==="gratis" ? h.precio!=="pago" : true);
-  const okNivel = h => st.rNivel==="cualquiera" || (st.rNivel==="nuevo" ? h.nivel===1 : h.nivel<=2);
-  pool = pool.map(h=>{
-    let s = h.nota;
-    const txtH = norm([h.desc,h.para,(h.ejemplos||[]).join(" ")].join(" "));
-    palabras.forEach(w=>{ if(txtH.includes(w.slice(0,Math.max(4,w.length-2)))) s+=6; });
-    if(h.cat===cats[0]) s+=8;
-    if(!okPrecio(h)) s-=100; if(!okNivel(h)) s-=60;
-    return {h,s};
-  }).sort((a,b)=>b.s-a.s).slice(0,3).map(x=>x.h);
-  return {cats, pool, generico: !best.length};
-}
-function motivo(h){
-  const r=[]; if(h.precio!=="pago") r.push("puedes empezar gratis"); if(h.nivel===1) r.push("es fácil de usar");
-  if(h.nota>=88) r.push("está entre las mejores de su campo"); if(h.novedad) r.push("se ha actualizado hace poco");
-  return r.length ? "Te la sugiero porque "+r.slice(0,3).join(", ")+"." : "Encaja con lo que buscas.";
-}
-$("#recoForm").addEventListener("submit", e=>{
-  e.preventDefault(); const txt=$("#recoTxt").value.trim();
-  if(!txt){ $("#recoOut").innerHTML=`<p class="empty">Escribe primero qué quieres hacer, por ejemplo «crear un logo para mi tienda».</p>`; return; }
-  if(!ALL.length){ $("#recoOut").innerHTML=`<p class="empty">Las fichas aún se están cargando. Inténtalo en unos segundos.</p>`; return; }
-  const {cats,pool,generico} = recomendar(txt);
-  const nombres = cats.map(id=>CATS.find(c=>c.id===id)?.nombre).filter(Boolean).join(" y ");
-  $("#recoOut").innerHTML = `<p class="reco-intro">${generico?"No he reconocido una tarea concreta, así que empiezo por los asistentes generales, que sirven para casi todo:":`Esto encaja con <b>${esc(nombres)}</b>. Mis tres sugerencias:`}</p>
-    <div class="grid">${pool.map(h=>`<div style="display:grid;gap:6px;min-width:0"><p class="why">${esc(motivo(h))}</p>${ficha(h)}</div>`).join("")}</div>`;
-});
+/* ---------- Recomendador ----------
+   Cada intención reconoce una tarea concreta y propone herramientas elegidas a mano,
+   con el motivo de cada una. Se evalúan en orden: primero las más específicas. */
+const INTENTS = [
+ {id:"aprender-programar", titulo:"Aprender a programar", re:/(aprend|empez|curso|estudi|ensen).{0,25}(program|codig|python|javascript|html|css|java\b)|program\w* desde cero|iniciarme en la programacion/, cat:"codigo", picks:[
+   ["Replit","Programas desde el navegador y ves el resultado al instante, sin instalar nada. Su asistente te explica cada paso."],
+   ["ChatGPT","Úsalo como profesor particular: pídele que te explique conceptos con ejemplos sencillos y que te ponga ejercicios."],
+   ["Claude","Explica el código con mucha claridad y paciencia. Pídele que corrija tus ejercicios y te diga por qué fallan."],
+   ["Khanmigo","Tutor pensado para aprender: te guía con preguntas en lugar de darte la solución directamente."]]},
+ {id:"crear-web", titulo:"Crear una web o una app sin saber programar", re:/(crea|hace|mont|diseñ|disen|constru).{0,25}(web|pagina|app|aplicacion|tienda online|landing|portfolio)|(web|app) (para|de) mi (negocio|empresa|tienda)/, cat:"codigo", picks:[
+   ["Lovable","Describes la web o app en español y la construye completa, lista para publicar."],
+   ["Framer AI","Ideal para webs bonitas y sencillas: portfolio, negocio o evento, con diseño cuidado."],
+   ["Bolt.new","Construye y publica apps web desde el navegador hablando con la IA."],
+   ["Base44","Para apps con usuarios y datos (reservas, clientes) sin programar."]]},
+ {id:"programar", titulo:"Programar con ayuda de IA", re:/programa|codigo|bug|depur|script|github|refactor|desarroll(o|ar) software/, cat:"codigo", picks:[
+   ["Claude Code","El agente de programación mejor valorado ahora mismo: entiende tu proyecto, escribe y prueba código."],
+   ["Cursor","Editor de código con IA integrada; cómodo si prefieres trabajar en un editor visual."],
+   ["GitHub Copilot","Autocompleta y explica código dentro de VS Code, con plan gratuito."],
+   ["Codex","El agente de OpenAI, incluido si ya pagas ChatGPT."]]},
+ {id:"instrumento", titulo:"Tocar un instrumento o practicar música", re:/acorde|guitarra|piano|ukelele|\bbajo\b|bateria|karaoke|quitar la voz|separar (la voz|pistas|instrumentos)|practicar (una )?cancion|tocar/, cat:"musica", picks:[
+   ["Chordify","Saca los acordes de cualquier canción para que puedas tocarla."],
+   ["Moises","Quita la voz o un instrumento y baja la velocidad para practicar."],
+   ["LALAL.AI","Separa voz e instrumentos con mucha calidad."]]},
+ {id:"cancion", titulo:"Hacer una canción", re:/cancion|canciones|letra|cantad|con voz|tema musical|jingle|cumpleanos.{0,20}(music|cancion)|rap\b|reggaeton/, cat:"musica", picks:[
+   ["Suno","Escribe de qué va la canción y el estilo, y crea el tema completo con voz y letra en un minuto."],
+   ["ElevenLabs Music","Voces muy realistas y la licencia más clara si quieres publicarla o usarla en un anuncio."],
+   ["Mureka","Alternativa a Suno con descargas ilimitadas en su plan de pago."],
+   ["Google Flow Music","Música de Google, con marca de agua que indica que es IA."]]},
+ {id:"musica-fondo", titulo:"Música de fondo para vídeos", re:/musica de fondo|instrumental|banda sonora|sin copyright|libre de derechos|musica para (un |mi )?(video|podcast|youtube|reel)/, cat:"musica", picks:[
+   ["Soundraw","Música instrumental libre de derechos que ajustas a la duración de tu vídeo."],
+   ["ElevenLabs Music","Pistas de gran calidad con licencia comercial clara."],
+   ["AIVA","Bandas sonoras orquestales y editables, ideal para cortos."],
+   ["Beatoven.ai","Elige la emoción de cada escena y adapta la música a ella."]]},
+ {id:"quitar-fondo", titulo:"Quitar el fondo de una foto", re:/quitar (el )?fondo|fondo (blanco|transparente)|recortar (una )?(foto|imagen|persona|producto)|foto de producto/, cat:"imagen", picks:[
+   ["Photoroom","Quita el fondo y crea fotos de producto profesionales desde el móvil."],
+   ["remove.bg","Un clic y listo; gratis en baja resolución."],
+   ["Nano Banana 2","Además de quitar el fondo, puedes pedir en palabras que te ponga otro."],
+   ["Adobe Firefly","La opción más precisa si ya usas Photoshop."]]},
+ {id:"editar-foto", titulo:"Retocar o mejorar una foto", re:/retoc|editar (una |mi )?(foto|imagen)|borrar (a alguien|una persona|un objeto)|mejorar (una )?foto|restaurar|foto antigua|ampliar (una )?foto|mas resolucion/, cat:"imagen", picks:[
+   ["Nano Banana 2","Edita fotos pidiéndolo con palabras: «quita a esa persona», «pon el cielo azul»."],
+   ["GPT Image 2","Retoques con instrucciones largas dentro de ChatGPT."],
+   ["Adobe Firefly","Borrar objetos y ampliar fotos con resultados profesionales."],
+   ["Magnific","Aumenta la resolución añadiendo detalle, para imprimir en grande."]]},
+ {id:"texto-imagen", titulo:"Logo, cartel o invitación", re:/logo|cartel|poster|invitacion|flyer|folleto|tarjeta|portada|miniatura|thumbnail|post para (instagram|redes)/, cat:"imagen", picks:[
+   ["Ideogram","El que mejor escribe texto legible dentro de la imagen: carteles, invitaciones, logos."],
+   ["Canva (Magic Media)","Genera la imagen y la colocas en una plantilla con tus textos."],
+   ["Recraft","Logos e iconos en vectorial, que se pueden ampliar sin perder calidad."],
+   ["GPT Image 2","Muy bueno siguiendo instrucciones detalladas con texto."]]},
+ {id:"imagen", titulo:"Crear una imagen o ilustración", re:/imagen|ilustracion|dibujo|dibujar|arte|pintura|cuadro|fondo de pantalla|avatar|concept art|foto (realista|de)/, cat:"imagen", picks:[
+   ["Nano Banana 2","Rápido, gratis dentro de Gemini y muy fácil de usar."],
+   ["GPT Image 2","Entiende muy bien lo que pides; incluido en ChatGPT."],
+   ["Midjourney","El referente en imágenes artísticas y con estilo."],
+   ["Leonardo.ai","Muchos estilos y plan gratuito, ideal para experimentar."]]},
+ {id:"subtitulos", titulo:"Editar vídeos o poner subtítulos", re:/subtitul|editar (un |mis )?video|montaje|montar (un )?video|recortar (un )?video|reels?\b|tiktok|shorts|clips? (de|para) redes/, cat:"video", picks:[
+   ["CapCut","Subtítulos automáticos, efectos y plantillas para redes, gratis."],
+   ["Descript","Edita el vídeo borrando texto, como en un documento. Quita muletillas solo."],
+   ["Captions","Desde el móvil: subtítulos animados para vídeos hablados."],
+   ["Opus Clip","Saca automáticamente clips cortos de un vídeo largo."]]},
+ {id:"avatar", titulo:"Vídeo con presentador virtual", re:/avatar|presentador|hable a camara|video con mi cara|curso en video|video explicativo|formacion en video/, cat:"video", picks:[
+   ["HeyGen","Presentadores virtuales que hablan tu guion en más de 175 idiomas."],
+   ["Synthesia","Pensado para empresas y cursos de formación."],
+   ["Hedra","Da voz y expresión a un personaje a partir de una imagen."]]},
+ {id:"doblaje", titulo:"Doblar o traducir un vídeo", re:/doblar|doblaje|traducir (un |mi )?video|video en (ingles|otro idioma)/, cat:"video", picks:[
+   ["HeyGen","Traduce el vídeo y ajusta los labios al nuevo idioma."],
+   ["ElevenLabs","Doblaje con voces muy naturales, incluso con tu propia voz."],
+   ["Rask AI","Especializado en doblar vídeos a otros idiomas."]]},
+ {id:"generar-video", titulo:"Generar un vídeo con IA", re:/video|clip|animar|animacion|cortometraje|corto\b|videoclip|escena|anuncio/, cat:"video", picks:[
+   ["Kling 3.0","La mejor relación calidad-precio y muy buena con personas. Tiene créditos gratis diarios."],
+   ["Veo 3.1","El más realista, con sonido y diálogos. Ideal para planos que tienen que impresionar."],
+   ["Runway","El mejor control de cámara, pensado para cine y publicidad."],
+   ["Seedance 2.5","Escenas con varios planos seguidos, perfecto para contar historias."]]},
+ {id:"leer-voz", titulo:"Escuchar textos en voz alta", re:/leer.{0,30}voz alta|voz alta|leerme|escuchar (un |el |mis )?(pdf|texto|libro|articulo|apuntes)|dislexia|lector de voz/, cat:"voz", picks:[
+   ["Speechify","Lee en voz alta cualquier PDF, web o texto desde el móvil."],
+   ["NaturalReader","Lector sencillo con versión gratuita."],
+   ["ElevenLabs","Las voces más naturales si quieres calidad de audiolibro."]]},
+ {id:"locucion", titulo:"Locución o voz en off", re:/locucion|narra|voz en off|audiolibro|voz para (un |mi )?video|clonar (mi )?voz|voz de ia/, cat:"voz", picks:[
+   ["ElevenLabs","El estándar: voces naturales en más de 70 idiomas y clonación de voz."],
+   ["Murf","Estudio de locución sencillo para cursos y presentaciones."],
+   ["Hume","Voces que interpretan la emoción del texto."]]},
+ {id:"transcribir", titulo:"Pasar audio a texto o dictar", re:/transcrib|pasar (un )?audio a texto|audio a texto|entrevista|dictar|dictado|nota de voz/, cat:"voz", picks:[
+   ["Whisper","El transcriptor más usado, gratis y en casi cualquier idioma."],
+   ["MacWhisper","Transcribe en tu Mac sin subir el audio a internet."],
+   ["Wispr Flow","Para dictar en cualquier app: habla y te deja el texto limpio."],
+   ["Otter.ai","Transcribe y resume reuniones y entrevistas automáticamente."]]},
+ {id:"audio", titulo:"Grabar o mejorar un podcast", re:/podcast|ruido|eco|mejorar (el )?audio|limpiar (el )?audio|grabacion/, cat:"voz", picks:[
+   ["Adobe Podcast","Hace que una grabación con el móvil suene como en un estudio."],
+   ["Descript","Edita el podcast como un documento de texto."],
+   ["Auphonic","Iguala volúmenes y mejora el sonido automáticamente."]]},
+ {id:"reuniones", titulo:"Tomar notas de reuniones", re:/reunion|acta|meet\b|zoom|teams|llamada/, cat:"trabajo", picks:[
+   ["Granola","Toma notas de tus reuniones sin meter un bot en la llamada."],
+   ["Otter.ai","Transcribe y resume con puntos clave y tareas."],
+   ["Fathom","Opción gratuita muy completa para Zoom, Meet y Teams."],
+   ["Fireflies","Se une a la reunión y reparte el resumen al equipo."]]},
+ {id:"presentacion", titulo:"Hacer una presentación", re:/presentacion|diapositiva|powerpoint|slides|exponer/, cat:"trabajo", picks:[
+   ["Gamma","Escribe el tema y crea una presentación bonita en segundos."],
+   ["Canva (Magic Studio)","Plantillas y diseño con IA; muy fácil de retocar a mano."],
+   ["Beautiful.ai","Diapositivas que se maquetan solas."],
+   ["Genspark","Crea la presentación investigando el tema por ti."]]},
+ {id:"curriculum", titulo:"Hacer un currículum", re:/curriculum|\bcv\b|carta de presentacion|entrevista de trabajo|linkedin/, cat:"trabajo", picks:[
+   ["Claude","Redacta y mejora tu CV o carta con un tono natural y profesional."],
+   ["Canva (Magic Studio)","Plantillas de currículum con diseño cuidado."],
+   ["ChatGPT","Prepara la entrevista: te hace preguntas y valora tus respuestas."]]},
+ {id:"investigar", titulo:"Buscar estudios científicos", re:/tesis|tfg|tfm|articulo cientifico|estudios (cientificos|sobre|de)|bibliografia|paper|investigacion|que dice la ciencia/, cat:"estudio", picks:[
+   ["Elicit","Busca y resume artículos científicos y extrae los datos en tablas."],
+   ["Consensus","Responde preguntas con lo que dicen los estudios."],
+   ["Gemini Notebook","Para trabajar a fondo con los artículos que ya tienes."],
+   ["SciSpace","Explica artículos difíciles en lenguaje sencillo."]]},
+ {id:"estudiar", titulo:"Estudiar y repasar", re:/apuntes|examen|estudiar|temario|repasar|oposicion|selectividad|resumir (mis |un |el )?(apuntes|pdf|libro|tema)/, cat:"estudio", picks:[
+   ["Gemini Notebook","Sube tus apuntes y pregúntale: responde solo con tu material y hasta crea un podcast para repasar."],
+   ["Quizlet","Convierte tus apuntes en fichas y tests para memorizar."],
+   ["ChatPDF","Hazle preguntas a un PDF concreto."],
+   ["Claude","Pídele que te explique lo que no entiendas o que te ponga preguntas de examen."]]},
+ {id:"traducir", titulo:"Traducir textos", re:/traduc/, cat:"estudio", picks:[
+   ["DeepL","El traductor más natural para textos y documentos."],
+   ["Google Lens","Apunta con la cámara y traduce carteles o menús al momento."],
+   ["ChatGPT","Traduce adaptando el tono y te explica expresiones."]]},
+ {id:"idiomas", titulo:"Aprender idiomas", re:/ingles|idioma|frances|aleman|italiano|chino|japones|practicar (a )?hablar|conversacion/, cat:"estudio", picks:[
+   ["Speak","Practicas conversaciones reales en inglés con un tutor de IA."],
+   ["Voz de ChatGPT","Habla con ChatGPT en el idioma que estudias, como en una llamada."],
+   ["Duolingo Max","Duolingo con conversaciones y explicaciones de tus errores."],
+   ["Praktika","Tutores con avatar para practicar a diario."]]},
+ {id:"mates", titulo:"Matemáticas y deberes", re:/matemat|ecuacion|deberes|problema de|fisica|quimica|derivada|integral/, cat:"estudio", picks:[
+   ["Photomath","Escanea el ejercicio y te explica cómo resolverlo paso a paso."],
+   ["Khanmigo","Te guía para que lo resuelvas tú, sin darte la respuesta."],
+   ["Wolfram Alpha","Cálculos exactos de matemáticas y ciencias."],
+   ["Symbolab","Muestra todos los pasos de la solución."]]},
+ {id:"automatizar", titulo:"Automatizar tareas", re:/automatiz|tarea repetitiva|conectar (apps|aplicaciones)|flujo de trabajo|agente que/, cat:"trabajo", picks:[
+   ["Zapier","Conecta tus apps sin programar: «cuando llegue un correo, guárdalo en Drive»."],
+   ["Make","Automatizaciones visuales más flexibles y baratas."],
+   ["n8n","Gratis si lo instalas tú; ideal si te importa la privacidad."]]},
+ {id:"privado", titulo:"Usar IA con privacidad", re:/sin internet|privad|en mi ordenador|local|(sin que|no) guarde|anonim/, cat:"chat", picks:[
+   ["LM Studio","Descarga modelos y úsalos en tu ordenador, sin conexión."],
+   ["Duck.ai","Chat anónimo que no guarda tus conversaciones."],
+   ["Jan","Alternativa a ChatGPT que funciona entera en tu equipo."]]},
+ {id:"datos", titulo:"Analizar datos o un Excel", re:/excel|hoja de calculo|datos|grafico|estadistica|tabla/, cat:"trabajo", picks:[
+   ["Julius AI","Sube tu Excel y pregunta en español: te hace gráficos y análisis."],
+   ["Microsoft Copilot","IA dentro de Excel si usas Office."],
+   ["ChatGPT","Analiza archivos y crea gráficos a partir de tus datos."]]},
+ {id:"escribir", titulo:"Escribir o mejorar textos", re:/email|correo|carta|redact|escribir|texto|articulo|blog|novela|relato|corregir|ortografia/, cat:"chat", picks:[
+   ["Claude","El que escribe con más naturalidad; ideal para corregir y mejorar textos."],
+   ["ChatGPT","Muy versátil para cualquier tipo de texto."],
+   ["DeepL","Si el texto es en otro idioma, su corrector DeepL Write es excelente."],
+   ["Grammarly","Corrige tus textos en inglés mientras escribes."]]},
+ {id:"buscar", titulo:"Buscar información fiable", re:/buscar|informacion|noticia|comparar|fuentes|actualidad|que (movil|ordenador) comprar/, cat:"chat", picks:[
+   ["Perplexity","Responde citando las fuentes para que puedas comprobarlas."],
+   ["Gemini","Integra la búsqueda de Google."],
+   ["ChatGPT","Busca en la web y resume lo que encuentra."]]},
+ {id:"empezar", titulo:"Empezar con la IA", re:/empezar|probar (la )?ia|no se por donde|primera vez|principiante|para todo/, cat:"chat", picks:[
+   ["ChatGPT","El más usado y el mejor punto de partida para casi todo."],
+   ["Gemini","Gratis y dentro de Google; cómodo si usas Gmail o Android."],
+   ["Claude","Muy bueno escribiendo y explicando con claridad."]]},
+];
 
-/* ---------- Consejos (fijos) ---------- */
+function pasaFiltros(h){
+  const okP = st.rPrecio==="cualquiera" || h.precio!=="pago";
+  const okN = st.rNivel==="cualquiera" || (st.rNivel==="nuevo" ? h.nivel===1 : h.nivel<=2);
+  return okP && okN;
+}
+function recomendar(txt){
+  const t = norm(txt);
+  const intent = INTENTS.find(i => i.re.test(t));
+  if(intent){
+    let elegidos = intent.picks.map(([n,why]) => ({h:byName.get(n), why})).filter(x=>x.h);
+    let validos = elegidos.filter(x=>pasaFiltros(x.h));
+    // Completa con la misma categoría si los filtros dejan menos de 3
+    if(validos.length < 3){
+      const ya = new Set(validos.map(x=>x.h.id));
+      ALL.filter(h=>h.cat===intent.cat && !ya.has(h.id) && pasaFiltros(h)).sort((a,b)=>b.nota-a.nota)
+        .slice(0, 3-validos.length).forEach(h=>validos.push({h, why:null}));
+    }
+    const descartados = elegidos.length - elegidos.filter(x=>pasaFiltros(x.h)).length;
+    return {intent, res: validos.slice(0,3), descartados};
+  }
+  return {intent:null, res:[]};
+}
+function motivoGenerico(h){
+  const r=[]; if(h.precio!=="pago") r.push("puedes empezar gratis"); if(h.nivel===1) r.push("es fácil de usar"); if(h.nota>=85) r.push("está entre las mejores de su campo");
+  return r.length ? "Encaja con tus filtros: "+r.join(", ")+"." : "Encaja con lo que buscas y con tus filtros.";
+}
+function pintarReco(txt){
+  const out = $("#recoOut");
+  if(!txt){ out.innerHTML=`<p class="empty">Escribe primero qué quieres hacer, por ejemplo «crear un logo para mi tienda».</p>`; return; }
+  if(!ALL.length){ out.innerHTML=`<p class="empty">Las fichas aún se están cargando. Inténtalo en unos segundos.</p>`; return; }
+  const {intent,res,descartados} = recomendar(txt);
+  if(!intent){
+    out.innerHTML = `<h2 class="h-section reco-head">No he entendido bien qué quieres hacer</h2>
+      <p class="reco-note">Prueba a decirlo con otras palabras («quiero…» + la tarea) o elige una de las ideas de arriba. También puedes buscar en el <a href="#explorar" id="goCat">catálogo</a>.</p>`;
+    $("#goCat")?.addEventListener("click",e=>{e.preventDefault(); st.q=txt; $("#q").value=txt; renderGrid(); showView("explorar");});
+    requestAnimationFrame(()=>window.scrollTo({top: out.getBoundingClientRect().top + window.scrollY - 120}));
+    return;
+  }
+  const nota = descartados>0 ? `He quitado ${descartados===1?"una opción que no encaja":"opciones que no encajan"} con tu presupuesto o experiencia.` : "";
+  out.innerHTML = `<div class="label">Tu objetivo</div><h2 class="h-section reco-head">${esc(intent.titulo)}</h2>
+    <p class="reco-note">Estas son nuestras tres propuestas, de la más recomendada a la menos. ${nota}</p>
+    ${res.length ? `<div class="grid">${res.map((x,i)=>`<div class="reco-card"><p class="why"><b>${i+1}.</b> ${esc(x.why || motivoGenerico(x.h))}</p>${ficha(x.h)}</div>`).join("")}</div>`
+      : `<p class="empty">Ninguna opción de este tipo encaja con esos filtros. Prueba con «Me da igual» en presupuesto o experiencia.</p>`}`;
+  requestAnimationFrame(()=>{ const top = out.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({top, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); });
+}
+$("#recoForm").addEventListener("submit", e=>{ e.preventDefault(); pintarReco($("#recoTxt").value.trim()); });
+$("#askForm").addEventListener("submit", e=>{ e.preventDefault(); const v=$("#askTxt").value.trim(); $("#recoTxt").value=v; showView("reco"); pintarReco(v); });
+
+const IDEAS = ["Hacer una canción para un cumpleaños","Quitar el fondo de una foto","Resumir mis apuntes para un examen","Crear la web de mi negocio","Subtitular un vídeo para Instagram","Hacer una presentación para el trabajo","Leer un PDF en voz alta","Aprender a programar","Practicar inglés hablando","Hacer un logo"];
+function ideasHTML(){ return IDEAS.map(i=>`<button type="button" class="idea">${esc(i)}</button>`).join(""); }
+$("#ideas").innerHTML = ideasHTML(); $("#ideasHome").innerHTML = ideasHTML().split("</button>").slice(0,6).join("</button>")+"</button>";
+function onIdea(e){ const b=e.target.closest(".idea"); if(!b) return; $("#recoTxt").value=b.textContent; $("#askTxt").value=b.textContent; showView("reco"); pintarReco(b.textContent); }
+$("#ideas").addEventListener("click", onIdea); $("#ideasHome").addEventListener("click", onIdea);
+
+/* ---------- Consejos ---------- */
 const TIPS = [
- ["Empieza por un asistente general","ChatGPT, Claude o Gemini resuelven el 80 % de las tareas. Aprende a usar uno bien antes de probar diez herramientas."],
+ ["Empieza por un asistente general","ChatGPT, Claude o Gemini resuelven la mayoría de tareas. Aprende a usar uno bien antes de probar diez herramientas."],
  ["Explica el contexto","Di quién eres, para qué es y cómo lo quieres. «Email formal a mi casero pidiendo arreglar la caldera, tono amable» funciona mucho mejor que «escribe un email»."],
  ["Pide cambios, no te conformes","La primera respuesta es un borrador. Pide «más corto», «más cercano» o «dame tres opciones» hasta que te guste."],
  ["Comprueba los datos importantes","La IA puede inventar cifras, fechas o citas con total seguridad. Verifica lo que vayas a publicar, firmar o decidir."],
- ["Cuidado con los datos personales","No pegues contraseñas, DNI ni datos médicos o bancarios. Si trabajas con documentos sensibles, revisa la privacidad o usa una IA local."],
+ ["Cuidado con los datos personales","No pegues contraseñas, DNI ni datos médicos o bancarios. Para documentos sensibles, revisa la privacidad o usa una IA local."],
  ["Los planes gratis bastan para empezar","Casi todas tienen versión gratuita. Paga solo cuando te quedes corto con una herramienta que ya usas a menudo."],
  ["Mira los derechos antes de publicar","En música e imágenes no todas permiten uso comercial en el plan gratis. Adobe Firefly y ElevenLabs Music tienen las licencias más claras."],
  ["Avisa cuando algo es IA","Desde agosto de 2026 la ley europea de IA obliga a marcar el contenido generado (imágenes, voces, vídeos) en muchos usos públicos."],
- ["Las herramientas cambian cada mes","Lo que hoy es lo mejor puede no serlo en tres meses. Por eso cada ficha lleva su fecha de revisión."],
+ ["Las herramientas cambian cada mes","Lo que hoy es lo mejor puede no serlo en tres meses. Por eso cada ficha lleva la fecha de su última revisión."],
 ];
 const GLOS = [
  ["Prompt","La instrucción que le das a la IA."],
- ["Modelo","El «cerebro» que hay detrás de una herramienta. Por ejemplo, ChatGPT usa modelos GPT y Claude usa modelos Claude."],
- ["Freemium","Gratis con límites y con planes de pago para usarla más."],
- ["Agente","Una IA que no solo responde: hace tareas de varios pasos por su cuenta (buscar, crear archivos, usar apps)."],
- ["Código abierto / modelo abierto","Se puede descargar e instalar en tu ordenador. Más privado, pero necesita más conocimientos."],
+ ["Modelo","El «cerebro» que hay detrás de una herramienta. ChatGPT usa modelos GPT; Claude, modelos Claude."],
+ ["Freemium","Gratis con límites, y con planes de pago para usarla más."],
+ ["Agente","Una IA que hace tareas de varios pasos por su cuenta: buscar, crear archivos, usar apps."],
+ ["Modelo abierto","Se puede descargar e instalar en tu ordenador. Más privado, pero requiere más conocimientos."],
  ["Alucinación","Cuando la IA se inventa algo y lo presenta como cierto."],
  ["API","Una forma de conectar la IA a tus propias aplicaciones. Se paga por uso."],
 ];
 $("#tips").innerHTML = TIPS.map(([t,d])=>`<li><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join("");
-$("#glosario").innerHTML = `<h2 style="margin-bottom:4px">Glosario básico</h2>` + GLOS.map(([t,d])=>`<dt>${esc(t)}</dt><dd>${esc(d)}</dd>`).join("");
-$("#ideas").innerHTML = IDEAS.map(i=>`<button type="button" class="idea">${esc(i)}</button>`).join("");
-$("#ideas").addEventListener("click", e=>{ const b=e.target.closest(".idea"); if(b){ $("#recoTxt").value=b.textContent; $("#recoForm").requestSubmit(); } });
+$("#glosario").innerHTML = GLOS.map(([t,d])=>`<div><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join("");
 chipRow($("#fPrecio"), [["gratis","Gratis"],["freemium","Gratis + pago"],["pago","De pago"]], "precio");
 chipRow($("#fNivel"), [["1","Fácil"],["2","Intermedio"],["3","Avanzado"]], "nivel");
 chipRow($("#rPrecio"), [["cualquiera","Me da igual"],["gratis","Quiero empezar gratis"]], "rPrecio");
@@ -394,23 +656,24 @@ chipRow($("#rNivel"), [["cualquiera","Cualquiera"],["nuevo","Soy principiante"],
 
 /* ---------- Novedades ---------- */
 function renderLog(){
-  $("#log").innerHTML = LOG.length ? LOG.map(n=>`<li><time>${fecha(n.fecha)}</time>${n.ia?`<b>${esc(n.ia)}</b> · `:""}${esc(n.texto)}</li>`).join("") : `<li>Aún no hay novedades registradas.</li>`;
+  $("#log").innerHTML = LOG.length ? LOG.map(n=>{
+    const h = byName.get(n.ia) || {nombre:n.ia||"Cualia", dominio: n.ia==="Cualia"?null:undefined};
+    return `<li>${icono(h,true)}<div><time>${fecha(n.fecha)}</time><div class="lt">${esc(n.ia||"")}</div><p>${esc(n.texto)}</p></div></li>`;
+  }).join("") : `<li>Aún no hay novedades registradas.</li>`;
 }
 function renderFresh(){
-  if(!META.ultimaRevision){ $("#fresh").textContent = ALL.length ? `${ALL.length} fichas` : "Cargando fichas…"; return; }
-  $("#fresh").innerHTML = `${ALL.length} fichas · revisado el <b>${fecha(META.ultimaRevision)}</b>${META.proximaRevision?` · próxima revisión ${fecha(META.proximaRevision)}`:""}`;
+  $("#fresh").innerHTML = META.ultimaRevision ? `${ALL.length} IAs · revisado el <b>${fecha(META.ultimaRevision)}</b>` : (ALL.length ? `${ALL.length} IAs` : "Cargando fichas…");
 }
 
 /* ---------- Datos ---------- */
-function setCats(cats){
-  CATS = cats.filter(c=>Array.isArray(c.herramientas)).sort((a,b)=>(a.orden||99)-(b.orden||99));
-  ALL = CATS.flatMap(c=>c.herramientas.map(h=>({...h, cat:c.id, catNombre:c.nombre})));
-  chipRow($("#fCat"), CATS.map(c=>[c.id,c.nombre]), "cat");
-  renderRanking(); renderGrid(); renderFresh();
-}
 fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
-  META = d.meta || {}; LOG = (d.novedades||[]).slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
-  setCats(d.cats||[]); renderLog();
+  META = d.meta || {};
+  CATS = (d.cats||[]).filter(c=>Array.isArray(c.herramientas)).sort((a,b)=>(a.orden||99)-(b.orden||99));
+  ALL = CATS.flatMap(c=>c.herramientas.map(h=>({...h, cat:c.id, catNombre:c.nombre})));
+  ALL.forEach(h=>byName.set(h.nombre,h));
+  LOG = (d.novedades||[]).slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
+  chipRow($("#fCat"), CATS.map(c=>[c.id,c.nombre]), "cat");
+  renderRanking(); renderGrid(); renderFresh(); renderLog();
 }).catch(()=>{ $("#fresh").textContent = "No se pudieron cargar las fichas. Recarga la página."; });
 </script>
 </body>

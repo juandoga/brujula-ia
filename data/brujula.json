@@ -3,12 +3,13 @@
   "ultimaRevision": "2026-09-29",
   "proximaRevision": "2026-10-06",
   "frecuencia": "semanal",
-  "totalFichas": 240
+  "totalFichas": 240,
+  "nombre": "Cualia"
  },
  "novedades": [
   {
    "fecha": "2026-09-29",
-   "ia": "Brújula IA",
+   "ia": "Cualia",
    "texto": "Primera revisión: 240 fichas en 8 campos, con fecha de revisión en cada una."
   },
   {
@@ -102,7 +103,8 @@
      "novedad": "Sept 2026: nueva familia GPT-6 (Astra, Sol y Luna). ChatGPT Work, su modo agente, desde julio.",
      "web": "https://chatgpt.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chatgpt.com"
     },
     {
      "id": "chat-02",
@@ -122,7 +124,8 @@
      "novedad": "Sept 2026: llegan Claude Fable 5.1, Opus 5.5 y Sonnet 5.5 (28 de septiembre).",
      "web": "https://claude.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "claude.ai"
     },
     {
      "id": "chat-03",
@@ -142,7 +145,8 @@
      "novedad": "Gemini 3.8 Flash (2 sept 2026). El modelo Pro sigue en la versión 3.1.",
      "web": "https://gemini.google.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "gemini.google.com"
     },
     {
      "id": "chat-04",
@@ -162,7 +166,8 @@
      "novedad": "Copilot Cowork (agente para tareas largas) disponible en todo el mundo desde junio 2026.",
      "web": "https://copilot.microsoft.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "copilot.microsoft.com"
     },
     {
      "id": "chat-05",
@@ -182,7 +187,8 @@
      "novedad": "Perplexity Computer: agentes que entregan informes y presentaciones. Su navegador Comet es gratis.",
      "web": "https://www.perplexity.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "perplexity.ai"
     },
     {
      "id": "chat-06",
@@ -202,7 +208,8 @@
      "novedad": "Grok 4.7 lanzado el 21 de septiembre de 2026.",
      "web": "https://grok.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "grok.com"
     },
     {
      "id": "chat-07",
@@ -222,7 +229,8 @@
      "novedad": "Modelo Muse Spark 1.3 (sept 2026) y Muse Image para crear imágenes gratis.",
      "web": "https://www.meta.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "meta.ai"
     },
     {
      "id": "chat-08",
@@ -242,7 +250,8 @@
      "novedad": "DeepSeek V4.1 Flash (10 sept 2026), ahora también entiende imágenes.",
      "web": "https://chat.deepseek.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chat.deepseek.com"
     },
     {
      "id": "chat-09",
@@ -262,7 +271,8 @@
      "novedad": "",
      "web": "https://chat.mistral.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chat.mistral.ai"
     },
     {
      "id": "chat-10",
@@ -282,7 +292,8 @@
      "novedad": "Qwen 3.8 Max disponible en septiembre de 2026.",
      "web": "https://chat.qwen.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chat.qwen.ai"
     },
     {
      "id": "chat-11",
@@ -302,7 +313,8 @@
      "novedad": "Kimi K3 disponible (sept 2026).",
      "web": "https://www.kimi.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "kimi.com"
     },
     {
      "id": "chat-12",
@@ -322,7 +334,8 @@
      "novedad": "GLM-5.3 y GLM-5.3 Flash (sept 2026).",
      "web": "https://chat.z.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chat.z.ai"
     },
     {
      "id": "chat-13",
@@ -341,7 +354,8 @@
      "novedad": "",
      "web": "https://poe.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "poe.com"
     },
     {
      "id": "chat-14",
@@ -360,7 +374,8 @@
      "novedad": "",
      "web": "https://duck.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "duck.ai"
     },
     {
      "id": "chat-15",
@@ -379,7 +394,8 @@
      "novedad": "",
      "web": "https://lumo.proton.me",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lumo.proton.me"
     },
     {
      "id": "chat-16",
@@ -399,7 +415,8 @@
      "novedad": "",
      "web": "https://www.apple.com/es/apple-intelligence/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "apple.com"
     },
     {
      "id": "chat-17",
@@ -419,7 +436,8 @@
      "novedad": "",
      "web": "https://www.amazon.com/alexa",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "alexa.amazon.com"
     },
     {
      "id": "chat-18",
@@ -438,7 +456,8 @@
      "novedad": "",
      "web": "https://brave.com/leo/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "brave.com"
     },
     {
      "id": "chat-19",
@@ -457,7 +476,8 @@
      "novedad": "",
      "web": "https://www.opera.com/features/aria",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "opera.com"
     },
     {
      "id": "chat-20",
@@ -476,7 +496,8 @@
      "novedad": "",
      "web": "https://you.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "you.com"
     },
     {
      "id": "chat-21",
@@ -495,7 +516,8 @@
      "novedad": "",
      "web": "https://venice.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "venice.ai"
     },
     {
      "id": "chat-22",
@@ -514,7 +536,8 @@
      "novedad": "",
      "web": "https://pi.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "pi.ai"
     },
     {
      "id": "chat-23",
@@ -533,7 +556,8 @@
      "novedad": "",
      "web": "https://character.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "character.ai"
     },
     {
      "id": "chat-24",
@@ -552,7 +576,8 @@
      "novedad": "",
      "web": "https://openrouter.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "openrouter.ai"
     },
     {
      "id": "chat-25",
@@ -570,7 +595,8 @@
      "novedad": "",
      "web": "https://t3.chat",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "t3.chat"
     },
     {
      "id": "chat-26",
@@ -589,7 +615,8 @@
      "novedad": "",
      "web": "https://lmstudio.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lmstudio.ai"
     },
     {
      "id": "chat-27",
@@ -608,7 +635,8 @@
      "novedad": "",
      "web": "https://ollama.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "ollama.com"
     },
     {
      "id": "chat-28",
@@ -627,7 +655,8 @@
      "novedad": "",
      "web": "https://jan.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "jan.ai"
     },
     {
      "id": "chat-29",
@@ -645,7 +674,8 @@
      "novedad": "",
      "web": "https://www.nomic.ai/gpt4all",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "nomic.ai"
     },
     {
      "id": "chat-30",
@@ -663,7 +693,8 @@
      "novedad": "",
      "web": "https://msty.app",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "msty.app"
     }
    ],
    "actualizado": "2026-09-29",
@@ -693,7 +724,8 @@
      "novedad": "Versión Lite (30 junio 2026) que crea imágenes en unos 4 segundos.",
      "web": "https://gemini.google.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "gemini.google.com"
     },
     {
      "id": "imagen-02",
@@ -713,7 +745,8 @@
      "novedad": "Sustituyó a DALL·E 3, retirado el 12 de mayo de 2026.",
      "web": "https://chatgpt.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "openai.com"
     },
     {
      "id": "imagen-03",
@@ -733,7 +766,8 @@
      "novedad": "V8.2 es el modelo por defecto desde el 24 de julio de 2026.",
      "web": "https://www.midjourney.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "midjourney.com"
     },
     {
      "id": "imagen-04",
@@ -752,7 +786,8 @@
      "novedad": "FLUX 3 (imagen, vídeo y audio) en acceso anticipado desde julio 2026.",
      "web": "https://bfl.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "bfl.ai"
     },
     {
      "id": "imagen-05",
@@ -772,7 +807,8 @@
      "novedad": "Firefly Image 5: edita solo una parte de la imagen con texto.",
      "web": "https://firefly.adobe.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "firefly.adobe.com"
     },
     {
      "id": "imagen-06",
@@ -791,7 +827,8 @@
      "novedad": "",
      "web": "https://gemini.google.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "gemini.google.com"
     },
     {
      "id": "imagen-07",
@@ -811,7 +848,8 @@
      "novedad": "Ideogram 4.0: control de posición del texto y versión descargable.",
      "web": "https://ideogram.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "ideogram.ai"
     },
     {
      "id": "imagen-08",
@@ -831,7 +869,8 @@
      "novedad": "Recraft V4.1 (14 mayo 2026).",
      "web": "https://www.recraft.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "recraft.ai"
     },
     {
      "id": "imagen-09",
@@ -851,7 +890,8 @@
      "novedad": "Modelo Lucid Origin.",
      "web": "https://leonardo.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "leonardo.ai"
     },
     {
      "id": "imagen-10",
@@ -870,7 +910,8 @@
      "novedad": "",
      "web": "https://stability.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "stability.ai"
     },
     {
      "id": "imagen-11",
@@ -890,7 +931,8 @@
      "novedad": "Lanzado el 7 de julio de 2026.",
      "web": "https://www.meta.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "meta.ai"
     },
     {
      "id": "imagen-12",
@@ -909,7 +951,8 @@
      "novedad": "",
      "web": "https://grok.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "grok.com"
     },
     {
      "id": "imagen-13",
@@ -928,7 +971,8 @@
      "novedad": "",
      "web": "https://www.canva.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "canva.com"
     },
     {
      "id": "imagen-14",
@@ -947,7 +991,8 @@
      "novedad": "",
      "web": "https://www.krea.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "krea.ai"
     },
     {
      "id": "imagen-15",
@@ -966,7 +1011,8 @@
      "novedad": "",
      "web": "https://www.freepik.com/ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "freepik.com"
     },
     {
      "id": "imagen-16",
@@ -985,7 +1031,8 @@
      "novedad": "",
      "web": "https://magnific.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "magnific.ai"
     },
     {
      "id": "imagen-17",
@@ -1004,7 +1051,8 @@
      "novedad": "",
      "web": "https://designer.microsoft.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "designer.microsoft.com"
     },
     {
      "id": "imagen-18",
@@ -1023,7 +1071,8 @@
      "novedad": "",
      "web": "https://www.photoroom.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "photoroom.com"
     },
     {
      "id": "imagen-19",
@@ -1042,7 +1091,8 @@
      "novedad": "",
      "web": "https://clipdrop.co",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "clipdrop.co"
     },
     {
      "id": "imagen-20",
@@ -1061,7 +1111,8 @@
      "novedad": "",
      "web": "https://dreamina.capcut.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "dreamina.capcut.com"
     },
     {
      "id": "imagen-21",
@@ -1080,7 +1131,8 @@
      "novedad": "",
      "web": "https://chat.qwen.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chat.qwen.ai"
     },
     {
      "id": "imagen-22",
@@ -1098,7 +1150,8 @@
      "novedad": "",
      "web": "https://lumalabs.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lumalabs.ai"
     },
     {
      "id": "imagen-23",
@@ -1117,7 +1170,8 @@
      "novedad": "",
      "web": "https://runwayml.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "runwayml.com"
     },
     {
      "id": "imagen-24",
@@ -1136,7 +1190,8 @@
      "novedad": "",
      "web": "https://www.comfy.org",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "comfy.org"
     },
     {
      "id": "imagen-25",
@@ -1155,7 +1210,8 @@
      "novedad": "",
      "web": "https://www.topazlabs.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "topazlabs.com"
     },
     {
      "id": "imagen-26",
@@ -1174,7 +1230,8 @@
      "novedad": "",
      "web": "https://www.remove.bg",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "remove.bg"
     },
     {
      "id": "imagen-27",
@@ -1193,7 +1250,8 @@
      "novedad": "",
      "web": "https://creator.nightcafe.studio",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "creator.nightcafe.studio"
     },
     {
      "id": "imagen-28",
@@ -1212,7 +1270,8 @@
      "novedad": "",
      "web": "https://playground.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "playground.com"
     },
     {
      "id": "imagen-29",
@@ -1230,7 +1289,8 @@
      "novedad": "",
      "web": "https://klingai.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "klingai.com"
     },
     {
      "id": "imagen-30",
@@ -1248,7 +1308,8 @@
      "novedad": "",
      "web": "https://hunyuan.tencent.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "hunyuan.tencent.com"
     }
    ],
    "actualizado": "2026-09-29",
@@ -1277,7 +1338,8 @@
      "novedad": "Muy usado dentro de Canva, Adobe Firefly y HeyGen.",
      "web": "https://labs.google/flow",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "deepmind.google"
     },
     {
      "id": "video-02",
@@ -1296,7 +1358,8 @@
      "novedad": "Kling 3.0 Turbo, opción económica por segundo.",
      "web": "https://klingai.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "klingai.com"
     },
     {
      "id": "video-03",
@@ -1315,7 +1378,8 @@
      "novedad": "Seedance 2.5 genera hasta 30 s en una sola pasada.",
      "web": "https://dreamina.capcut.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "dreamina.capcut.com"
     },
     {
      "id": "video-04",
@@ -1335,7 +1399,8 @@
      "novedad": "Gen-4.5 genera audio junto al vídeo.",
      "web": "https://runwayml.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "runwayml.com"
     },
     {
      "id": "video-05",
@@ -1354,7 +1419,8 @@
      "novedad": "Vídeos continuos de hasta 30 minutos (junio 2026).",
      "web": "https://www.heygen.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "heygen.com"
     },
     {
      "id": "video-06",
@@ -1373,7 +1439,8 @@
      "novedad": "",
      "web": "https://www.synthesia.io",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "synthesia.io"
     },
     {
      "id": "video-07",
@@ -1392,7 +1459,8 @@
      "novedad": "Se reorienta hacia su plataforma Luma Agents.",
      "web": "https://lumalabs.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lumalabs.ai"
     },
     {
      "id": "video-08",
@@ -1411,7 +1479,8 @@
      "novedad": "",
      "web": "https://hailuoai.video",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "hailuoai.video"
     },
     {
      "id": "video-09",
@@ -1430,7 +1499,8 @@
      "novedad": "",
      "web": "https://pika.art",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "pika.art"
     },
     {
      "id": "video-10",
@@ -1449,7 +1519,8 @@
      "novedad": "Wan 3.0 destacado en rankings de septiembre de 2026.",
      "web": "https://wan.video",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "wan.video"
     },
     {
      "id": "video-11",
@@ -1467,7 +1538,8 @@
      "novedad": "Versión 1.5.",
      "web": "https://grok.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "grok.com"
     },
     {
      "id": "video-12",
@@ -1486,7 +1558,8 @@
      "novedad": "PixVerse V6.",
      "web": "https://pixverse.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "pixverse.ai"
     },
     {
      "id": "video-13",
@@ -1504,7 +1577,8 @@
      "novedad": "",
      "web": "https://higgsfield.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "higgsfield.ai"
     },
     {
      "id": "video-14",
@@ -1523,7 +1597,8 @@
      "novedad": "",
      "web": "https://www.capcut.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "capcut.com"
     },
     {
      "id": "video-15",
@@ -1542,7 +1617,8 @@
      "novedad": "",
      "web": "https://www.descript.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "descript.com"
     },
     {
      "id": "video-16",
@@ -1560,7 +1636,8 @@
      "novedad": "",
      "web": "https://www.opus.pro",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "opus.pro"
     },
     {
      "id": "video-17",
@@ -1579,7 +1656,8 @@
      "novedad": "",
      "web": "https://www.captions.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "captions.ai"
     },
     {
      "id": "video-18",
@@ -1597,7 +1675,8 @@
      "novedad": "",
      "web": "https://invideo.io",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "invideo.io"
     },
     {
      "id": "video-19",
@@ -1615,7 +1694,8 @@
      "novedad": "",
      "web": "https://www.canva.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "canva.com"
     },
     {
      "id": "video-20",
@@ -1634,7 +1714,8 @@
      "novedad": "",
      "web": "https://firefly.adobe.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "firefly.adobe.com"
     },
     {
      "id": "video-21",
@@ -1653,7 +1734,8 @@
      "novedad": "",
      "web": "https://ltx.studio",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "ltx.studio"
     },
     {
      "id": "video-22",
@@ -1671,7 +1753,8 @@
      "novedad": "",
      "web": "https://www.vidu.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "vidu.com"
     },
     {
      "id": "video-23",
@@ -1689,7 +1772,8 @@
      "novedad": "Lanzado en abril de 2026.",
      "web": "https://www.alibaba.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "alibaba.com"
     },
     {
      "id": "video-24",
@@ -1707,7 +1791,8 @@
      "novedad": "",
      "web": "https://www.hedra.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "hedra.com"
     },
     {
      "id": "video-25",
@@ -1725,7 +1810,8 @@
      "novedad": "",
      "web": "https://www.d-id.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "d-id.com"
     },
     {
      "id": "video-26",
@@ -1744,7 +1830,8 @@
      "novedad": "",
      "web": "https://www.veed.io",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "veed.io"
     },
     {
      "id": "video-27",
@@ -1763,7 +1850,8 @@
      "novedad": "",
      "web": "https://www.kapwing.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "kapwing.com"
     },
     {
      "id": "video-28",
@@ -1782,7 +1870,8 @@
      "novedad": "",
      "web": "https://www.topazlabs.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "topazlabs.com"
     },
     {
      "id": "video-29",
@@ -1800,7 +1889,8 @@
      "novedad": "",
      "web": "https://www.midjourney.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "midjourney.com"
     },
     {
      "id": "video-30",
@@ -1818,7 +1908,8 @@
      "novedad": "",
      "web": "https://www.rask.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "rask.ai"
     }
    ],
    "actualizado": "2026-09-29",
@@ -1848,7 +1939,8 @@
      "novedad": "Suno V6 (9 sept 2026). Descargas limitadas: 20/mes en Pro.",
      "web": "https://suno.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "suno.com"
     },
     {
      "id": "musica-02",
@@ -1867,7 +1959,8 @@
      "novedad": "Music v2.5 (11 sept 2026).",
      "web": "https://elevenlabs.io/music",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "elevenlabs.io"
     },
     {
      "id": "musica-03",
@@ -1886,7 +1979,8 @@
      "novedad": "Descargas desactivadas tras su acuerdo con Universal.",
      "web": "https://www.udio.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "udio.com"
     },
     {
      "id": "musica-04",
@@ -1905,7 +1999,8 @@
      "novedad": "Sustituyó a MusicFX (cerrado el 31 julio 2026). Antes se llamaba Producer.ai / Riffusion.",
      "web": "https://labs.google/flow",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "labs.google"
     },
     {
      "id": "musica-05",
@@ -1924,7 +2019,8 @@
      "novedad": "",
      "web": "https://www.mureka.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "mureka.ai"
     },
     {
      "id": "musica-06",
@@ -1942,7 +2038,8 @@
      "novedad": "",
      "web": "https://soundraw.io",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "soundraw.io"
     },
     {
      "id": "musica-07",
@@ -1961,7 +2058,8 @@
      "novedad": "",
      "web": "https://www.aiva.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "aiva.ai"
     },
     {
      "id": "musica-08",
@@ -1979,7 +2077,8 @@
      "novedad": "",
      "web": "https://www.beatoven.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "beatoven.ai"
     },
     {
      "id": "musica-09",
@@ -1997,7 +2096,8 @@
      "novedad": "",
      "web": "https://mubert.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "mubert.com"
     },
     {
      "id": "musica-10",
@@ -2016,7 +2116,8 @@
      "novedad": "",
      "web": "https://stableaudio.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "stableaudio.com"
     },
     {
      "id": "musica-11",
@@ -2034,7 +2135,8 @@
      "novedad": "Antes se llamaba Sonauto.",
      "web": "https://treblo.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "treblo.com"
     },
     {
      "id": "musica-12",
@@ -2052,7 +2154,8 @@
      "novedad": "",
      "web": "https://github.com/ace-step",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "acestudio.ai"
     },
     {
      "id": "musica-13",
@@ -2070,7 +2173,8 @@
      "novedad": "",
      "web": "https://audiocraft.metademolab.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "meta.com"
     },
     {
      "id": "musica-14",
@@ -2088,7 +2192,8 @@
      "novedad": "",
      "web": "https://boomy.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "boomy.com"
     },
     {
      "id": "musica-15",
@@ -2106,7 +2211,8 @@
      "novedad": "",
      "web": "https://www.loudly.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "loudly.com"
     },
     {
      "id": "musica-16",
@@ -2125,7 +2231,8 @@
      "novedad": "",
      "web": "https://soundful.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "soundful.com"
     },
     {
      "id": "musica-17",
@@ -2145,7 +2252,8 @@
      "novedad": "",
      "web": "https://moises.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "moises.ai"
     },
     {
      "id": "musica-18",
@@ -2164,7 +2272,8 @@
      "novedad": "",
      "web": "https://www.lalal.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lalal.ai"
     },
     {
      "id": "musica-19",
@@ -2182,7 +2291,8 @@
      "novedad": "",
      "web": "https://www.landr.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "landr.com"
     },
     {
      "id": "musica-20",
@@ -2200,7 +2310,8 @@
      "novedad": "",
      "web": "https://www.izotope.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "izotope.com"
     },
     {
      "id": "musica-21",
@@ -2218,7 +2329,8 @@
      "novedad": "",
      "web": "https://www.bandlab.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "bandlab.com"
     },
     {
      "id": "musica-22",
@@ -2236,7 +2348,8 @@
      "novedad": "",
      "web": "https://www.kits.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "kits.ai"
     },
     {
      "id": "musica-23",
@@ -2254,7 +2367,8 @@
      "novedad": "",
      "web": "https://splice.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "splice.com"
     },
     {
      "id": "musica-24",
@@ -2273,7 +2387,8 @@
      "novedad": "",
      "web": "https://chordify.net",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chordify.net"
     },
     {
      "id": "musica-25",
@@ -2291,7 +2406,8 @@
      "novedad": "",
      "web": "https://magenta.tensorflow.org",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "magenta.tensorflow.org"
     },
     {
      "id": "musica-26",
@@ -2309,7 +2425,8 @@
      "novedad": "",
      "web": "https://musicfy.lol",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "musicfy.lol"
     },
     {
      "id": "musica-27",
@@ -2327,7 +2444,8 @@
      "novedad": "",
      "web": "https://boppy.me",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "boppy.me"
     },
     {
      "id": "musica-28",
@@ -2345,7 +2463,8 @@
      "novedad": "",
      "web": "https://samplab.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "samplab.com"
     },
     {
      "id": "musica-29",
@@ -2363,7 +2482,8 @@
      "novedad": "",
      "web": "https://basicpitch.spotify.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "basicpitch.spotify.com"
     },
     {
      "id": "musica-30",
@@ -2381,7 +2501,8 @@
      "novedad": "",
      "web": "https://www.audioshake.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "audioshake.ai"
     }
    ],
    "actualizado": "2026-09-29",
@@ -2411,7 +2532,8 @@
      "novedad": "Eleven v3 en 70+ idiomas con diálogos de varios personajes.",
      "web": "https://elevenlabs.io",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "elevenlabs.io"
     },
     {
      "id": "voz-02",
@@ -2430,7 +2552,8 @@
      "novedad": "Sonic 3.6 (27 agosto 2026), número 1 del ranking Artificial Analysis.",
      "web": "https://cartesia.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "cartesia.ai"
     },
     {
      "id": "voz-03",
@@ -2449,7 +2572,8 @@
      "novedad": "Gemini 3.8 Flash TTS y Gemini 3.8 Live (sept 2026).",
      "web": "https://ai.google.dev",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "ai.google.dev"
     },
     {
      "id": "voz-04",
@@ -2468,7 +2592,8 @@
      "novedad": "GPT-Live-1 lidera los rankings de conversación por voz.",
      "web": "https://chatgpt.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chatgpt.com"
     },
     {
      "id": "voz-05",
@@ -2486,7 +2611,8 @@
      "novedad": "TTS-2 entre los tres primeros del ranking.",
      "web": "https://inworld.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "inworld.ai"
     },
     {
      "id": "voz-06",
@@ -2505,7 +2631,8 @@
      "novedad": "Octave 2.",
      "web": "https://www.hume.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "hume.ai"
     },
     {
      "id": "voz-07",
@@ -2524,7 +2651,8 @@
      "novedad": "",
      "web": "https://fish.audio",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "fish.audio"
     },
     {
      "id": "voz-08",
@@ -2543,7 +2671,8 @@
      "novedad": "",
      "web": "https://speechify.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "speechify.com"
     },
     {
      "id": "voz-09",
@@ -2561,7 +2690,8 @@
      "novedad": "",
      "web": "https://murf.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "murf.ai"
     },
     {
      "id": "voz-10",
@@ -2579,7 +2709,8 @@
      "novedad": "",
      "web": "https://wellsaidlabs.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "wellsaidlabs.com"
     },
     {
      "id": "voz-11",
@@ -2597,7 +2728,8 @@
      "novedad": "",
      "web": "https://github.com/resemble-ai/chatterbox",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "resemble.ai"
     },
     {
      "id": "voz-12",
@@ -2615,7 +2747,8 @@
      "novedad": "",
      "web": "https://huggingface.co/hexgrad/Kokoro-82M",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "huggingface.co"
     },
     {
      "id": "voz-13",
@@ -2633,7 +2766,8 @@
      "novedad": "Qwen-Audio-3.0-TTS (21 julio 2026).",
      "web": "https://chat.qwen.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chat.qwen.ai"
     },
     {
      "id": "voz-14",
@@ -2651,7 +2785,8 @@
      "novedad": "",
      "web": "https://rime.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "rime.ai"
     },
     {
      "id": "voz-15",
@@ -2669,7 +2804,8 @@
      "novedad": "",
      "web": "https://deepgram.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "deepgram.com"
     },
     {
      "id": "voz-16",
@@ -2688,7 +2824,8 @@
      "novedad": "",
      "web": "https://github.com/openai/whisper",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "openai.com"
     },
     {
      "id": "voz-17",
@@ -2706,7 +2843,8 @@
      "novedad": "",
      "web": "https://www.assemblyai.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "assemblyai.com"
     },
     {
      "id": "voz-18",
@@ -2724,7 +2862,8 @@
      "novedad": "",
      "web": "https://www.speechmatics.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "speechmatics.com"
     },
     {
      "id": "voz-19",
@@ -2742,7 +2881,8 @@
      "novedad": "",
      "web": "https://podcast.adobe.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "podcast.adobe.com"
     },
     {
      "id": "voz-20",
@@ -2760,7 +2900,8 @@
      "novedad": "",
      "web": "https://krisp.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "krisp.ai"
     },
     {
      "id": "voz-21",
@@ -2778,7 +2919,8 @@
      "novedad": "",
      "web": "https://auphonic.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "auphonic.com"
     },
     {
      "id": "voz-22",
@@ -2797,7 +2939,8 @@
      "novedad": "",
      "web": "https://wisprflow.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "wisprflow.ai"
     },
     {
      "id": "voz-23",
@@ -2815,7 +2958,8 @@
      "novedad": "",
      "web": "https://goodsnooze.gumroad.com/l/macwhisper",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "goodsnooze.gumroad.com"
     },
     {
      "id": "voz-24",
@@ -2833,7 +2977,8 @@
      "novedad": "",
      "web": "https://www.voicemod.net",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "voicemod.net"
     },
     {
      "id": "voz-25",
@@ -2851,7 +2996,8 @@
      "novedad": "",
      "web": "https://azure.microsoft.com/products/ai-services/ai-speech",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "azure.microsoft.com"
     },
     {
      "id": "voz-26",
@@ -2869,7 +3015,8 @@
      "novedad": "",
      "web": "https://aws.amazon.com/polly/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "aws.amazon.com"
     },
     {
      "id": "voz-27",
@@ -2887,7 +3034,8 @@
      "novedad": "",
      "web": "https://www.sesame.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "sesame.com"
     },
     {
      "id": "voz-28",
@@ -2905,7 +3053,8 @@
      "novedad": "",
      "web": "https://lovo.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lovo.ai"
     },
     {
      "id": "voz-29",
@@ -2923,7 +3072,8 @@
      "novedad": "",
      "web": "https://www.naturalreaders.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "naturalreaders.com"
     },
     {
      "id": "voz-30",
@@ -2941,7 +3091,8 @@
      "novedad": "Primero en la prueba de pronunciación difícil de agosto 2026.",
      "web": "https://gradium.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "gradium.ai"
     }
    ],
    "actualizado": "2026-09-29",
@@ -2971,7 +3122,8 @@
      "novedad": "Primero en el ranking de herramientas de LogRocket (sept 2026) con Fable 5.1.",
      "web": "https://claude.com/claude-code",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "claude.com"
     },
     {
      "id": "codigo-02",
@@ -2990,7 +3142,8 @@
      "novedad": "SpaceX acordó comprarlo por 60.000 M$. Cursor Router elige el modelo para ahorrar.",
      "web": "https://cursor.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "cursor.com"
     },
     {
      "id": "codigo-03",
@@ -3009,7 +3162,8 @@
      "novedad": "Más de 160.000 estrellas en GitHub.",
      "web": "https://opencode.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "opencode.ai"
     },
     {
      "id": "codigo-04",
@@ -3028,7 +3182,8 @@
      "novedad": "Más de 5 millones de usuarios semanales (junio 2026).",
      "web": "https://openai.com/codex",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "openai.com"
     },
     {
      "id": "codigo-05",
@@ -3047,7 +3202,8 @@
      "novedad": "",
      "web": "https://github.com/features/copilot",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "github.com"
     },
     {
      "id": "codigo-06",
@@ -3065,7 +3221,8 @@
      "novedad": "",
      "web": "https://windsurf.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "windsurf.com"
     },
     {
      "id": "codigo-07",
@@ -3083,7 +3240,8 @@
      "novedad": "Antigravity 2.0 (mayo 2026). Sustituyó a Gemini CLI.",
      "web": "https://antigravity.google",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "antigravity.google"
     },
     {
      "id": "codigo-08",
@@ -3103,7 +3261,8 @@
      "novedad": "",
      "web": "https://lovable.dev",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lovable.dev"
     },
     {
      "id": "codigo-09",
@@ -3122,7 +3281,8 @@
      "novedad": "",
      "web": "https://bolt.new",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "bolt.new"
     },
     {
      "id": "codigo-10",
@@ -3141,7 +3301,8 @@
      "novedad": "",
      "web": "https://v0.app",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "v0.app"
     },
     {
      "id": "codigo-11",
@@ -3160,7 +3321,8 @@
      "novedad": "",
      "web": "https://replit.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "replit.com"
     },
     {
      "id": "codigo-12",
@@ -3178,7 +3340,8 @@
      "novedad": "Valorada en 1.500 M$ (agosto 2026).",
      "web": "https://www.coderabbit.ai",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "coderabbit.ai"
     },
     {
      "id": "codigo-13",
@@ -3196,7 +3359,8 @@
      "novedad": "",
      "web": "https://www.kimi.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "kimi.com"
     },
     {
      "id": "codigo-14",
@@ -3214,7 +3378,8 @@
      "novedad": "",
      "web": "https://kiro.dev",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "kiro.dev"
     },
     {
      "id": "codigo-15",
@@ -3232,7 +3397,8 @@
      "novedad": "",
      "web": "https://cline.bot",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "cline.bot"
     },
     {
      "id": "codigo-16",
@@ -3250,7 +3416,8 @@
      "novedad": "",
      "web": "https://aider.chat",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "aider.chat"
     },
     {
      "id": "codigo-17",
@@ -3268,7 +3435,8 @@
      "novedad": "",
      "web": "https://zed.dev",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "zed.dev"
     },
     {
      "id": "codigo-18",
@@ -3286,7 +3454,8 @@
      "novedad": "",
      "web": "https://www.jetbrains.com/ai/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "jetbrains.com"
     },
     {
      "id": "codigo-19",
@@ -3304,7 +3473,8 @@
      "novedad": "",
      "web": "https://www.tabnine.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "tabnine.com"
     },
     {
      "id": "codigo-20",
@@ -3323,7 +3493,8 @@
      "novedad": "",
      "web": "https://www.warp.dev",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "warp.dev"
     },
     {
      "id": "codigo-21",
@@ -3341,7 +3512,8 @@
      "novedad": "",
      "web": "https://www.continue.dev",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "continue.dev"
     },
     {
      "id": "codigo-22",
@@ -3359,7 +3531,8 @@
      "novedad": "",
      "web": "https://roocode.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "roocode.com"
     },
     {
      "id": "codigo-23",
@@ -3378,7 +3551,8 @@
      "novedad": "",
      "web": "https://base44.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "base44.com"
     },
     {
      "id": "codigo-24",
@@ -3397,7 +3571,8 @@
      "novedad": "",
      "web": "https://bubble.io",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "bubble.io"
     },
     {
      "id": "codigo-25",
@@ -3415,7 +3590,8 @@
      "novedad": "",
      "web": "https://firebase.studio",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "firebase.studio"
     },
     {
      "id": "codigo-26",
@@ -3433,7 +3609,8 @@
      "novedad": "",
      "web": "https://www.qodo.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "qodo.ai"
     },
     {
      "id": "codigo-27",
@@ -3451,7 +3628,8 @@
      "novedad": "",
      "web": "https://ampcode.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "ampcode.com"
     },
     {
      "id": "codigo-28",
@@ -3469,7 +3647,8 @@
      "novedad": "",
      "web": "https://devin.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "devin.ai"
     },
     {
      "id": "codigo-29",
@@ -3487,7 +3666,8 @@
      "novedad": "",
      "web": "https://www.figma.com/make/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "figma.com"
     },
     {
      "id": "codigo-30",
@@ -3506,7 +3686,8 @@
      "novedad": "",
      "web": "https://www.framer.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "framer.com"
     }
    ],
    "actualizado": "2026-09-29",
@@ -3536,7 +3717,8 @@
      "novedad": "Antes NotebookLM; cambió de nombre el 16 de julio de 2026. Ahora crea Excel, PDF y presentaciones.",
      "web": "https://notebooklm.google",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "notebooklm.google"
     },
     {
      "id": "estudio-02",
@@ -3555,7 +3737,8 @@
      "novedad": "",
      "web": "https://elicit.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "elicit.com"
     },
     {
      "id": "estudio-03",
@@ -3574,7 +3757,8 @@
      "novedad": "",
      "web": "https://consensus.app",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "consensus.app"
     },
     {
      "id": "estudio-04",
@@ -3592,7 +3776,8 @@
      "novedad": "",
      "web": "https://scispace.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "scispace.com"
     },
     {
      "id": "estudio-05",
@@ -3610,7 +3795,8 @@
      "novedad": "",
      "web": "https://www.semanticscholar.org",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "semanticscholar.org"
     },
     {
      "id": "estudio-06",
@@ -3628,7 +3814,8 @@
      "novedad": "",
      "web": "https://scite.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "scite.ai"
     },
     {
      "id": "estudio-07",
@@ -3646,7 +3833,8 @@
      "novedad": "",
      "web": "https://www.researchrabbit.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "researchrabbit.ai"
     },
     {
      "id": "estudio-08",
@@ -3664,7 +3852,8 @@
      "novedad": "",
      "web": "https://www.connectedpapers.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "connectedpapers.com"
     },
     {
      "id": "estudio-09",
@@ -3682,7 +3871,8 @@
      "novedad": "",
      "web": "https://www.undermind.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "undermind.ai"
     },
     {
      "id": "estudio-10",
@@ -3701,7 +3891,8 @@
      "novedad": "",
      "web": "https://www.khanmigo.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "khanmigo.ai"
     },
     {
      "id": "estudio-11",
@@ -3720,7 +3911,8 @@
      "novedad": "",
      "web": "https://www.duolingo.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "duolingo.com"
     },
     {
      "id": "estudio-12",
@@ -3738,7 +3930,8 @@
      "novedad": "",
      "web": "https://www.speak.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "speak.com"
     },
     {
      "id": "estudio-13",
@@ -3756,7 +3949,8 @@
      "novedad": "",
      "web": "https://praktika.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "praktika.ai"
     },
     {
      "id": "estudio-14",
@@ -3775,7 +3969,8 @@
      "novedad": "",
      "web": "https://quizlet.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "quizlet.com"
     },
     {
      "id": "estudio-15",
@@ -3793,7 +3988,8 @@
      "novedad": "",
      "web": "https://photomath.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "photomath.com"
     },
     {
      "id": "estudio-16",
@@ -3812,7 +4008,8 @@
      "novedad": "",
      "web": "https://www.wolframalpha.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "wolframalpha.com"
     },
     {
      "id": "estudio-17",
@@ -3830,7 +4027,8 @@
      "novedad": "",
      "web": "https://www.gauthmath.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "gauthmath.com"
     },
     {
      "id": "estudio-18",
@@ -3848,7 +4046,8 @@
      "novedad": "",
      "web": "https://www.symbolab.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "symbolab.com"
     },
     {
      "id": "estudio-19",
@@ -3867,7 +4066,8 @@
      "novedad": "",
      "web": "https://www.chatpdf.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "chatpdf.com"
     },
     {
      "id": "estudio-20",
@@ -3885,7 +4085,8 @@
      "novedad": "",
      "web": "https://www.humata.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "humata.ai"
     },
     {
      "id": "estudio-21",
@@ -3904,7 +4105,8 @@
      "novedad": "",
      "web": "https://kagi.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "kagi.com"
     },
     {
      "id": "estudio-22",
@@ -3922,7 +4124,8 @@
      "novedad": "",
      "web": "https://getliner.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "getliner.com"
     },
     {
      "id": "estudio-23",
@@ -3940,7 +4143,8 @@
      "novedad": "",
      "web": "https://readwise.io/read",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "readwise.io"
     },
     {
      "id": "estudio-24",
@@ -3958,7 +4162,8 @@
      "novedad": "",
      "web": "https://www.coursera.org",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "coursera.org"
     },
     {
      "id": "estudio-25",
@@ -3977,7 +4182,8 @@
      "novedad": "",
      "web": "https://www.deepl.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "deepl.com"
     },
     {
      "id": "estudio-26",
@@ -3996,7 +4202,8 @@
      "novedad": "",
      "web": "https://lens.google",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lens.google"
     },
     {
      "id": "estudio-27",
@@ -4014,7 +4221,8 @@
      "novedad": "",
      "web": "https://paperpal.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "paperpal.com"
     },
     {
      "id": "estudio-28",
@@ -4032,7 +4240,8 @@
      "novedad": "",
      "web": "https://www.scholarcy.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "scholarcy.com"
     },
     {
      "id": "estudio-29",
@@ -4050,7 +4259,8 @@
      "novedad": "",
      "web": "https://talkpal.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "talkpal.ai"
     },
     {
      "id": "estudio-30",
@@ -4068,7 +4278,8 @@
      "novedad": "",
      "web": "https://brainly.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "brainly.com"
     }
    ],
    "actualizado": "2026-09-29",
@@ -4097,7 +4308,8 @@
      "novedad": "",
      "web": "https://gamma.app",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "gamma.app"
     },
     {
      "id": "trabajo-02",
@@ -4116,7 +4328,8 @@
      "novedad": "",
      "web": "https://www.notion.com/product/ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "notion.com"
     },
     {
      "id": "trabajo-03",
@@ -4136,7 +4349,8 @@
      "novedad": "",
      "web": "https://www.canva.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "canva.com"
     },
     {
      "id": "trabajo-04",
@@ -4154,7 +4368,8 @@
      "novedad": "",
      "web": "https://www.grammarly.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "grammarly.com"
     },
     {
      "id": "trabajo-05",
@@ -4172,7 +4387,8 @@
      "novedad": "",
      "web": "https://otter.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "otter.ai"
     },
     {
      "id": "trabajo-06",
@@ -4190,7 +4406,8 @@
      "novedad": "",
      "web": "https://fireflies.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "fireflies.ai"
     },
     {
      "id": "trabajo-07",
@@ -4208,7 +4425,8 @@
      "novedad": "",
      "web": "https://www.granola.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "granola.ai"
     },
     {
      "id": "trabajo-08",
@@ -4226,7 +4444,8 @@
      "novedad": "",
      "web": "https://fathom.video",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "fathom.video"
     },
     {
      "id": "trabajo-09",
@@ -4244,7 +4463,8 @@
      "novedad": "",
      "web": "https://tldv.io",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "tldv.io"
     },
     {
      "id": "trabajo-10",
@@ -4263,7 +4483,8 @@
      "novedad": "",
      "web": "https://zapier.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "zapier.com"
     },
     {
      "id": "trabajo-11",
@@ -4281,7 +4502,8 @@
      "novedad": "",
      "web": "https://www.make.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "make.com"
     },
     {
      "id": "trabajo-12",
@@ -4300,7 +4522,8 @@
      "novedad": "SAP invirtió en n8n (valoración de 5.200 M$, mayo 2026).",
      "web": "https://n8n.io",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "n8n.io"
     },
     {
      "id": "trabajo-13",
@@ -4318,7 +4541,8 @@
      "novedad": "",
      "web": "https://www.beautiful.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "beautiful.ai"
     },
     {
      "id": "trabajo-14",
@@ -4336,7 +4560,8 @@
      "novedad": "",
      "web": "https://www.napkin.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "napkin.ai"
     },
     {
      "id": "trabajo-15",
@@ -4355,7 +4580,8 @@
      "novedad": "",
      "web": "https://www.figma.com/ai/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "figma.com"
     },
     {
      "id": "trabajo-16",
@@ -4373,7 +4599,8 @@
      "novedad": "",
      "web": "https://miro.com/ai/",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "miro.com"
     },
     {
      "id": "trabajo-17",
@@ -4392,7 +4619,8 @@
      "novedad": "",
      "web": "https://superhuman.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "superhuman.com"
     },
     {
      "id": "trabajo-18",
@@ -4410,7 +4638,8 @@
      "novedad": "",
      "web": "https://www.usemotion.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "usemotion.com"
     },
     {
      "id": "trabajo-19",
@@ -4428,7 +4657,8 @@
      "novedad": "",
      "web": "https://reclaim.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "reclaim.ai"
     },
     {
      "id": "trabajo-20",
@@ -4446,7 +4676,8 @@
      "novedad": "",
      "web": "https://clickup.com/ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "clickup.com"
     },
     {
      "id": "trabajo-21",
@@ -4465,7 +4696,8 @@
      "novedad": "",
      "web": "https://www.jasper.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "jasper.ai"
     },
     {
      "id": "trabajo-22",
@@ -4483,7 +4715,8 @@
      "novedad": "Superó 300 M$ de ingresos anuales (mayo 2026).",
      "web": "https://www.glean.com",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "glean.com"
     },
     {
      "id": "trabajo-23",
@@ -4501,7 +4734,8 @@
      "novedad": "",
      "web": "https://www.lindy.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "lindy.ai"
     },
     {
      "id": "trabajo-24",
@@ -4519,7 +4753,8 @@
      "novedad": "",
      "web": "https://manus.im",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "manus.im"
     },
     {
      "id": "trabajo-25",
@@ -4537,7 +4772,8 @@
      "novedad": "",
      "web": "https://www.genspark.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "genspark.ai"
     },
     {
      "id": "trabajo-26",
@@ -4555,7 +4791,8 @@
      "novedad": "",
      "web": "https://julius.ai",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "julius.ai"
     },
     {
      "id": "trabajo-27",
@@ -4573,7 +4810,8 @@
      "novedad": "",
      "web": "https://quillbot.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "quillbot.com"
     },
     {
      "id": "trabajo-28",
@@ -4591,7 +4829,8 @@
      "novedad": "",
      "web": "https://www.wordtune.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "wordtune.com"
     },
     {
      "id": "trabajo-29",
@@ -4609,7 +4848,8 @@
      "novedad": "",
      "web": "https://www.taskade.com",
      "verificado": false,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "taskade.com"
     },
     {
      "id": "trabajo-30",
@@ -4628,7 +4868,8 @@
      "novedad": "Agentes MCP en Word, Excel, PowerPoint y Outlook desde el 15 de julio de 2026.",
      "web": "https://www.microsoft.com/microsoft-365/copilot",
      "verificado": true,
-     "actualizado": "2026-09-29"
+     "actualizado": "2026-09-29",
+     "dominio": "microsoft.com"
     }
    ],
    "actualizado": "2026-09-29",
