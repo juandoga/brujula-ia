@@ -25,6 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Generar páginas por IA y por pack
+        run: python3 tools/build_pages.py
+        env:
+          SITE_URL: https://juandoga.github.io/brujula-ia
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

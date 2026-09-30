@@ -257,6 +257,33 @@ select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;bac
 .pack[open] .pack-cta::before{content:"Ocultar"}
 .pack-body{display:grid;gap:14px;padding:0 18px 18px}
 
+.builder{background:var(--card);border:2px solid var(--accent-soft);border-radius:18px;padding:18px;display:grid;gap:12px;box-shadow:var(--shadow)}
+.builder > *{min-width:0}
+.shared-note{margin:0;background:var(--accent-soft);color:var(--ink);border-radius:10px;padding:10px 12px;font-size:15px}
+.b-add{position:relative}
+.b-suggest{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;list-style:none;margin:0;padding:6px;background:var(--card);border:1px solid var(--rule);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.15);max-height:300px;overflow:auto}
+.b-suggest button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:8px;border-radius:8px;cursor:pointer;text-align:left;color:var(--ink)}
+.b-suggest button:hover,.b-suggest button:focus-visible{background:var(--accent-soft)}
+.b-suggest .bs-sub{font-size:12px;color:var(--muted)}
+.b-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.b-item{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:6px 10px;align-items:center;padding:10px 0;border-top:1px solid var(--rule)}
+.b-item .bn{font-weight:700;color:var(--ink);background:none;border:0;padding:0;cursor:pointer;text-align:left;font-size:15px}
+.b-item .bsub{font-size:12px;color:var(--muted)}
+.b-price{grid-column:2 / -1;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.b-amount{display:flex;align-items:center;gap:6px}
+.b-price input[type=number]{width:4.6em;padding:6px 8px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.b-price label{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:4px;white-space:nowrap}
+.b-del{width:30px;height:30px;border-radius:50%;border:1px solid var(--rule);background:var(--bg);cursor:pointer;color:var(--muted)}
+.b-empty{color:var(--muted);font-size:15px;padding:8px 0;margin:0}
+.b-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;background:var(--accent-soft);border-radius:12px;padding:12px 14px}
+.b-total .v{font-family:var(--f-display);font-weight:800;font-size:28px;color:var(--ink);font-variant-numeric:tabular-nums}
+.b-actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn-sec{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:12px;padding:11px 18px;font-weight:700;cursor:pointer}
+.add-pack{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer;font-size:15px}
+.hist{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.hist li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;font-size:14px}
+.hist time{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px}
+.afil{font-size:12px;color:var(--muted)}
 /* Consejos y guías */
 .tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .tips li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
@@ -358,6 +385,27 @@ footer.note p{max-width:78ch;margin:0 0 8px}
       <h1 class="h-page" style="margin-top:6px">Packs para cada proyecto</h1>
       <p class="lede">Muchos proyectos necesitan varias IAs. Aquí tienes combinaciones probadas, paso a paso, con lo que puedes hacer gratis y lo que cuesta al mes la versión completa.</p>
     </header>
+    <section class="builder" id="builder" aria-labelledby="builderTitle">
+      <div class="builder-head">
+        <div><div class="label">Tu combinación</div><h2 class="h-section" id="builderTitle">Crea tu pack</h2>
+          <p class="small" style="margin:4px 0 0">Elige las IAs que vas a usar y te sumamos lo que cuesta al mes. Se guarda en este dispositivo y puedes compartirlo con un enlace.</p></div>
+      </div>
+      <p class="shared-note" id="sharedNote" hidden></p>
+      <label class="label" for="bName" style="color:var(--muted)">Nombre del pack</label>
+      <input id="bName" class="search" type="text" maxlength="60" placeholder="Ej.: Mi pack para hacer vídeos">
+      <div class="b-add">
+        <input id="bSearch" class="search" type="search" placeholder="Añadir una IA: escribe su nombre…" aria-label="Buscar una IA para añadir" autocomplete="off">
+        <ul class="b-suggest" id="bSuggest" hidden></ul>
+      </div>
+      <ul class="b-list" id="bList"></ul>
+      <div class="b-total" id="bTotal"></div>
+      <div class="b-actions">
+        <button type="button" class="btn" id="bShare">Copiar enlace para compartir</button>
+        <button type="button" class="btn-sec" id="bClear">Vaciar</button>
+      </div>
+      <p class="small" id="bMsg" aria-live="polite"></p>
+    </section>
+    <h2 class="h-section" style="margin:32px 0 12px">Packs recomendados</h2>
     <div class="packs" id="packs"></div>
     <p class="small" style="margin-top:16px;max-width:75ch">Precios aproximados al mes en euros, con el plan de pago más básico que sirve para ese uso. Algunos se cobran en dólares y el importe final puede variar con el cambio y el IVA. Pagando por año suele salir más barato.</p>
   </section>
@@ -509,6 +557,7 @@ function barras(n){
 }
 function abrirFicha(id){
   const h = byId.get(id); if(!h) return;
+  setTimeout(()=>pintarHistorial(id),0);
   const n = h.notas || {calidad:0,versatilidad:0,facilidad:0,precio:0};
   const dias = diasDesde(h.actualizado);
   abrirVentana(`
@@ -533,12 +582,34 @@ function abrirFicha(id){
         <div class="score-box"><div class="score-big">${h.nota}<small>NOTA</small></div>${barras(n)}</div>
         <p class="small">Calidad ${n.calidad} × 4 + versatilidad ${n.versatilidad} × 2 + facilidad ${n.facilidad} × 2 + precio ${n.precio} × 2 = ${h.nota}. <button class="linkbtn" type="button" data-explica="nota">¿Qué mide cada parte?</button></p>
       </div>
+      <p class="small" style="margin:0"><a href="ia/${esc(h.slug)}/">Página de ${esc(h.nombre)} para compartir</a></p>
       <div class="s-block"><h3>Dificultad</h3><p>${NIVEL[h.nivel]||""}${h.nivel===1?": pensada para cualquiera, sin conocimientos previos.":h.nivel===2?": conviene tener algo de soltura con la tecnología.":": para usuarios técnicos o con experiencia."}</p></div>
+      <div class="s-block" id="histBlock" hidden><h3>Historial de precio y plan gratis</h3><ul class="hist" id="histList"></ul></div>
       <div class="s-foot">
         <span class="f-date">Revisado el <b>${fecha(h.actualizado)}</b> · ${h.verificado?"✓ verificado con fuentes":"pendiente de verificar"}${dias>30?" · desactualizado":""}</span>
-        ${h.web ? `<a class="f-link" href="${esc(h.web)}" target="_blank" rel="noopener">Ir a ${esc(h.nombre)} ↗</a>` : ""}
+        <span style="display:flex;gap:8px;flex-wrap:wrap">
+          <button type="button" class="add-pack" data-addpack="${esc(h.id)}">${enPack(h.id)?"✓ En tu pack":"+ Añadir a mi pack"}</button>
+          ${h.web ? `<a class="f-link" href="${esc(h.afiliado||h.web)}" target="_blank" rel="noopener${h.afiliado?" sponsored":""}" data-go="${esc(h.id)}">Ir a ${esc(h.nombre)} ↗</a>` : ""}
+        </span>
       </div>
+      ${h.afiliado ? `<p class="afil">Enlace de afiliado: si contratas desde aquí, Cualia puede recibir una comisión sin que a ti te cueste más. No influye en la nota.</p>` : ""}
     </div>`);
+}
+let HIST = null;
+function cargarHistorial(){ if(HIST) return Promise.resolve(HIST); return fetch("data/historial.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{ias:{}}).then(j=>HIST=j).catch(()=>HIST={ias:{}}); }
+function pintarHistorial(id){
+  cargarHistorial().then(j=>{
+    const lista = (j.ias||{})[id] || []; const blk = document.getElementById("histBlock"); if(!blk) return;
+    const TXT = t => GRATIS[t]?.txt || t;
+    const filas = lista.slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||"")).map((e,i,arr)=>{
+      const prev = arr[i+1];
+      const cambios = !prev ? `Primer registro: ${esc(e.precioTxt)} · ${esc(TXT(e.gratisTipo))}` :
+        [e.precioTxt!==prev.precioTxt?`Precio: ${esc(prev.precioTxt)} → <b>${esc(e.precioTxt)}</b>`:"", e.gratisTipo!==prev.gratisTipo?`Versión gratis: ${esc(TXT(prev.gratisTipo))} → <b>${esc(TXT(e.gratisTipo))}</b>`:"", e.gratisTxt!==prev.gratisTxt&&e.gratisTipo===prev.gratisTipo?`Cambio en lo gratis: ${esc(e.gratisTxt)}`:""].filter(Boolean).join("<br>") || "Sin cambios relevantes";
+      return `<li><time>${fecha(e.fecha)}</time><span>${cambios}</span></li>`; }).join("");
+    document.getElementById("histList").innerHTML = filas;
+    blk.hidden = !lista.length;
+    if(lista.length===1) document.getElementById("histList").insertAdjacentHTML("beforeend",`<li><time></time><span class="small">Desde esta fecha guardamos cada cambio de precio o de plan gratis.</span></li>`);
+  });
 }
 function explicarNota(){
   abrirVentana(`<div class="sheet-top" style="grid-template-columns:minmax(0,1fr) auto"><h2 id="sheetTitle">¿De dónde sale la nota?</h2><button class="close" type="button" aria-label="Cerrar">✕</button></div>
@@ -823,6 +894,87 @@ $("#ideas").innerHTML = ideasHTML(IDEAS.length); $("#ideasHome").innerHTML = ide
 function onIdea(e){ const b=e.target.closest(".idea"); if(!b) return; $("#recoTxt").value=b.textContent; $("#askTxt").value=b.textContent; showView("reco"); pintarReco(b.textContent); }
 $("#ideas").addEventListener("click", onIdea); $("#ideasHome").addEventListener("click", onIdea);
 
+/* ---------- Crea tu pack ---------- */
+let MIPACK = {nombre:"", items:[]};   // items: {id, precio (número o null), gratis (bool)}
+function guardarPack(){ try{ localStorage.setItem("cualia-mipack", JSON.stringify(MIPACK)); }catch(e){} }
+function cargarPack(){ try{ const j = JSON.parse(localStorage.getItem("cualia-mipack")||"null"); if(j && Array.isArray(j.items)) MIPACK = j; }catch(e){} }
+const enPack = id => MIPACK.items.some(x=>x.id===id);
+function precioBase(h){ return (typeof h.precioMes==="number") ? h.precioMes : null; }
+function addPack(id){
+  const h = byId.get(id); if(!h || enPack(id)) return;
+  const libre = h.gratisTipo==="libre";
+  MIPACK.items.push({id, precio: precioBase(h), gratis: libre});
+  guardarPack(); renderBuilder();
+}
+function quitarPack(id){ MIPACK.items = MIPACK.items.filter(x=>x.id!==id); guardarPack(); renderBuilder(); }
+function totalPack(){
+  let t=0, faltan=0;
+  MIPACK.items.forEach(x=>{ if(x.gratis) return; if(typeof x.precio==="number" && !isNaN(x.precio)) t+=x.precio; else faltan++; });
+  return {t:Math.round(t*100)/100, faltan};
+}
+function renderBuilder(){
+  $("#bName").value = MIPACK.nombre || "";
+  const list = MIPACK.items.map(x=>{ const h = byId.get(x.id); if(!h) return "";
+    return `<li class="b-item">${icono(h,"sm")}
+      <div style="min-width:0"><button type="button" class="bn" data-open="${esc(h.id)}">${esc(h.nombre)}</button><div class="bsub">${esc(h.catNombre)} · ${esc(GRATIS[h.gratisTipo]?.corto||"")}</div></div>
+      <button type="button" class="b-del" data-bdel="${esc(h.id)}" aria-label="Quitar ${esc(h.nombre)}">✕</button>
+      <div class="b-price">
+        ${h.gratisTipo!=="no" ? `<label><input type="checkbox" data-bgratis="${esc(h.id)}" ${x.gratis?"checked":""}> Usaré lo gratis</label>` : `<span class="small">Sin versión gratis</span>`}
+        <span class="b-amount">${x.gratis ? `<b>0 €</b>` : `<input type="number" min="0" step="1" inputmode="decimal" aria-label="Precio al mes de ${esc(h.nombre)}" data-bprecio="${esc(h.id)}" value="${x.precio??""}" placeholder="?"><span class="small">€/mes</span>`}</span>
+      </div></li>`; }).join("");
+  $("#bList").innerHTML = list || `<li><p class="b-empty">Aún no has añadido ninguna IA. Búscala arriba o pulsa «+ Añadir a mi pack» en cualquier ficha.</p></li>`;
+  const {t,faltan} = totalPack();
+  $("#bTotal").innerHTML = `<span><span class="label">Total al mes</span><br><span class="small">${MIPACK.items.length} ${MIPACK.items.length===1?"IA":"IAs"}${faltan?` · falta el precio de ${faltan}`:""}</span></span><span class="v">≈ ${t.toLocaleString("es-ES")} €</span>`;
+  $("#bShare").disabled = !MIPACK.items.length; $("#bClear").disabled = !MIPACK.items.length;
+}
+$("#bName").addEventListener("input", e=>{ MIPACK.nombre = e.target.value.slice(0,60); guardarPack(); });
+$("#bSearch").addEventListener("input", e=>{
+  const q = norm(e.target.value.trim()); const box = $("#bSuggest");
+  if(q.length<2){ box.hidden = true; return; }
+  const res = ALL.filter(h=>!enPack(h.id) && norm(h.nombre+" "+h.empresa).includes(q)).sort((a,b)=>b.nota-a.nota).slice(0,8);
+  box.innerHTML = res.length ? res.map(h=>`<li><button type="button" data-bsel="${esc(h.id)}">${icono(h,"sm")}<span><span style="font-weight:700">${esc(h.nombre)}</span><br><span class="bs-sub">${esc(h.catNombre)}</span></span></button></li>`).join("") : `<li class="small" style="padding:8px">No encontramos esa IA en el catálogo.</li>`;
+  box.hidden = false;
+});
+document.addEventListener("click", e=>{
+  const s = e.target.closest("[data-bsel]"); if(s){ addPack(s.dataset.bsel); $("#bSearch").value=""; $("#bSuggest").hidden=true; $("#bSearch").focus(); return; }
+  if(!e.target.closest(".b-add")) $("#bSuggest").hidden = true;
+  const d = e.target.closest("[data-bdel]"); if(d){ quitarPack(d.dataset.bdel); return; }
+  const a = e.target.closest("[data-addpack]"); if(a){ addPack(a.dataset.addpack); a.textContent="✓ En tu pack"; }
+});
+document.addEventListener("change", e=>{
+  const g = e.target.closest("[data-bgratis]"); if(g){ const it = MIPACK.items.find(x=>x.id===g.dataset.bgratis); if(it){ it.gratis = g.checked; guardarPack(); renderBuilder(); } }
+});
+document.addEventListener("input", e=>{
+  const p = e.target.closest("[data-bprecio]"); if(p){ const it = MIPACK.items.find(x=>x.id===p.dataset.bprecio); if(it){ it.precio = p.value==="" ? null : Math.max(0, Number(p.value)); guardarPack();
+    const {t,faltan} = totalPack(); $("#bTotal .v").textContent = `≈ ${t.toLocaleString("es-ES")} €`; $("#bTotal .small").textContent = `${MIPACK.items.length} ${MIPACK.items.length===1?"IA":"IAs"}${faltan?` · falta el precio de ${faltan}`:""}`; } }
+});
+function enlacePack(){
+  const u = new URL(location.href.split("?")[0].split("#")[0]);
+  u.searchParams.set("pack", MIPACK.items.map(x=>{ const h=byId.get(x.id); return (h?.slug||x.id) + (x.gratis?"~g":(typeof x.precio==="number"?"~"+x.precio:"")); }).join(","));
+  if(MIPACK.nombre) u.searchParams.set("n", MIPACK.nombre);
+  return u.toString();
+}
+$("#bShare").addEventListener("click", async ()=>{
+  const url = enlacePack();
+  try{ await navigator.clipboard.writeText(url); $("#bMsg").textContent = "Enlace copiado. Quien lo abra verá tu pack con su precio total."; }
+  catch(e){ $("#bMsg").innerHTML = `Copia este enlace: <input class="search" style="margin-top:6px" readonly value="${esc(url)}" onclick="this.select()">`; }
+});
+$("#bClear").addEventListener("click", ()=>{ MIPACK = {nombre:"", items:[]}; guardarPack(); renderBuilder(); $("#bMsg").textContent = "Pack vaciado."; });
+function leerPackCompartido(){
+  const sp = new URLSearchParams(location.search); const raw = sp.get("pack"); if(!raw) return false;
+  const bySlug = new Map(ALL.map(h=>[h.slug,h]));
+  const items = raw.split(",").map(tok=>{ const [slug,extra] = tok.split("~"); const h = bySlug.get(slug) || byId.get(slug); if(!h) return null;
+    if(extra==="g") return {id:h.id, precio:precioBase(h), gratis:true};
+    const n = extra!==undefined && extra!=="" ? Number(extra) : precioBase(h);
+    return {id:h.id, precio: isNaN(n)?precioBase(h):n, gratis:false}; }).filter(Boolean);
+  if(!items.length) return false;
+  MIPACK = {nombre:(sp.get("n")||"").slice(0,60), items}; guardarPack();
+  const note = $("#sharedNote"); note.hidden = false;
+  note.textContent = `Te han compartido ${MIPACK.nombre?`el pack «${MIPACK.nombre}»`:"un pack"}. Ya está cargado aquí: puedes cambiarlo como quieras.`;
+  history.replaceState(null,"",location.pathname);
+  showView("packs",false); return true;
+}
+
 /* ---------- Packs ---------- */
 const euros = n => n===0 ? "0 €" : `≈ ${n} €`;
 function renderPacks(){
@@ -909,6 +1061,9 @@ fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; retu
   PACKS = d.packs || [];
   chipRow($("#fCat"), CATS.map(c=>[c.id,c.nombre]), "cat");
   renderRanking(); renderGrid(); renderFresh(); renderLog(); renderPacks();
+  cargarPack(); leerPackCompartido(); renderBuilder();
+  const iaParam = new URLSearchParams(location.search).get("ia");
+  if(iaParam){ const x = ALL.find(h=>h.slug===iaParam); if(x){ history.replaceState(null,"",location.pathname); showView("explorar",false); abrirFicha(x.id); } }
 }).catch(()=>{ $("#fresh").textContent = "No se pudieron cargar las fichas. Recarga la página."; });
 </script>
 </body>

@@ -1,0 +1,1925 @@
+{
+ "desde": "2026-09-30",
+ "ias": {
+  "chat-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Plus 20 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Chat ilimitado con el modelo básico; límites diarios en el modelo avanzado, imágenes y archivos."
+   }
+  ],
+  "chat-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro 20 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso diario con límite de mensajes que se renueva cada pocas horas."
+   }
+  ],
+  "chat-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Google AI Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso amplio gratis; los modelos más potentes y el vídeo requieren Google AI Pro."
+   }
+  ],
+  "chat-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · incluido en Microsoft 365",
+    "gratisTipo": "util",
+    "gratisTxt": "Chat gratis con cuenta Microsoft; dentro de Word y Excel requiere Microsoft 365."
+   }
+  ],
+  "chat-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro 20 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Búsquedas ilimitadas; pocas búsquedas «Pro» al día."
+   }
+  ],
+  "chat-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites diarios dentro de X y en su app."
+   }
+  ],
+  "chat-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis sin suscripción dentro de WhatsApp, Instagram y Facebook."
+   }
+  ],
+  "chat-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · API muy barata",
+    "gratisTipo": "libre",
+    "gratisTxt": "Chat gratis sin suscripción; la API es de pago pero muy barata."
+   }
+  ],
+  "chat-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con límites diarios."
+   }
+  ],
+  "chat-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis, con modelos avanzados incluidos."
+   }
+  ],
+  "chat-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis con límites generosos."
+   }
+  ],
+  "chat-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · API barata",
+    "gratisTipo": "libre",
+    "gratisTxt": "Chat gratis; API barata."
+   }
+  ],
+  "chat-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · suscripción de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos mensajes diarios con los mejores modelos."
+   }
+  ],
+  "chat-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y anónimo."
+   }
+  ],
+  "chat-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · plan de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con límites semanales."
+   }
+  ],
+  "chat-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis en iPhone compatibles",
+    "gratisTipo": "libre",
+    "gratisTxt": "Incluido gratis en iPhone, iPad y Mac compatibles."
+   }
+  ],
+  "chat-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido con Prime (según país)",
+    "gratisTipo": "no",
+    "gratisTxt": "Incluido con Amazon Prime donde está disponible; sin versión gratis aparte."
+   }
+  ],
+  "chat-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites dentro del navegador Brave."
+   }
+  ],
+  "chat-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis dentro de Opera."
+   }
+  ],
+  "chat-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Búsquedas básicas gratis; lo avanzado es de pago."
+   }
+  ],
+  "chat-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites diarios."
+   }
+  ],
+  "chat-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "chat-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · c.ai+ de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con anuncios y esperas."
+   }
+  ],
+  "chat-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Pago por uso",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Algún modelo gratis; lo normal es pagar por uso."
+   }
+  ],
+  "chat-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción mensual baja",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba limitada; el uso normal es con suscripción barata."
+   }
+  ],
+  "chat-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis; funciona en tu ordenador."
+   }
+  ],
+  "chat-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "chat-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis y de código abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "chat-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "chat-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · licencia de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis para uso personal; licencia de pago con extras."
+   }
+  ],
+  "imagen-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Gemini · API muy barata",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis dentro de Gemini con un número limitado de imágenes al día."
+   }
+  ],
+  "imagen-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en ChatGPT (limitado gratis)",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas imágenes al día en ChatGPT gratis."
+   }
+  ],
+  "imagen-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Desde 10 $/mes",
+    "gratisTipo": "no",
+    "gratisTxt": "Sin versión gratis; desde unos 10 $/mes."
+   }
+  ],
+  "imagen-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "~0,05 $ por imagen (API)",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Créditos iniciales en su web; luego se paga por imagen."
+   }
+  ],
+  "imagen-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro 19,99 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos créditos gratis al mes."
+   }
+  ],
+  "imagen-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "~0,14–0,24 $ por imagen (API)",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Algunas imágenes con Gemini gratis; más con Google AI Pro."
+   }
+  ],
+  "imagen-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Algunas imágenes gratis cada día."
+   }
+  ],
+  "imagen-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · créditos de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis diarios."
+   }
+  ],
+  "imagen-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro desde 30 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis diarios."
+   }
+  ],
+  "imagen-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis para instalar en tu equipo",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis si lo instalas en tu ordenador."
+   }
+  ],
+  "imagen-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis en Meta AI, WhatsApp e Instagram."
+   }
+  ],
+  "imagen-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Grok · API barata",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites en Grok."
+   }
+  ],
+  "imagen-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas generaciones gratis; más con Canva Pro."
+   }
+  ],
+  "imagen-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites diarios."
+   }
+  ],
+  "imagen-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis escasos; lo útil está en Premium."
+   }
+  ],
+  "imagen-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Desde unos 39 $/mes",
+    "gratisTipo": "no",
+    "gratisTxt": "Sin versión gratis; desde unos 39 $/mes."
+   }
+  ],
+  "imagen-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis con cuenta Microsoft",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis con cuenta Microsoft y créditos diarios."
+   }
+  ],
+  "imagen-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Gratis con marca de agua y resolución baja."
+   }
+  ],
+  "imagen-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos usos gratis al día."
+   }
+  ],
+  "imagen-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Dreamina/CapCut",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis en Dreamina/CapCut."
+   }
+  ],
+  "imagen-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · modelo abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis en Qwen Chat o instalándolo."
+   }
+  ],
+  "imagen-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Luma",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos créditos gratis."
+   }
+  ],
+  "imagen-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · desde 12 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos iniciales que no se renuevan."
+   }
+  ],
+  "imagen-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis y de código abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "imagen-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Licencia o suscripción",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba con marca de agua; luego de pago."
+   }
+  ],
+  "imagen-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis en baja resolución",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Gratis solo en baja resolución."
+   }
+  ],
+  "imagen-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis con créditos diarios",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis diarios."
+   }
+  ],
+  "imagen-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "imagen-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Kling",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis diarios dentro de Kling."
+   }
+  ],
+  "imagen-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · modelo abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis como modelo abierto."
+   }
+  ],
+  "video-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Google AI Pro/Ultra y Flow",
+    "gratisTipo": "no",
+    "gratisTxt": "Requiere Google AI Pro o Ultra (algunos vídeos al mes)."
+   }
+  ],
+  "video-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis con créditos diarios · desde ~10 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis cada día (con marca de agua y cola de espera)."
+   }
+  ],
+  "video-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Dreamina y planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Algunos créditos en Dreamina; lo potente es de pago."
+   }
+  ],
+  "video-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · desde 12 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "125 créditos iniciales que no se renuevan (unos pocos clips)."
+   }
+  ],
+  "video-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos vídeos cortos al mes con marca de agua."
+   }
+  ],
+  "video-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Desde unos 29 $/mes",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Demo gratuita; uso real de pago."
+   }
+  ],
+  "video-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes desde ~30 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos vídeos gratis y con marca de agua."
+   }
+  ],
+  "video-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis diarios."
+   }
+  ],
+  "video-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos créditos gratis."
+   }
+  ],
+  "video-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · modelo abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis como modelo abierto (y en Qwen Chat con límites)."
+   }
+  ],
+  "video-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Grok",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites en Grok."
+   }
+  ],
+  "video-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis diarios."
+   }
+  ],
+  "video-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba limitada; uso real de pago."
+   }
+  ],
+  "video-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Editor gratis muy completo; algunas funciones y plantillas son Pro."
+   }
+  ],
+  "video-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Una hora de transcripción al mes y exportación con marca de agua."
+   }
+  ],
+  "video-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis mensuales con marca de agua."
+   }
+  ],
+  "video-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Funciones básicas gratis; lo interesante es de pago."
+   }
+  ],
+  "video-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos minutos gratis con marca de agua."
+   }
+  ],
+  "video-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas generaciones de vídeo gratis."
+   }
+  ],
+  "video-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de Firefly",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos créditos gratis."
+   }
+  ],
+  "video-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis limitados."
+   }
+  ],
+  "video-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis periódicos."
+   }
+  ],
+  "video-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Según plataforma",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Depende de la plataforma que lo ofrezca."
+   }
+  ],
+  "video-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos créditos gratis."
+   }
+  ],
+  "video-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Prueba gratis · planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba corta con marca de agua."
+   }
+  ],
+  "video-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Gratis con marca de agua y límite de duración."
+   }
+  ],
+  "video-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Gratis con marca de agua."
+   }
+  ],
+  "video-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Licencia de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba con marca de agua; licencia de pago."
+   }
+  ],
+  "video-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Midjourney",
+    "gratisTipo": "no",
+    "gratisTxt": "Solo con suscripción de Midjourney."
+   }
+  ],
+  "video-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Pocos minutos de prueba."
+   }
+  ],
+  "musica-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro 10 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Unas 10 canciones al día, sin uso comercial y con descargas limitadas."
+   }
+  ],
+  "musica-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis sin descarga · Starter desde 6 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Puedes probarla gratis, pero no descargar."
+   }
+  ],
+  "musica-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Puedes crear, pero no descargar nada (en ningún plan)."
+   }
+  ],
+  "musica-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Starter desde 6 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con límites."
+   }
+  ],
+  "musica-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro ~8 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas canciones gratis."
+   }
+  ],
+  "musica-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Puedes crear y escuchar gratis, pero descargar exige pagar."
+   }
+  ],
+  "musica-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis sin uso comercial · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Gratis pero sin uso comercial y con pocas descargas."
+   }
+  ],
+  "musica-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas pistas gratis al mes."
+   }
+  ],
+  "musica-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "musica-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas generaciones gratis al mes."
+   }
+  ],
+  "musica-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis con derechos comerciales",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis e ilimitado, con derechos comerciales."
+   }
+  ],
+  "musica-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · modelo abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis como modelo abierto."
+   }
+  ],
+  "musica-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · modelo abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis como modelo abierto."
+   }
+  ],
+  "musica-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis con límites."
+   }
+  ],
+  "musica-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas pistas gratis."
+   }
+  ],
+  "musica-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas pistas gratis."
+   }
+  ],
+  "musica-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Separa pistas de unas pocas canciones al mes gratis."
+   }
+  ],
+  "musica-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Prueba gratis · paquetes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba de pocos minutos; luego paquetes de pago."
+   }
+  ],
+  "musica-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba limitada; masterizar exige pagar."
+   }
+  ],
+  "musica-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Licencia de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba temporal; licencia de pago."
+   }
+  ],
+  "musica-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "musica-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "musica-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "no",
+    "gratisTxt": "Suscripción."
+   }
+  ],
+  "musica-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Acordes de cualquier canción gratis; funciones extra en Premium."
+   }
+  ],
+  "musica-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · modelo abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis como modelo abierto."
+   }
+  ],
+  "musica-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos usos gratis."
+   }
+  ],
+  "musica-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis, sin registro",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y sin registro."
+   }
+  ],
+  "musica-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · licencia",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "musica-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "musica-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "no",
+    "gratisTxt": "Planes de pago."
+   }
+  ],
+  "voz-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Starter desde 5–6 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Unos 10 minutos de voz al mes, sin uso comercial."
+   }
+  ],
+  "voz-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Pro desde ~4 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis limitados."
+   }
+  ],
+  "voz-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API barata",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis limitado en Google AI Studio."
+   }
+  ],
+  "voz-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en ChatGPT",
+    "gratisTipo": "util",
+    "gratisTxt": "Conversación por voz gratis con límites diarios."
+   }
+  ],
+  "voz-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API desde 25 $ por millón de caracteres",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Créditos iniciales; luego pago por uso."
+   }
+  ],
+  "voz-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Desde unos 3 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Créditos gratis mensuales."
+   }
+  ],
+  "voz-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Desde unos 10 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "voz-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Lectura gratis con voces básicas; las naturales son Premium."
+   }
+  ],
+  "voz-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos minutos gratis sin descarga."
+   }
+  ],
+  "voz-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba; uso real de pago."
+   }
+  ],
+  "voz-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · código abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "voz-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · código abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "voz-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API",
+    "gratisTipo": "prueba",
+    "gratisTxt": "API con créditos iniciales."
+   }
+  ],
+  "voz-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API",
+    "gratisTipo": "prueba",
+    "gratisTxt": "API con créditos iniciales."
+   }
+  ],
+  "voz-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API con crédito gratis",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Crédito inicial gratis."
+   }
+  ],
+  "voz-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · código abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "voz-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API con crédito gratis",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Crédito inicial gratis."
+   }
+  ],
+  "voz-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "voz-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Mejora de audio gratis con límite de duración."
+   }
+  ],
+  "voz-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos minutos gratis al día."
+   }
+  ],
+  "voz-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "2 h gratis/mes · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "2 horas gratis al mes."
+   }
+  ],
+  "voz-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Palabras limitadas a la semana."
+   }
+  ],
+  "voz-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis con el modelo básico; los más precisos en Pro."
+   }
+  ],
+  "voz-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Algunas voces gratis que rotan."
+   }
+  ],
+  "voz-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Pago por uso · capa gratis",
+    "gratisTipo": "util",
+    "gratisTxt": "Capa gratis mensual para desarrolladores."
+   }
+  ],
+  "voz-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Pago por uso · capa gratis",
+    "gratisTipo": "util",
+    "gratisTxt": "Capa gratis durante 12 meses."
+   }
+  ],
+  "voz-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Demo gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Demo gratis."
+   }
+  ],
+  "voz-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos minutos gratis."
+   }
+  ],
+  "voz-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Lectura gratis con voces básicas."
+   }
+  ],
+  "voz-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "API",
+    "gratisTipo": "prueba",
+    "gratisTxt": "API con créditos iniciales."
+   }
+  ],
+  "codigo-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en Claude Pro (20 $) y Max",
+    "gratisTipo": "no",
+    "gratisTxt": "Incluido en Claude Pro (unos 22 €/mes) o superior."
+   }
+  ],
+  "codigo-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro desde 20 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con límite de peticiones."
+   }
+  ],
+  "codigo-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis (con tu propia clave) · Go 10 $/mes",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis; pagas solo el modelo que uses (o usa modelos gratis)."
+   }
+  ],
+  "codigo-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en ChatGPT",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso limitado con ChatGPT gratis; más con Plus."
+   }
+  ],
+  "codigo-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · desde 10 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con límite mensual de sugerencias."
+   }
+  ],
+  "codigo-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · hasta 60 $/mes",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con créditos limitados."
+   }
+  ],
+  "codigo-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis en vista previa",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis mientras está en vista previa."
+   }
+  ],
+  "codigo-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · desde 25–30 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos mensajes gratis al día."
+   }
+  ],
+  "codigo-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Límite diario de uso."
+   }
+  ],
+  "codigo-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · desde 5 $/mes",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis mensuales."
+   }
+  ],
+  "codigo-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis para programar; el agente de IA tiene uso limitado."
+   }
+  ],
+  "codigo-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis para código abierto",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis para proyectos de código abierto."
+   }
+  ],
+  "codigo-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "codigo-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis limitado."
+   }
+  ],
+  "codigo-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · pagas el modelo",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis; pagas el modelo."
+   }
+  ],
+  "codigo-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · pagas el modelo",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis; pagas el modelo."
+   }
+  ],
+  "codigo-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis con IA limitada."
+   }
+  ],
+  "codigo-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en planes de JetBrains",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba; incluido en planes de pago."
+   }
+  ],
+  "codigo-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "no",
+    "gratisTxt": "Planes de pago."
+   }
+  ],
+  "codigo-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con IA limitada."
+   }
+  ],
+  "codigo-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · código abierto",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis y de código abierto."
+   }
+  ],
+  "codigo-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · pagas el modelo",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis; pagas el modelo."
+   }
+  ],
+  "codigo-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos mensajes gratis."
+   }
+  ],
+  "codigo-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis para construir; publicar en serio es de pago."
+   }
+  ],
+  "codigo-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis en vista previa",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis en vista previa."
+   }
+  ],
+  "codigo-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis para uso individual limitado."
+   }
+  ],
+  "codigo-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Pago por uso",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Pago por uso con crédito inicial."
+   }
+  ],
+  "codigo-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "no",
+    "gratisTxt": "Planes de pago."
+   }
+  ],
+  "codigo-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en planes de Figma",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso limitado en planes gratis de Figma."
+   }
+  ],
+  "codigo-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis para webs con dominio de Framer."
+   }
+  ],
+  "estudio-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · más límites con Google AI",
+    "gratisTipo": "util",
+    "gratisTxt": "Gratis con límites amplios; más con Google AI Pro."
+   }
+  ],
+  "estudio-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Búsquedas gratis limitadas."
+   }
+  ],
+  "estudio-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Premium de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Búsquedas avanzadas gratis limitadas."
+   }
+  ],
+  "estudio-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "estudio-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "estudio-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "no",
+    "gratisTxt": "Planes de pago."
+   }
+  ],
+  "estudio-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "estudio-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos gráficos gratis al mes."
+   }
+  ],
+  "estudio-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Pro de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas búsquedas gratis."
+   }
+  ],
+  "estudio-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis para docentes · de pago para alumnos",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Gratis para profesores; para alumnos es de pago según país."
+   }
+  ],
+  "estudio-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "no",
+    "gratisTxt": "Duolingo es gratis, pero las funciones de IA (Max) son de pago."
+   }
+  ],
+  "estudio-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba corta; suscripción."
+   }
+  ],
+  "estudio-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba corta; suscripción."
+   }
+  ],
+  "estudio-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Plus de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Fichas gratis; las funciones de IA más útiles son Plus."
+   }
+  ],
+  "estudio-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Plus de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Soluciones gratis; explicaciones detalladas en Plus."
+   }
+  ],
+  "estudio-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Resultados gratis; pasos detallados en Pro."
+   }
+  ],
+  "estudio-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Plus de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con límites."
+   }
+  ],
+  "estudio-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Soluciones gratis; pasos completos en Pro."
+   }
+  ],
+  "estudio-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Plus de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos PDFs y preguntas al día."
+   }
+  ],
+  "estudio-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas páginas gratis."
+   }
+  ],
+  "estudio-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Desde unos 5 $/mes",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba de 100 búsquedas; luego suscripción."
+   }
+  ],
+  "estudio-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Uso gratis limitado."
+   }
+  ],
+  "estudio-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba de 30 días; suscripción."
+   }
+  ],
+  "estudio-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en cursos",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Solo dentro de cursos de Coursera."
+   }
+  ],
+  "estudio-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Traducción gratis con límite de caracteres y archivos."
+   }
+  ],
+  "estudio-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis."
+   }
+  ],
+  "estudio-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · Prime de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Correcciones gratis limitadas."
+   }
+  ],
+  "estudio-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos resúmenes gratis."
+   }
+  ],
+  "estudio-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba corta; suscripción."
+   }
+  ],
+  "estudio-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Plus de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Uso gratis con anuncios y límites."
+   }
+  ],
+  "trabajo-01": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Plus de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos iniciales para unas pocas presentaciones."
+   }
+  ],
+  "trabajo-02": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en planes Business",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Pruebas limitadas; la IA completa va en planes Business."
+   }
+  ],
+  "trabajo-03": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Canva gratis es muy completo; la IA tiene usos limitados."
+   }
+  ],
+  "trabajo-04": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Pro de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Correcciones básicas gratis; reescrituras avanzadas en Pro."
+   }
+  ],
+  "trabajo-05": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "300 minutos al mes y 30 minutos por reunión."
+   }
+  ],
+  "trabajo-06": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Transcripciones limitadas."
+   }
+  ],
+  "trabajo-07": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Número limitado de reuniones gratis."
+   }
+  ],
+  "trabajo-08": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Grabación y resúmenes gratis para uso individual."
+   }
+  ],
+  "trabajo-09": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Grabaciones gratis con resúmenes limitados."
+   }
+  ],
+  "trabajo-10": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "100 tareas al mes y automatizaciones sencillas."
+   }
+  ],
+  "trabajo-11": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "1.000 operaciones al mes gratis."
+   }
+  ],
+  "trabajo-12": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis instalado en tu equipo · nube de pago",
+    "gratisTipo": "libre",
+    "gratisTxt": "Gratis si lo instalas tú; la nube es de pago."
+   }
+  ],
+  "trabajo-13": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba de 14 días; suscripción."
+   }
+  ],
+  "trabajo-14": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con créditos mensuales."
+   }
+  ],
+  "trabajo-15": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Incluido en planes de Figma",
+    "gratisTipo": "limitado",
+    "gratisTxt": "IA limitada en planes gratis."
+   }
+  ],
+  "trabajo-16": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos de IA limitados."
+   }
+  ],
+  "trabajo-17": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "no",
+    "gratisTxt": "Suscripción."
+   }
+  ],
+  "trabajo-18": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Suscripción",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba de 7 días; suscripción."
+   }
+  ],
+  "trabajo-19": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis útil para uso personal."
+   }
+  ],
+  "trabajo-20": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Complemento de pago",
+    "gratisTipo": "no",
+    "gratisTxt": "Complemento de pago sobre ClickUp."
+   }
+  ],
+  "trabajo-21": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Planes de pago",
+    "gratisTipo": "prueba",
+    "gratisTxt": "Prueba de 7 días."
+   }
+  ],
+  "trabajo-22": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Solo empresas",
+    "gratisTipo": "no",
+    "gratisTxt": "Solo para empresas."
+   }
+  ],
+  "trabajo-23": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis limitados."
+   }
+  ],
+  "trabajo-24": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis limitados."
+   }
+  ],
+  "trabajo-25": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Créditos gratis diarios limitados."
+   }
+  ],
+  "trabajo-26": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocos mensajes gratis al mes."
+   }
+  ],
+  "trabajo-27": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · Premium de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Parafraseo gratis con límite de palabras."
+   }
+  ],
+  "trabajo-28": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis limitado · planes de pago",
+    "gratisTipo": "limitado",
+    "gratisTxt": "Pocas reescrituras al día."
+   }
+  ],
+  "trabajo-29": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Gratis · planes de pago",
+    "gratisTipo": "util",
+    "gratisTxt": "Plan gratis con IA limitada."
+   }
+  ],
+  "trabajo-30": [
+   {
+    "fecha": "2026-09-30",
+    "precioTxt": "Complemento para empresas",
+    "gratisTipo": "no",
+    "gratisTxt": "Complemento de pago para empresas."
+   }
+  ]
+ }
+}

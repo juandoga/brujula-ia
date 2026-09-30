@@ -128,7 +128,10 @@
      "contras": [
       "Lo mejor (modelo avanzado, agentes) requiere pagar",
       "Puede inventar datos con seguridad"
-     ]
+     ],
+     "slug": "chatgpt",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "chat-02",
@@ -172,7 +175,10 @@
      "contras": [
       "El plan gratis se queda corto si lo usas mucho",
       "No genera imágenes"
-     ]
+     ],
+     "slug": "claude",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "chat-03",
@@ -216,7 +222,10 @@
      "contras": [
       "Algunas funciones varían según el país",
       "Respuestas a veces menos cuidadas que ChatGPT o Claude"
-     ]
+     ],
+     "slug": "gemini",
+     "afiliado": "",
+     "precioMes": 22
     },
     {
      "id": "chat-04",
@@ -260,7 +269,10 @@
      "contras": [
       "La versión gratis no funciona dentro de Word o Excel",
       "Menos funciones que ChatGPT"
-     ]
+     ],
+     "slug": "microsoft-copilot",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "chat-05",
@@ -304,7 +316,10 @@
      "contras": [
       "Menos útil para escribir textos largos",
       "Las funciones de agente se pagan aparte"
-     ]
+     ],
+     "slug": "perplexity",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "chat-06",
@@ -348,7 +363,10 @@
      "contras": [
       "Muy ligado a X (Twitter)",
       "Moderación menos estricta; contrasta la información"
-     ]
+     ],
+     "slug": "grok",
+     "afiliado": "",
+     "precioMes": 30
     },
     {
      "id": "chat-07",
@@ -391,7 +409,10 @@
      "contras": [
       "Menos potente que los líderes",
       "Usa tus conversaciones según la política de Meta"
-     ]
+     ],
+     "slug": "meta-ai",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-08",
@@ -433,7 +454,10 @@
      "contras": [
       "Servidores en China: cuidado con datos personales",
       "Menos funciones (voz, imágenes)"
-     ]
+     ],
+     "slug": "deepseek",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-09",
@@ -475,7 +499,10 @@
      "contras": [
       "Menos potente que los líderes",
       "Comunidad y tutoriales más pequeños"
-     ]
+     ],
+     "slug": "le-chat",
+     "afiliado": "",
+     "precioMes": 15
     },
     {
      "id": "chat-10",
@@ -517,7 +544,10 @@
      "contras": [
       "Empresa china: cuidado con datos personales",
       "Interfaz menos pulida en español"
-     ]
+     ],
+     "slug": "qwen-chat",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-11",
@@ -559,7 +589,10 @@
      "contras": [
       "Empresa china: cuidado con datos personales",
       "Menos conocido en español"
-     ]
+     ],
+     "slug": "kimi",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-12",
@@ -600,7 +633,10 @@
      "contras": [
       "Interfaz sencilla y poco conocida",
       "Soporte en español limitado"
-     ]
+     ],
+     "slug": "z-ai-glm",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-13",
@@ -642,7 +678,10 @@
      "contras": [
       "El plan gratis se agota rápido con los mejores modelos",
       "Funciones propias de cada IA no siempre disponibles"
-     ]
+     ],
+     "slug": "poe",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "chat-14",
@@ -683,7 +722,10 @@
      "contras": [
       "Modelos menos potentes",
       "Sin archivos ni funciones avanzadas"
-     ]
+     ],
+     "slug": "duck-ai",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-15",
@@ -724,7 +766,10 @@
      "contras": [
       "Menos potente que los líderes",
       "Funciones básicas"
-     ]
+     ],
+     "slug": "lumo",
+     "afiliado": "",
+     "precioMes": 13
     },
     {
      "id": "chat-16",
@@ -766,7 +811,10 @@
      "contras": [
       "Solo en dispositivos Apple recientes",
       "Menos capaz que un chat dedicado"
-     ]
+     ],
+     "slug": "siri-con-apple-intelligence",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-17",
@@ -807,7 +855,10 @@
      "contras": [
       "Disponibilidad en español limitada",
       "Requiere Prime y altavoz Echo"
-     ]
+     ],
+     "slug": "alexa",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "chat-18",
@@ -848,7 +899,10 @@
      "contras": [
       "Solo dentro de Brave",
       "Modelos limitados en gratis"
-     ]
+     ],
+     "slug": "brave-leo",
+     "afiliado": "",
+     "precioMes": 15
     },
     {
      "id": "chat-19",
@@ -890,7 +944,10 @@
      "contras": [
       "Solo dentro de Opera",
       "Básico"
-     ]
+     ],
+     "slug": "opera-aria",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-20",
@@ -931,7 +988,10 @@
      "contras": [
       "Poco diferenciado frente a Perplexity",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "you-com",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "chat-21",
@@ -972,7 +1032,10 @@
      "contras": [
       "Menos potente",
       "Moderación mínima"
-     ]
+     ],
+     "slug": "venice",
+     "afiliado": "",
+     "precioMes": 18
     },
     {
      "id": "chat-22",
@@ -1013,7 +1076,10 @@
      "contras": [
       "No sirve para tareas técnicas",
       "Apenas recibe novedades"
-     ]
+     ],
+     "slug": "pi",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-23",
@@ -1054,7 +1120,10 @@
      "contras": [
       "No es fuente fiable de información",
       "Puede enganchar: úsalo con moderación"
-     ]
+     ],
+     "slug": "character-ai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "chat-24",
@@ -1094,7 +1163,10 @@
      "contras": [
       "Pensado para usuarios técnicos",
       "Hay que gestionar saldo"
-     ]
+     ],
+     "slug": "openrouter",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "chat-25",
@@ -1133,7 +1205,10 @@
      "contras": [
       "Sin versión gratis real",
       "Poco conocido"
-     ]
+     ],
+     "slug": "t3-chat",
+     "afiliado": "",
+     "precioMes": 8
     },
     {
      "id": "chat-26",
@@ -1173,7 +1248,10 @@
      "contras": [
       "Necesita un ordenador potente",
       "Modelos locales menos capaces que los de pago"
-     ]
+     ],
+     "slug": "lm-studio",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-27",
@@ -1213,7 +1291,10 @@
      "contras": [
       "Se usa sobre todo desde la terminal",
       "Requiere buen hardware"
-     ]
+     ],
+     "slug": "ollama",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-28",
@@ -1253,7 +1334,10 @@
      "contras": [
       "Requiere buen hardware",
       "Modelos menos capaces"
-     ]
+     ],
+     "slug": "jan",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-29",
@@ -1292,7 +1376,10 @@
      "contras": [
       "Modelos pequeños y limitados",
       "Interfaz básica"
-     ]
+     ],
+     "slug": "gpt4all",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "chat-30",
@@ -1331,7 +1418,10 @@
      "contras": [
       "Configuración algo técnica",
       "Poco conocido"
-     ]
+     ],
+     "slug": "msty",
+     "afiliado": "",
+     "precioMes": null
     }
    ],
    "actualizado": "2026-09-29",
@@ -1384,7 +1474,10 @@
      "contras": [
       "Límite diario en el plan gratis",
       "Menos estilo artístico que Midjourney"
-     ]
+     ],
+     "slug": "nano-banana-2",
+     "afiliado": "",
+     "precioMes": 22
     },
     {
      "id": "imagen-02",
@@ -1427,7 +1520,10 @@
      "contras": [
       "Plan gratis muy corto",
       "Más lento que otros"
-     ]
+     ],
+     "slug": "gpt-image-2",
+     "afiliado": "",
+     "precioMes": 23
     },
     {
      "id": "imagen-03",
@@ -1468,7 +1564,10 @@
      "contras": [
       "Sin plan gratis",
       "Curva de aprendizaje"
-     ]
+     ],
+     "slug": "midjourney",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "imagen-04",
@@ -1508,7 +1607,10 @@
      "contras": [
       "Pensado para uso por API",
       "Menos cómodo para principiantes"
-     ]
+     ],
+     "slug": "flux-2-pro",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-05",
@@ -1551,7 +1653,10 @@
      "contras": [
       "Créditos gratis escasos",
       "Más caro que otros"
-     ]
+     ],
+     "slug": "adobe-firefly",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "imagen-06",
@@ -1592,7 +1697,10 @@
      "contras": [
       "Más lento",
       "Límites bajos en gratis"
-     ]
+     ],
+     "slug": "nano-banana-pro",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-07",
@@ -1634,7 +1742,10 @@
      "contras": [
       "Menos fotorrealista",
       "Imágenes públicas en el plan gratis"
-     ]
+     ],
+     "slug": "ideogram",
+     "afiliado": "",
+     "precioMes": 8
     },
     {
      "id": "imagen-08",
@@ -1675,7 +1786,10 @@
      "contras": [
       "Más orientado a diseñadores",
       "Interfaz con muchas opciones"
-     ]
+     ],
+     "slug": "recraft",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "imagen-09",
@@ -1717,7 +1831,10 @@
      "contras": [
       "Interfaz cargada",
       "Los mejores modelos gastan más créditos"
-     ]
+     ],
+     "slug": "leonardo-ai",
+     "afiliado": "",
+     "precioMes": 30
     },
     {
      "id": "imagen-10",
@@ -1757,7 +1874,10 @@
      "contras": [
       "Requiere ordenador potente y conocimientos",
       "Calidad por debajo de los líderes"
-     ]
+     ],
+     "slug": "stable-diffusion-3-5",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "imagen-11",
@@ -1799,7 +1919,10 @@
      "contras": [
       "Calidad media",
       "Revisa los términos antes de uso comercial"
-     ]
+     ],
+     "slug": "meta-muse-image",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "imagen-12",
@@ -1840,7 +1963,10 @@
      "contras": [
       "Moderación menos estricta",
       "Calidad irregular"
-     ]
+     ],
+     "slug": "grok-imagine",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-13",
@@ -1882,7 +2008,10 @@
      "contras": [
       "Pocas imágenes en gratis",
       "Calidad menor que herramientas dedicadas"
-     ]
+     ],
+     "slug": "canva-magic-media",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "imagen-14",
@@ -1922,7 +2051,10 @@
      "contras": [
       "Interfaz con muchas opciones",
       "Algunos modelos solo de pago"
-     ]
+     ],
+     "slug": "krea",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "imagen-15",
@@ -1963,7 +2095,10 @@
      "contras": [
       "Créditos gratis escasos",
       "Mucha oferta que puede abrumar"
-     ]
+     ],
+     "slug": "freepik-ai",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "imagen-16",
@@ -2003,7 +2138,10 @@
      "contras": [
       "Caro",
       "Sin plan gratis"
-     ]
+     ],
+     "slug": "magnific",
+     "afiliado": "",
+     "precioMes": 39
     },
     {
      "id": "imagen-17",
@@ -2044,7 +2182,10 @@
      "contras": [
       "Calidad media",
       "Pocas opciones de control"
-     ]
+     ],
+     "slug": "microsoft-designer",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-18",
@@ -2085,7 +2226,10 @@
      "contras": [
       "Marca de agua en gratis",
       "Centrado en producto"
-     ]
+     ],
+     "slug": "photoroom",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "imagen-19",
@@ -2126,7 +2270,10 @@
      "contras": [
       "Plan gratis corto",
       "Menos novedades"
-     ]
+     ],
+     "slug": "clipdrop",
+     "afiliado": "",
+     "precioMes": 9
     },
     {
      "id": "imagen-20",
@@ -2167,7 +2314,10 @@
      "contras": [
       "Créditos limitados",
       "Algunas funciones según país"
-     ]
+     ],
+     "slug": "seedream",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-21",
@@ -2208,7 +2358,10 @@
      "contras": [
       "Menos conocido",
       "Instalarlo requiere conocimientos"
-     ]
+     ],
+     "slug": "qwen-image",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "imagen-22",
@@ -2248,7 +2401,10 @@
      "contras": [
       "Mejor dentro del flujo de Luma",
       "Pocos créditos gratis"
-     ]
+     ],
+     "slug": "luma-photon",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-23",
@@ -2289,7 +2445,10 @@
      "contras": [
       "Créditos gratis que no se recargan",
       "Precio alto para solo imágenes"
-     ]
+     ],
+     "slug": "runway-imagen",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "imagen-24",
@@ -2329,7 +2488,10 @@
      "contras": [
       "Muy técnico",
       "Requiere ordenador potente"
-     ]
+     ],
+     "slug": "comfyui",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "imagen-25",
@@ -2369,7 +2531,10 @@
      "contras": [
       "De pago",
       "Solo sirve para ampliar"
-     ]
+     ],
+     "slug": "topaz-gigapixel",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-26",
@@ -2411,7 +2576,10 @@
      "contras": [
       "Alta resolución de pago",
       "Hace solo una cosa"
-     ]
+     ],
+     "slug": "remove-bg",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-27",
@@ -2452,7 +2620,10 @@
      "contras": [
       "Calidad desigual",
       "Interfaz algo recargada"
-     ]
+     ],
+     "slug": "nightcafe",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-28",
@@ -2492,7 +2663,10 @@
      "contras": [
       "Plan gratis corto",
       "Ha cambiado mucho de enfoque"
-     ]
+     ],
+     "slug": "playground",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-29",
@@ -2532,7 +2706,10 @@
      "contras": [
       "Mejor dentro de Kling",
       "Menos conocido"
-     ]
+     ],
+     "slug": "kolors",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "imagen-30",
@@ -2572,7 +2749,10 @@
      "contras": [
       "Requiere conocimientos técnicos",
       "Poco conocido"
-     ]
+     ],
+     "slug": "hunyuan-image",
+     "afiliado": "",
+     "precioMes": 0
     }
    ],
    "actualizado": "2026-09-29",
@@ -2623,7 +2803,10 @@
      "contras": [
       "De pago y con límite de vídeos",
       "Clips cortos"
-     ]
+     ],
+     "slug": "veo-3-1",
+     "afiliado": "",
+     "precioMes": 22
     },
     {
      "id": "video-02",
@@ -2665,7 +2848,10 @@
      "contras": [
       "Esperas largas en gratis",
       "Marca de agua en gratis"
-     ]
+     ],
+     "slug": "kling-3-0",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-03",
@@ -2706,7 +2892,10 @@
      "contras": [
       "Acceso según plataforma y país",
       "Créditos gratis escasos"
-     ]
+     ],
+     "slug": "seedance-2-5",
+     "afiliado": "",
+     "precioMes": 18
     },
     {
      "id": "video-04",
@@ -2748,7 +2937,10 @@
      "contras": [
       "Los créditos gratis se acaban enseguida",
       "Caro para uso intenso"
-     ]
+     ],
+     "slug": "runway",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "video-05",
@@ -2789,7 +2981,10 @@
      "contras": [
       "Plan gratis con marca de agua",
       "Precio alto para uso frecuente"
-     ]
+     ],
+     "slug": "heygen",
+     "afiliado": "",
+     "precioMes": 29
     },
     {
      "id": "video-06",
@@ -2829,7 +3024,10 @@
      "contras": [
       "Sin plan gratis útil",
       "Pensado para empresas"
-     ]
+     ],
+     "slug": "synthesia",
+     "afiliado": "",
+     "precioMes": 29
     },
     {
      "id": "video-07",
@@ -2870,7 +3068,10 @@
      "contras": [
       "Plan gratis corto",
       "Ha cambiado mucho de planes"
-     ]
+     ],
+     "slug": "luma-dream-machine",
+     "afiliado": "",
+     "precioMes": 30
     },
     {
      "id": "video-08",
@@ -2911,7 +3112,10 @@
      "contras": [
       "Esperas en gratis",
       "Marca de agua en gratis"
-     ]
+     ],
+     "slug": "hailuo-minimax",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-09",
@@ -2952,7 +3156,10 @@
      "contras": [
       "Calidad inferior a los líderes",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "pika",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-10",
@@ -2993,7 +3200,10 @@
      "contras": [
       "Instalarlo requiere mucho equipo",
       "Menos cómodo para principiantes"
-     ]
+     ],
+     "slug": "wan",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "video-11",
@@ -3033,7 +3243,10 @@
      "contras": [
       "Calidad irregular",
       "Moderación menos estricta"
-     ]
+     ],
+     "slug": "grok-imagine-video",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-12",
@@ -3074,7 +3287,10 @@
      "contras": [
       "Marca de agua en gratis",
       "Esperas"
-     ]
+     ],
+     "slug": "pixverse",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-13",
@@ -3114,7 +3330,10 @@
      "contras": [
       "Sin plan gratis útil",
       "Puede salir caro"
-     ]
+     ],
+     "slug": "higgsfield",
+     "afiliado": "",
+     "precioMes": 15
     },
     {
      "id": "video-14",
@@ -3157,7 +3376,10 @@
      "contras": [
       "Algunas funciones clave pasaron a Pro",
       "Marca de agua en algunas plantillas"
-     ]
+     ],
+     "slug": "capcut",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-15",
@@ -3198,7 +3420,10 @@
      "contras": [
       "Plan gratis corto",
       "En inglés funciona mejor"
-     ]
+     ],
+     "slug": "descript",
+     "afiliado": "",
+     "precioMes": 16
     },
     {
      "id": "video-16",
@@ -3238,7 +3463,10 @@
      "contras": [
       "Marca de agua en gratis",
       "Cortes no siempre acertados"
-     ]
+     ],
+     "slug": "opus-clip",
+     "afiliado": "",
+     "precioMes": 15
     },
     {
      "id": "video-17",
@@ -3279,7 +3507,10 @@
      "contras": [
       "Plan gratis muy limitado",
       "Suscripción cara"
-     ]
+     ],
+     "slug": "captions",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-18",
@@ -3319,7 +3550,10 @@
      "contras": [
       "Marca de agua en gratis",
       "Resultados algo genéricos"
-     ]
+     ],
+     "slug": "invideo-ai",
+     "afiliado": "",
+     "precioMes": 28
     },
     {
      "id": "video-19",
@@ -3360,7 +3594,10 @@
      "contras": [
       "Pocas generaciones gratis",
       "Poco control"
-     ]
+     ],
+     "slug": "canva-video",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "video-20",
@@ -3401,7 +3638,10 @@
      "contras": [
       "Créditos escasos",
       "Mejor si ya usas Adobe"
-     ]
+     ],
+     "slug": "adobe-firefly-video",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-21",
@@ -3441,7 +3681,10 @@
      "contras": [
       "Créditos escasos",
       "Calidad por debajo de los líderes"
-     ]
+     ],
+     "slug": "ltx-studio",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-22",
@@ -3481,7 +3724,10 @@
      "contras": [
       "Menos conocido",
       "Calidad irregular"
-     ]
+     ],
+     "slug": "vidu",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-23",
@@ -3520,7 +3766,10 @@
      "contras": [
       "Acceso poco claro",
       "Pocas guías en español"
-     ]
+     ],
+     "slug": "happyhorse",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-24",
@@ -3560,7 +3809,10 @@
      "contras": [
       "Plan gratis corto",
       "Clips cortos"
-     ]
+     ],
+     "slug": "hedra",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-25",
@@ -3600,7 +3852,10 @@
      "contras": [
       "Aspecto menos natural que HeyGen",
       "Sin plan gratis útil"
-     ]
+     ],
+     "slug": "d-id",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-26",
@@ -3640,7 +3895,10 @@
      "contras": [
       "Marca de agua en gratis",
       "Algo caro"
-     ]
+     ],
+     "slug": "veed",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "video-27",
@@ -3680,7 +3938,10 @@
      "contras": [
       "Marca de agua en gratis",
       "Menos IA que otros"
-     ]
+     ],
+     "slug": "kapwing",
+     "afiliado": "",
+     "precioMes": 16
     },
     {
      "id": "video-28",
@@ -3720,7 +3981,10 @@
      "contras": [
       "Caro",
       "Necesita ordenador potente"
-     ]
+     ],
+     "slug": "topaz-video-ai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "video-29",
@@ -3759,7 +4023,10 @@
      "contras": [
       "Sin plan gratis",
       "Clips cortos"
-     ]
+     ],
+     "slug": "midjourney-video",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "video-30",
@@ -3798,7 +4065,10 @@
      "contras": [
       "Caro por minuto",
       "Sin plan gratis útil"
-     ]
+     ],
+     "slug": "rask-ai",
+     "afiliado": "",
+     "precioMes": null
     }
    ],
    "actualizado": "2026-09-29",
@@ -3851,7 +4121,10 @@
      "contras": [
       "Plan gratis sin uso comercial",
       "Descargas limitadas desde V6"
-     ]
+     ],
+     "slug": "suno",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "musica-02",
@@ -3892,7 +4165,10 @@
      "contras": [
       "Sin descargas en gratis",
       "Menos opciones de edición que Suno"
-     ]
+     ],
+     "slug": "elevenlabs-music",
+     "afiliado": "",
+     "precioMes": 6
     },
     {
      "id": "musica-03",
@@ -3932,7 +4208,10 @@
      "contras": [
       "No permite descargar tus canciones",
       "Solo sirve para bocetar"
-     ]
+     ],
+     "slug": "udio",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "musica-04",
@@ -3972,7 +4251,10 @@
      "contras": [
       "Menos conocido",
       "Algunas funciones según país"
-     ]
+     ],
+     "slug": "google-flow-music",
+     "afiliado": "",
+     "precioMes": 6
     },
     {
      "id": "musica-05",
@@ -4013,7 +4295,10 @@
      "contras": [
       "Plan gratis corto",
       "Menos refinado que Suno"
-     ]
+     ],
+     "slug": "mureka",
+     "afiliado": "",
+     "precioMes": 8
     },
     {
      "id": "musica-06",
@@ -4052,7 +4337,10 @@
      "contras": [
       "Sin descarga gratis",
       "Solo instrumental"
-     ]
+     ],
+     "slug": "soundraw",
+     "afiliado": "",
+     "precioMes": 17
     },
     {
      "id": "musica-07",
@@ -4093,7 +4381,10 @@
      "contras": [
       "Interfaz algo técnica",
       "Uso comercial de pago"
-     ]
+     ],
+     "slug": "aiva",
+     "afiliado": "",
+     "precioMes": 11
     },
     {
      "id": "musica-08",
@@ -4132,7 +4423,10 @@
      "contras": [
       "Plan gratis corto",
       "Solo instrumental"
-     ]
+     ],
+     "slug": "beatoven-ai",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "musica-09",
@@ -4172,7 +4466,10 @@
      "contras": [
       "Calidad algo genérica",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "mubert",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-10",
@@ -4212,7 +4509,10 @@
      "contras": [
       "Sin voces",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "stable-audio",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-11",
@@ -4251,7 +4551,10 @@
      "contras": [
       "Calidad por debajo de Suno",
       "Poco conocido"
-     ]
+     ],
+     "slug": "treblo",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-12",
@@ -4290,7 +4593,10 @@
      "contras": [
       "Muy técnico de instalar",
       "Calidad media"
-     ]
+     ],
+     "slug": "ace-step",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-13",
@@ -4329,7 +4635,10 @@
      "contras": [
       "Solo instrumental",
       "Técnico y anticuado"
-     ]
+     ],
+     "slug": "musicgen",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-14",
@@ -4369,7 +4678,10 @@
      "contras": [
       "Calidad básica",
       "Poco control"
-     ]
+     ],
+     "slug": "boomy",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-15",
@@ -4408,7 +4720,10 @@
      "contras": [
       "Calidad genérica",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "loudly",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-16",
@@ -4448,7 +4763,10 @@
      "contras": [
       "Calidad genérica",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "soundful",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-17",
@@ -4492,7 +4810,10 @@
      "contras": [
       "Límite de canciones en gratis",
       "Algunas funciones solo Premium"
-     ]
+     ],
+     "slug": "moises",
+     "afiliado": "",
+     "precioMes": 5
     },
     {
      "id": "musica-18",
@@ -4533,7 +4854,10 @@
      "contras": [
       "Se paga por minutos",
       "Solo separa pistas"
-     ]
+     ],
+     "slug": "lalal-ai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-19",
@@ -4573,7 +4897,10 @@
      "contras": [
       "Suscripción",
       "Menos control que un técnico"
-     ]
+     ],
+     "slug": "landr",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "musica-20",
@@ -4612,7 +4939,10 @@
      "contras": [
       "Caro",
       "Pensado para productores"
-     ]
+     ],
+     "slug": "izotope-ozone",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-21",
@@ -4653,7 +4983,10 @@
      "contras": [
       "Ideas algo básicas",
       "Interfaz con muchas opciones"
-     ]
+     ],
+     "slug": "bandlab-songstarter",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-22",
@@ -4692,7 +5025,10 @@
      "contras": [
       "Plan gratis corto",
       "Técnico para principiantes"
-     ]
+     ],
+     "slug": "kits-ai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-23",
@@ -4732,7 +5068,10 @@
      "contras": [
       "Sin plan gratis",
       "Para productores"
-     ]
+     ],
+     "slug": "splice",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-24",
@@ -4773,7 +5112,10 @@
      "contras": [
       "Acordes a veces simplificados",
       "Funciones de práctica de pago"
-     ]
+     ],
+     "slug": "chordify",
+     "afiliado": "",
+     "precioMes": 4
     },
     {
      "id": "musica-25",
@@ -4812,7 +5154,10 @@
      "contras": [
       "Muy técnico",
       "Experimental"
-     ]
+     ],
+     "slug": "magenta-rt",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-26",
@@ -4851,7 +5196,10 @@
      "contras": [
       "Calidad irregular",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "musicfy",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-27",
@@ -4890,7 +5238,10 @@
      "contras": [
       "Calidad básica",
       "Poco control"
-     ]
+     ],
+     "slug": "boppy",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-28",
@@ -4929,7 +5280,10 @@
      "contras": [
       "Técnico",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "samplab",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "musica-29",
@@ -4968,7 +5322,10 @@
      "contras": [
       "Solo transcribe",
       "Mejor con melodías sencillas"
-     ]
+     ],
+     "slug": "basic-pitch",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "musica-30",
@@ -5007,7 +5364,10 @@
      "contras": [
       "Pensado para profesionales",
       "Sin plan gratis útil"
-     ]
+     ],
+     "slug": "audioshake",
+     "afiliado": "",
+     "precioMes": null
     }
    ],
    "actualizado": "2026-09-29",
@@ -5060,7 +5420,10 @@
      "contras": [
       "Plan gratis corto y sin uso comercial",
       "Caro para mucho volumen"
-     ]
+     ],
+     "slug": "elevenlabs",
+     "afiliado": "",
+     "precioMes": 6
     },
     {
      "id": "voz-02",
@@ -5100,7 +5463,10 @@
      "contras": [
       "Pensada para desarrolladores",
       "Interfaz técnica"
-     ]
+     ],
+     "slug": "cartesia",
+     "afiliado": "",
+     "precioMes": 4
     },
     {
      "id": "voz-03",
@@ -5140,7 +5506,10 @@
      "contras": [
       "Se usa desde herramientas técnicas",
       "Poca interfaz para principiantes"
-     ]
+     ],
+     "slug": "gemini-tts",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-04",
@@ -5181,7 +5550,10 @@
      "contras": [
       "Límite diario en gratis",
       "No sirve para locuciones"
-     ]
+     ],
+     "slug": "voz-de-chatgpt",
+     "afiliado": "",
+     "precioMes": 23
     },
     {
      "id": "voz-05",
@@ -5220,7 +5592,10 @@
      "contras": [
       "Técnico",
       "Pensado para desarrolladores"
-     ]
+     ],
+     "slug": "inworld-tts",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-06",
@@ -5260,7 +5635,10 @@
      "contras": [
       "Menos voces en español",
       "Interfaz técnica"
-     ]
+     ],
+     "slug": "hume",
+     "afiliado": "",
+     "precioMes": 3
     },
     {
      "id": "voz-07",
@@ -5300,7 +5678,10 @@
      "contras": [
       "Calidad variable según voz",
       "Menos conocido"
-     ]
+     ],
+     "slug": "fish-audio",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "voz-08",
@@ -5342,7 +5723,10 @@
      "contras": [
       "Voces buenas solo en Premium",
       "Suscripción cara"
-     ]
+     ],
+     "slug": "speechify",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "voz-09",
@@ -5381,7 +5765,10 @@
      "contras": [
       "Sin descarga en gratis",
       "Menos natural que ElevenLabs"
-     ]
+     ],
+     "slug": "murf",
+     "afiliado": "",
+     "precioMes": 19
     },
     {
      "id": "voz-10",
@@ -5420,7 +5807,10 @@
      "contras": [
       "Caro",
       "Sin plan gratis"
-     ]
+     ],
+     "slug": "wellsaid",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-11",
@@ -5459,7 +5849,10 @@
      "contras": [
       "Técnico de instalar",
       "Requiere buen equipo"
-     ]
+     ],
+     "slug": "chatterbox",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "voz-12",
@@ -5498,7 +5891,10 @@
      "contras": [
       "Técnico",
       "Pocas voces en español"
-     ]
+     ],
+     "slug": "kokoro",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "voz-13",
@@ -5537,7 +5933,10 @@
      "contras": [
       "Solo por API",
       "Técnico"
-     ]
+     ],
+     "slug": "qwen-audio-tts",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-14",
@@ -5576,7 +5975,10 @@
      "contras": [
       "Solo para desarrolladores",
       "Técnico"
-     ]
+     ],
+     "slug": "rime",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-15",
@@ -5615,7 +6017,10 @@
      "contras": [
       "Solo para desarrolladores",
       "Técnico"
-     ]
+     ],
+     "slug": "deepgram",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-16",
@@ -5655,7 +6060,10 @@
      "contras": [
       "Se instala con conocimientos técnicos",
       "Mejor usarlo a través de apps como MacWhisper"
-     ]
+     ],
+     "slug": "whisper",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "voz-17",
@@ -5694,7 +6102,10 @@
      "contras": [
       "Para desarrolladores",
       "Técnico"
-     ]
+     ],
+     "slug": "assemblyai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-18",
@@ -5733,7 +6144,10 @@
      "contras": [
       "Para empresas",
       "Técnico"
-     ]
+     ],
+     "slug": "speechmatics",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-19",
@@ -5772,7 +6186,10 @@
      "contras": [
       "Límite de duración en gratis",
       "A veces el resultado suena artificial"
-     ]
+     ],
+     "slug": "adobe-podcast",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "voz-20",
@@ -5812,7 +6229,10 @@
      "contras": [
       "Plan gratis corto",
       "Suscripción"
-     ]
+     ],
+     "slug": "krisp",
+     "afiliado": "",
+     "precioMes": 8
     },
     {
      "id": "voz-21",
@@ -5851,7 +6271,10 @@
      "contras": [
       "Interfaz anticuada",
       "Pensado para podcasts"
-     ]
+     ],
+     "slug": "auphonic",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-22",
@@ -5892,7 +6315,10 @@
      "contras": [
       "Plan gratis corto",
       "Suscripción"
-     ]
+     ],
+     "slug": "wispr-flow",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "voz-23",
@@ -5931,7 +6357,10 @@
      "contras": [
       "Solo Mac",
       "Modelos buenos en Pro"
-     ]
+     ],
+     "slug": "macwhisper",
+     "afiliado": "",
+     "precioMes": 6
     },
     {
      "id": "voz-24",
@@ -5970,7 +6399,10 @@
      "contras": [
       "Pocas voces gratis",
       "Solo entretenimiento"
-     ]
+     ],
+     "slug": "voicemod",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-25",
@@ -6009,7 +6441,10 @@
      "contras": [
       "Solo para desarrolladores",
       "Configuración compleja"
-     ]
+     ],
+     "slug": "azure-ai-speech",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-26",
@@ -6048,7 +6483,10 @@
      "contras": [
       "Voces menos naturales",
       "Técnico"
-     ]
+     ],
+     "slug": "amazon-polly",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-27",
@@ -6087,7 +6525,10 @@
      "contras": [
       "Es una demo",
       "No sirve para locuciones"
-     ]
+     ],
+     "slug": "sesame",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "voz-28",
@@ -6126,7 +6567,10 @@
      "contras": [
       "Menos natural que los líderes",
       "Plan gratis corto"
-     ]
+     ],
+     "slug": "lovo-genny",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-29",
@@ -6167,7 +6611,10 @@
      "contras": [
       "Voces básicas en gratis",
       "Anticuado"
-     ]
+     ],
+     "slug": "naturalreader",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "voz-30",
@@ -6206,7 +6653,10 @@
      "contras": [
       "Solo por API",
       "Poco conocido"
-     ]
+     ],
+     "slug": "gradium",
+     "afiliado": "",
+     "precioMes": null
     }
    ],
    "actualizado": "2026-09-29",
@@ -6260,7 +6710,10 @@
      "contras": [
       "Sin plan gratis",
       "Mejor si ya sabes algo de programación"
-     ]
+     ],
+     "slug": "claude-code",
+     "afiliado": "",
+     "precioMes": 22
     },
     {
      "id": "codigo-02",
@@ -6300,7 +6753,10 @@
      "contras": [
       "Plan gratis se agota pronto",
       "Cambios de propiedad (SpaceX)"
-     ]
+     ],
+     "slug": "cursor",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "codigo-03",
@@ -6340,7 +6796,10 @@
      "contras": [
       "Se usa desde la terminal",
       "Coste del modelo aparte"
-     ]
+     ],
+     "slug": "opencode",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-04",
@@ -6381,7 +6840,10 @@
      "contras": [
       "Límites bajos en gratis",
       "Menos preciso que Claude Code en pruebas"
-     ]
+     ],
+     "slug": "codex",
+     "afiliado": "",
+     "precioMes": 23
     },
     {
      "id": "codigo-05",
@@ -6422,7 +6884,10 @@
      "contras": [
       "Menos autónomo que los agentes",
       "Requiere cuenta de GitHub"
-     ]
+     ],
+     "slug": "github-copilot",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "codigo-06",
@@ -6461,7 +6926,10 @@
      "contras": [
       "Créditos gratis escasos",
       "Menos popular que Cursor"
-     ]
+     ],
+     "slug": "windsurf",
+     "afiliado": "",
+     "precioMes": 60
     },
     {
      "id": "codigo-07",
@@ -6500,7 +6968,10 @@
      "contras": [
       "Puede dejar de ser gratis",
       "Algo técnico"
-     ]
+     ],
+     "slug": "antigravity",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-08",
@@ -6541,7 +7012,10 @@
      "contras": [
       "Los mensajes gratis se agotan rápido",
       "Proyectos grandes pueden liarse"
-     ]
+     ],
+     "slug": "lovable",
+     "afiliado": "",
+     "precioMes": 30
     },
     {
      "id": "codigo-09",
@@ -6581,7 +7055,10 @@
      "contras": [
       "Plan gratis corto",
       "Errores en proyectos complejos"
-     ]
+     ],
+     "slug": "bolt-new",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "codigo-10",
@@ -6621,7 +7098,10 @@
      "contras": [
       "Centrado en diseño web",
       "Créditos escasos"
-     ]
+     ],
+     "slug": "v0",
+     "afiliado": "",
+     "precioMes": 5
     },
     {
      "id": "codigo-11",
@@ -6662,7 +7142,10 @@
      "contras": [
       "El agente gasta créditos rápido",
       "Proyectos grandes van lentos"
-     ]
+     ],
+     "slug": "replit",
+     "afiliado": "",
+     "precioMes": 25
     },
     {
      "id": "codigo-12",
@@ -6701,7 +7184,10 @@
      "contras": [
       "Para equipos",
       "Técnico"
-     ]
+     ],
+     "slug": "coderabbit",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-13",
@@ -6741,7 +7227,10 @@
      "contras": [
       "Técnico",
       "Menos conocido"
-     ]
+     ],
+     "slug": "kimi-code",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-14",
@@ -6780,7 +7269,10 @@
      "contras": [
       "Más lento para cambios rápidos",
       "Técnico"
-     ]
+     ],
+     "slug": "kiro",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-15",
@@ -6819,7 +7311,10 @@
      "contras": [
       "Coste del modelo aparte",
       "Técnico"
-     ]
+     ],
+     "slug": "cline",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-16",
@@ -6858,7 +7353,10 @@
      "contras": [
       "Solo terminal",
       "Técnico"
-     ]
+     ],
+     "slug": "aider",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-17",
@@ -6897,7 +7395,10 @@
      "contras": [
       "Menos extensiones",
       "Técnico"
-     ]
+     ],
+     "slug": "zed",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-18",
@@ -6936,7 +7437,10 @@
      "contras": [
       "De pago",
       "Solo en editores JetBrains"
-     ]
+     ],
+     "slug": "jetbrains-ai-junie",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-19",
@@ -6975,7 +7479,10 @@
      "contras": [
       "Menos potente",
       "Sin plan gratis útil"
-     ]
+     ],
+     "slug": "tabnine",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-20",
@@ -7015,7 +7522,10 @@
      "contras": [
       "Solo para quien usa terminal",
       "Créditos limitados"
-     ]
+     ],
+     "slug": "warp",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-21",
@@ -7054,7 +7564,10 @@
      "contras": [
       "Configuración técnica",
       "Menos pulido"
-     ]
+     ],
+     "slug": "continue",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-22",
@@ -7093,7 +7606,10 @@
      "contras": [
       "Técnico",
       "Coste del modelo aparte"
-     ]
+     ],
+     "slug": "roo-code",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-23",
@@ -7133,7 +7649,10 @@
      "contras": [
       "Plan gratis corto",
       "Dependes de su plataforma"
-     ]
+     ],
+     "slug": "base44",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "codigo-24",
@@ -7173,7 +7692,10 @@
      "contras": [
       "Curva de aprendizaje",
       "Caro al crecer"
-     ]
+     ],
+     "slug": "bubble",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-25",
@@ -7212,7 +7734,10 @@
      "contras": [
       "Técnico",
       "Puede cambiar de condiciones"
-     ]
+     ],
+     "slug": "firebase-studio",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "codigo-26",
@@ -7251,7 +7776,10 @@
      "contras": [
       "Técnico",
       "Nicho"
-     ]
+     ],
+     "slug": "qodo",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-27",
@@ -7290,7 +7818,10 @@
      "contras": [
       "Técnico",
       "Puede salir caro"
-     ]
+     ],
+     "slug": "amp",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-28",
@@ -7329,7 +7860,10 @@
      "contras": [
       "Caro",
       "Resultados irregulares"
-     ]
+     ],
+     "slug": "devin",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-29",
@@ -7369,7 +7903,10 @@
      "contras": [
       "Requiere Figma",
       "Mejor en planes de pago"
-     ]
+     ],
+     "slug": "figma-make",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "codigo-30",
@@ -7410,7 +7947,10 @@
      "contras": [
       "Dominio propio de pago",
       "Menos flexible para apps"
-     ]
+     ],
+     "slug": "framer-ai",
+     "afiliado": "",
+     "precioMes": 10
     }
    ],
    "actualizado": "2026-09-29",
@@ -7463,7 +8003,10 @@
      "contras": [
       "Límites en cuadernos y fuentes",
       "Necesita cuenta de Google"
-     ]
+     ],
+     "slug": "gemini-notebook",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "estudio-02",
@@ -7503,7 +8046,10 @@
      "contras": [
       "Plan gratis corto",
       "En inglés"
-     ]
+     ],
+     "slug": "elicit",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "estudio-03",
@@ -7544,7 +8090,10 @@
      "contras": [
       "Plan gratis corto",
       "Artículos en inglés"
-     ]
+     ],
+     "slug": "consensus",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "estudio-04",
@@ -7583,7 +8132,10 @@
      "contras": [
       "Plan gratis corto",
       "En inglés sobre todo"
-     ]
+     ],
+     "slug": "scispace",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-05",
@@ -7622,7 +8174,10 @@
      "contras": [
       "En inglés",
       "Menos IA que otros"
-     ]
+     ],
+     "slug": "semantic-scholar",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "estudio-06",
@@ -7661,7 +8216,10 @@
      "contras": [
       "De pago",
       "Nicho"
-     ]
+     ],
+     "slug": "scite",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-07",
@@ -7700,7 +8258,10 @@
      "contras": [
       "En inglés",
       "Curva de aprendizaje"
-     ]
+     ],
+     "slug": "researchrabbit",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "estudio-08",
@@ -7739,7 +8300,10 @@
      "contras": [
       "Plan gratis corto",
       "Nicho"
-     ]
+     ],
+     "slug": "connected-papers",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-09",
@@ -7778,7 +8342,10 @@
      "contras": [
       "Plan gratis corto",
       "En inglés"
-     ]
+     ],
+     "slug": "undermind",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-10",
@@ -7819,7 +8386,10 @@
      "contras": [
       "Disponibilidad limitada en español",
       "De pago para alumnos"
-     ]
+     ],
+     "slug": "khanmigo",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-11",
@@ -7860,7 +8430,10 @@
      "contras": [
       "Las funciones de IA son de pago",
       "Idiomas limitados"
-     ]
+     ],
+     "slug": "duolingo-max",
+     "afiliado": "",
+     "precioMes": 14
     },
     {
      "id": "estudio-12",
@@ -7899,7 +8472,10 @@
      "contras": [
       "Sin plan gratis útil",
       "Sobre todo inglés"
-     ]
+     ],
+     "slug": "speak",
+     "afiliado": "",
+     "precioMes": 15
     },
     {
      "id": "estudio-13",
@@ -7938,7 +8514,10 @@
      "contras": [
       "Sin plan gratis útil",
       "Suscripción"
-     ]
+     ],
+     "slug": "praktika",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-14",
@@ -7979,7 +8558,10 @@
      "contras": [
       "IA avanzada de pago",
       "Anuncios en gratis"
-     ]
+     ],
+     "slug": "quizlet",
+     "afiliado": "",
+     "precioMes": 8
     },
     {
      "id": "estudio-15",
@@ -8018,7 +8600,10 @@
      "contras": [
       "Explicaciones completas de pago",
       "Puede usarse para copiar"
-     ]
+     ],
+     "slug": "photomath",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "estudio-16",
@@ -8059,7 +8644,10 @@
      "contras": [
       "Pasos detallados de pago",
       "Interfaz técnica"
-     ]
+     ],
+     "slug": "wolfram-alpha",
+     "afiliado": "",
+     "precioMes": 7
     },
     {
      "id": "estudio-17",
@@ -8099,7 +8687,10 @@
      "contras": [
       "Respuestas a veces erróneas",
       "Anuncios"
-     ]
+     ],
+     "slug": "gauth",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-18",
@@ -8139,7 +8730,10 @@
      "contras": [
       "Pasos completos de pago",
       "Solo matemáticas"
-     ]
+     ],
+     "slug": "symbolab",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-19",
@@ -8179,7 +8773,10 @@
      "contras": [
       "Plan gratis corto",
       "Un asistente general hace lo mismo"
-     ]
+     ],
+     "slug": "chatpdf",
+     "afiliado": "",
+     "precioMes": 7
     },
     {
      "id": "estudio-20",
@@ -8218,7 +8815,10 @@
      "contras": [
       "Plan gratis corto",
       "Poco diferenciado"
-     ]
+     ],
+     "slug": "humata",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-21",
@@ -8259,7 +8859,10 @@
      "contras": [
       "De pago",
       "Poco conocido"
-     ]
+     ],
+     "slug": "kagi",
+     "afiliado": "",
+     "precioMes": 5
     },
     {
      "id": "estudio-22",
@@ -8299,7 +8902,10 @@
      "contras": [
       "Plan gratis corto",
       "Poco diferenciado"
-     ]
+     ],
+     "slug": "liner",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-23",
@@ -8340,7 +8946,10 @@
      "contras": [
       "De pago",
       "Para lectores intensivos"
-     ]
+     ],
+     "slug": "readwise-reader",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-24",
@@ -8380,7 +8989,10 @@
      "contras": [
       "Solo en Coursera",
       "Depende del curso"
-     ]
+     ],
+     "slug": "coursera-coach",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-25",
@@ -8422,7 +9034,10 @@
      "contras": [
       "Límites en gratis",
       "Documentos grandes de pago"
-     ]
+     ],
+     "slug": "deepl",
+     "afiliado": "",
+     "precioMes": 9
     },
     {
      "id": "estudio-26",
@@ -8463,7 +9078,10 @@
      "contras": [
       "Menos útil en ordenador",
       "Depende de Google"
-     ]
+     ],
+     "slug": "google-lens",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "estudio-27",
@@ -8503,7 +9121,10 @@
      "contras": [
       "Plan gratis corto",
       "Nicho"
-     ]
+     ],
+     "slug": "paperpal",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-28",
@@ -8542,7 +9163,10 @@
      "contras": [
       "Plan gratis corto",
       "Poco diferenciado"
-     ]
+     ],
+     "slug": "scholarcy",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-29",
@@ -8582,7 +9206,10 @@
      "contras": [
       "Sin plan gratis útil",
       "Menos pulido que Speak"
-     ]
+     ],
+     "slug": "talkpal",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "estudio-30",
@@ -8622,7 +9249,10 @@
      "contras": [
       "Calidad irregular",
       "Anuncios"
-     ]
+     ],
+     "slug": "brainly",
+     "afiliado": "",
+     "precioMes": null
     }
    ],
    "actualizado": "2026-09-29",
@@ -8673,7 +9303,10 @@
      "contras": [
       "Créditos gratis que se acaban",
       "Marca de agua en gratis"
-     ]
+     ],
+     "slug": "gamma",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "trabajo-02",
@@ -8715,7 +9348,10 @@
      "contras": [
       "Cara para uso personal",
       "Solo útil si usas Notion"
-     ]
+     ],
+     "slug": "notion-ai",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "trabajo-03",
@@ -8758,7 +9394,10 @@
      "contras": [
       "IA limitada en gratis",
       "Diseños que se parecen entre sí"
-     ]
+     ],
+     "slug": "canva-magic-studio",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "trabajo-04",
@@ -8799,7 +9438,10 @@
      "contras": [
       "Solo inglés",
       "Lo avanzado es de pago"
-     ]
+     ],
+     "slug": "grammarly",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "trabajo-05",
@@ -8840,7 +9482,10 @@
      "contras": [
       "Mejor en inglés",
       "Límites en gratis"
-     ]
+     ],
+     "slug": "otter-ai",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "trabajo-06",
@@ -8880,7 +9525,10 @@
      "contras": [
       "Plan gratis corto",
       "Un bot visible en la llamada"
-     ]
+     ],
+     "slug": "fireflies",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "trabajo-07",
@@ -8920,7 +9568,10 @@
      "contras": [
       "Plan gratis corto",
       "Suscripción"
-     ]
+     ],
+     "slug": "granola",
+     "afiliado": "",
+     "precioMes": 14
     },
     {
      "id": "trabajo-08",
@@ -8960,7 +9611,10 @@
      "contras": [
       "Funciones de equipo de pago",
       "Mejor en inglés"
-     ]
+     ],
+     "slug": "fathom",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "trabajo-09",
@@ -9000,7 +9654,10 @@
      "contras": [
       "IA limitada en gratis",
       "Bot en la llamada"
-     ]
+     ],
+     "slug": "tl-dv",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-10",
@@ -9040,7 +9697,10 @@
      "contras": [
       "Plan gratis corto",
       "Caro al crecer"
-     ]
+     ],
+     "slug": "zapier",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "trabajo-11",
@@ -9079,7 +9739,10 @@
      "contras": [
       "Curva de aprendizaje",
       "Puede liarse"
-     ]
+     ],
+     "slug": "make",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "trabajo-12",
@@ -9120,7 +9783,10 @@
      "contras": [
       "Técnico",
       "La versión en la nube es de pago"
-     ]
+     ],
+     "slug": "n8n",
+     "afiliado": "",
+     "precioMes": 0
     },
     {
      "id": "trabajo-13",
@@ -9159,7 +9825,10 @@
      "contras": [
       "Sin plan gratis",
       "Caro"
-     ]
+     ],
+     "slug": "beautiful-ai",
+     "afiliado": "",
+     "precioMes": 12
     },
     {
      "id": "trabajo-14",
@@ -9198,7 +9867,10 @@
      "contras": [
       "Estilos limitados en gratis",
       "Nicho"
-     ]
+     ],
+     "slug": "napkin-ai",
+     "afiliado": "",
+     "precioMes": 10
     },
     {
      "id": "trabajo-15",
@@ -9239,7 +9911,10 @@
      "contras": [
       "Requiere Figma",
       "Mejor en pago"
-     ]
+     ],
+     "slug": "figma-ai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-16",
@@ -9280,7 +9955,10 @@
      "contras": [
       "Créditos escasos",
       "Mejor en equipo"
-     ]
+     ],
+     "slug": "miro-ai",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-17",
@@ -9322,7 +10000,10 @@
      "contras": [
       "Caro",
       "Solo Gmail y Outlook"
-     ]
+     ],
+     "slug": "superhuman",
+     "afiliado": "",
+     "precioMes": 30
     },
     {
      "id": "trabajo-18",
@@ -9363,7 +10044,10 @@
      "contras": [
       "Caro",
       "Curva de aprendizaje"
-     ]
+     ],
+     "slug": "motion",
+     "afiliado": "",
+     "precioMes": 19
     },
     {
      "id": "trabajo-19",
@@ -9402,7 +10086,10 @@
      "contras": [
       "Solo Google y Outlook",
       "En inglés"
-     ]
+     ],
+     "slug": "reclaim",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-20",
@@ -9443,7 +10130,10 @@
      "contras": [
       "Solo si usas ClickUp",
       "De pago"
-     ]
+     ],
+     "slug": "clickup-brain",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-21",
@@ -9483,7 +10173,10 @@
      "contras": [
       "Caro",
       "Un asistente general hace casi lo mismo"
-     ]
+     ],
+     "slug": "jasper",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-22",
@@ -9522,7 +10215,10 @@
      "contras": [
       "Solo empresas",
       "Sin precio público"
-     ]
+     ],
+     "slug": "glean",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-23",
@@ -9561,7 +10257,10 @@
      "contras": [
       "Créditos escasos",
       "Configuración inicial"
-     ]
+     ],
+     "slug": "lindy",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-24",
@@ -9601,7 +10300,10 @@
      "contras": [
       "Créditos se agotan rápido",
       "Resultados irregulares"
-     ]
+     ],
+     "slug": "manus",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "trabajo-25",
@@ -9641,7 +10343,10 @@
      "contras": [
       "Créditos escasos",
       "Calidad variable"
-     ]
+     ],
+     "slug": "genspark",
+     "afiliado": "",
+     "precioMes": 25
     },
     {
      "id": "trabajo-26",
@@ -9680,7 +10385,10 @@
      "contras": [
       "Plan gratis corto",
       "Datos sensibles: revisa privacidad"
-     ]
+     ],
+     "slug": "julius-ai",
+     "afiliado": "",
+     "precioMes": 20
     },
     {
      "id": "trabajo-27",
@@ -9720,7 +10428,10 @@
      "contras": [
       "Límite de palabras",
       "Menos útil que un asistente general"
-     ]
+     ],
+     "slug": "quillbot",
+     "afiliado": "",
+     "precioMes": 9
     },
     {
      "id": "trabajo-28",
@@ -9760,7 +10471,10 @@
      "contras": [
       "Plan gratis corto",
       "Sobre todo inglés"
-     ]
+     ],
+     "slug": "wordtune",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-29",
@@ -9801,7 +10515,10 @@
      "contras": [
       "IA limitada en gratis",
       "Poco conocido"
-     ]
+     ],
+     "slug": "taskade",
+     "afiliado": "",
+     "precioMes": null
     },
     {
      "id": "trabajo-30",
@@ -9843,7 +10560,10 @@
      "contras": [
       "De pago y para empresas",
       "Precio alto"
-     ]
+     ],
+     "slug": "microsoft-365-copilot",
+     "afiliado": "",
+     "precioMes": null
     }
    ],
    "actualizado": "2026-09-29",

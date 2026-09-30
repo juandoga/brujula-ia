@@ -1,0 +1,5 @@
+# Se generan al publicar (tools/build_pages.py)
+/ia/
+/pack/
+/sitemap.xml
+/robots.txt
