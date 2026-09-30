@@ -121,6 +121,8 @@ section.view > header{margin-bottom:22px}
 .rank-main{min-width:0}
 .rank-name{font-weight:700;color:var(--ink);font-size:16px;line-height:1.25}
 .rank-sub{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-tabs{margin-bottom:10px}
+@media (max-width:640px){.chips.rank-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}.rank-tabs::-webkit-scrollbar{display:none}.rank-tabs .chip{flex:0 0 auto}}
 .podiums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 @media (max-width:520px){.podiums{grid-template-columns:1fr}}
 .podium{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
@@ -188,7 +190,7 @@ select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;bac
 .score-big{font-family:var(--f-display);font-weight:800;font-size:44px;color:var(--ink);line-height:1;text-align:center}
 .score-big small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;color:var(--muted);margin-top:4px}
 .bars{display:grid;gap:8px}
-.bar-row{display:grid;grid-template-columns:8.8em minmax(0,1fr) 3em;gap:8px;align-items:center;font-size:14px}
+.bar-row{display:grid;grid-template-columns:10em minmax(0,1fr) 3em;gap:8px;align-items:center;font-size:14px}
 .bar-row .track{height:8px;border-radius:4px;background:var(--rule);overflow:hidden}
 .bar-row .track i{display:block;height:100%;background:var(--accent);border-radius:4px}
 .bar-row b{font-variant-numeric:tabular-nums;color:var(--ink);text-align:right}
@@ -296,7 +298,9 @@ footer.note p{max-width:78ch;margin:0 0 8px}
 
     <div class="split">
       <div>
-        <div class="block-title"><h2 class="h-section">Ranking general</h2><button class="linkbtn" type="button" data-explica="nota">¿De dónde sale la nota?</button></div>
+        <div class="block-title"><h2 class="h-section" id="rankTitle">Ranking general</h2><button class="linkbtn" type="button" data-explica="nota">¿De dónde sale la nota?</button></div>
+        <div class="chips rank-tabs" id="rankTabs" role="group" aria-label="Elegir ranking"></div>
+        <p class="small" id="rankHelp" style="margin:0 0 10px"></p>
         <ol class="rank-list" id="rankList"><li class="empty" style="padding:20px">Cargando el ranking…</li></ol>
       </div>
       <div>
@@ -391,7 +395,7 @@ footer.note p{max-width:78ch;margin:0 0 8px}
   </section>
 
   <footer class="note">
-    <p><b>Nota.</b> Va de 0 a 100 y se calcula así: calidad (50 %), facilidad de uso (25 %) y relación calidad-precio (25 %). Cada parte es una valoración de Cualia del 0 al 10. <button class="linkbtn" type="button" data-explica="nota">Ver explicación</button></p>
+    <p><b>Nota.</b> Va de 0 a 100 y combina calidad (40 %), versatilidad (20 %), facilidad de uso (20 %) y relación calidad-precio (20 %). Cada parte es una valoración de Cualia del 0 al 10. <button class="linkbtn" type="button" data-explica="nota">Ver explicación</button></p>
     <p>Los precios son orientativos: varían por país y cambian a menudo. «Verificado» indica que la ficha se contrastó con fuentes en su última revisión; «pendiente de verificar», que aún no se ha comprobado en detalle.</p>
     <p>Cualia no tiene relación comercial con ninguna de estas empresas. Los logotipos pertenecen a sus propietarios y se muestran solo para identificar cada herramienta.</p>
   </footer>
@@ -479,11 +483,11 @@ document.addEventListener("keydown", e => { if(e.key==="Escape" && !$("#scrim").
 
 function barras(n){
   const fila = (k,label,peso) => `<div class="bar-row"><span>${label} <span class="small">(${peso})</span></span><span class="track"><i style="width:${n[k]*10}%"></i></span><b>${n[k]}/10</b></div>`;
-  return `<div class="bars">${fila("calidad","Calidad","50 %")}${fila("facilidad","Facilidad","25 %")}${fila("precio","Precio","25 %")}</div>`;
+  return `<div class="bars">${fila("calidad","Calidad","40 %")}${fila("versatilidad","Versatilidad","20 %")}${fila("facilidad","Facilidad","20 %")}${fila("precio","Precio","20 %")}</div>`;
 }
 function abrirFicha(id){
   const h = byId.get(id); if(!h) return;
-  const n = h.notas || {calidad:0,facilidad:0,precio:0};
+  const n = h.notas || {calidad:0,versatilidad:0,facilidad:0,precio:0};
   const dias = diasDesde(h.actualizado);
   abrirVentana(`
     <div class="sheet-top">${icono(h,"lg")}
@@ -505,7 +509,7 @@ function abrirFicha(id){
       ${h.ejemplos?.length ? `<div class="s-block"><h3>Ejemplos de uso</h3><ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
       <div class="s-block"><h3>Nota: ${h.nota} sobre 100</h3>
         <div class="score-box"><div class="score-big">${h.nota}<small>NOTA</small></div>${barras(n)}</div>
-        <p class="small">Calidad ${n.calidad} × 5 + facilidad ${n.facilidad} × 2,5 + precio ${n.precio} × 2,5 = ${h.nota}. <button class="linkbtn" type="button" data-explica="nota">¿Qué mide cada parte?</button></p>
+        <p class="small">Calidad ${n.calidad} × 4 + versatilidad ${n.versatilidad} × 2 + facilidad ${n.facilidad} × 2 + precio ${n.precio} × 2 = ${h.nota}. <button class="linkbtn" type="button" data-explica="nota">¿Qué mide cada parte?</button></p>
       </div>
       <div class="s-block"><h3>Dificultad</h3><p>${NIVEL[h.nivel]||""}${h.nivel===1?": pensada para cualquiera, sin conocimientos previos.":h.nivel===2?": conviene tener algo de soltura con la tecnología.":": para usuarios técnicos o con experiencia."}</p></div>
       <div class="s-foot">
@@ -519,25 +523,34 @@ function explicarNota(){
     <div class="sheet-body">${guiaNotaHTML()}</div>`);
 }
 function guiaNotaHTML(){
-  return `<p style="margin:0 0 12px;max-width:65ch">Cada IA recibe tres puntuaciones del 0 al 10. La nota final, sobre 100, es la suma ponderada: <b>calidad × 5 + facilidad × 2,5 + precio × 2,5</b>. Así, una IA perfecta en todo sacaría 100.</p>
+  return `<p style="margin:0 0 12px;max-width:65ch">Cada IA recibe cuatro puntuaciones del 0 al 10. La nota final, sobre 100, es: <b>calidad × 4 + versatilidad × 2 + facilidad × 2 + precio × 2</b>. Una IA perfecta en todo sacaría 100.</p>
     <ul class="legend">
-      <li><b>Calidad (50 %)</b><span>Lo bien que hace su trabajo comparada con las demás de su campo: resultados, fiabilidad y funciones.</span></li>
-      <li><b>Facilidad (25 %)</b><span>Lo fácil que es para alguien que empieza: si se entiende a la primera, si está en español, si hay que instalar algo.</span></li>
-      <li><b>Precio (25 %)</b><span>Lo que obtienes por lo que pagas. Un plan gratis útil puntúa alto; una prueba de dos minutos o un precio alto puntúan bajo.</span></li>
+      <li><b>Calidad (40 %)</b><span>Lo bien que hace su trabajo comparada con las demás de su campo: resultados, fiabilidad y funciones.</span></li>
+      <li><b>Versatilidad (20 %)</b><span>Para cuántas cosas distintas sirve. Un asistente como ChatGPT, que escribe, analiza, crea imágenes y más, saca un 10; una herramienta que solo quita fondos de fotos saca un 1.</span></li>
+      <li><b>Facilidad (20 %)</b><span>Lo fácil que es para alguien que empieza: si se entiende a la primera, si está en español, si hay que instalar algo.</span></li>
+      <li><b>Precio (20 %)</b><span>Lo que obtienes por lo que pagas. Un plan gratis útil puntúa alto; una prueba de dos minutos o un precio alto puntúan bajo.</span></li>
     </ul>
-    <p class="small" style="margin-top:12px">Son valoraciones de Cualia basadas en pruebas, comparativas y rankings públicos, y se revisan cada semana. Sirven para comparar dentro de un mismo campo; entre campos distintos (música frente a programación) orientan, pero no son exactas.</p>`;
+    <p class="small" style="margin-top:12px">Por eso en el ranking general suben las IAs que sirven para muchas cosas. Si buscas la mejor para una tarea concreta, mira el ranking de su campo: ahí se comparan herramientas que hacen lo mismo. Son valoraciones de Cualia basadas en pruebas, comparativas y rankings públicos, y se revisan cada semana.</p>`;
 }
 document.addEventListener("click", e => {
+  const r = e.target.closest("[data-rank]"); if(r){ rankCat = r.dataset.rank || null; renderRanking(); return; }
   const o = e.target.closest("[data-open]"); if(o){ abrirFicha(o.dataset.open); return; }
   const x = e.target.closest("[data-explica]"); if(x){ explicarNota(); }
 });
 
 /* ---------- Inicio ---------- */
+let rankCat = null;
 function renderRanking(){
-  const top = [...ALL].sort((a,b)=>b.nota-a.nota || b.notas.calidad-a.notas.calidad).slice(0,25);
+  const tabs = [[null,"General"], ...CATS.map(c=>[c.id,c.nombre])];
+  $("#rankTabs").innerHTML = tabs.map(([id,n])=>`<button type="button" class="chip" data-rank="${id??""}" aria-pressed="${String(rankCat===id)}">${esc(n)}</button>`).join("");
+  const cat = CATS.find(c=>c.id===rankCat);
+  $("#rankTitle").textContent = cat ? `Ranking: ${cat.nombre}` : "Ranking general";
+  $("#rankHelp").textContent = cat ? `Las mejores de este campo, comparadas entre herramientas que hacen lo mismo.` : `Todas las IAs juntas. Suben las que sirven para muchas cosas; para una tarea concreta, elige su campo.`;
+  const lista = (cat ? ALL.filter(h=>h.cat===cat.id) : ALL).slice().sort((a,b)=>b.nota-a.nota || b.notas.calidad-a.notas.calidad);
+  const top = lista.slice(0, cat ? 30 : 25);
   $("#rankList").innerHTML = top.map((h,i)=>`<li><button type="button" class="rank-row" data-open="${esc(h.id)}">
     <span class="rank-pos">${i+1}</span>${icono(h,"sm")}
-    <div class="rank-main"><div class="rank-name">${esc(h.nombre)}</div><div class="rank-sub">${esc(h.catNombre)} · ${esc(GRATIS[h.gratisTipo]?.corto||"")}</div></div>
+    <div class="rank-main"><div class="rank-name">${esc(h.nombre)}</div><div class="rank-sub">${cat?"":esc(h.catNombre)+" · "}${esc(GRATIS[h.gratisTipo]?.corto||"")}</div></div>
     <span class="nota-chip">${h.nota}</span></button></li>`).join("");
   $("#podiums").innerHTML = CATS.map(c=>{
     const t = ALL.filter(h=>h.cat===c.id).sort((a,b)=>b.nota-a.nota).slice(0,3);
@@ -859,7 +872,7 @@ function renderFresh(){
 fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
   META = d.meta || {};
   CATS = (d.cats||[]).filter(c=>Array.isArray(c.herramientas)).sort((a,b)=>(a.orden||99)-(b.orden||99));
-  ALL = CATS.flatMap(c=>c.herramientas.map(h=>({notas:{calidad:0,facilidad:0,precio:0}, ...h, cat:c.id, catNombre:c.nombre})));
+  ALL = CATS.flatMap(c=>c.herramientas.map(h=>({notas:{calidad:0,versatilidad:0,facilidad:0,precio:0}, ...h, cat:c.id, catNombre:c.nombre})));
   ALL.forEach(h=>{ byName.set(h.nombre,h); byId.set(h.id,h); });
   LOG = (d.novedades||[]).slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
   PACKS = d.packs || [];

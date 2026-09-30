@@ -5,7 +5,7 @@
   "frecuencia": "semanal",
   "totalFichas": 240,
   "nombre": "Cualia",
-  "formulaNota": "calidad×5 + facilidad×2,5 + precio×2,5"
+  "formulaNota": "calidad×4 + versatilidad×2 + facilidad×2 + precio×2"
  },
  "novedades": [
   {
@@ -93,7 +93,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Plus 20 $/mes",
      "nivel": 1,
-     "nota": 95,
+     "nota": 96,
      "desc": "El asistente más usado: conversa, escribe, analiza archivos, crea imágenes y ejecuta tareas largas.",
      "para": "Todo el mundo. El mejor punto de partida.",
      "ejemplos": [
@@ -117,7 +117,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 10,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 10
      },
      "pros": [
       "El más completo: texto, imágenes, voz, archivos y búsqueda",
@@ -136,7 +137,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro 20 $/mes",
      "nivel": 1,
-     "nota": 92,
+     "nota": 94,
      "desc": "Escribe con mucha naturalidad y razona bien con documentos largos, datos y código.",
      "para": "Quien escribe mucho o trabaja con textos largos.",
      "ejemplos": [
@@ -160,7 +161,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 10
      },
      "pros": [
       "Escribe con mucha naturalidad",
@@ -179,7 +181,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Google AI Pro de pago",
      "nivel": 1,
-     "nota": 92,
+     "nota": 94,
      "desc": "Integrado en Gmail, Docs y Android. Muy bueno con vídeo, fotos y búsquedas.",
      "para": "Quien usa Gmail, Android o Google Drive.",
      "ejemplos": [
@@ -203,7 +205,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 10
      },
      "pros": [
       "Integrado en Gmail, Docs y Android",
@@ -222,7 +225,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · incluido en Microsoft 365",
      "nivel": 1,
-     "nota": 82,
+     "nota": 84,
      "desc": "Asistente dentro de Windows, Word, Excel y Outlook. Usa modelos de OpenAI y Anthropic.",
      "para": "Quien trabaja con Office o Windows.",
      "ejemplos": [
@@ -246,7 +249,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 9
      },
      "pros": [
       "Integrado en Windows y Office",
@@ -265,7 +269,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro 20 $/mes",
      "nivel": 1,
-     "nota": 90,
+     "nota": 86,
      "desc": "Buscador que responde en lenguaje natural y cita sus fuentes.",
      "para": "Quien quiere respuestas con enlaces para comprobarlas.",
      "ejemplos": [
@@ -289,7 +293,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 7
      },
      "pros": [
       "Cita las fuentes de cada respuesta",
@@ -332,7 +337,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 8
      },
      "pros": [
       "Acceso a lo que se publica en X",
@@ -351,7 +357,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 85,
+     "nota": 82,
      "desc": "Asistente dentro de WhatsApp, Instagram y Facebook. No hay que instalar nada.",
      "para": "Quien quiere probar la IA desde WhatsApp.",
      "ejemplos": [
@@ -374,7 +380,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 7
      },
      "pros": [
       "Sin instalar nada: está en WhatsApp",
@@ -393,7 +400,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · API muy barata",
      "nivel": 2,
-     "nota": 85,
+     "nota": 82,
      "desc": "Modelo chino de código abierto, muy capaz para lo que cuesta. Sus servidores están en China.",
      "para": "Curiosos y desarrolladores con poco presupuesto.",
      "ejemplos": [
@@ -416,7 +423,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 7
      },
      "pros": [
       "Muy capaz y totalmente gratis",
@@ -434,7 +442,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 76,
      "desc": "Asistente europeo (francés), rápido y con un enfoque fuerte en privacidad.",
      "para": "Quien prefiere una empresa europea.",
      "ejemplos": [
@@ -457,7 +465,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 7
      },
      "pros": [
       "Empresa europea, buena privacidad",
@@ -475,7 +484,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 2,
-     "nota": 85,
+     "nota": 84,
      "desc": "Asistente de Alibaba con modelos abiertos que compiten con los mejores.",
      "para": "Quien quiere una alternativa gratuita potente.",
      "ejemplos": [
@@ -498,7 +507,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 8
      },
      "pros": [
       "Gratis y muy potente",
@@ -516,7 +526,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 2,
-     "nota": 78,
+     "nota": 74,
      "desc": "Asistente chino especializado en leer documentos muy largos.",
      "para": "Quien necesita analizar muchos PDFs a la vez.",
      "ejemplos": [
@@ -539,7 +549,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 6
      },
      "pros": [
       "Lee documentos muy largos",
@@ -557,7 +568,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · API barata",
      "nivel": 2,
-     "nota": 75,
+     "nota": 72,
      "desc": "Chat con los modelos GLM, muy baratos y buenos programando.",
      "para": "Desarrolladores y curiosos técnicos.",
      "ejemplos": [
@@ -579,7 +590,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 6
      },
      "pros": [
       "Bueno programando",
@@ -597,7 +609,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · suscripción de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 72,
      "desc": "Una sola app para probar muchos modelos distintos (GPT, Claude, Gemini y más).",
      "para": "Quien quiere comparar IAs sin abrir diez cuentas.",
      "ejemplos": [
@@ -620,7 +632,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 8
      },
      "pros": [
       "Prueba muchas IAs en un solo sitio",
@@ -638,7 +651,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 80,
+     "nota": 74,
      "desc": "Chat anónimo con varios modelos. No guarda tus conversaciones para entrenar.",
      "para": "Quien prioriza la privacidad.",
      "ejemplos": [
@@ -660,7 +673,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 10,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 5
      },
      "pros": [
       "Privado: no guarda tus chats",
@@ -678,7 +692,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · plan de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 66,
      "desc": "Asistente de Proton (los de ProtonMail) centrado en privacidad y cifrado.",
      "para": "Usuarios de Proton o muy preocupados por la privacidad.",
      "ejemplos": [
@@ -700,7 +714,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Cifrado y privacidad de Proton",
@@ -718,7 +733,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis en iPhone compatibles",
      "nivel": 1,
-     "nota": 75,
+     "nota": 72,
      "desc": "La IA integrada en iPhone, iPad y Mac: resume, reescribe y ordena notificaciones.",
      "para": "Usuarios de Apple con dispositivos recientes.",
      "ejemplos": [
@@ -741,7 +756,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 6
      },
      "pros": [
       "Integrado en el sistema",
@@ -759,7 +775,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido con Prime (según país)",
      "nivel": 1,
-     "nota": 60,
+     "nota": 58,
      "desc": "Nueva Alexa conversacional. Disponibilidad en español todavía limitada.",
      "para": "Hogares con altavoces Echo.",
      "ejemplos": [
@@ -781,7 +797,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 5
      },
      "pros": [
       "Controla la casa por voz",
@@ -799,7 +816,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 66,
      "desc": "Asistente dentro del navegador Brave que resume la página que estás viendo.",
      "para": "Usuarios del navegador Brave.",
      "ejemplos": [
@@ -821,7 +838,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Resume la página que estás viendo",
@@ -839,7 +857,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 70,
+     "nota": 64,
      "desc": "Asistente integrado en el navegador Opera.",
      "para": "Usuarios de Opera.",
      "ejemplos": [
@@ -862,7 +880,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 9,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 4
      },
      "pros": [
       "Gratis en el navegador",
@@ -880,7 +899,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 62,
      "desc": "Buscador con IA y modo de investigación profunda.",
      "para": "Quien busca una alternativa a Perplexity.",
      "ejemplos": [
@@ -902,7 +921,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Buscador con fuentes",
@@ -920,7 +940,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 66,
      "desc": "Chat privado con modelos abiertos que no guarda conversaciones en servidores.",
      "para": "Usuarios preocupados por la privacidad.",
      "ejemplos": [
@@ -942,7 +962,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 6
      },
      "pros": [
       "Privado, sin guardar chats",
@@ -960,7 +981,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 72,
+     "nota": 64,
      "desc": "Asistente amable pensado para conversar y reflexionar, no para tareas técnicas.",
      "para": "Quien quiere charlar o pensar en voz alta.",
      "ejemplos": [
@@ -982,7 +1003,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 3
      },
      "pros": [
       "Muy amable para conversar",
@@ -1000,7 +1022,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · c.ai+ de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 56,
      "desc": "Conversar con personajes de ficción. Entretenimiento, no fuente fiable de información.",
      "para": "Aficionados a la ficción y el rol.",
      "ejemplos": [
@@ -1022,7 +1044,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 2
      },
      "pros": [
       "Entretenido para juego de rol",
@@ -1040,7 +1063,7 @@
      "precio": "freemium",
      "precioTxt": "Pago por uso",
      "nivel": 3,
-     "nota": 72,
+     "nota": 74,
      "desc": "Acceso a cientos de modelos con una sola cuenta, pagando solo lo que usas.",
      "para": "Usuarios avanzados y desarrolladores.",
      "ejemplos": [
@@ -1061,7 +1084,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 5,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 8
      },
      "pros": [
       "Cientos de modelos con una cuenta",
@@ -1079,7 +1103,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción mensual baja",
      "nivel": 2,
-     "nota": 75,
+     "nota": 74,
      "desc": "Chat muy rápido que reúne los mejores modelos por una cuota pequeña.",
      "para": "Quien quiere varios modelos sin pagar varias suscripciones.",
      "ejemplos": [
@@ -1099,7 +1123,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 7
      },
      "pros": [
       "Muy rápido",
@@ -1117,7 +1142,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 3,
-     "nota": 72,
+     "nota": 70,
      "desc": "Programa para descargar y usar modelos de IA en tu propio ordenador, sin internet.",
      "para": "Quien quiere privacidad total y tiene un ordenador potente.",
      "ejemplos": [
@@ -1138,7 +1163,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 5,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "Privacidad total, sin internet",
@@ -1156,7 +1182,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 3,
-     "nota": 70,
+     "nota": 68,
      "desc": "Herramienta para ejecutar modelos de IA en local. Muy usada por programadores.",
      "para": "Desarrolladores y curiosos técnicos.",
      "ejemplos": [
@@ -1177,7 +1203,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 4,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "IA local y gratuita",
@@ -1195,7 +1222,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis y de código abierto",
      "nivel": 3,
-     "nota": 70,
+     "nota": 68,
      "desc": "Alternativa a ChatGPT que funciona 100 % en tu ordenador.",
      "para": "Quien quiere una IA local con interfaz sencilla.",
      "ejemplos": [
@@ -1216,7 +1243,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 6,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "Interfaz parecida a ChatGPT, en local",
@@ -1234,7 +1262,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 3,
-     "nota": 65,
+     "nota": 62,
      "desc": "App de escritorio para chatear con modelos locales y tus documentos.",
      "para": "Usuarios de ordenadores modestos que quieren IA local.",
      "ejemplos": [
@@ -1254,7 +1282,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 6,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 5
      },
      "pros": [
       "Funciona en ordenadores modestos",
@@ -1272,7 +1301,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · licencia de pago",
      "nivel": 2,
-     "nota": 65,
+     "nota": 64,
      "desc": "App que mezcla modelos locales y en la nube en una misma interfaz.",
      "para": "Quien quiere lo mejor de lo local y de la nube.",
      "ejemplos": [
@@ -1292,7 +1321,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 6,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 6
      },
      "pros": [
       "Mezcla modelos locales y en la nube",
@@ -1320,7 +1350,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en Gemini · API muy barata",
      "nivel": 1,
-     "nota": 95,
+     "nota": 88,
      "desc": "El generador de Google dentro de Gemini: rápido, barato y muy bueno editando fotos.",
      "para": "Todo el mundo. Ideal para empezar.",
      "ejemplos": [
@@ -1343,7 +1373,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "Muy rápido y fácil",
@@ -1362,7 +1393,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en ChatGPT (limitado gratis)",
      "nivel": 1,
-     "nota": 88,
+     "nota": 82,
      "desc": "El creador de imágenes de ChatGPT. Entiende instrucciones largas y escribe texto dentro de la imagen muy bien.",
      "para": "Quien ya usa ChatGPT.",
      "ejemplos": [
@@ -1386,7 +1417,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 6
      },
      "pros": [
       "Entiende instrucciones largas",
@@ -1404,7 +1436,7 @@
      "precio": "pago",
      "precioTxt": "Desde 10 $/mes",
      "nivel": 2,
-     "nota": 82,
+     "nota": 76,
      "desc": "El referente en imágenes artísticas y con estilo cinematográfico.",
      "para": "Artistas, diseñadores y quien busca belleza visual.",
      "ejemplos": [
@@ -1426,7 +1458,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "La mejor calidad artística",
@@ -1444,7 +1477,7 @@
      "precio": "pago",
      "precioTxt": "~0,05 $ por imagen (API)",
      "nivel": 2,
-     "nota": 78,
+     "nota": 70,
      "desc": "El más fiel en fotorrealismo, manos y retratos.",
      "para": "Quien necesita fotos realistas de producto o personas.",
      "ejemplos": [
@@ -1465,7 +1498,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 6,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "El más realista con personas y manos",
@@ -1483,7 +1517,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro 19,99 $/mes",
      "nivel": 1,
-     "nota": 80,
+     "nota": 76,
      "desc": "Entrenado solo con imágenes con licencia: el más seguro para uso comercial.",
      "para": "Profesionales y marcas; usuarios de Photoshop.",
      "ejemplos": [
@@ -1507,7 +1541,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Seguro para uso comercial",
@@ -1525,7 +1560,7 @@
      "precio": "pago",
      "precioTxt": "~0,14–0,24 $ por imagen (API)",
      "nivel": 2,
-     "nota": 82,
+     "nota": 76,
      "desc": "La versión profesional de Google, más lenta pero con más detalle y precisión.",
      "para": "Proyectos donde la calidad importa más que la velocidad.",
      "ejemplos": [
@@ -1547,7 +1582,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Máximo detalle de Google",
@@ -1565,7 +1601,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 88,
+     "nota": 80,
      "desc": "El mejor para imágenes con texto legible: carteles, logos, etiquetas.",
      "para": "Quien diseña carteles, invitaciones o redes sociales.",
      "ejemplos": [
@@ -1588,7 +1624,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "El mejor con texto dentro de la imagen",
@@ -1606,7 +1643,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · créditos de pago",
      "nivel": 2,
-     "nota": 78,
+     "nota": 72,
      "desc": "Crea gráficos vectoriales (SVG) además de imágenes: logos e iconos escalables.",
      "para": "Diseñadores gráficos y marcas.",
      "ejemplos": [
@@ -1628,7 +1665,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "Crea vectores (SVG) para logos",
@@ -1646,7 +1684,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro desde 30 $/mes",
      "nivel": 1,
-     "nota": 80,
+     "nota": 76,
      "desc": "Suite creativa completa con dibujo en tiempo real y muchos estilos.",
      "para": "Creadores de videojuegos y contenido.",
      "ejemplos": [
@@ -1669,7 +1707,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 6
      },
      "pros": [
       "Muchos estilos",
@@ -1687,7 +1726,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis para instalar en tu equipo",
      "nivel": 3,
-     "nota": 68,
+     "nota": 64,
      "desc": "Modelo abierto que puedes instalar y personalizar en tu propio ordenador.",
      "para": "Usuarios técnicos que quieren control total.",
      "ejemplos": [
@@ -1708,7 +1747,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 3,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 5
      },
      "pros": [
       "Gratis y sin límites en local",
@@ -1726,7 +1766,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 85,
+     "nota": 76,
      "desc": "Crea imágenes gratis dentro de WhatsApp e Instagram.",
      "para": "Quien quiere algo rápido desde el móvil.",
      "ejemplos": [
@@ -1749,7 +1789,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 4
      },
      "pros": [
       "Gratis y desde el móvil",
@@ -1767,7 +1808,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en Grok · API barata",
      "nivel": 1,
-     "nota": 78,
+     "nota": 72,
      "desc": "Generador de imágenes (y vídeo) de xAI dentro de Grok.",
      "para": "Usuarios de X y Grok.",
      "ejemplos": [
@@ -1789,7 +1830,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "Rápido",
@@ -1807,7 +1849,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 72,
      "desc": "Crea imágenes y las coloca directamente en tus diseños de Canva.",
      "para": "Quien hace publicaciones, carteles o presentaciones.",
      "ejemplos": [
@@ -1830,7 +1872,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Pones la imagen directamente en tu diseño",
@@ -1848,7 +1891,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 2,
-     "nota": 78,
+     "nota": 74,
      "desc": "Genera y mejora imágenes en tiempo real mientras dibujas. Reúne varios modelos.",
      "para": "Diseñadores que quieren experimentar.",
      "ejemplos": [
@@ -1869,7 +1912,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 6
      },
      "pros": [
       "Genera en tiempo real mientras dibujas",
@@ -1887,7 +1931,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 76,
      "desc": "Plataforma española con muchos modelos de imagen y vídeo en un solo sitio.",
      "para": "Creadores que quieren variedad en un solo lugar.",
      "ejemplos": [
@@ -1909,7 +1953,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 7
      },
      "pros": [
       "Muchos modelos en un sitio",
@@ -1927,7 +1972,7 @@
      "precio": "pago",
      "precioTxt": "Desde unos 39 $/mes",
      "nivel": 2,
-     "nota": 72,
+     "nota": 62,
      "desc": "Aumenta la resolución de imágenes añadiendo detalle realista.",
      "para": "Quien necesita imprimir en grande.",
      "ejemplos": [
@@ -1948,7 +1993,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 7,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 2
      },
      "pros": [
       "Amplía imágenes con mucho detalle",
@@ -1966,7 +2012,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis con cuenta Microsoft",
      "nivel": 1,
-     "nota": 75,
+     "nota": 68,
      "desc": "Crea imágenes y diseños sencillos gratis.",
      "para": "Principiantes con cuenta de Microsoft.",
      "ejemplos": [
@@ -1988,7 +2034,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 4
      },
      "pros": [
       "Gratis",
@@ -2006,7 +2053,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 72,
      "desc": "Quita fondos y crea fotos de producto profesionales desde el móvil.",
      "para": "Tiendas online y vendedores de Wallapop o Vinted.",
      "ejemplos": [
@@ -2028,7 +2075,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Fotos de producto desde el móvil",
@@ -2046,7 +2094,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 66,
      "desc": "Herramientas rápidas: quitar fondo, borrar objetos, cambiar iluminación.",
      "para": "Retoques rápidos.",
      "ejemplos": [
@@ -2068,7 +2116,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Borra objetos y fondos rápido",
@@ -2086,7 +2135,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en Dreamina/CapCut",
      "nivel": 1,
-     "nota": 80,
+     "nota": 72,
      "desc": "Generador de ByteDance, muy bueno con texto y estilos variados.",
      "para": "Usuarios de CapCut y TikTok.",
      "ejemplos": [
@@ -2108,7 +2157,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Buen texto en imágenes",
@@ -2126,7 +2176,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · modelo abierto",
      "nivel": 3,
-     "nota": 80,
+     "nota": 72,
      "desc": "Modelo abierto de Alibaba, destaca escribiendo texto en imágenes.",
      "para": "Usuarios técnicos.",
      "ejemplos": [
@@ -2148,7 +2198,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 4
      },
      "pros": [
       "Gratis",
@@ -2166,7 +2217,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en Luma",
      "nivel": 2,
-     "nota": 68,
+     "nota": 60,
      "desc": "Generador de imágenes de Luma, pensado para luego animarlas en vídeo.",
      "para": "Quien quiere pasar de imagen a vídeo.",
      "ejemplos": [
@@ -2187,7 +2238,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Pensado para pasar a vídeo",
@@ -2205,7 +2257,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · desde 12 $/mes",
      "nivel": 2,
-     "nota": 72,
+     "nota": 66,
      "desc": "Crea imágenes con control de estilo y referencias, dentro de la suite de Runway.",
      "para": "Cineastas y creativos audiovisuales.",
      "ejemplos": [
@@ -2227,7 +2279,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Control de estilo y referencias",
@@ -2245,7 +2298,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis y de código abierto",
      "nivel": 3,
-     "nota": 75,
+     "nota": 76,
      "desc": "Editor por nodos para montar flujos de imagen y vídeo con modelos abiertos.",
      "para": "Usuarios avanzados que quieren control total.",
      "ejemplos": [
@@ -2266,7 +2319,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 2,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 8
      },
      "pros": [
       "Control total con modelos abiertos",
@@ -2284,7 +2338,7 @@
      "precio": "pago",
      "precioTxt": "Licencia o suscripción",
      "nivel": 2,
-     "nota": 75,
+     "nota": 64,
      "desc": "Aumenta la resolución de fotos con resultados muy naturales.",
      "para": "Fotógrafos.",
      "ejemplos": [
@@ -2305,7 +2359,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 7,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Amplía fotos de forma muy natural",
@@ -2323,7 +2378,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis en baja resolución",
      "nivel": 1,
-     "nota": 82,
+     "nota": 68,
      "desc": "Quita el fondo de una foto en un clic.",
      "para": "Cualquiera que necesite un recorte rápido.",
      "ejemplos": [
@@ -2346,7 +2401,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 1
      },
      "pros": [
       "Quita fondos en un clic",
@@ -2364,7 +2420,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis con créditos diarios",
      "nivel": 1,
-     "nota": 70,
+     "nota": 64,
      "desc": "Comunidad para crear imágenes con varios modelos y retos diarios.",
      "para": "Aficionados que quieren aprender jugando.",
      "ejemplos": [
@@ -2386,7 +2442,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Comunidad y retos",
@@ -2404,7 +2461,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado",
      "nivel": 1,
-     "nota": 65,
+     "nota": 58,
      "desc": "Editor sencillo orientado a diseños gráficos (camisetas, pósters).",
      "para": "Principiantes que quieren diseños rápidos.",
      "ejemplos": [
@@ -2425,7 +2482,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Diseños rápidos para camisetas o pósters",
@@ -2443,7 +2501,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en Kling",
      "nivel": 1,
-     "nota": 75,
+     "nota": 66,
      "desc": "Generador de imágenes de los creadores de Kling, útil para preparar vídeos.",
      "para": "Usuarios de Kling.",
      "ejemplos": [
@@ -2464,7 +2522,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Preparar imágenes para vídeo",
@@ -2482,7 +2541,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · modelo abierto",
      "nivel": 3,
-     "nota": 70,
+     "nota": 62,
      "desc": "Modelo abierto de Tencent de buena calidad.",
      "para": "Usuarios técnicos.",
      "ejemplos": [
@@ -2503,7 +2562,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 4,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 3
      },
      "pros": [
       "Gratis",
@@ -2531,7 +2591,7 @@
      "precio": "pago",
      "precioTxt": "Incluido en Google AI Pro/Ultra y Flow",
      "nivel": 2,
-     "nota": 80,
+     "nota": 74,
      "desc": "Vídeo muy realista con sonido y diálogos sincronizados. Referente en calidad.",
      "para": "Creadores y cineastas que buscan realismo.",
      "ejemplos": [
@@ -2553,7 +2613,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 7,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 5
      },
      "pros": [
       "El más realista, con sonido y diálogos",
@@ -2571,7 +2632,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis con créditos diarios · desde ~10 $/mes",
      "nivel": 1,
-     "nota": 88,
+     "nota": 80,
      "desc": "Excelente con movimiento humano y caras. La mejor relación calidad-precio.",
      "para": "Redes sociales y cortos con personas.",
      "ejemplos": [
@@ -2593,7 +2654,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 8,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 5
      },
      "pros": [
       "Muy bueno con personas y caras",
@@ -2612,7 +2674,7 @@
      "precio": "pago",
      "precioTxt": "Incluido en Dreamina y planes de pago",
      "nivel": 2,
-     "nota": 80,
+     "nota": 74,
      "desc": "Vídeo narrativo con varios planos y audio, hasta 30 segundos seguidos.",
      "para": "Quien cuenta historias con varias tomas.",
      "ejemplos": [
@@ -2634,7 +2696,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 7,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Varios planos seguidos, ideal para historias",
@@ -2652,7 +2715,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · desde 12 $/mes",
      "nivel": 2,
-     "nota": 75,
+     "nota": 74,
      "desc": "El mejor control de cámara y edición. Muy usado en cine y publicidad.",
      "para": "Profesionales del audiovisual.",
      "ejemplos": [
@@ -2675,7 +2738,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 6,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 7
      },
      "pros": [
       "El mejor control de cámara",
@@ -2693,7 +2757,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 76,
      "desc": "Avatares que hablan a cámara en más de 175 idiomas, con tu cara o una inventada.",
      "para": "Formación, marketing y comunicación interna.",
      "ejemplos": [
@@ -2715,7 +2779,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Avatares muy realistas en 175 idiomas",
@@ -2733,7 +2798,7 @@
      "precio": "pago",
      "precioTxt": "Desde unos 29 $/mes",
      "nivel": 1,
-     "nota": 75,
+     "nota": 68,
      "desc": "Vídeos con presentadores virtuales para empresas y formación.",
      "para": "Empresas y formadores.",
      "ejemplos": [
@@ -2754,7 +2819,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 4
      },
      "pros": [
       "Muy usado en empresas",
@@ -2772,7 +2838,7 @@
      "precio": "freemium",
      "precioTxt": "Planes desde ~30 $/mes",
      "nivel": 2,
-     "nota": 75,
+     "nota": 68,
      "desc": "Vídeo rápido con fotogramas clave para controlar el principio y el final.",
      "para": "Creativos que quieren transiciones controladas.",
      "ejemplos": [
@@ -2794,7 +2860,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Controlas principio y fin del vídeo",
@@ -2812,7 +2879,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 80,
+     "nota": 72,
      "desc": "Vídeo con buena física y movimiento a precio contenido.",
      "para": "Creadores de contenido para redes.",
      "ejemplos": [
@@ -2834,7 +2901,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Buena física y movimiento",
@@ -2852,7 +2920,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 68,
+     "nota": 60,
      "desc": "Efectos divertidos y rápidos para redes sociales.",
      "para": "Creadores de contenido casual.",
      "ejemplos": [
@@ -2874,7 +2942,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Efectos divertidos y virales",
@@ -2892,7 +2961,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · modelo abierto",
      "nivel": 3,
-     "nota": 75,
+     "nota": 70,
      "desc": "Modelo abierto de vídeo de gran calidad que se puede instalar en local.",
      "para": "Usuarios técnicos.",
      "ejemplos": [
@@ -2914,7 +2983,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 4,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 5
      },
      "pros": [
       "Gratis y de gran calidad",
@@ -2932,7 +3002,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en Grok",
      "nivel": 1,
-     "nota": 78,
+     "nota": 70,
      "desc": "Convierte texto o imágenes en vídeos cortos con audio.",
      "para": "Usuarios de Grok y X.",
      "ejemplos": [
@@ -2953,7 +3023,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Rápido y con audio",
@@ -2971,7 +3042,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 80,
+     "nota": 72,
      "desc": "Vídeo con varios planos y audio, pensado para probar muchas variantes.",
      "para": "Creadores que iteran mucho.",
      "ejemplos": [
@@ -2993,7 +3064,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Varios planos y audio",
@@ -3011,7 +3083,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 70,
      "desc": "Agrupa varios modelos (Veo, Kling, Seedance) con efectos de cámara listos.",
      "para": "Quien quiere varios modelos en una suscripción.",
      "ejemplos": [
@@ -3032,7 +3104,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Varios modelos en una suscripción",
@@ -3050,7 +3123,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 88,
+     "nota": 84,
      "desc": "Editor de vídeo con IA: subtítulos automáticos, recortes, efectos y generación.",
      "para": "Cualquiera que edite vídeos para redes.",
      "ejemplos": [
@@ -3073,7 +3146,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 7
      },
      "pros": [
       "Subtítulos automáticos gratis",
@@ -3092,7 +3166,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 80,
+     "nota": 78,
      "desc": "Edita vídeo y podcast como si fuera un documento de texto.",
      "para": "Podcasters y youtubers.",
      "ejemplos": [
@@ -3114,7 +3188,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 7
      },
      "pros": [
       "Editas el vídeo borrando texto",
@@ -3132,7 +3207,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 68,
      "desc": "Corta un vídeo largo en clips cortos virales automáticamente.",
      "para": "Youtubers y podcasters.",
      "ejemplos": [
@@ -3153,7 +3228,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Saca reels de un vídeo largo solo",
@@ -3171,7 +3247,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 70,
      "desc": "App móvil para editar vídeos hablados con subtítulos y efectos.",
      "para": "Creadores que graban con el móvil.",
      "ejemplos": [
@@ -3193,7 +3269,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Subtítulos animados desde el móvil",
@@ -3211,7 +3288,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 70,
      "desc": "Crea vídeos completos a partir de una idea, con acceso a varios modelos.",
      "para": "Quien necesita vídeos terminados rápido.",
      "ejemplos": [
@@ -3232,7 +3309,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Vídeo completo desde una idea",
@@ -3250,7 +3328,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 72,
      "desc": "Genera clips con Veo dentro de Canva y los monta con plantillas.",
      "para": "Principiantes y equipos de marketing.",
      "ejemplos": [
@@ -3272,7 +3350,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Muy fácil con plantillas",
@@ -3290,7 +3369,7 @@
      "precio": "freemium",
      "precioTxt": "Planes de Firefly",
      "nivel": 2,
-     "nota": 72,
+     "nota": 68,
      "desc": "Genera vídeo con modelos de Adobe y de terceros (como Veo) dentro de Adobe.",
      "para": "Usuarios de Premiere y Adobe.",
      "ejemplos": [
@@ -3312,7 +3391,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Integrado con Premiere",
@@ -3330,7 +3410,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 64,
      "desc": "Herramienta para planificar y producir un corto de principio a fin con storyboard.",
      "para": "Guionistas y cineastas.",
      "ejemplos": [
@@ -3351,7 +3431,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Planifica un corto con storyboard",
@@ -3369,7 +3450,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 64,
      "desc": "Vídeo con personajes consistentes a partir de imágenes de referencia.",
      "para": "Animación con personajes fijos.",
      "ejemplos": [
@@ -3390,7 +3471,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Personajes consistentes entre escenas",
@@ -3408,7 +3490,7 @@
      "precio": "freemium",
      "precioTxt": "Según plataforma",
      "nivel": 2,
-     "nota": 68,
+     "nota": 62,
      "desc": "Modelo que se situó entre los mejores del ranking de vídeo en 2026.",
      "para": "Usuarios que siguen los rankings.",
      "ejemplos": [
@@ -3428,7 +3510,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 5,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Muy bien situado en los rankings",
@@ -3446,7 +3529,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 75,
+     "nota": 66,
      "desc": "Da voz y expresión a personajes a partir de una imagen.",
      "para": "Creadores de personajes y animación.",
      "ejemplos": [
@@ -3467,7 +3550,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Personajes que hablan o cantan desde una imagen",
@@ -3485,7 +3569,7 @@
      "precio": "freemium",
      "precioTxt": "Prueba gratis · planes de pago",
      "nivel": 1,
-     "nota": 62,
+     "nota": 56,
      "desc": "Avatares que hablan a partir de una foto.",
      "para": "Presentaciones y formación sencillas.",
      "ejemplos": [
@@ -3506,7 +3590,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 3
      },
      "pros": [
       "Hace hablar a una foto",
@@ -3524,7 +3609,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 70,
      "desc": "Editor online con subtítulos, doblaje y avatares.",
      "para": "Equipos de marketing.",
      "ejemplos": [
@@ -3545,7 +3630,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Editor online completo",
@@ -3563,7 +3649,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 68,
+     "nota": 64,
      "desc": "Editor online colaborativo con herramientas de IA.",
      "para": "Equipos pequeños.",
      "ejemplos": [
@@ -3584,7 +3670,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Editor online colaborativo",
@@ -3602,7 +3689,7 @@
      "precio": "pago",
      "precioTxt": "Licencia de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 62,
      "desc": "Mejora la resolución y fluidez de vídeos antiguos o de baja calidad.",
      "para": "Restaurar vídeos familiares o de archivo.",
      "ejemplos": [
@@ -3623,7 +3710,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 6,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Restaura y amplía vídeos antiguos",
@@ -3641,7 +3729,7 @@
      "precio": "pago",
      "precioTxt": "Incluido en Midjourney",
      "nivel": 2,
-     "nota": 72,
+     "nota": 64,
      "desc": "Anima tus imágenes de Midjourney en clips cortos.",
      "para": "Usuarios de Midjourney.",
      "ejemplos": [
@@ -3661,7 +3749,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Anima tus imágenes de Midjourney",
@@ -3679,7 +3768,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 1,
-     "nota": 68,
+     "nota": 58,
      "desc": "Traduce y dobla vídeos a otros idiomas con tu propia voz.",
      "para": "Creadores que quieren llegar a otros países.",
      "ejemplos": [
@@ -3699,7 +3788,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Dobla vídeos con tu voz",
@@ -3727,7 +3817,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro 10 $/mes",
      "nivel": 1,
-     "nota": 92,
+     "nota": 84,
      "desc": "Crea canciones completas con voz y letra a partir de una descripción.",
      "para": "Cualquiera que quiera hacer una canción sin saber música.",
      "ejemplos": [
@@ -3750,7 +3840,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Canciones completas con voz en un minuto",
@@ -3769,7 +3860,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis sin descarga · Starter desde 6 $/mes",
      "nivel": 1,
-     "nota": 85,
+     "nota": 76,
      "desc": "Música con voces muy realistas y la licencia más clara para uso comercial.",
      "para": "Quien quiere publicar en Spotify o usar música en anuncios.",
      "ejemplos": [
@@ -3791,7 +3882,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Voces muy realistas",
@@ -3809,7 +3901,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 66,
      "desc": "Canciones de gran calidad, pero ahora no permite descargar lo que creas.",
      "para": "Quien quiere bocetar ideas dentro de la plataforma.",
      "ejemplos": [
@@ -3830,7 +3922,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 8,
-      "precio": 3
+      "precio": 3,
+      "versatilidad": 4
      },
      "pros": [
       "Calidad de sonido muy alta",
@@ -3848,7 +3941,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Starter desde 6 $/mes",
      "nivel": 1,
-     "nota": 80,
+     "nota": 72,
      "desc": "Música de Google con el modelo Lyria 3.5 y marca de agua SynthID.",
      "para": "Usuarios de Google que quieren música segura.",
      "ejemplos": [
@@ -3869,7 +3962,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Música de Google con marca de agua IA",
@@ -3887,7 +3981,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro ~8 $/mes",
      "nivel": 1,
-     "nota": 82,
+     "nota": 74,
      "desc": "Canciones con voz y descargas ilimitadas en su plan Pro.",
      "para": "Alternativa a Suno para descargar sin límites.",
      "ejemplos": [
@@ -3909,7 +4003,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Descargas ilimitadas en Pro",
@@ -3927,7 +4022,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 68,
      "desc": "Música instrumental de fondo personalizable y libre de derechos.",
      "para": "Youtubers y creadores de vídeo.",
      "ejemplos": [
@@ -3947,7 +4042,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Música de fondo libre de derechos",
@@ -3965,7 +4061,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis sin uso comercial · planes de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 66,
      "desc": "Compone bandas sonoras instrumentales editables (MIDI).",
      "para": "Compositores y cineastas.",
      "ejemplos": [
@@ -3987,7 +4083,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Bandas sonoras editables en MIDI",
@@ -4005,7 +4102,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 64,
      "desc": "Música de fondo según la emoción de cada escena.",
      "para": "Creadores de vídeo y podcast.",
      "ejemplos": [
@@ -4025,7 +4122,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Música según la emoción de cada escena",
@@ -4043,7 +4141,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 58,
      "desc": "Genera música continua para streams, apps y vídeos.",
      "para": "Streamers y desarrolladores.",
      "ejemplos": [
@@ -4064,7 +4162,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Música continua para directos",
@@ -4082,7 +4181,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 62,
      "desc": "Genera música instrumental y efectos de sonido.",
      "para": "Productores y diseñadores de sonido.",
      "ejemplos": [
@@ -4103,7 +4202,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Efectos de sonido y loops",
@@ -4121,7 +4221,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis con derechos comerciales",
      "nivel": 1,
-     "nota": 75,
+     "nota": 66,
      "desc": "Generación de canciones gratis e ilimitada.",
      "para": "Quien quiere experimentar sin pagar.",
      "ejemplos": [
@@ -4141,7 +4241,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 3
      },
      "pros": [
       "Totalmente gratis",
@@ -4159,7 +4260,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · modelo abierto",
      "nivel": 3,
-     "nota": 62,
+     "nota": 56,
      "desc": "Modelo abierto de música para instalar en tu equipo.",
      "para": "Usuarios técnicos.",
      "ejemplos": [
@@ -4179,7 +4280,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 3,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 3
      },
      "pros": [
       "Gratis y en local",
@@ -4197,7 +4299,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · modelo abierto",
      "nivel": 3,
-     "nota": 58,
+     "nota": 50,
      "desc": "Modelo abierto de Meta para generar música instrumental.",
      "para": "Curiosos técnicos.",
      "ejemplos": [
@@ -4217,7 +4319,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 3,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 2
      },
      "pros": [
       "Gratis",
@@ -4235,7 +4338,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 62,
      "desc": "Crea canciones sencillas y permite distribuirlas.",
      "para": "Principiantes absolutos.",
      "ejemplos": [
@@ -4256,7 +4359,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 10,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Tu primera canción en minutos",
@@ -4274,7 +4378,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 58,
      "desc": "Música libre de derechos para vídeos y marcas.",
      "para": "Creadores de contenido.",
      "ejemplos": [
@@ -4294,7 +4398,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Música libre de derechos",
@@ -4312,7 +4417,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 58,
      "desc": "Genera beats y pistas por género.",
      "para": "Productores que buscan ideas.",
      "ejemplos": [
@@ -4333,7 +4438,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Beats por género",
@@ -4351,7 +4457,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 92,
+     "nota": 84,
      "desc": "Separa voz, batería, bajo y guitarra de cualquier canción. Ideal para practicar.",
      "para": "Músicos aficionados y estudiantes.",
      "ejemplos": [
@@ -4375,7 +4481,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 5
      },
      "pros": [
       "Quita la voz o un instrumento",
@@ -4394,7 +4501,7 @@
      "precio": "freemium",
      "precioTxt": "Prueba gratis · paquetes de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 70,
      "desc": "Separación de pistas de alta calidad.",
      "para": "Productores y DJs.",
      "ejemplos": [
@@ -4416,7 +4523,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 2
      },
      "pros": [
       "Separación de pistas de gran calidad",
@@ -4434,7 +4542,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 1,
-     "nota": 75,
+     "nota": 68,
      "desc": "Masterización automática con IA para que tu canción suene profesional.",
      "para": "Músicos que publican sus temas.",
      "ejemplos": [
@@ -4455,7 +4563,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 4
      },
      "pros": [
       "Masteriza tu canción automáticamente",
@@ -4473,7 +4582,7 @@
      "precio": "pago",
      "precioTxt": "Licencia de pago",
      "nivel": 2,
-     "nota": 70,
+     "nota": 62,
      "desc": "Asistente de mezcla y masterización para productores.",
      "para": "Productores con estudio en casa.",
      "ejemplos": [
@@ -4493,7 +4602,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 5,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 3
      },
      "pros": [
       "Masterización profesional asistida",
@@ -4511,7 +4621,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 82,
+     "nota": 78,
      "desc": "Estudio online gratis con ideas de canciones generadas por IA.",
      "para": "Principiantes que quieren aprender a producir.",
      "ejemplos": [
@@ -4533,7 +4643,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "Estudio completo gratis",
@@ -4551,7 +4662,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 60,
      "desc": "Voces de IA con licencia para tus maquetas.",
      "para": "Productores sin cantante.",
      "ejemplos": [
@@ -4571,7 +4682,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Voces con licencia para maquetas",
@@ -4589,7 +4701,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 2,
-     "nota": 70,
+     "nota": 66,
      "desc": "Biblioteca de sonidos con herramientas de IA para combinar samples.",
      "para": "Productores.",
      "ejemplos": [
@@ -4610,7 +4722,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Biblioteca enorme de sonidos",
@@ -4628,7 +4741,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 88,
+     "nota": 76,
      "desc": "Saca los acordes de cualquier canción para tocarla.",
      "para": "Quien aprende guitarra, ukelele o piano.",
      "ejemplos": [
@@ -4650,7 +4763,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 3
      },
      "pros": [
       "Saca los acordes para tocar",
@@ -4668,7 +4782,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · modelo abierto",
      "nivel": 3,
-     "nota": 60,
+     "nota": 52,
      "desc": "Modelo abierto de Google para generar música en tiempo real.",
      "para": "Músicos experimentales y programadores.",
      "ejemplos": [
@@ -4688,7 +4802,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 2,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 2
      },
      "pros": [
       "Improvisación en tiempo real",
@@ -4706,7 +4821,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 60,
+     "nota": 52,
      "desc": "Convierte tu voz en la de otro timbre o instrumento.",
      "para": "Creadores que experimentan con voces.",
      "ejemplos": [
@@ -4726,7 +4841,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 2
      },
      "pros": [
       "Convierte tu voz en instrumentos",
@@ -4744,7 +4860,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis, sin registro",
      "nivel": 1,
-     "nota": 75,
+     "nota": 64,
      "desc": "Genera una canción en un minuto sin crear cuenta.",
      "para": "Quien quiere probar sin compromiso.",
      "ejemplos": [
@@ -4764,7 +4880,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 10,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 2
      },
      "pros": [
       "Sin cuenta ni pago",
@@ -4782,7 +4899,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · licencia",
      "nivel": 2,
-     "nota": 62,
+     "nota": 54,
      "desc": "Convierte audio en notas (MIDI) editables.",
      "para": "Productores.",
      "ejemplos": [
@@ -4802,7 +4919,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 5,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 2
      },
      "pros": [
       "Pasa audio a notas MIDI",
@@ -4820,7 +4938,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 2,
-     "nota": 78,
+     "nota": 64,
      "desc": "Herramienta gratuita de Spotify que transcribe audio a notas MIDI.",
      "para": "Músicos que quieren transcribir.",
      "ejemplos": [
@@ -4840,7 +4958,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 1
      },
      "pros": [
       "Transcribe melodías a MIDI gratis",
@@ -4858,7 +4977,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 58,
      "desc": "Separación de pistas profesional usada por discográficas.",
      "para": "Profesionales del audio.",
      "ejemplos": [
@@ -4878,7 +4997,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Separación profesional",
@@ -4906,7 +5026,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Starter desde 5–6 $/mes",
      "nivel": 1,
-     "nota": 90,
+     "nota": 88,
      "desc": "Voces muy naturales en más de 70 idiomas, clonación de voz y doblaje.",
      "para": "Narración, audiolibros, vídeos y agentes de voz.",
      "ejemplos": [
@@ -4929,7 +5049,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 8
      },
      "pros": [
       "Las voces más naturales",
@@ -4948,7 +5069,7 @@
      "precio": "freemium",
      "precioTxt": "Pro desde ~4 $/mes",
      "nivel": 2,
-     "nota": 80,
+     "nota": 70,
      "desc": "La voz de IA mejor valorada en pruebas a ciegas (sept 2026) y la más rápida.",
      "para": "Desarrolladores de asistentes de voz.",
      "ejemplos": [
@@ -4969,7 +5090,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 6,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Voz nº 1 en pruebas a ciegas",
@@ -4987,7 +5109,7 @@
      "precio": "freemium",
      "precioTxt": "API barata",
      "nivel": 2,
-     "nota": 82,
+     "nota": 72,
      "desc": "Voces de Google de alta calidad con control de escena y varios personajes.",
      "para": "Desarrolladores y usuarios de Google.",
      "ejemplos": [
@@ -5008,7 +5130,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 6,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 3
      },
      "pros": [
       "Calidad muy alta y barata",
@@ -5026,7 +5149,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en ChatGPT",
      "nivel": 1,
-     "nota": 90,
+     "nota": 86,
      "desc": "Conversa por voz con ChatGPT de forma natural, como en una llamada.",
      "para": "Quien prefiere hablar a escribir.",
      "ejemplos": [
@@ -5048,7 +5171,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 7
      },
      "pros": [
       "Hablar como en una llamada",
@@ -5066,7 +5190,7 @@
      "precio": "pago",
      "precioTxt": "API desde 25 $ por millón de caracteres",
      "nivel": 3,
-     "nota": 78,
+     "nota": 68,
      "desc": "Voz de alta calidad a menor precio que ElevenLabs.",
      "para": "Desarrolladores de juegos y apps.",
      "ejemplos": [
@@ -5086,7 +5210,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 5,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Alta calidad a buen precio",
@@ -5104,7 +5229,7 @@
      "precio": "freemium",
      "precioTxt": "Desde unos 3 $/mes",
      "nivel": 2,
-     "nota": 78,
+     "nota": 70,
      "desc": "Voces que entienden la emoción del texto y la interpretan.",
      "para": "Narración emotiva e historias.",
      "ejemplos": [
@@ -5125,7 +5250,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Interpreta la emoción del texto",
@@ -5143,7 +5269,7 @@
      "precio": "freemium",
      "precioTxt": "Desde unos 10 $/mes",
      "nivel": 2,
-     "nota": 78,
+     "nota": 70,
      "desc": "Clonación y voces baratas con muchos idiomas.",
      "para": "Creadores con presupuesto ajustado.",
      "ejemplos": [
@@ -5164,7 +5290,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Clonación barata",
@@ -5182,7 +5309,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 74,
      "desc": "Lee en voz alta cualquier texto, PDF o web.",
      "para": "Estudiantes, personas con dislexia, quien lee mucho.",
      "ejemplos": [
@@ -5205,7 +5332,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Lee cualquier PDF o web",
@@ -5223,7 +5351,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 66,
      "desc": "Estudio de locución con muchas voces para presentaciones y vídeos.",
      "para": "Formadores y marketing.",
      "ejemplos": [
@@ -5243,7 +5371,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Estudio de locución fácil",
@@ -5261,7 +5390,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 58,
      "desc": "Voces profesionales para empresas.",
      "para": "Empresas y formación corporativa.",
      "ejemplos": [
@@ -5281,7 +5410,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 3
      },
      "pros": [
       "Voces profesionales",
@@ -5299,7 +5429,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · código abierto",
      "nivel": 3,
-     "nota": 72,
+     "nota": 64,
      "desc": "Voz y clonación de código abierto que rivaliza con ElevenLabs en pruebas a ciegas.",
      "para": "Usuarios técnicos.",
      "ejemplos": [
@@ -5319,7 +5449,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 3,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 3
      },
      "pros": [
       "Clonación gratis en local",
@@ -5337,7 +5468,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · código abierto",
      "nivel": 3,
-     "nota": 70,
+     "nota": 60,
      "desc": "Modelo de voz muy ligero que funciona incluso en ordenadores modestos.",
      "para": "Usuarios técnicos.",
      "ejemplos": [
@@ -5357,7 +5488,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 4,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 2
      },
      "pros": [
       "Muy ligero",
@@ -5375,7 +5507,7 @@
      "precio": "freemium",
      "precioTxt": "API",
      "nivel": 3,
-     "nota": 70,
+     "nota": 62,
      "desc": "Voces de Alibaba, segundo puesto en pruebas a ciegas en septiembre de 2026.",
      "para": "Desarrolladores.",
      "ejemplos": [
@@ -5395,7 +5527,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 4,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Muy bien valorado en pruebas a ciegas",
@@ -5413,7 +5546,7 @@
      "precio": "pago",
      "precioTxt": "API",
      "nivel": 3,
-     "nota": 62,
+     "nota": 54,
      "desc": "Voces para agentes conversacionales con más de 600 voces.",
      "para": "Desarrolladores de agentes de voz.",
      "ejemplos": [
@@ -5433,7 +5566,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 4,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 2
      },
      "pros": [
       "Más de 600 voces",
@@ -5451,7 +5585,7 @@
      "precio": "pago",
      "precioTxt": "API con crédito gratis",
      "nivel": 3,
-     "nota": 70,
+     "nota": 64,
      "desc": "Transcripción y voz muy rápidas para aplicaciones.",
      "para": "Desarrolladores.",
      "ejemplos": [
@@ -5471,7 +5605,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 4,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Transcripción muy rápida",
@@ -5489,7 +5624,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · código abierto",
      "nivel": 2,
-     "nota": 80,
+     "nota": 72,
      "desc": "El transcriptor abierto más usado: pasa audio a texto en casi cualquier idioma.",
      "para": "Periodistas, estudiantes, investigadores.",
      "ejemplos": [
@@ -5510,7 +5645,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 4,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 4
      },
      "pros": [
       "Transcribe casi cualquier idioma",
@@ -5528,7 +5664,7 @@
      "precio": "pago",
      "precioTxt": "API con crédito gratis",
      "nivel": 3,
-     "nota": 70,
+     "nota": 64,
      "desc": "Transcripción con detección de hablantes y resúmenes.",
      "para": "Desarrolladores.",
      "ejemplos": [
@@ -5548,7 +5684,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 4,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Detecta quién habla",
@@ -5566,7 +5703,7 @@
      "precio": "pago",
      "precioTxt": "API",
      "nivel": 3,
-     "nota": 70,
+     "nota": 62,
      "desc": "Transcripción precisa con buen soporte de acentos.",
      "para": "Empresas y desarrolladores.",
      "ejemplos": [
@@ -5586,7 +5723,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 5,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Muy preciso con acentos",
@@ -5604,7 +5742,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 92,
+     "nota": 82,
      "desc": "Limpia el audio grabado con el móvil para que suene como en un estudio.",
      "para": "Podcasters y quien graba entrevistas.",
      "ejemplos": [
@@ -5624,7 +5762,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 4
      },
      "pros": [
       "Tu grabación suena como en estudio",
@@ -5642,7 +5781,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 70,
      "desc": "Elimina ruidos de fondo en tus videollamadas y toma notas.",
      "para": "Teletrabajo.",
      "ejemplos": [
@@ -5663,7 +5802,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Elimina ruidos en videollamadas",
@@ -5681,7 +5821,7 @@
      "precio": "freemium",
      "precioTxt": "2 h gratis/mes · planes de pago",
      "nivel": 1,
-     "nota": 80,
+     "nota": 70,
      "desc": "Nivela y mejora audio de podcasts automáticamente.",
      "para": "Podcasters.",
      "ejemplos": [
@@ -5701,7 +5841,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Iguala volúmenes automáticamente",
@@ -5719,7 +5860,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 72,
      "desc": "Dicta en cualquier app y la IA limpia el texto (quita muletillas, puntúa).",
      "para": "Quien escribe mucho y prefiere hablar.",
      "ejemplos": [
@@ -5741,7 +5882,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Dictas y deja el texto limpio",
@@ -5759,7 +5901,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 85,
+     "nota": 74,
      "desc": "Transcribe audio en tu Mac, sin subirlo a internet.",
      "para": "Usuarios de Mac.",
      "ejemplos": [
@@ -5779,7 +5921,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 3
      },
      "pros": [
       "Transcribe en tu Mac sin internet",
@@ -5797,7 +5940,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 60,
      "desc": "Cambia tu voz en tiempo real para juegos y streams.",
      "para": "Gamers y streamers.",
      "ejemplos": [
@@ -5817,7 +5960,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 2
      },
      "pros": [
       "Cambia tu voz en directo",
@@ -5835,7 +5979,7 @@
      "precio": "pago",
      "precioTxt": "Pago por uso · capa gratis",
      "nivel": 3,
-     "nota": 68,
+     "nota": 64,
      "desc": "Voz y transcripción de Microsoft para empresas.",
      "para": "Desarrolladores en entorno Microsoft.",
      "ejemplos": [
@@ -5855,7 +5999,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 3,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "Muchas voces e idiomas",
@@ -5873,7 +6018,7 @@
      "precio": "pago",
      "precioTxt": "Pago por uso · capa gratis",
      "nivel": 3,
-     "nota": 58,
+     "nota": 52,
      "desc": "Texto a voz de Amazon Web Services.",
      "para": "Desarrolladores en AWS.",
      "ejemplos": [
@@ -5893,7 +6038,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 3,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Barato y estable",
@@ -5911,7 +6057,7 @@
      "precio": "gratis",
      "precioTxt": "Demo gratis",
      "nivel": 1,
-     "nota": 88,
+     "nota": 76,
      "desc": "Asistente de voz con conversación muy natural.",
      "para": "Curiosos que quieren probar voz conversacional.",
      "ejemplos": [
@@ -5931,7 +6077,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 3
      },
      "pros": [
       "Conversación de voz muy natural",
@@ -5949,7 +6096,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 60,
      "desc": "Estudio de voz y vídeo con muchas voces.",
      "para": "Creadores de contenido.",
      "ejemplos": [
@@ -5969,7 +6116,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Voz y vídeo en un sitio",
@@ -5987,7 +6135,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 62,
      "desc": "Lector de textos en voz alta sencillo.",
      "para": "Estudiantes.",
      "ejemplos": [
@@ -6009,7 +6157,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 2
      },
      "pros": [
       "Lector sencillo",
@@ -6027,7 +6176,7 @@
      "precio": "pago",
      "precioTxt": "API",
      "nivel": 3,
-     "nota": 68,
+     "nota": 58,
      "desc": "Voz con muy buena pronunciación en casos difíciles.",
      "para": "Desarrolladores.",
      "ejemplos": [
@@ -6047,7 +6196,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 4,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 2
      },
      "pros": [
       "Pronuncia muy bien nombres difíciles",
@@ -6099,7 +6249,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 6,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 8
      },
      "pros": [
       "El agente de programación mejor valorado",
@@ -6118,7 +6269,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro desde 20 $/mes",
      "nivel": 2,
-     "nota": 80,
+     "nota": 78,
      "desc": "Editor de código con IA integrada y varios agentes en paralelo.",
      "para": "Programadores que quieren un editor completo.",
      "ejemplos": [
@@ -6139,7 +6290,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 7,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 7
      },
      "pros": [
       "Editor completo con IA",
@@ -6157,7 +6309,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis (con tu propia clave) · Go 10 $/mes",
      "nivel": 3,
-     "nota": 78,
+     "nota": 76,
      "desc": "Agente de programación de código abierto que funciona con cualquier modelo.",
      "para": "Programadores que no quieren atarse a una empresa.",
      "ejemplos": [
@@ -6178,7 +6330,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 4,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 7
      },
      "pros": [
       "Código abierto y sin ataduras",
@@ -6196,7 +6349,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en ChatGPT",
      "nivel": 2,
-     "nota": 80,
+     "nota": 78,
      "desc": "El agente de programación de OpenAI, ahora dentro de la app de escritorio de ChatGPT.",
      "para": "Usuarios de ChatGPT que programan.",
      "ejemplos": [
@@ -6218,7 +6371,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 7,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 7
      },
      "pros": [
       "Incluido en ChatGPT",
@@ -6236,7 +6390,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · desde 10 $/mes",
      "nivel": 2,
-     "nota": 82,
+     "nota": 78,
      "desc": "Autocompletado y agente de código dentro de VS Code y GitHub.",
      "para": "Programadores que usan VS Code o GitHub.",
      "ejemplos": [
@@ -6257,7 +6411,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 6
      },
      "pros": [
       "Autocompleta en VS Code",
@@ -6276,7 +6431,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · hasta 60 $/mes",
      "nivel": 2,
-     "nota": 78,
+     "nota": 76,
      "desc": "Editor con agente, modo plan y sesiones en paralelo, buena relación calidad-precio.",
      "para": "Programadores que buscan alternativa a Cursor.",
      "ejemplos": [
@@ -6296,7 +6451,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 7
      },
      "pros": [
       "Buen equilibrio calidad-precio",
@@ -6314,7 +6470,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis en vista previa",
      "nivel": 2,
-     "nota": 80,
+     "nota": 78,
      "desc": "Entorno de Google con agentes que programan y prueban en el navegador.",
      "para": "Quien quiere probar agentes potentes gratis.",
      "ejemplos": [
@@ -6334,7 +6490,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 7
      },
      "pros": [
       "Gratis con modelos potentes",
@@ -6352,7 +6509,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · desde 25–30 $/mes",
      "nivel": 1,
-     "nota": 88,
+     "nota": 82,
      "desc": "Crea webs y apps completas describiéndolas en español. Sin saber programar.",
      "para": "Emprendedores y quien no programa.",
      "ejemplos": [
@@ -6374,7 +6531,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 6
      },
      "pros": [
       "Crea webs completas hablando en español",
@@ -6392,7 +6550,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 80,
+     "nota": 76,
      "desc": "Construye y publica apps web desde el navegador hablando con la IA.",
      "para": "Principiantes que quieren publicar rápido.",
      "ejemplos": [
@@ -6413,7 +6571,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 6
      },
      "pros": [
       "Crea y publica apps desde el navegador",
@@ -6431,7 +6590,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · desde 5 $/mes",
      "nivel": 1,
-     "nota": 80,
+     "nota": 74,
      "desc": "Genera interfaces y webs bonitas a partir de texto o capturas.",
      "para": "Diseñadores y frontends.",
      "ejemplos": [
@@ -6452,7 +6611,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Interfaces bonitas desde texto o capturas",
@@ -6470,7 +6630,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 80,
      "desc": "Crea, ejecuta y publica apps en el navegador con su agente.",
      "para": "Principiantes y estudiantes.",
      "ejemplos": [
@@ -6492,7 +6652,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 7
      },
      "pros": [
       "Programas en el navegador sin instalar nada",
@@ -6510,7 +6671,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis para código abierto",
      "nivel": 2,
-     "nota": 75,
+     "nota": 66,
      "desc": "Revisa automáticamente los cambios de código y sugiere mejoras.",
      "para": "Equipos de desarrollo.",
      "ejemplos": [
@@ -6530,7 +6691,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Revisa el código automáticamente",
@@ -6548,7 +6710,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 2,
-     "nota": 72,
+     "nota": 70,
      "desc": "Agente de código de los creadores de Kimi, muy barato.",
      "para": "Programadores con poco presupuesto.",
      "ejemplos": [
@@ -6569,7 +6731,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 5,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "Gratis",
@@ -6587,7 +6750,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 70,
      "desc": "Editor de Amazon que parte de especificaciones antes de programar.",
      "para": "Programadores que quieren orden y documentación.",
      "ejemplos": [
@@ -6607,7 +6770,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 6
      },
      "pros": [
       "Parte de especificaciones claras",
@@ -6625,7 +6789,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · pagas el modelo",
      "nivel": 3,
-     "nota": 72,
+     "nota": 70,
      "desc": "Agente de código abierto dentro de VS Code.",
      "para": "Programadores de VS Code.",
      "ejemplos": [
@@ -6645,7 +6809,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 5,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 6
      },
      "pros": [
       "Abierto y transparente",
@@ -6663,7 +6828,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · pagas el modelo",
      "nivel": 3,
-     "nota": 62,
+     "nota": 60,
      "desc": "Programación con IA desde el terminal, muy integrada con Git.",
      "para": "Programadores de terminal.",
      "ejemplos": [
@@ -6683,7 +6848,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 3,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "Muy preciso con Git",
@@ -6701,7 +6867,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 2,
-     "nota": 70,
+     "nota": 66,
      "desc": "Editor de código muy rápido con IA integrada.",
      "para": "Programadores que valoran la velocidad.",
      "ejemplos": [
@@ -6721,7 +6887,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "Editor muy rápido",
@@ -6739,7 +6906,7 @@
      "precio": "pago",
      "precioTxt": "Incluido en planes de JetBrains",
      "nivel": 2,
-     "nota": 70,
+     "nota": 68,
      "desc": "Asistente y agente dentro de IntelliJ, PyCharm y compañía.",
      "para": "Usuarios de JetBrains.",
      "ejemplos": [
@@ -6759,7 +6926,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Ideal si usas IntelliJ o PyCharm",
@@ -6777,7 +6945,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 2,
-     "nota": 60,
+     "nota": 56,
      "desc": "Autocompletado con foco en privacidad para empresas.",
      "para": "Empresas con código sensible.",
      "ejemplos": [
@@ -6797,7 +6965,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 7,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 4
      },
      "pros": [
       "Privacidad para empresas",
@@ -6815,7 +6984,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 68,
      "desc": "Terminal moderno con agentes que ejecutan comandos por ti.",
      "para": "Programadores que usan mucho la terminal.",
      "ejemplos": [
@@ -6836,7 +7005,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 5
      },
      "pros": [
       "Terminal moderna con agentes",
@@ -6854,7 +7024,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · código abierto",
      "nivel": 3,
-     "nota": 65,
+     "nota": 62,
      "desc": "Asistente abierto para VS Code y JetBrains con cualquier modelo.",
      "para": "Programadores que quieren personalizar.",
      "ejemplos": [
@@ -6874,7 +7044,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 5,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 5
      },
      "pros": [
       "Personalizable",
@@ -6892,7 +7063,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis · pagas el modelo",
      "nivel": 3,
-     "nota": 65,
+     "nota": 64,
      "desc": "Agente abierto para VS Code con varios modos de trabajo.",
      "para": "Programadores avanzados.",
      "ejemplos": [
@@ -6912,7 +7083,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 4,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 6
      },
      "pros": [
       "Varios modos de trabajo",
@@ -6930,7 +7102,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 75,
+     "nota": 70,
      "desc": "Crea apps con base de datos y usuarios describiéndolas.",
      "para": "Pequeños negocios sin programador.",
      "ejemplos": [
@@ -6951,7 +7123,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Apps con usuarios y datos sin programar",
@@ -6969,7 +7142,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 2,
-     "nota": 65,
+     "nota": 64,
      "desc": "Plataforma sin código veterana, ahora con IA para generar apps.",
      "para": "Emprendedores que quieren algo escalable.",
      "ejemplos": [
@@ -6990,7 +7163,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Muy potente sin código",
@@ -7008,7 +7182,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis en vista previa",
      "nivel": 2,
-     "nota": 72,
+     "nota": 68,
      "desc": "Crea prototipos de apps con Gemini y publícalos en Firebase.",
      "para": "Desarrolladores del ecosistema Google.",
      "ejemplos": [
@@ -7028,7 +7202,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 5
      },
      "pros": [
       "Prototipos con Gemini",
@@ -7046,7 +7221,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 60,
      "desc": "Genera pruebas y revisa la calidad del código.",
      "para": "Equipos que quieren menos errores.",
      "ejemplos": [
@@ -7066,7 +7241,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Genera pruebas automáticamente",
@@ -7084,7 +7260,7 @@
      "precio": "pago",
      "precioTxt": "Pago por uso",
      "nivel": 3,
-     "nota": 65,
+     "nota": 64,
      "desc": "Agente de código pensado para proyectos grandes.",
      "para": "Equipos con bases de código enormes.",
      "ejemplos": [
@@ -7104,7 +7280,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 4,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Para proyectos enormes",
@@ -7142,7 +7319,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 6
      },
      "pros": [
       "Trabaja en tareas completas solo",
@@ -7160,7 +7338,7 @@
      "precio": "pago",
      "precioTxt": "Incluido en planes de Figma",
      "nivel": 1,
-     "nota": 75,
+     "nota": 70,
      "desc": "Convierte diseños de Figma en prototipos funcionales con IA.",
      "para": "Diseñadores de producto.",
      "ejemplos": [
@@ -7181,7 +7359,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Prototipos desde tus diseños",
@@ -7199,7 +7378,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 74,
      "desc": "Crea y publica webs bonitas a partir de una descripción.",
      "para": "Diseñadores y portfolios.",
      "ejemplos": [
@@ -7221,7 +7400,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 4
      },
      "pros": [
       "Webs bonitas desde una descripción",
@@ -7249,7 +7429,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · más límites con Google AI",
      "nivel": 1,
-     "nota": 98,
+     "nota": 92,
      "desc": "Sube tus apuntes o PDFs y pregúntale: solo responde con tus fuentes. Crea podcasts de tus documentos.",
      "para": "Estudiantes e investigadores.",
      "ejemplos": [
@@ -7272,7 +7452,8 @@
      "notas": {
       "calidad": 10,
       "facilidad": 9,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 7
      },
      "pros": [
       "Responde solo con tus documentos",
@@ -7291,7 +7472,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 66,
      "desc": "Busca y resume artículos científicos, y extrae datos en tablas.",
      "para": "Universitarios e investigadores.",
      "ejemplos": [
@@ -7312,7 +7493,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Resume y compara estudios",
@@ -7330,7 +7512,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Premium de pago",
      "nivel": 1,
-     "nota": 80,
+     "nota": 72,
      "desc": "Responde preguntas con lo que dicen los estudios científicos.",
      "para": "Quien quiere saber qué dice la ciencia.",
      "ejemplos": [
@@ -7352,7 +7534,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Qué dice la ciencia en una respuesta",
@@ -7370,7 +7553,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 70,
+     "nota": 64,
      "desc": "Explica artículos científicos en lenguaje sencillo.",
      "para": "Estudiantes que leen papers.",
      "ejemplos": [
@@ -7390,7 +7573,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Explica artículos difíciles",
@@ -7408,7 +7592,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 2,
-     "nota": 78,
+     "nota": 68,
      "desc": "Buscador académico gratuito con resúmenes de una línea.",
      "para": "Investigadores y estudiantes.",
      "ejemplos": [
@@ -7428,7 +7612,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 3
      },
      "pros": [
       "Buscador académico gratis",
@@ -7446,7 +7631,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 2,
-     "nota": 62,
+     "nota": 54,
      "desc": "Muestra si un artículo ha sido apoyado o contradicho por otros.",
      "para": "Investigadores.",
      "ejemplos": [
@@ -7466,7 +7651,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Muestra si un estudio ha sido apoyado o contradicho",
@@ -7484,7 +7670,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 2,
-     "nota": 78,
+     "nota": 66,
      "desc": "Mapa visual de artículos relacionados.",
      "para": "Investigadores que empiezan un tema.",
      "ejemplos": [
@@ -7504,7 +7690,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 2
      },
      "pros": [
       "Mapa visual de artículos relacionados",
@@ -7522,7 +7709,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado",
      "nivel": 2,
-     "nota": 70,
+     "nota": 60,
      "desc": "Grafo visual de artículos parecidos.",
      "para": "Estudiantes de posgrado.",
      "ejemplos": [
@@ -7542,7 +7729,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 2
      },
      "pros": [
       "Ve de un vistazo la red de un tema",
@@ -7560,7 +7748,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Pro de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 64,
      "desc": "Búsqueda académica profunda que lee cientos de artículos por ti.",
      "para": "Investigadores.",
      "ejemplos": [
@@ -7580,7 +7768,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Lee cientos de artículos por ti",
@@ -7598,7 +7787,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis para docentes · de pago para alumnos",
      "nivel": 1,
-     "nota": 78,
+     "nota": 74,
      "desc": "Tutor que guía paso a paso sin darte la respuesta directamente.",
      "para": "Estudiantes y profesores.",
      "ejemplos": [
@@ -7620,7 +7809,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Te guía sin darte la respuesta",
@@ -7638,7 +7828,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 1,
-     "nota": 75,
+     "nota": 66,
      "desc": "Duolingo con conversaciones y explicaciones de IA.",
      "para": "Quien aprende idiomas.",
      "ejemplos": [
@@ -7660,7 +7850,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Conversaciones y explicaciones de errores",
@@ -7678,7 +7869,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 1,
-     "nota": 78,
+     "nota": 68,
      "desc": "Practica hablar inglés con un tutor de IA.",
      "para": "Quien quiere soltarse hablando inglés.",
      "ejemplos": [
@@ -7698,7 +7889,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Practicas hablar inglés de verdad",
@@ -7716,7 +7908,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 1,
-     "nota": 70,
+     "nota": 62,
      "desc": "Tutores con avatar para practicar idiomas.",
      "para": "Estudiantes de idiomas.",
      "ejemplos": [
@@ -7736,7 +7928,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 3
      },
      "pros": [
       "Tutores con avatar",
@@ -7754,7 +7947,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Plus de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 70,
      "desc": "Crea fichas y tests a partir de tus apuntes.",
      "para": "Estudiantes de secundaria y universidad.",
      "ejemplos": [
@@ -7776,7 +7969,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Convierte apuntes en fichas y tests",
@@ -7794,7 +7988,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Plus de pago",
      "nivel": 1,
-     "nota": 85,
+     "nota": 74,
      "desc": "Escanea un problema de matemáticas y te explica cómo resolverlo.",
      "para": "Estudiantes y padres.",
      "ejemplos": [
@@ -7814,7 +8008,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Escaneas el problema y lo explica",
@@ -7832,7 +8027,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 2,
-     "nota": 78,
+     "nota": 72,
      "desc": "Motor de cálculo exacto: matemáticas, física, datos.",
      "para": "Estudiantes de ciencias.",
      "ejemplos": [
@@ -7854,7 +8049,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 6,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Cálculos exactos",
@@ -7872,7 +8068,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Plus de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 64,
      "desc": "Ayuda con deberes de varias asignaturas desde una foto.",
      "para": "Estudiantes.",
      "ejemplos": [
@@ -7893,7 +8089,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Ayuda con deberes desde una foto",
@@ -7911,7 +8108,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 64,
      "desc": "Calculadora que muestra los pasos de la solución.",
      "para": "Estudiantes de matemáticas.",
      "ejemplos": [
@@ -7932,7 +8129,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Muestra los pasos",
@@ -7950,7 +8148,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Plus de pago",
      "nivel": 1,
-     "nota": 75,
+     "nota": 66,
      "desc": "Sube un PDF y hazle preguntas.",
      "para": "Quien necesita entender un documento rápido.",
      "ejemplos": [
@@ -7971,7 +8169,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Preguntas a un PDF en segundos",
@@ -7989,7 +8188,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 68,
+     "nota": 60,
      "desc": "Preguntas y resúmenes sobre documentos largos.",
      "para": "Profesionales y estudiantes.",
      "ejemplos": [
@@ -8009,7 +8208,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Analiza varios PDFs",
@@ -8027,7 +8227,7 @@
      "precio": "pago",
      "precioTxt": "Desde unos 5 $/mes",
      "nivel": 2,
-     "nota": 75,
+     "nota": 70,
      "desc": "Buscador sin publicidad con asistente de IA.",
      "para": "Quien quiere búsquedas limpias.",
      "ejemplos": [
@@ -8049,7 +8249,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Búsquedas sin anuncios",
@@ -8067,7 +8268,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 60,
      "desc": "Buscador con fuentes para trabajos académicos.",
      "para": "Estudiantes.",
      "ejemplos": [
@@ -8088,7 +8289,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Fuentes para trabajos académicos",
@@ -8106,7 +8308,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 2,
-     "nota": 65,
+     "nota": 60,
      "desc": "Lector de artículos con asistente que resume y responde.",
      "para": "Lectores intensivos.",
      "ejemplos": [
@@ -8128,7 +8330,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 4
      },
      "pros": [
       "Resume artículos guardados",
@@ -8146,7 +8349,7 @@
      "precio": "freemium",
      "precioTxt": "Incluido en cursos",
      "nivel": 1,
-     "nota": 68,
+     "nota": 60,
      "desc": "Tutor dentro de los cursos de Coursera.",
      "para": "Alumnos de cursos online.",
      "ejemplos": [
@@ -8167,7 +8370,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Resuelve dudas del curso",
@@ -8185,7 +8389,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 92,
+     "nota": 84,
      "desc": "El traductor más natural, con corrector de estilo (DeepL Write).",
      "para": "Todo el mundo que traduce textos.",
      "ejemplos": [
@@ -8208,7 +8412,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 5
      },
      "pros": [
       "Traducciones muy naturales",
@@ -8226,7 +8431,7 @@
      "precio": "gratis",
      "precioTxt": "Gratis",
      "nivel": 1,
-     "nota": 90,
+     "nota": 84,
      "desc": "Apunta con la cámara y pregunta: traduce carteles, identifica plantas, resuelve dudas.",
      "para": "Cualquiera con móvil.",
      "ejemplos": [
@@ -8248,7 +8453,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 10
+      "precio": 10,
+      "versatilidad": 6
      },
      "pros": [
       "Traduce y reconoce lo que ves con la cámara",
@@ -8266,7 +8472,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · Prime de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 60,
      "desc": "Corrector de escritura académica en inglés.",
      "para": "Investigadores que publican.",
      "ejemplos": [
@@ -8287,7 +8493,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 3
      },
      "pros": [
       "Corrige textos académicos en inglés",
@@ -8305,7 +8512,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 62,
+     "nota": 54,
      "desc": "Convierte artículos en fichas resumen.",
      "para": "Estudiantes universitarios.",
      "ejemplos": [
@@ -8325,7 +8532,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Fichas de lectura automáticas",
@@ -8343,7 +8551,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 1,
-     "nota": 65,
+     "nota": 58,
      "desc": "Tutor de idiomas por chat y voz.",
      "para": "Estudiantes de idiomas.",
      "ejemplos": [
@@ -8364,7 +8572,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 3
      },
      "pros": [
       "Practicar idiomas por chat y voz",
@@ -8382,7 +8591,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Plus de pago",
      "nivel": 1,
-     "nota": 62,
+     "nota": 58,
      "desc": "Comunidad de deberes con respuestas asistidas por IA.",
      "para": "Estudiantes de secundaria.",
      "ejemplos": [
@@ -8403,7 +8612,8 @@
      "notas": {
       "calidad": 5,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Comunidad de deberes",
@@ -8431,7 +8641,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Plus de pago",
      "nivel": 1,
-     "nota": 88,
+     "nota": 80,
      "desc": "Crea presentaciones, documentos y webs bonitas a partir de un texto.",
      "para": "Quien hace presentaciones a menudo.",
      "ejemplos": [
@@ -8453,7 +8663,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 5
      },
      "pros": [
       "Presentaciones bonitas en segundos",
@@ -8494,7 +8705,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 7
      },
      "pros": [
       "Busca y resume en todos tus documentos",
@@ -8512,7 +8724,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 85,
+     "nota": 84,
      "desc": "Diseños, presentaciones y documentos con IA para todo el mundo.",
      "para": "Cualquiera que necesite diseñar algo.",
      "ejemplos": [
@@ -8536,7 +8748,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 10,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 8
      },
      "pros": [
       "Diseños y presentaciones muy fáciles",
@@ -8554,7 +8767,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Pro de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 70,
      "desc": "Corrige y mejora tus textos en inglés mientras escribes.",
      "para": "Quien escribe en inglés en el trabajo.",
      "ejemplos": [
@@ -8576,7 +8789,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 10,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 4
      },
      "pros": [
       "Corrige tu inglés mientras escribes",
@@ -8594,7 +8808,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 70,
      "desc": "Graba y transcribe reuniones con resumen automático.",
      "para": "Quien tiene muchas reuniones.",
      "ejemplos": [
@@ -8616,7 +8830,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Transcribe y resume reuniones",
@@ -8634,7 +8849,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 75,
+     "nota": 68,
      "desc": "Asistente que se une a tus reuniones y toma notas.",
      "para": "Equipos comerciales y de proyecto.",
      "ejemplos": [
@@ -8655,7 +8870,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Se une a tus reuniones y toma notas",
@@ -8673,7 +8889,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 74,
      "desc": "Toma notas de reuniones sin bot visible y las mejora con IA.",
      "para": "Profesionales con reuniones seguidas.",
      "ejemplos": [
@@ -8694,7 +8910,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 4
      },
      "pros": [
       "Notas sin bot en la llamada",
@@ -8712,7 +8929,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 85,
+     "nota": 74,
      "desc": "Grabador de reuniones gratuito con resúmenes.",
      "para": "Quien busca una opción gratis.",
      "ejemplos": [
@@ -8733,7 +8950,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 3
      },
      "pros": [
       "Gratis y muy completo",
@@ -8751,7 +8969,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 72,
+     "nota": 64,
      "desc": "Graba reuniones y crea informes para el equipo.",
      "para": "Equipos que comparten notas.",
      "ejemplos": [
@@ -8772,7 +8990,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Clips de momentos clave",
@@ -8811,7 +9030,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 8
      },
      "pros": [
       "Conecta miles de apps",
@@ -8829,7 +9049,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 75,
+     "nota": 76,
      "desc": "Automatizaciones visuales más flexibles y baratas que Zapier.",
      "para": "Usuarios que quieren flujos complejos.",
      "ejemplos": [
@@ -8849,7 +9069,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 6,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 8
      },
      "pros": [
       "Más barato y flexible que Zapier",
@@ -8889,7 +9110,8 @@
      "notas": {
       "calidad": 9,
       "facilidad": 4,
-      "precio": 9
+      "precio": 9,
+      "versatilidad": 8
      },
      "pros": [
       "Gratis instalado en tu servidor",
@@ -8907,7 +9129,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 62,
      "desc": "Presentaciones que se maquetan solas.",
      "para": "Profesionales que presentan a menudo.",
      "ejemplos": [
@@ -8927,7 +9149,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 3
      },
      "pros": [
       "Diapositivas que se maquetan solas",
@@ -8945,7 +9168,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 82,
+     "nota": 72,
      "desc": "Convierte un texto en esquemas y gráficos visuales.",
      "para": "Quien quiere explicar ideas con dibujos.",
      "ejemplos": [
@@ -8965,7 +9188,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Convierte texto en esquemas visuales",
@@ -8983,7 +9207,7 @@
      "precio": "pago",
      "precioTxt": "Incluido en planes de Figma",
      "nivel": 2,
-     "nota": 65,
+     "nota": 62,
      "desc": "Funciones de IA dentro de Figma para diseñar interfaces.",
      "para": "Diseñadores de producto.",
      "ejemplos": [
@@ -9005,7 +9229,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "IA dentro de Figma",
@@ -9023,7 +9248,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 66,
      "desc": "Pizarra colaborativa que agrupa ideas y crea diagramas.",
      "para": "Equipos que hacen lluvias de ideas.",
      "ejemplos": [
@@ -9045,7 +9270,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Organiza ideas en una pizarra",
@@ -9063,7 +9289,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 1,
-     "nota": 70,
+     "nota": 64,
      "desc": "Cliente de correo rápido que redacta y clasifica con IA.",
      "para": "Quien recibe muchos emails.",
      "ejemplos": [
@@ -9086,7 +9312,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 4
      },
      "pros": [
       "Correo muy rápido con IA",
@@ -9104,7 +9331,7 @@
      "precio": "pago",
      "precioTxt": "Suscripción",
      "nivel": 1,
-     "nota": 62,
+     "nota": 58,
      "desc": "Planifica tu calendario y tareas automáticamente.",
      "para": "Personas con agendas complicadas.",
      "ejemplos": [
@@ -9126,7 +9353,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 4
      },
      "pros": [
       "Planifica tu semana automáticamente",
@@ -9144,7 +9372,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 75,
+     "nota": 66,
      "desc": "Reserva tiempo para tareas y hábitos en Google Calendar.",
      "para": "Quien quiere proteger su tiempo.",
      "ejemplos": [
@@ -9164,7 +9392,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 8
+      "precio": 8,
+      "versatilidad": 3
      },
      "pros": [
       "Reserva tiempo para tareas",
@@ -9182,7 +9411,7 @@
      "precio": "pago",
      "precioTxt": "Complemento de pago",
      "nivel": 1,
-     "nota": 62,
+     "nota": 60,
      "desc": "IA dentro de ClickUp para gestionar proyectos.",
      "para": "Equipos en ClickUp.",
      "ejemplos": [
@@ -9204,7 +9433,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 6,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 5
      },
      "pros": [
       "IA para gestionar proyectos",
@@ -9222,7 +9452,7 @@
      "precio": "pago",
      "precioTxt": "Planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 60,
      "desc": "Redacción de marketing con la voz de tu marca.",
      "para": "Equipos de marketing.",
      "ejemplos": [
@@ -9243,7 +9473,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 8,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 4
      },
      "pros": [
       "Textos de marketing con tu voz de marca",
@@ -9261,7 +9492,7 @@
      "precio": "pago",
      "precioTxt": "Solo empresas",
      "nivel": 2,
-     "nota": 68,
+     "nota": 66,
      "desc": "Buscador interno que encuentra información en todas las herramientas de la empresa.",
      "para": "Empresas grandes.",
      "ejemplos": [
@@ -9281,7 +9512,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 4
+      "precio": 4,
+      "versatilidad": 6
      },
      "pros": [
       "Encuentra información interna",
@@ -9299,7 +9531,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 68,
+     "nota": 66,
      "desc": "Crea asistentes que gestionan email, agenda y tareas por ti.",
      "para": "Autónomos y pequeños negocios.",
      "ejemplos": [
@@ -9319,7 +9551,8 @@
      "notas": {
       "calidad": 7,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 6
      },
      "pros": [
       "Asistentes para email y agenda",
@@ -9337,7 +9570,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 2,
-     "nota": 72,
+     "nota": 74,
      "desc": "Agente que ejecuta tareas completas: investiga, crea archivos y webs.",
      "para": "Quien quiere delegar tareas largas.",
      "ejemplos": [
@@ -9358,7 +9591,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 7,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 8
      },
      "pros": [
       "Hace tareas completas solo",
@@ -9397,7 +9631,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 8
      },
      "pros": [
       "Presentaciones e informes terminados",
@@ -9415,7 +9650,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 78,
+     "nota": 72,
      "desc": "Analiza hojas de cálculo y crea gráficos preguntando en lenguaje natural.",
      "para": "Quien trabaja con datos sin saber programar.",
      "ejemplos": [
@@ -9435,7 +9670,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 9,
-      "precio": 6
+      "precio": 6,
+      "versatilidad": 5
      },
      "pros": [
       "Analiza tu Excel preguntando en español",
@@ -9453,7 +9689,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · Premium de pago",
      "nivel": 1,
-     "nota": 70,
+     "nota": 62,
      "desc": "Parafrasea y resume textos.",
      "para": "Estudiantes y redactores.",
      "ejemplos": [
@@ -9474,7 +9710,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 3
      },
      "pros": [
       "Reformula textos",
@@ -9492,7 +9729,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis limitado · planes de pago",
      "nivel": 1,
-     "nota": 65,
+     "nota": 56,
      "desc": "Propone formas alternativas de decir una frase.",
      "para": "Quien quiere mejorar su estilo.",
      "ejemplos": [
@@ -9513,7 +9750,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 9,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 2
      },
      "pros": [
       "Alternativas para cada frase",
@@ -9531,7 +9769,7 @@
      "precio": "freemium",
      "precioTxt": "Gratis · planes de pago",
      "nivel": 1,
-     "nota": 68,
+     "nota": 66,
      "desc": "Listas, mapas mentales y agentes de IA en un mismo espacio.",
      "para": "Equipos pequeños.",
      "ejemplos": [
@@ -9553,7 +9791,8 @@
      "notas": {
       "calidad": 6,
       "facilidad": 8,
-      "precio": 7
+      "precio": 7,
+      "versatilidad": 6
      },
      "pros": [
       "Listas, mapas y agentes",
@@ -9571,7 +9810,7 @@
      "precio": "pago",
      "precioTxt": "Complemento para empresas",
      "nivel": 2,
-     "nota": 72,
+     "nota": 76,
      "desc": "Copilot dentro de Word, Excel, PowerPoint y Outlook con los datos de tu empresa.",
      "para": "Empresas con Microsoft 365.",
      "ejemplos": [
@@ -9594,7 +9833,8 @@
      "notas": {
       "calidad": 8,
       "facilidad": 8,
-      "precio": 5
+      "precio": 5,
+      "versatilidad": 9
      },
      "pros": [
       "IA dentro de Word, Excel y PowerPoint con tus datos",
