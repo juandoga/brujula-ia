@@ -238,6 +238,25 @@ select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;bac
 .tot .v{font-family:var(--f-display);font-weight:800;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
 .pack-note{margin:0;font-size:14px;color:var(--ink-2)}
 
+
+.pack{padding:0;gap:0}
+.pack-sum{list-style:none;cursor:pointer;display:grid;gap:10px;padding:18px}
+.pack-sum::-webkit-details-marker{display:none}
+.pack-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.pack-h3{font-family:var(--f-display);font-weight:800;font-size:20px;color:var(--ink);line-height:1.2}
+.pack-chev{flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--accent-soft);position:relative}
+.pack-chev::after{content:"";position:absolute;left:50%;top:45%;width:9px;height:9px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:translate(-50%,-50%) rotate(45deg);transition:transform .15s}
+.pack[open] .pack-chev::after{transform:translate(-50%,-20%) rotate(-135deg)}
+.pack-sum .para{margin:0;color:var(--muted);font-size:15px}
+.pack-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.pack-icons{display:flex;gap:4px}
+.pack-icons .ico.sm{width:30px;height:30px;border-radius:8px}
+.pack-icons .ico.sm img{width:20px;height:20px}
+.pack-prices{display:flex;gap:6px;flex-wrap:wrap}
+.pack-cta::before{content:"Ver los pasos y precios →"}
+.pack[open] .pack-cta::before{content:"Ocultar"}
+.pack-body{display:grid;gap:14px;padding:0 18px 18px}
+
 /* Consejos y guías */
 .tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .tips li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
@@ -794,7 +813,7 @@ function pintarReco(txt){
     ${pack ? `<p class="reco-note" style="margin-top:18px">¿Es parte de un proyecto más grande? Mira el pack <button class="linkbtn" type="button" data-pack="${pack.id}">«${esc(pack.titulo)}»</button>, con todas las IAs que necesitas y su precio total.</p>` : ""}`;
   irA();
 }
-document.addEventListener("click", e => { const p=e.target.closest("[data-pack]"); if(p){ showView("packs"); requestAnimationFrame(()=>document.getElementById("pack-"+p.dataset.pack)?.scrollIntoView({block:"start"})); } });
+document.addEventListener("click", e => { const p=e.target.closest("[data-pack]"); if(p){ showView("packs"); requestAnimationFrame(()=>{ const el=document.getElementById("pack-"+p.dataset.pack); if(el){ el.open=true; el.scrollIntoView({block:"start"}); window.scrollBy(0,-120); } }); } });
 $("#recoForm").addEventListener("submit", e=>{ e.preventDefault(); pintarReco($("#recoTxt").value.trim()); });
 $("#askForm").addEventListener("submit", e=>{ e.preventDefault(); const v=$("#askTxt").value.trim(); $("#recoTxt").value=v; showView("reco"); pintarReco(v); });
 
@@ -808,19 +827,28 @@ $("#ideas").addEventListener("click", onIdea); $("#ideasHome").addEventListener(
 const euros = n => n===0 ? "0 €" : `≈ ${n} €`;
 function renderPacks(){
   $("#packs").innerHTML = PACKS.map(p=>{
+    const iconos = p.pasos.map(s=>icono(byName.get(s.ia)||{nombre:s.ia},"sm")).join("");
     const pasos = p.pasos.map(s=>{ const h = byName.get(s.ia) || {nombre:s.ia}; return `
       <li><button type="button" class="step" ${h.id?`data-open="${esc(h.id)}"`:""}>${icono(h,"sm")}
         <span style="min-width:0"><span class="sn">${esc(s.ia)}</span><br><span class="sr">${esc(s.rol)}</span></span>
         <span class="sp">${s.precio ? `${euros(s.precio)}/mes<small>${esc(s.plan)}</small>` : `Gratis<small>&nbsp;</small>`}</span></button></li>`; }).join("");
-    return `<article class="pack" id="pack-${esc(p.id)}">
-      <div><h3>${esc(p.titulo)}</h3><p class="para">${esc(p.para)}</p></div>
-      <ol class="steps">${pasos}</ol>
-      <div class="pack-total">
-        <div class="tot free"><span class="t">Versión gratis</span><span class="v">0 €</span><span class="small">Con límites</span></div>
-        <div class="tot full"><span class="t">Versión completa</span><span class="v">${euros(p.total)}<span style="font-size:14px">/mes</span></span><span class="small">Suma de los planes básicos</span></div>
+    return `<details class="pack" id="pack-${esc(p.id)}">
+      <summary class="pack-sum">
+        <span class="pack-head"><span class="pack-h3">${esc(p.titulo)}</span><span class="pack-chev" aria-hidden="true"></span></span>
+        <span class="para">${esc(p.para)}</span>
+        <span class="pack-row"><span class="pack-icons">${iconos}</span>
+          <span class="pack-prices"><span class="pill g-libre">Gratis: 0 €</span><span class="pill">Completo: ${euros(p.total)}/mes</span></span></span>
+        <span class="c-more pack-cta"></span>
+      </summary>
+      <div class="pack-body">
+        <ol class="steps">${pasos}</ol>
+        <div class="pack-total">
+          <div class="tot free"><span class="t">Versión gratis</span><span class="v">0 €</span><span class="small">Con límites</span></div>
+          <div class="tot full"><span class="t">Versión completa</span><span class="v">${euros(p.total)}<span style="font-size:14px">/mes</span></span><span class="small">Suma de los planes básicos</span></div>
+        </div>
+        <p class="pack-note"><b>Con la versión gratis:</b> ${esc(p.notaGratis)}</p>
       </div>
-      <p class="pack-note"><b>Con la versión gratis:</b> ${esc(p.notaGratis)}</p>
-    </article>`;
+    </details>`;
   }).join("");
 }
 
