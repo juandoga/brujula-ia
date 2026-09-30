@@ -41,7 +41,7 @@ def pagina(ruta, titulo, desc, cuerpo, canon):
 <div class="top"><a class="logo" href="{SITE}/">Cual<span>ia</span></a><a href="{SITE}/">¿Qué IA uso para esto?</a></div>
 {cuerpo}
 <p class="small" style="margin-top:36px">Cualia es una guía independiente de herramientas de IA en español, revisada cada semana. Precios orientativos.</p>
-</div></body></html>"""
+</div><!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "8693430a24394f339b7e26f53a417319"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
     destino = os.path.join(RAIZ, ruta)
     os.makedirs(os.path.dirname(destino), exist_ok=True)
     open(destino, "w", encoding="utf-8").write(doc)
