@@ -215,6 +215,7 @@ select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;bac
 .reco-panel textarea{width:100%;min-height:76px;padding:12px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);resize:vertical;font-size:16px;color:var(--ink)}
 .reco-head{margin:0 0 6px}
 .reco-note{margin:0 0 16px;color:var(--muted);max-width:65ch}
+.reco-aviso{margin:0 0 14px;max-width:70ch;background:var(--info-soft);color:var(--ink);border-radius:10px;padding:10px 12px;font-size:15px}
 .reco-list{display:grid;gap:12px}
 .reco-item{display:grid;gap:8px}
 .why{margin:0;font-size:15px;color:var(--ink)}
@@ -691,6 +692,74 @@ $("#sort").addEventListener("change", e=>{ st.sort=e.target.value; renderGrid();
 
 /* ---------- Recomendador ---------- */
 const INTENTS = [
+ {id:"produccion-audiovisual", titulo:"Producción audiovisual: plan de rodaje, desglose y presupuesto", re:/plan (de|del) rodaje|orden de rodaje|hoja de (rodaje|llamada|citacion)|call ?sheet|desglose (de|del) guion|desglos|preproduccion|produccion audiovisual|presupuesto (de|del|para) (rodaje|produccion|un corto|una pelicula|un videoclip)|localizaciones|casting|ayudante de produccion|jefe de produccion|producir (un corto|una pelicula|una serie)|rodar (un|una)|rodaje/, cat:"chat",
+   nota:"Todavía no hay en el catálogo herramientas específicas de producción de cine. Los asistentes generales resuelven muy bien el desglose de guion y el plan de rodaje si les das el guion y tus condiciones (días, localizaciones, disponibilidad del reparto).", picks:[
+   ["Claude","Pásale el guion y pídele el desglose por escenas (localización, personajes, día o noche, atrezo) y un plan de rodaje agrupando escenas por localización. Maneja guiones largos sin perderse."],
+   ["ChatGPT","Hace lo mismo y puede entregarte el plan de rodaje o el presupuesto como hoja de Excel descargable."],
+   ["Gemini Notebook","Sube guion, notas de localizaciones y documentos del proyecto: responde solo con tu material, útil para consultar dudas durante la producción."],
+   ["Gemini","Si el equipo trabaja con Google Drive, lo pasa a una hoja de Google Sheets para compartirla."]]},
+ {id:"storyboard", titulo:"Hacer un storyboard", re:/storyboard|guion grafico|animatic|previsualiz|planos? (de|para) (mi|un|una) (corto|pelicula|anuncio|videoclip|escena)/, cat:"video", picks:[
+   ["LTX Studio","Convierte el guion en un storyboard por planos y puedes animarlo después."],
+   ["Midjourney","Fotogramas con aspecto cinematográfico para cada plano."],
+   ["Nano Banana 2","Rápido y gratis en Gemini; mantiene bien el mismo personaje entre viñetas."]]},
+ {id:"guion", titulo:"Escribir un guion", re:/guion|guiones|escaleta|sinopsis|tratamiento (de|para)|dialogos|escribir (un|una) (corto|pelicula|serie|obra de teatro|sketch)|argumento (de|para)/, cat:"chat", picks:[
+   ["Claude","El que mejor escribe diálogos y estructura; ideal para desarrollar, revisar y dar formato al guion."],
+   ["ChatGPT","Muy bueno para lluvia de ideas, sinopsis y variantes de escenas."],
+   ["Gemini","Alternativa gratuita potente, cómoda si guardas el guion en Google Docs."]]},
+ {id:"resumir-video", titulo:"Resumir un vídeo de YouTube", re:/resum\w*.{0,25}(video|youtube)|de que (va|trata) (este|un|el) video|video de youtube/, cat:"chat", picks:[
+   ["Gemini","Pégale el enlace de YouTube y te resume el vídeo o responde preguntas sobre él."],
+   ["Gemini Notebook","Añade uno o varios vídeos como fuentes y consúltalos como si fueran apuntes."],
+   ["Perplexity","Resume y te enlaza fuentes relacionadas para ampliar."]]},
+ {id:"musica-produccion", titulo:"Producir, mezclar o masterizar música", re:/mezcl|masteriz|produc(ir|cion) musical|produccion de musica|\bbeats?\b|base (de|para) (rap|trap)|home studio/, cat:"musica", picks:[
+   ["BandLab SongStarter","Estudio completo y gratis en el navegador para grabar y producir."],
+   ["LANDR","Masteriza tu canción automáticamente para que suene profesional."],
+   ["iZotope Ozone","Masterización asistida con más control, para quien ya produce."]]},
+ {id:"marketing", titulo:"Marketing y anuncios", re:/marketing|anuncios? (para|de|en) (redes|instagram|facebook|google|tiktok)|campana (de|publicitaria)|publicidad|eslogan|slogan|\bcopy\b|textos? (de|para) venta|captar clientes/, cat:"trabajo", picks:[
+   ["ChatGPT","Ideas de campaña, textos de anuncios y variantes para probar."],
+   ["Canva (Magic Studio)","Diseña las piezas (posts, banners, historias) con plantillas y IA."],
+   ["Claude","Textos persuasivos con un tono natural, sin sonar a plantilla."]]},
+ {id:"chatbot", titulo:"Crear un chatbot o asistente para tu negocio", re:/chatbot|bot (para|de|en) (mi )?(web|whatsapp|telegram|tienda|negocio|empresa)|atencion al cliente|asistente virtual (para|de)|responder (a )?clientes/, cat:"trabajo", picks:[
+   ["Lindy","Crea asistentes que responden emails y mensajes sin programar."],
+   ["n8n","Monta un bot conectado a WhatsApp, tu web o tu correo; gratis si lo instalas tú."],
+   ["Zapier","Conecta un asistente de IA con tus apps en pocos pasos."]]},
+ {id:"cuento", titulo:"Crear un cuento o cómic", re:/cuento|comic|libro infantil|historia (para|de) (ninos|mi hijo|mi hija|dormir)|novela grafica/, cat:"chat", picks:[
+   ["Claude","Escribe la historia adaptada a la edad y al estilo que quieras."],
+   ["Nano Banana 2","Ilustra cada página manteniendo los mismos personajes."],
+   ["ElevenLabs","Narra el cuento con voces naturales para escucharlo."]]},
+ {id:"juegos-3d", titulo:"Videojuegos y 3D", re:/videojuego|\bjuego\b|modelo 3d|\b3d\b|personaje para (un )?juego|sprites?/, cat:"imagen", picks:[
+   ["Leonardo.ai","Personajes, escenarios y recursos visuales para juegos."],
+   ["Replit","Programa un juego sencillo en el navegador con ayuda de su asistente."],
+   ["Krea","Genera y mejora imágenes en tiempo real mientras dibujas."]]},
+ {id:"interiores", titulo:"Decorar o rediseñar un espacio", re:/decorar|decoracion|interiorismo|redisen\w* (mi |la |el )?(casa|habitacion|salon|cocina|piso)|reforma|muebles/, cat:"imagen", picks:[
+   ["Nano Banana 2","Sube una foto de tu salón y pídele cambios: «pinta las paredes de verde», «pon un sofá moderno»."],
+   ["GPT Image 2","Muy preciso siguiendo instrucciones detalladas sobre tu foto."],
+   ["Meta Muse Image","Gratis en WhatsApp e Instagram y permite rediseñar estancias."]]},
+ {id:"foto-perfil", titulo:"Foto de perfil profesional", re:/foto (de perfil|profesional|para (linkedin|el cv|el curriculum))|headshot/, cat:"imagen", picks:[
+   ["Nano Banana 2","A partir de tu selfie, crea una foto con fondo y ropa profesional."],
+   ["GPT Image 2","Retoques detallados con instrucciones en lenguaje normal."],
+   ["Photoroom","Fondo de estudio limpio en segundos desde el móvil."]]},
+ {id:"viaje", titulo:"Planificar un viaje", re:/viaje|viajar|itinerario|vacaciones|escapada|\bruta\b|que ver en/, cat:"chat", picks:[
+   ["Perplexity","Itinerario con información actual y enlaces a las fuentes para comprobar horarios y precios."],
+   ["ChatGPT","Organiza el viaje día a día según tu presupuesto y gustos."],
+   ["Gemini","Integrado con Google Maps y Gmail: útil si tienes las reservas en tu correo."]]},
+ {id:"cocina", titulo:"Cocina y menús", re:/receta|cocinar|menu semanal|menu de la semana|que (cocino|como|ceno)|comida|lista de la compra|dieta|rutina de (ejercicio|gimnasio)|entrenamiento/, cat:"chat", picks:[
+   ["ChatGPT","Recetas y menús con lo que tienes en la nevera, y la lista de la compra."],
+   ["Gemini","Hazle una foto a la nevera y te propone qué cocinar."],
+   ["Claude","Planes semanales bien organizados y fáciles de seguir."]]},
+ {id:"legal", titulo:"Entender contratos, trámites o impuestos", re:/contrato|legal|abogad|demanda|reclamacion|hacienda|impuestos|\brenta\b|declaracion|autonomo|factura|tramite|burocracia/, cat:"chat",
+   nota:"Úsalas para entender documentos y preparar dudas, no como asesoramiento: para decisiones importantes consulta con un profesional.", picks:[
+   ["Claude","Explica contratos y documentos largos en lenguaje sencillo y señala puntos a revisar."],
+   ["Perplexity","Busca la normativa actual y te enlaza la fuente oficial."],
+   ["ChatGPT","Te ayuda a redactar reclamaciones o escritos a partir de tu caso."]]},
+ {id:"finanzas", titulo:"Organizar tus finanzas", re:/ahorr|finanzas|presupuesto (familiar|personal|mensual|de casa)|gastos|inversion|invertir|hipoteca|prestamo/, cat:"trabajo",
+   nota:"Úsalas para ordenar tus números y entender conceptos, no como asesoramiento financiero.", picks:[
+   ["ChatGPT","Crea tu presupuesto mensual y lo entrega como hoja de Excel."],
+   ["Julius AI","Sube el Excel de tus gastos y pregúntale en español dónde se te va el dinero."],
+   ["Claude","Explica conceptos como hipotecas o fondos de forma sencilla."]]},
+ {id:"organizar", titulo:"Organizar tu tiempo y tareas", re:/organizar(me)? (mi |la |el )?(semana|dia|tiempo|tareas|agenda|trabajo)|productividad|habitos|gestionar (mi )?tiempo|to ?do|lista de tareas/, cat:"trabajo", picks:[
+   ["ChatGPT","Ordena tus tareas por prioridad y te propone un horario realista."],
+   ["Reclaim","Reserva automáticamente huecos en tu Google Calendar para tus tareas."],
+   ["Motion","Planifica tu semana solo y la reajusta cuando algo cambia."]]},
  {id:"aprender-programar", titulo:"Aprender a programar", re:/(aprend|empez|curso|estudi|ensen).{0,25}(program|codig|python|javascript|html|css|java\b)|program\w* desde cero|iniciarme en la programacion/, cat:"codigo", picks:[
    ["Replit","Programas desde el navegador y ves el resultado al instante, sin instalar nada. Su asistente te explica cada paso."],
    ["ChatGPT","Úsalo como profesor particular: pídele que te explique conceptos con ejemplos sencillos y que te ponga ejercicios."],
@@ -710,12 +779,16 @@ const INTENTS = [
    ["Chordify","Saca los acordes de cualquier canción para que puedas tocarla."],
    ["Moises","Quita la voz o un instrumento y baja la velocidad para practicar."],
    ["LALAL.AI","Separa voz e instrumentos con mucha calidad."]]},
+ {id:"letra", titulo:"Escribir la letra de una canción", re:/letra (de|para) (una |mi )?cancion|escribir (la )?letra|componer (la )?letra|rimas|versos/, cat:"chat", picks:[
+   ["Claude","Escribe letras con buen ritmo y rima; pídele el estilo y el tema, y ve ajustando estrofa a estrofa."],
+   ["ChatGPT","Muy útil para ideas, estribillos y variantes de una misma letra."],
+   ["Suno","Cuando tengas la letra, pégala en Suno para escuchar cómo sonaría cantada."]]},
  {id:"cancion", titulo:"Hacer una canción", re:/cancion|canciones|letra|cantad|con voz|tema musical|jingle|cumpleanos.{0,20}(music|cancion)|rap\b|reggaeton/, cat:"musica", picks:[
    ["Suno","Escribe de qué va la canción y el estilo, y crea el tema completo con voz y letra en un minuto."],
    ["ElevenLabs Music","Voces muy realistas y la licencia más clara si quieres publicarla o usarla en un anuncio."],
    ["Mureka","Alternativa a Suno con descargas ilimitadas en su plan de pago."],
    ["Google Flow Music","Música de Google, con marca de agua que indica que es IA."]]},
- {id:"musica-fondo", titulo:"Música de fondo para vídeos", re:/musica de fondo|instrumental|banda sonora|sin copyright|libre de derechos|musica para (un |mi )?(video|podcast|youtube|reel)/, cat:"musica", picks:[
+ {id:"musica-fondo", titulo:"Música de fondo para vídeos", re:/musica de fondo|instrumental|banda sonora|sin copyright|libre de derechos|musica (para|de) (un |una |mi )?(video|podcast|youtube|reel|corto|pelicula|documental|anuncio|juego|videojuego)/, cat:"musica", picks:[
    ["Soundraw","Música instrumental libre de derechos que ajustas a la duración de tu vídeo."],
    ["ElevenLabs Music","Pistas de gran calidad con licencia comercial clara."],
    ["AIVA","Bandas sonoras orquestales y editables, ideal para cortos."],
@@ -766,7 +839,7 @@ const INTENTS = [
    ["ElevenLabs","El estándar: voces naturales en más de 70 idiomas y clonación de voz."],
    ["Murf","Estudio de locución sencillo para cursos y presentaciones."],
    ["Hume","Voces que interpretan la emoción del texto."]]},
- {id:"transcribir", titulo:"Pasar audio a texto o dictar", re:/transcrib|pasar (un )?audio a texto|audio a texto|entrevista|dictar|dictado|nota de voz/, cat:"voz", picks:[
+ {id:"transcribir", titulo:"Pasar audio a texto o dictar", re:/transcrib|pasar (un |una )?(audio|grabacion|entrevista) a texto|audio a texto|entrevista grabada|dictar|dictado|nota de voz/, cat:"voz", picks:[
    ["Whisper","El transcriptor más usado, gratis y en casi cualquier idioma."],
    ["MacWhisper","Transcribe en tu Mac sin subir el audio a internet."],
    ["Wispr Flow","Para dictar en cualquier app: habla y te deja el texto limpio."],
@@ -844,25 +917,66 @@ function pasaFiltros(h){
   const okN = st.rNivel==="cualquiera" || (st.rNivel==="nuevo" ? h.nivel===1 : h.nivel<=2);
   return okP && okN && okDisp(h, st.rDisp);
 }
-function recomendar(txt){
-  const t = norm(txt);
-  const intent = INTENTS.find(i => i.re.test(t));
-  if(!intent) return {intent:null, res:[]};
-  const elegidos = intent.picks.map(([n,why]) => ({h:byName.get(n), why})).filter(x=>x.h);
-  const validos = elegidos.filter(x=>pasaFiltros(x.h));
+const STOP = new Set("quiero querria necesito necesitaria hacer hago crear como para una unos unas los las del con por que mis una algo cosa cosas mejor herramienta herramientas usar puedo poder alguna alguien sobre esto esta este desde tengo quisiera ayuda ayudame".split(" "));
+const TIPOS = [
+ {cat:"chat", w:2, kw:["plan","planific","organiz","horario","calendar","agenda","lista","checklist","presupuest","guion","escrib","redact","document","informe","resum","idea","estrateg","propuest","contrat","carta","email","correo","explica","preparar","borrador","esquema","plantilla"]},
+ {cat:"imagen", w:1, kw:["imagen","foto","dibuj","ilustr","logo","disen","cartel","portada","personaj","render","boceto","pintur","retrat"]},
+ {cat:"video", w:1, kw:["video","grab","clip","anim","cine","pelicul","corto","escena","reel","youtube","tiktok","trailer","montaj"]},
+ {cat:"musica", w:1, kw:["music","cancion","melod","acorde","instrument","sinton","jingle","ritmo","sonar"]},
+ {cat:"voz", w:1, kw:["voz","audio","podcast","locuc","narr","transcrib","dict","sonido","ruido","escuch"]},
+ {cat:"codigo", w:1, kw:["program","codigo","web","app","aplicac","softwar","script","datos base","api","pagina"]},
+ {cat:"estudio", w:1, kw:["estudi","aprend","examen","tesis","idioma","ingles","investig","clase","curso","libro","apunte","colegio","universidad"]},
+ {cat:"trabajo", w:1, kw:["reunion","presentac","excel","automat","empresa","negocio","client","factur","marketing","ventas","proyecto","equipo","oficina"]},
+];
+const ASIST = [
+ ["Claude", t=>`Descríbele con detalle lo que necesitas («${t}») y te prepara un primer borrador que puedes ir ajustando. Es el que mejor redacta y organiza.`],
+ ["ChatGPT", t=>`También lo resuelve y puede entregártelo como archivo (Word, Excel o PDF) listo para usar.`],
+ ["Gemini", t=>`Alternativa gratuita muy capaz; cómoda si trabajas con Google Docs o Drive.`],
+];
+function tokens(t){ return norm(t).split(/[^a-z0-9ñ]+/).filter(w=>w.length>=4 && !STOP.has(w)); }
+function elegir(cands, cat){
+  const validos = cands.filter(x=>x.h && pasaFiltros(x.h));
   if(validos.length < 3){
     const ya = new Set(validos.map(x=>x.h.id));
-    ALL.filter(h=>h.cat===intent.cat && !ya.has(h.id) && pasaFiltros(h)).sort((a,b)=>b.nota-a.nota)
+    ALL.filter(h=>h.cat===cat && !ya.has(h.id) && pasaFiltros(h)).sort((a,b)=>b.nota-a.nota)
       .slice(0, 3-validos.length).forEach(h=>validos.push({h, why:null}));
   }
-  return {intent, res: validos.slice(0,3), descartados: elegidos.length - elegidos.filter(x=>pasaFiltros(x.h)).length};
+  return {res: validos.slice(0,3), descartados: cands.filter(x=>x.h).length - cands.filter(x=>x.h && pasaFiltros(x.h)).length};
+}
+function recomendar(txt){
+  const t = norm(txt);
+  // 1. Tarea conocida
+  const intent = INTENTS.find(i => i.re.test(t));
+  if(intent){
+    const r = elegir(intent.picks.map(([n,why]) => ({h:byName.get(n), why})), intent.cat);
+    return {intent, ...r, modo:"exacto"};
+  }
+  // 2. Tipo de tarea por palabras clave
+  const toks = tokens(txt);
+  const puntos = TIPOS.map(tp=>({tp, s: toks.reduce((acc,w)=>acc + (tp.kw.some(k=>w.startsWith(k)||k.startsWith(w.slice(0,5)) && w.length>=5) ? tp.w : 0), 0)})).sort((a,b)=>b.s-a.s);
+  const titulo = txt.charAt(0).toUpperCase()+txt.slice(1);
+  if(puntos[0].s>0 && puntos[0].tp.cat!=="chat"){
+    const cat = puntos[0].tp.cat;
+    const stems = toks.map(w=>w.slice(0,5));
+    const ranked = ALL.filter(h=>h.cat===cat).map(h=>{ const tx = norm([h.nombre,h.desc,h.para,(h.ejemplos||[]).join(" ")].join(" "));
+      return {h, s: stems.reduce((a,s)=>a+(tx.includes(s)?10:0),0) + h.nota/10}; }).sort((a,b)=>b.s-a.s);
+    const r = elegir(ranked.slice(0,6).map(x=>({h:x.h, why:null})), cat);
+    const nombreCat = CATS.find(c=>c.id===cat)?.nombre || "";
+    return {intent:{id:"gen-"+cat, titulo, cat, nota:`No tenemos una recomendación preparada para esto exactamente. Parece una tarea de «${nombreCat}», así que te mostramos las que mejor encajan con lo que has escrito.`}, ...r, modo:"aprox"};
+  }
+  // 3. Documento, plan o texto (o no reconocido): asistente general
+  const r = elegir(ASIST.map(([n,f])=>({h:byName.get(n), why:f(txt)})), "chat");
+  const nota = puntos[0].s>0
+    ? "Para preparar un documento, un plan o un texto como este, lo que mejor funciona es un asistente general: le explicas tu caso y te lo prepara."
+    : "No hemos reconocido una tarea concreta. Un asistente general sirve para casi todo; si buscas algo muy específico, prueba a describirlo de otra forma o búscalo en el catálogo.";
+  return {intent:{id:"gen-chat", titulo, cat:"chat", nota}, ...r, modo: puntos[0].s>0 ? "aprox" : "general"};
 }
 function motivoGenerico(h){
   const r=[]; if(h.gratisTipo==="libre"||h.gratisTipo==="util") r.push("tiene un plan gratis útil"); if(h.nivel===1) r.push("es fácil de usar"); if(h.nota>=85) r.push("está entre las mejores de su campo");
   return r.length ? "Encaja con tus filtros: "+r.join(", ")+"." : "Encaja con lo que buscas y con tus filtros.";
 }
 function packDeIntent(intent){
-  const mapa = {"generar-video":"cortometraje","cancion":"videoclip","subtitulos":"youtube","audio":"podcast","crear-web":"negocio","estudiar":"estudiante","aprender-programar":"programar","presentacion":"oficina","reuniones":"oficina","idiomas":"idiomas","instrumento":"musico","texto-imagen":"redes","avatar":"youtube","locucion":"youtube"};
+  const mapa = {"produccion-audiovisual":"cortometraje","storyboard":"cortometraje","guion":"cortometraje","marketing":"redes","cuento":"escritor","musica-produccion":"musico","generar-video":"cortometraje","cancion":"videoclip","subtitulos":"youtube","audio":"podcast","crear-web":"negocio","estudiar":"estudiante","aprender-programar":"programar","presentacion":"oficina","reuniones":"oficina","idiomas":"idiomas","instrumento":"musico","texto-imagen":"redes","avatar":"youtube","locucion":"youtube"};
   return PACKS.find(p=>p.id===mapa[intent.id]);
 }
 function pintarReco(txt){
@@ -870,20 +984,17 @@ function pintarReco(txt){
   const irA = () => requestAnimationFrame(()=>window.scrollTo({top: out.getBoundingClientRect().top + window.scrollY - 120, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}));
   if(!txt){ out.innerHTML=`<p class="empty">Escribe primero qué quieres hacer, por ejemplo «crear un logo para mi tienda».</p>`; return; }
   if(!ALL.length){ out.innerHTML=`<p class="empty">Las fichas aún se están cargando. Inténtalo en unos segundos.</p>`; return; }
-  const {intent,res,descartados} = recomendar(txt);
-  if(!intent){
-    out.innerHTML = `<h2 class="h-section reco-head">No he entendido bien qué quieres hacer</h2>
-      <p class="reco-note">Prueba a decirlo con otras palabras («quiero…» + la tarea) o elige una de las ideas de arriba. También puedes buscarlo en el <a href="#explorar" id="goCat">catálogo</a>.</p>`;
-    $("#goCat")?.addEventListener("click",e=>{e.preventDefault(); st.q=txt; $("#q").value=txt; renderGrid(); showView("explorar");});
-    irA(); return;
-  }
-  const nota = descartados>0 ? ` He quitado ${descartados===1?"una opción que no encaja":"opciones que no encajan"} con tus filtros.` : "";
-  const pack = packDeIntent(intent);
+  const {intent,res,descartados,modo} = recomendar(txt);
+  const filt = descartados>0 ? ` He quitado ${descartados===1?"una opción que no encaja":"opciones que no encajan"} con tus filtros.` : "";
+  const pack = modo==="exacto" ? packDeIntent(intent) : null;
   out.innerHTML = `<div class="label">Tu objetivo</div><h2 class="h-section reco-head">${esc(intent.titulo)}</h2>
-    <p class="reco-note">Nuestras tres propuestas, de la más recomendada a la menos.${nota} Toca una para ver su ficha completa.</p>
+    ${intent.nota ? `<p class="reco-aviso">${esc(intent.nota)}</p>` : ""}
+    <p class="reco-note">Nuestras tres propuestas, de la más recomendada a la menos.${filt} Toca una para ver su ficha completa.</p>
     ${res.length ? `<div class="grid">${res.map((x,i)=>`<div class="reco-item"><p class="why"><b>${i+1}</b>${esc(x.why || motivoGenerico(x.h))}</p>${tarjeta(x.h)}</div>`).join("")}</div>`
       : `<p class="empty">Ninguna opción encaja con esos filtros. Prueba con «Me da igual» en alguno de ellos.</p>`}
-    ${pack ? `<p class="reco-note" style="margin-top:18px">¿Es parte de un proyecto más grande? Mira el pack <button class="linkbtn" type="button" data-pack="${pack.id}">«${esc(pack.titulo)}»</button>, con todas las IAs que necesitas y su precio total.</p>` : ""}`;
+    ${pack ? `<p class="reco-note" style="margin-top:18px">¿Es parte de un proyecto más grande? Mira el pack <button class="linkbtn" type="button" data-pack="${pack.id}">«${esc(pack.titulo)}»</button>, con todas las IAs que necesitas y su precio total.</p>` : ""}
+    ${modo!=="exacto" ? `<p class="reco-note" style="margin-top:18px">¿No es lo que buscabas? Prueba a describirlo con otras palabras o <button class="linkbtn" type="button" id="goCat">búscalo en el catálogo</button>.</p>` : ""}`;
+  $("#goCat")?.addEventListener("click",()=>{ st.q=txt; $("#q").value=txt; renderGrid(); showView("explorar"); });
   irA();
 }
 document.addEventListener("click", e => { const p=e.target.closest("[data-pack]"); if(p){ showView("packs"); requestAnimationFrame(()=>{ const el=document.getElementById("pack-"+p.dataset.pack); if(el){ el.open=true; el.scrollIntoView({block:"start"}); window.scrollBy(0,-120); } }); } });
