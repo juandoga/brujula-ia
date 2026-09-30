@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Cualia · ¿Qué IA uso para esto?</title>
-<meta name="description" content="Cualia es una guía en español para elegir inteligencia artificial: 240 herramientas con ranking, filtros por precio y nivel, recomendaciones según lo que quieras hacer y fecha de revisión en cada ficha.">
+<meta name="description" content="Cualia es una guía en español para elegir inteligencia artificial: 240 herramientas con lo que incluye de verdad su versión gratis, ventajas y desventajas, packs de IAs combinadas con precio total y fecha de revisión en cada ficha.">
 <meta property="og:title" content="Cualia · ¿Qué IA uso para esto?">
-<meta property="og:description" content="240 IAs revisadas cada semana, con ranking, filtros y recomendaciones para quien empieza.">
+<meta property="og:description" content="240 IAs revisadas cada semana: qué incluye lo gratis, ventajas, desventajas y packs con precio total.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#5B3FD9">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235B3FD9'/%3E%3Ctext x='50' y='70' font-family='Arial Black,Arial' font-size='60' font-weight='900' text-anchor='middle' fill='%23fff'%3Ec%3C/text%3E%3Ccircle cx='74' cy='28' r='9' fill='%23FFC94A'/%3E%3C/svg%3E">
@@ -14,30 +14,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-/* Layout: una guía tipo FilmAffinity — cabecera con marca, pestañas, y fichas con icono, nota grande y secciones etiquetadas. Una columna en móvil, rejilla en escritorio. */
+/* Layout: guía tipo FilmAffinity. Tarjetas compactas en rejilla; al tocar una, la ficha completa se abre en una ventana (hoja inferior en móvil) sin mover la página. */
 :root{
   --bg:#F4F5F9; --card:#FFFFFF; --ink:#11151C; --ink-2:#2E3746; --muted:#667085; --rule:#E1E4EC;
   --accent:#5B3FD9; --accent-ink:#FFFFFF; --accent-soft:#ECE8FD; --gold:#FFC94A;
-  --ok:#157347; --ok-soft:#DCF3E6; --warn:#8A5300; --warn-soft:#FCEBCF; --mark:#FFF1BF; --mark-ink:#4A3800;
+  --ok:#157347; --ok-soft:#DCF3E6; --info:#1D5FB8; --info-soft:#DDEAFB; --warn:#8A5300; --warn-soft:#FCEBCF;
+  --bad:#A3261F; --bad-soft:#FBE1DE; --mark:#FFF1BF; --mark-ink:#4A3800;
   --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
   --shadow:0 1px 2px rgba(17,21,28,.06),0 4px 16px rgba(17,21,28,.05);
+  --scrim:rgba(13,16,22,.45);
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --bg:#0D1016; --card:#161A22; --ink:#F1F3F8; --ink-2:#C9CFDB; --muted:#8C95A6; --rule:#272D39;
   --accent:#9C88FF; --accent-ink:#0D1016; --accent-soft:#231D45; --gold:#E9B63B;
-  --ok:#6FD6A0; --ok-soft:#12291D; --warn:#F2B55C; --warn-soft:#30230E; --mark:#3A3212; --mark-ink:#F7E4A0;
-  --shadow:none; color-scheme:dark } }
+  --ok:#6FD6A0; --ok-soft:#12291D; --info:#8DB8F5; --info-soft:#14243B; --warn:#F2B55C; --warn-soft:#30230E;
+  --bad:#F59A92; --bad-soft:#3A1614; --mark:#3A3212; --mark-ink:#F7E4A0;
+  --shadow:none; --scrim:rgba(0,0,0,.6); color-scheme:dark } }
 :root[data-theme="dark"]{
   --bg:#0D1016; --card:#161A22; --ink:#F1F3F8; --ink-2:#C9CFDB; --muted:#8C95A6; --rule:#272D39;
   --accent:#9C88FF; --accent-ink:#0D1016; --accent-soft:#231D45; --gold:#E9B63B;
-  --ok:#6FD6A0; --ok-soft:#12291D; --warn:#F2B55C; --warn-soft:#30230E; --mark:#3A3212; --mark-ink:#F7E4A0;
-  --shadow:none; color-scheme:dark }
+  --ok:#6FD6A0; --ok-soft:#12291D; --info:#8DB8F5; --info-soft:#14243B; --warn:#F2B55C; --warn-soft:#30230E;
+  --bad:#F59A92; --bad-soft:#3A1614; --mark:#3A3212; --mark-ink:#F7E4A0;
+  --shadow:none; --scrim:rgba(0,0,0,.6); color-scheme:dark }
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink-2);font-family:var(--f-body);font-size:16px;line-height:1.55}
+body.locked{overflow:hidden}
 img{max-width:100%}
 [hidden]{display:none!important}
 .wrap{max-width:1160px;margin:0 auto;padding-inline:16px}
@@ -45,13 +50,14 @@ a{color:var(--accent)}
 button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
 
-/* Jerarquía de texto */
+/* Texto */
 h1,h2,h3,h4{color:var(--ink);font-family:var(--f-display);margin:0;text-wrap:balance;line-height:1.15}
 .h-page{font-size:clamp(28px,6vw,42px);font-weight:800;letter-spacing:-.025em}
 .h-section{font-size:clamp(20px,3.6vw,26px);font-weight:800;letter-spacing:-.015em}
 .label{font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .lede{font-size:17px;color:var(--muted);max-width:62ch;margin:8px 0 0}
 .small{font-size:13px;color:var(--muted)}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);font-weight:700;cursor:pointer;text-decoration:underline;text-underline-offset:3px;font-size:14px}
 
 /* Cabecera */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
@@ -72,9 +78,9 @@ nav.tabs::-webkit-scrollbar{display:none}
 main{padding-block:28px 72px}
 section.view > header{margin-bottom:22px}
 
-/* Buscador hero */
+/* Buscador */
 .ask{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:8px;box-shadow:var(--shadow);max-width:720px}
-.ask input{flex:1 1 220px;min-width:0;border:0;background:transparent;padding:10px 10px;font-size:17px;color:var(--ink)}
+.ask input{flex:1 1 220px;min-width:0;border:0;background:transparent;padding:10px;font-size:17px;color:var(--ink)}
 .ask input:focus{outline:none}
 .btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:11px 20px;font-weight:700;cursor:pointer;font-size:16px}
 .btn:hover{filter:brightness(1.08)}
@@ -83,99 +89,162 @@ section.view > header{margin-bottom:22px}
 .idea:hover{background:var(--accent-soft);color:var(--ink)}
 @media (max-width:640px){.ideas{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-bottom:4px}.ideas::-webkit-scrollbar{display:none}.idea{flex:0 0 auto;font-size:13px;padding:5px 11px}.reco-panel .ideas{margin-inline:-18px;padding-inline:18px}}
 
-/* Iconos de IA */
+/* Iconos */
 .ico{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
 .ico img{width:32px;height:32px;object-fit:contain}
 .ico.sm{width:36px;height:36px;border-radius:9px}
 .ico.sm img{width:24px;height:24px}
+.ico.lg{width:60px;height:60px;border-radius:15px}
+.ico.lg img{width:40px;height:40px}
 .ico.mono{background:var(--mono-bg,#5B3FD9);border-color:transparent}
 .ico.mono span{font-family:var(--f-display);font-weight:800;color:#fff;font-size:20px}
 .ico.sm.mono span{font-size:15px}
 
-/* Ranking */
+/* Etiquetas de estado */
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.g-libre{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
+.g-util{background:var(--info-soft);border-color:transparent;color:var(--info)}
+.g-limitado{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
+.g-prueba,.g-no{background:var(--bad-soft);border-color:transparent;color:var(--bad)}
+.nota-chip{min-width:44px;text-align:center;padding:4px 8px;border-radius:10px;background:var(--accent-soft);color:var(--ink);font-family:var(--f-display);font-weight:800;font-size:17px;font-variant-numeric:tabular-nums}
+
+/* Inicio */
 .split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start;margin-top:36px}
 @media (max-width:860px){.split{grid-template-columns:1fr;gap:32px}}
-.block-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+.block-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap}
 .rank-list{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--rule);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.rank-row{display:grid;grid-template-columns:2rem 36px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--rule);cursor:pointer}
-.rank-row:first-child{border-top:0}
+.rank-row{display:grid;grid-template-columns:2rem 36px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--rule);cursor:pointer;width:100%;background:none;border-left:0;border-right:0;border-bottom:0;text-align:left}
+.rank-list li:first-child .rank-row{border-top:0}
 .rank-row:hover{background:var(--accent-soft)}
 .rank-pos{font-family:var(--f-display);font-weight:800;font-size:18px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
-.rank-row:nth-child(-n+3) .rank-pos{color:var(--accent)}
+.rank-list li:nth-child(-n+3) .rank-pos{color:var(--accent)}
 .rank-main{min-width:0}
 .rank-name{font-weight:700;color:var(--ink);font-size:16px;line-height:1.25}
 .rank-sub{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nota{font-family:var(--f-display);font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
-.nota-chip{min-width:44px;text-align:center;padding:4px 8px;border-radius:10px;background:var(--accent-soft);color:var(--ink);font-family:var(--f-display);font-weight:800;font-size:17px;font-variant-numeric:tabular-nums}
 .podiums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 @media (max-width:520px){.podiums{grid-template-columns:1fr}}
 .podium{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
 .podium h3{font-size:17px;font-weight:800;margin-bottom:10px}
 .podium ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .podium li button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:0;cursor:pointer;text-align:left}
-.podium li .pn{font-weight:700;color:var(--ink);font-size:15px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.podium li .pp{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.podium .pn{font-weight:700;color:var(--ink);font-size:15px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.podium .pp{margin-left:auto}
 
 /* Filtros */
 .filters{display:grid;gap:14px;margin-bottom:20px;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
 .search{width:100%;padding:12px 14px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);font-size:16px;color:var(--ink)}
-.frow{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:10px;align-items:start}
+.frow{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;align-items:start}
 @media (max-width:520px){.frow{grid-template-columns:1fr;gap:6px}}
 .frow .label{padding-top:8px;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{border:1px solid var(--rule);background:var(--bg);padding:6px 12px;border-radius:999px;cursor:pointer;font-size:14px;color:var(--ink-2)}
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
 select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--bg);color:var(--ink)}
+.filt-toggle{display:none;justify-self:start;border:1px solid var(--rule);background:var(--bg);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer;color:var(--ink)}
+.filt-body{display:grid;gap:14px}
+@media (max-width:640px){.filt-toggle{display:inline-block}.filt-body:not(.open){display:none}}
 .count{font-size:14px;color:var(--muted);margin:0 0 12px}
 
-/* Fichas */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+/* Tarjetas compactas */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
 @media (max-width:400px){.grid{grid-template-columns:1fr}}
-.ficha{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0;box-shadow:var(--shadow)}
-.f-head{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center}
-.f-title{font-size:20px;font-weight:800;letter-spacing:-.01em}
-.f-sub{font-size:13px;color:var(--muted);margin-top:2px}
-.f-score{display:grid;justify-items:center;gap:2px}
-.f-score .nota-chip{font-size:20px;min-width:52px;padding:6px 8px}
-.f-score small{font-family:var(--f-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.f-desc{margin:0;font-size:16px;color:var(--ink);line-height:1.5}
-.f-sec{display:grid;gap:4px}
-.f-sec p{margin:0;font-size:15px}
-.ejemplos{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 0;padding:0;list-style:none}
-.ejemplos li{font-size:13px;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:3px 9px;color:var(--ink-2)}
-.novedad{margin:0;font-size:14px;background:var(--mark);color:var(--mark-ink);padding:8px 10px;border-radius:10px}
-.novedad b{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-right:4px}
-.tags{display:flex;flex-wrap:wrap;gap:6px}
-.pill{font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--rule);color:var(--ink-2)}
-.pill.gratis,.pill.verif{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
-.pill.orient{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
-.f-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
-.f-date{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.02em}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0;box-shadow:var(--shadow);cursor:pointer;text-align:left;width:100%;color:inherit}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--rule))}
+.c-head{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center}
+.c-title{font-size:18px;font-weight:800;line-height:1.2}
+.c-sub{font-size:13px;color:var(--muted)}
+.c-desc{margin:0;font-size:15px;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.c-tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.c-more{font-size:13px;font-weight:700;color:var(--accent)}
+
+/* Ventana de ficha */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:50;display:flex;align-items:center;justify-content:center;padding:24px}
+.sheet{background:var(--card);color:var(--ink-2);width:min(720px,100%);max-height:calc(100vh - 48px);overflow:auto;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;overscroll-behavior:contain}
+@media (max-width:640px){
+  .scrim{align-items:flex-end;padding:0}
+  .sheet{border-radius:20px 20px 0 0;max-height:92vh;padding-bottom:env(safe-area-inset-bottom,0px)}
+}
+.sheet-top{position:sticky;top:0;z-index:1;background:var(--card);display:grid;grid-template-columns:60px minmax(0,1fr) auto;gap:14px;align-items:center;padding:18px 18px 14px;border-bottom:1px solid var(--rule)}
+.sheet-top h2{font-size:24px;font-weight:800}
+.close{width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:var(--bg);cursor:pointer;font-size:20px;line-height:1;color:var(--ink)}
+.sheet-body{padding:18px;display:grid;gap:22px}
+.s-desc{margin:0;font-size:17px;color:var(--ink);line-height:1.5}
+.s-block{display:grid;gap:8px}
+.s-block h3{font-size:17px;font-weight:800}
+.s-block p{margin:0}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:520px){.facts{grid-template-columns:1fr}}
+.fact{background:var(--bg);border:1px solid var(--rule);border-radius:12px;padding:12px;display:grid;gap:4px;align-content:start}
+.fact .v{font-weight:700;color:var(--ink);font-size:15px}
+.fact .d{font-size:13px;color:var(--muted)}
+.proscons{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.proscons{grid-template-columns:1fr}}
+.pc{border-radius:12px;padding:12px 14px}
+.pc.pro{background:var(--ok-soft)} .pc.con{background:var(--bad-soft)}
+.pc h4{font-size:15px;margin-bottom:6px}
+.pc.pro h4{color:var(--ok)} .pc.con h4{color:var(--bad)}
+.pc ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:15px;color:var(--ink)}
+.score-box{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:14px}
+.score-big{font-family:var(--f-display);font-weight:800;font-size:44px;color:var(--ink);line-height:1;text-align:center}
+.score-big small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;color:var(--muted);margin-top:4px}
+.bars{display:grid;gap:8px}
+.bar-row{display:grid;grid-template-columns:8.8em minmax(0,1fr) 3em;gap:8px;align-items:center;font-size:14px}
+.bar-row .track{height:8px;border-radius:4px;background:var(--rule);overflow:hidden}
+.bar-row .track i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.bar-row b{font-variant-numeric:tabular-nums;color:var(--ink);text-align:right}
+.bar-row > span:first-child{white-space:nowrap}
+@media (max-width:520px){.score-box{grid-template-columns:1fr;justify-items:stretch}.score-big{justify-self:start;text-align:left}.score-big small{display:inline;margin-left:6px}}
+.ejemplos{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.ejemplos li{font-size:14px;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:4px 10px;color:var(--ink-2)}
+.novedad{margin:0;font-size:15px;background:var(--mark);color:var(--mark-ink);padding:10px 12px;border-radius:10px}
+.novedad b{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-right:6px}
+.s-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--rule)}
+.f-date{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
 .f-date b{color:var(--ink)}
-.f-link{font-weight:700;text-decoration:none;font-size:14px;padding:7px 12px;border-radius:10px;background:var(--accent-soft);color:var(--ink)}
-.f-link:hover{background:var(--accent);color:var(--accent-ink)}
-.f-price{font-size:13px;color:var(--muted)}
-.ficha.flash{animation:flash 1.4s ease-out}
-@keyframes flash{0%{box-shadow:0 0 0 4px var(--accent)}100%{box-shadow:var(--shadow)}}
+.f-link{font-weight:700;text-decoration:none;font-size:15px;padding:10px 16px;border-radius:12px;background:var(--accent);color:var(--accent-ink)}
 
 /* Recomendador */
 .reco-panel{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;display:grid;gap:14px;box-shadow:var(--shadow);margin-bottom:24px}
 .reco-panel textarea{width:100%;min-height:76px;padding:12px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);resize:vertical;font-size:16px;color:var(--ink)}
 .reco-head{margin:0 0 6px}
 .reco-note{margin:0 0 16px;color:var(--muted);max-width:65ch}
-.why{margin:0;font-size:15px;color:var(--ink);background:var(--accent-soft);border-radius:10px;padding:10px 12px}
-.why b{color:var(--accent)}
-.reco-card{display:grid;gap:8px;min-width:0;align-content:start}
+.reco-list{display:grid;gap:12px}
+.reco-item{display:grid;gap:8px}
+.why{margin:0;font-size:15px;color:var(--ink)}
+.why b{color:var(--accent);font-family:var(--f-display);font-size:18px;margin-right:4px}
 
-/* Consejos */
+/* Packs */
+.packs{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+@media (max-width:400px){.packs{grid-template-columns:1fr}}
+.pack{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;box-shadow:var(--shadow);display:grid;gap:14px;align-content:start;min-width:0}
+.pack h3{font-size:20px;font-weight:800}
+.pack .para{margin:4px 0 0;color:var(--muted);font-size:15px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:paso}
+.step{display:grid;grid-template-columns:1.6rem 36px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--rule);counter-increment:paso;cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left}
+.step::before{content:counter(paso);font-family:var(--f-display);font-weight:800;color:var(--muted);text-align:center}
+.step .sn{font-weight:700;color:var(--ink);font-size:15px}
+.step .sr{font-size:13px;color:var(--muted)}
+.step .sp{font-size:13px;font-weight:700;color:var(--ink);white-space:nowrap;text-align:right}
+.step .sp small{display:block;font-weight:400;color:var(--muted)}
+.pack-total{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tot{border-radius:12px;padding:12px;display:grid;gap:2px}
+.tot.free{background:var(--ok-soft)} .tot.full{background:var(--accent-soft)}
+.tot .t{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tot .v{font-family:var(--f-display);font-weight:800;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
+.pack-note{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* Consejos y guías */
 .tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .tips li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
 .tips h3{font-size:18px;font-weight:800;margin-bottom:6px}
 .tips p{margin:0;font-size:15px}
-.glosario{margin-top:36px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 28px}
+.glosario{margin-top:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 28px}
 .glosario div{padding:12px 0;border-top:1px solid var(--rule)}
 .glosario dt{font-weight:700;color:var(--ink);font-size:16px}
 .glosario dd{margin:2px 0 0;font-size:15px}
+.legend{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.legend li{display:grid;grid-template-columns:10.5em minmax(0,1fr);gap:12px;align-items:start;font-size:15px}
+@media (max-width:520px){.legend li{grid-template-columns:1fr;gap:4px}}
 
 /* Novedades */
 .log{list-style:none;padding:0;margin:0;display:grid;gap:10px;max-width:760px}
@@ -201,11 +270,12 @@ footer.note p{max-width:78ch;margin:0 0 8px}
       <div class="fresh" id="fresh">Cargando fichas…</div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Secciones">
-      <button class="tab" role="tab" id="t-ranking" data-v="ranking" aria-selected="true">Inicio</button>
-      <button class="tab" role="tab" id="t-explorar" data-v="explorar" aria-selected="false">Catálogo</button>
-      <button class="tab" role="tab" id="t-reco" data-v="reco" aria-selected="false">¿Cuál uso?</button>
-      <button class="tab" role="tab" id="t-consejos" data-v="consejos" aria-selected="false">Consejos</button>
-      <button class="tab" role="tab" id="t-novedades" data-v="novedades" aria-selected="false">Novedades</button>
+      <button class="tab" role="tab" data-v="ranking" aria-selected="true">Inicio</button>
+      <button class="tab" role="tab" data-v="reco" aria-selected="false">¿Cuál uso?</button>
+      <button class="tab" role="tab" data-v="packs" aria-selected="false">Packs</button>
+      <button class="tab" role="tab" data-v="explorar" aria-selected="false">Catálogo</button>
+      <button class="tab" role="tab" data-v="consejos" aria-selected="false">Guía</button>
+      <button class="tab" role="tab" data-v="novedades" aria-selected="false">Novedades</button>
     </nav>
   </div>
 </header>
@@ -216,7 +286,7 @@ footer.note p{max-width:78ch;margin:0 0 8px}
     <header>
       <div class="label">Guía de inteligencia artificial para empezar</div>
       <h1 class="h-page" style="margin-top:6px">¿Qué IA uso para esto?</h1>
-      <p class="lede">Dinos qué quieres hacer y te decimos qué herramienta usar. 240 IAs revisadas cada semana, con su precio, su dificultad y la fecha de la última revisión.</p>
+      <p class="lede">Dinos qué quieres hacer y te decimos qué herramienta usar, qué incluye de verdad su versión gratis y cuánto cuesta. 240 IAs revisadas cada semana.</p>
       <form class="ask" id="askForm">
         <input id="askTxt" type="text" placeholder="Ej.: quiero hacer una canción para un cumpleaños" aria-label="¿Qué quieres hacer?">
         <button class="btn" type="submit">Recomiéndame</button>
@@ -226,7 +296,7 @@ footer.note p{max-width:78ch;margin:0 0 8px}
 
     <div class="split">
       <div>
-        <div class="block-title"><h2 class="h-section">Ranking general</h2><span class="small">Top 25 por puntuación</span></div>
+        <div class="block-title"><h2 class="h-section">Ranking general</h2><button class="linkbtn" type="button" data-explica="nota">¿De dónde sale la nota?</button></div>
         <ol class="rank-list" id="rankList"><li class="empty" style="padding:20px">Cargando el ranking…</li></ol>
       </div>
       <div>
@@ -234,29 +304,6 @@ footer.note p{max-width:78ch;margin:0 0 8px}
         <div class="podiums" id="podiums"></div>
       </div>
     </div>
-  </section>
-
-  <!-- CATÁLOGO -->
-  <section class="view" id="v-explorar" hidden>
-    <header>
-      <div class="label">Catálogo completo</div>
-      <h1 class="h-page" style="margin-top:6px">Todas las IAs</h1>
-      <p class="lede">Filtra por campo, precio y dificultad.</p>
-    </header>
-    <div class="filters">
-      <input class="search" id="q" type="search" placeholder="Busca por nombre o tarea: subtítulos, logo, podcast…" aria-label="Buscar">
-      <div class="frow"><span class="label">Campo</span><div class="chips" id="fCat"></div></div>
-      <div class="frow"><span class="label">Precio</span><div class="chips" id="fPrecio"></div></div>
-      <div class="frow"><span class="label">Nivel</span><div class="chips" id="fNivel"></div></div>
-      <div class="frow"><span class="label">Orden</span><div>
-        <select class="sort" id="sort" aria-label="Ordenar">
-          <option value="nota">Mejor puntuación</option>
-          <option value="nombre">Nombre (A–Z)</option>
-          <option value="fecha">Revisadas más recientemente</option>
-        </select></div></div>
-    </div>
-    <p class="count" id="count"></p>
-    <div class="grid" id="grid"></div>
   </section>
 
   <!-- RECOMENDADOR -->
@@ -272,21 +319,65 @@ footer.note p{max-width:78ch;margin:0 0 8px}
       <div class="ideas" id="ideas" style="margin-top:0"></div>
       <div class="frow"><span class="label">Presupuesto</span><div class="chips" id="rPrecio"></div></div>
       <div class="frow"><span class="label">Experiencia</span><div class="chips" id="rNivel"></div></div>
+      <div class="frow"><span class="label">Dispositivo</span><div class="chips" id="rDisp"></div></div>
       <div><button class="btn" type="submit">Recomiéndame</button></div>
     </form>
     <div id="recoOut" aria-live="polite"></div>
   </section>
 
-  <!-- CONSEJOS -->
+  <!-- PACKS -->
+  <section class="view" id="v-packs" hidden>
+    <header>
+      <div class="label">IAs que funcionan juntas</div>
+      <h1 class="h-page" style="margin-top:6px">Packs para cada proyecto</h1>
+      <p class="lede">Muchos proyectos necesitan varias IAs. Aquí tienes combinaciones probadas, paso a paso, con lo que puedes hacer gratis y lo que cuesta al mes la versión completa.</p>
+    </header>
+    <div class="packs" id="packs"></div>
+    <p class="small" style="margin-top:16px;max-width:75ch">Precios aproximados al mes en euros, con el plan de pago más básico que sirve para ese uso. Algunos se cobran en dólares y el importe final puede variar con el cambio y el IVA. Pagando por año suele salir más barato.</p>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="view" id="v-explorar" hidden>
+    <header>
+      <div class="label">Catálogo completo</div>
+      <h1 class="h-page" style="margin-top:6px">Todas las IAs</h1>
+      <p class="lede">Toca cualquier IA para ver su ficha completa: qué incluye gratis, ventajas, desventajas y de dónde sale su nota.</p>
+    </header>
+    <div class="filters">
+      <input class="search" id="q" type="search" placeholder="Busca por nombre o tarea: subtítulos, logo, podcast…" aria-label="Buscar">
+      <button type="button" class="filt-toggle" id="filtToggle" aria-expanded="false" aria-controls="filtBody">Filtros <span id="filtCount"></span></button>
+      <div class="filt-body" id="filtBody">
+      <div class="frow"><span class="label">Campo</span><div class="chips" id="fCat"></div></div>
+      <div class="frow"><span class="label">Versión gratis</span><div class="chips" id="fGratis"></div></div>
+      <div class="frow"><span class="label">Mejor en</span><div class="chips" id="fDisp"></div></div>
+      <div class="frow"><span class="label">Nivel</span><div class="chips" id="fNivel"></div></div>
+      <div class="frow"><span class="label">Orden</span><div>
+        <select class="sort" id="sort" aria-label="Ordenar">
+          <option value="nota">Mejor nota</option>
+          <option value="precio">Mejor relación calidad-precio</option>
+          <option value="facilidad">Más fáciles</option>
+          <option value="nombre">Nombre (A–Z)</option>
+          <option value="fecha">Revisadas más recientemente</option>
+        </select></div></div>
+      </div>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- GUÍA -->
   <section class="view" id="v-consejos" hidden>
     <header>
-      <div class="label">Para empezar con buen pie</div>
-      <h1 class="h-page" style="margin-top:6px">Consejos</h1>
-      <p class="lede">Lo que conviene saber antes de ponerse a probar herramientas.</p>
+      <div class="label">Para entenderlo todo</div>
+      <h1 class="h-page" style="margin-top:6px">Guía</h1>
+      <p class="lede">Qué significa cada dato de las fichas y consejos para empezar.</p>
     </header>
-    <ul class="tips" id="tips"></ul>
-    <h2 class="h-section" style="margin-top:44px">Glosario básico</h2>
-    <dl class="glosario" id="glosario"></dl>
+    <div style="display:grid;gap:36px">
+      <div><h2 class="h-section" style="margin-bottom:12px">Cómo se calcula la nota</h2><div id="guiaNota"></div></div>
+      <div><h2 class="h-section" style="margin-bottom:12px">Qué significa cada tipo de «gratis»</h2><ul class="legend" id="guiaGratis"></ul></div>
+      <div><h2 class="h-section" style="margin-bottom:12px">Consejos para empezar</h2><ul class="tips" id="tips"></ul></div>
+      <div><h2 class="h-section">Glosario básico</h2><dl class="glosario" id="glosario"></dl></div>
+    </div>
   </section>
 
   <!-- NOVEDADES -->
@@ -300,31 +391,43 @@ footer.note p{max-width:78ch;margin:0 0 8px}
   </section>
 
   <footer class="note">
-    <p><b>Cómo puntuamos.</b> La nota (0–100) combina calidad, facilidad de uso y relación calidad-precio. Es una valoración editorial de Cualia.</p>
-    <p>Los precios son orientativos: varían por país y cambian a menudo. «Verificado» indica que la ficha se contrastó con fuentes en su última revisión; «orientativo», que está pendiente de comprobar en detalle.</p>
+    <p><b>Nota.</b> Va de 0 a 100 y se calcula así: calidad (50 %), facilidad de uso (25 %) y relación calidad-precio (25 %). Cada parte es una valoración de Cualia del 0 al 10. <button class="linkbtn" type="button" data-explica="nota">Ver explicación</button></p>
+    <p>Los precios son orientativos: varían por país y cambian a menudo. «Verificado» indica que la ficha se contrastó con fuentes en su última revisión; «pendiente de verificar», que aún no se ha comprobado en detalle.</p>
     <p>Cualia no tiene relación comercial con ninguna de estas empresas. Los logotipos pertenecen a sus propietarios y se muestran solo para identificar cada herramienta.</p>
   </footer>
 </main>
+
+<div class="scrim" id="scrim" hidden>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></div>
+</div>
 
 <script>
 const $ = s => document.querySelector(s);
 const MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sept","oct","nov","dic"];
 const fecha = iso => { if(!iso) return "—"; const [y,m,d] = iso.split("-").map(Number); return `${d} ${MESES[m-1]} ${y}`; };
 const diasDesde = iso => Math.floor((Date.now() - new Date(iso+"T12:00:00").getTime())/86400000);
-const PRECIO = {gratis:"Gratis", freemium:"Gratis + pago", pago:"De pago"};
 const NIVEL = {1:"Fácil",2:"Intermedio",3:"Avanzado"};
+const GRATIS = {
+  libre:   {txt:"Gratis de verdad",  corto:"Gratis",           expl:"Se puede usar sin pagar y sin límites que molesten en un uso normal. Incluye herramientas de código abierto."},
+  util:    {txt:"Plan gratis útil",  corto:"Gratis útil",      expl:"Tiene un plan gratis con límites, pero suficiente para usarla de verdad en el día a día."},
+  limitado:{txt:"Gratis muy limitado",corto:"Gratis limitado", expl:"El plan gratis sirve para probarla: muy pocos usos, marca de agua, sin descargas o sin uso comercial."},
+  prueba:  {txt:"Solo prueba",       corto:"Solo prueba",      expl:"Solo tiene unos créditos iniciales o unos días de prueba. Para usarla habitualmente hay que pagar."},
+  no:      {txt:"De pago",           corto:"De pago",          expl:"No tiene versión gratis. Hay que pagar desde el principio."},
+};
+const MEJOR = {ordenador:"Mejor en ordenador", movil:"Mejor en móvil", ambos:"Móvil y ordenador"};
+const PLAT = {web:"Web", movil:"App móvil", escritorio:"App de escritorio"};
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm = s => String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
 
-let CATS = [], ALL = [], META = {}, LOG = [];
-const byName = new Map();
-const st = {q:"", cat:null, precio:null, nivel:null, sort:"nota", rPrecio:"cualquiera", rNivel:"cualquiera"};
+let CATS = [], ALL = [], META = {}, LOG = [], PACKS = [];
+const byName = new Map(), byId = new Map();
+const st = {q:"", cat:null, gratis:null, disp:null, nivel:null, sort:"nota", rPrecio:"cualquiera", rNivel:"cualquiera", rDisp:"cualquiera"};
 
 /* ---------- Iconos ---------- */
 const PALETA = ["#5B3FD9","#0E7C66","#C2410C","#1D4ED8","#9D174D","#4D7C0F","#7C3AED","#B45309","#0F766E","#BE123C"];
 function monoColor(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))>>>0; return PALETA[h%PALETA.length]; }
-function icono(h, small){
-  const cls = "ico"+(small?" sm":"");
+function icono(h, size){
+  const cls = "ico"+(size?" "+size:"");
   const letra = esc((h.nombre||"?").trim()[0].toUpperCase());
   const col = monoColor(h.nombre||"");
   if(!h.dominio) return `<span class="${cls} mono" style="--mono-bg:${col}" aria-hidden="true"><span>${letra}</span></span>`;
@@ -332,9 +435,10 @@ function icono(h, small){
   return `<span class="${cls}" aria-hidden="true"><img src="${src}" alt="" loading="lazy" width="32" height="32"
     onerror="this.parentNode.classList.add('mono');this.parentNode.style.setProperty('--mono-bg','${col}');this.outerHTML='<span>${letra}</span>'"></span>`;
 }
+const gratisPill = h => `<span class="pill g-${h.gratisTipo}" title="${esc(GRATIS[h.gratisTipo]?.expl||"")}">${esc(GRATIS[h.gratisTipo]?.corto||"")}</span>`;
 
 /* ---------- Pestañas ---------- */
-const VIEWS = ["ranking","explorar","reco","consejos","novedades"];
+const VIEWS = ["ranking","reco","packs","explorar","consejos","novedades"];
 function showView(v, scroll=true){
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.v===v));
   document.querySelectorAll("section.view").forEach(s => s.hidden = s.id !== "v-"+v);
@@ -347,48 +451,99 @@ document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () =>
   if(v && VIEWS.includes(v)) showView(v,false); })();
 $(".logo").addEventListener("click", e => { e.preventDefault(); showView("ranking"); });
 
-/* ---------- Ficha ---------- */
-function ficha(h){
-  const dias = diasDesde(h.actualizado);
-  const estado = h.verificado ? `<span class="pill verif" title="Contrastado con fuentes en la última revisión">✓ Verificado</span>` : `<span class="pill orient" title="Pendiente de comprobar en detalle">Orientativo</span>`;
-  return `<article class="ficha" id="f-${esc(h.id)}">
-    <div class="f-head">
-      ${icono(h)}
-      <div style="min-width:0"><h3 class="f-title">${esc(h.nombre)}</h3><div class="f-sub">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
-      <div class="f-score" title="Nota de Cualia (0–100)"><span class="nota-chip">${h.nota}</span><small>nota</small></div>
-    </div>
-    <div class="tags"><span class="pill ${h.precio==='gratis'?'gratis':''}">${PRECIO[h.precio]||esc(h.precio)}</span><span class="pill">${NIVEL[h.nivel]||""}</span>${estado}</div>
-    <p class="f-desc">${esc(h.desc)}</p>
-    <div class="f-sec"><span class="label">Ideal para</span><p>${esc(h.para)}</p></div>
-    ${h.ejemplos?.length ? `<div class="f-sec"><span class="label">Ejemplos de uso</span><ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
-    ${h.novedad ? `<p class="novedad"><b>Novedad</b>${esc(h.novedad)}</p>` : ""}
-    <div class="f-sec"><span class="label">Precio</span><p class="f-price" style="color:var(--ink-2)">${esc(h.precioTxt)}</p></div>
-    <div class="f-foot">
-      <span class="f-date" title="Fecha de la última revisión de esta ficha">Revisado el <b>${fecha(h.actualizado)}</b>${dias>30?" · pendiente de revisar":""}</span>
-      ${h.web ? `<a class="f-link" href="${esc(h.web)}" target="_blank" rel="noopener">Visitar web ↗</a>` : ""}
-    </div>
-  </article>`;
+/* ---------- Tarjeta compacta ---------- */
+function tarjeta(h){
+  return `<button type="button" class="card" data-open="${esc(h.id)}">
+    <div class="c-head">${icono(h)}
+      <div style="min-width:0"><h3 class="c-title">${esc(h.nombre)}</h3><div class="c-sub">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
+      <span class="nota-chip" title="Nota de Cualia sobre 100">${h.nota}</span></div>
+    <p class="c-desc">${esc(h.desc)}</p>
+    <div class="c-tags">${gratisPill(h)}<span class="pill">${esc(MEJOR[h.mejorEn]||"")}</span><span class="pill">${NIVEL[h.nivel]||""}</span></div>
+    <span class="c-more">Ver ficha completa →</span>
+  </button>`;
 }
+
+/* ---------- Ventana de ficha ---------- */
+let lastFocus = null;
+function abrirVentana(html){
+  lastFocus = document.activeElement;
+  $("#sheet").innerHTML = html; $("#scrim").hidden = false; document.body.classList.add("locked");
+  $("#sheet").scrollTop = 0; $("#sheet .close")?.focus();
+}
+function cerrarVentana(){
+  $("#scrim").hidden = true; document.body.classList.remove("locked"); $("#sheet").innerHTML = "";
+  lastFocus?.focus?.();
+}
+$("#scrim").addEventListener("click", e => { if(e.target.id==="scrim" || e.target.closest(".close")) cerrarVentana(); });
+document.addEventListener("keydown", e => { if(e.key==="Escape" && !$("#scrim").hidden) cerrarVentana(); });
+
+function barras(n){
+  const fila = (k,label,peso) => `<div class="bar-row"><span>${label} <span class="small">(${peso})</span></span><span class="track"><i style="width:${n[k]*10}%"></i></span><b>${n[k]}/10</b></div>`;
+  return `<div class="bars">${fila("calidad","Calidad","50 %")}${fila("facilidad","Facilidad","25 %")}${fila("precio","Precio","25 %")}</div>`;
+}
+function abrirFicha(id){
+  const h = byId.get(id); if(!h) return;
+  const n = h.notas || {calidad:0,facilidad:0,precio:0};
+  const dias = diasDesde(h.actualizado);
+  abrirVentana(`
+    <div class="sheet-top">${icono(h,"lg")}
+      <div style="min-width:0"><h2 id="sheetTitle">${esc(h.nombre)}</h2><div class="small">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
+      <button class="close" type="button" aria-label="Cerrar">✕</button></div>
+    <div class="sheet-body">
+      <p class="s-desc">${esc(h.desc)}</p>
+      ${h.novedad ? `<p class="novedad"><b>Novedad</b>${esc(h.novedad)}</p>` : ""}
+      <div class="facts">
+        <div class="fact"><span class="label">Versión gratis</span><span>${gratisPill(h)}</span><span class="d">${esc(h.gratisTxt)}</span></div>
+        <div class="fact"><span class="label">Precio</span><span class="v">${esc(h.precioTxt)}</span><span class="d">Orientativo, puede variar por país.</span></div>
+        <div class="fact"><span class="label">Dónde usarla</span><span class="v">${esc(MEJOR[h.mejorEn]||"")}</span><span class="d">${(h.plataformas||[]).map(p=>PLAT[p]).join(" · ")}</span></div>
+      </div>
+      <div class="proscons">
+        <div class="pc pro"><h4>Ventajas</h4><ul>${(h.pros||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+        <div class="pc con"><h4>Desventajas</h4><ul>${(h.contras||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      </div>
+      <div class="s-block"><h3>Ideal para</h3><p>${esc(h.para)}</p></div>
+      ${h.ejemplos?.length ? `<div class="s-block"><h3>Ejemplos de uso</h3><ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
+      <div class="s-block"><h3>Nota: ${h.nota} sobre 100</h3>
+        <div class="score-box"><div class="score-big">${h.nota}<small>NOTA</small></div>${barras(n)}</div>
+        <p class="small">Calidad ${n.calidad} × 5 + facilidad ${n.facilidad} × 2,5 + precio ${n.precio} × 2,5 = ${h.nota}. <button class="linkbtn" type="button" data-explica="nota">¿Qué mide cada parte?</button></p>
+      </div>
+      <div class="s-block"><h3>Dificultad</h3><p>${NIVEL[h.nivel]||""}${h.nivel===1?": pensada para cualquiera, sin conocimientos previos.":h.nivel===2?": conviene tener algo de soltura con la tecnología.":": para usuarios técnicos o con experiencia."}</p></div>
+      <div class="s-foot">
+        <span class="f-date">Revisado el <b>${fecha(h.actualizado)}</b> · ${h.verificado?"✓ verificado con fuentes":"pendiente de verificar"}${dias>30?" · desactualizado":""}</span>
+        ${h.web ? `<a class="f-link" href="${esc(h.web)}" target="_blank" rel="noopener">Ir a ${esc(h.nombre)} ↗</a>` : ""}
+      </div>
+    </div>`);
+}
+function explicarNota(){
+  abrirVentana(`<div class="sheet-top" style="grid-template-columns:minmax(0,1fr) auto"><h2 id="sheetTitle">¿De dónde sale la nota?</h2><button class="close" type="button" aria-label="Cerrar">✕</button></div>
+    <div class="sheet-body">${guiaNotaHTML()}</div>`);
+}
+function guiaNotaHTML(){
+  return `<p style="margin:0 0 12px;max-width:65ch">Cada IA recibe tres puntuaciones del 0 al 10. La nota final, sobre 100, es la suma ponderada: <b>calidad × 5 + facilidad × 2,5 + precio × 2,5</b>. Así, una IA perfecta en todo sacaría 100.</p>
+    <ul class="legend">
+      <li><b>Calidad (50 %)</b><span>Lo bien que hace su trabajo comparada con las demás de su campo: resultados, fiabilidad y funciones.</span></li>
+      <li><b>Facilidad (25 %)</b><span>Lo fácil que es para alguien que empieza: si se entiende a la primera, si está en español, si hay que instalar algo.</span></li>
+      <li><b>Precio (25 %)</b><span>Lo que obtienes por lo que pagas. Un plan gratis útil puntúa alto; una prueba de dos minutos o un precio alto puntúan bajo.</span></li>
+    </ul>
+    <p class="small" style="margin-top:12px">Son valoraciones de Cualia basadas en pruebas, comparativas y rankings públicos, y se revisan cada semana. Sirven para comparar dentro de un mismo campo; entre campos distintos (música frente a programación) orientan, pero no son exactas.</p>`;
+}
+document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]"); if(o){ abrirFicha(o.dataset.open); return; }
+  const x = e.target.closest("[data-explica]"); if(x){ explicarNota(); }
+});
 
 /* ---------- Inicio ---------- */
 function renderRanking(){
-  const top = [...ALL].sort((a,b)=>b.nota-a.nota).slice(0,25);
-  $("#rankList").innerHTML = top.map((h,i)=>`<li class="rank-row" data-id="${esc(h.id)}" tabindex="0">
-    <span class="rank-pos">${i+1}</span>${icono(h,true)}
-    <div class="rank-main"><div class="rank-name">${esc(h.nombre)}</div><div class="rank-sub">${esc(h.catNombre)} · ${PRECIO[h.precio]}</div></div>
-    <span class="nota-chip">${h.nota}</span></li>`).join("");
+  const top = [...ALL].sort((a,b)=>b.nota-a.nota || b.notas.calidad-a.notas.calidad).slice(0,25);
+  $("#rankList").innerHTML = top.map((h,i)=>`<li><button type="button" class="rank-row" data-open="${esc(h.id)}">
+    <span class="rank-pos">${i+1}</span>${icono(h,"sm")}
+    <div class="rank-main"><div class="rank-name">${esc(h.nombre)}</div><div class="rank-sub">${esc(h.catNombre)} · ${esc(GRATIS[h.gratisTipo]?.corto||"")}</div></div>
+    <span class="nota-chip">${h.nota}</span></button></li>`).join("");
   $("#podiums").innerHTML = CATS.map(c=>{
-    const t = [...c.herramientas].map(h=>({...h,catNombre:c.nombre})).sort((a,b)=>b.nota-a.nota).slice(0,3);
-    return `<div class="podium"><h3>${esc(c.nombre)}</h3><ol>${t.map(h=>`<li><button data-id="${esc(h.id)}">${icono(h,true)}<span class="pn">${esc(h.nombre)}</span><span class="pp">${PRECIO[h.precio]}</span></button></li>`).join("")}</ol></div>`;
+    const t = ALL.filter(h=>h.cat===c.id).sort((a,b)=>b.nota-a.nota).slice(0,3);
+    return `<div class="podium"><h3>${esc(c.nombre)}</h3><ol>${t.map(h=>`<li><button type="button" data-open="${esc(h.id)}">${icono(h,"sm")}<span class="pn">${esc(h.nombre)}</span><span class="pp">${gratisPill(h)}</span></button></li>`).join("")}</ol></div>`;
   }).join("");
 }
-function irAFicha(id){
-  const h = ALL.find(x=>x.id===id); if(!h) return;
-  st.q=""; $("#q").value=""; st.cat=h.cat; st.precio=null; st.nivel=null; syncChips(); renderGrid(); showView("explorar",false);
-  requestAnimationFrame(()=>{ const el=document.getElementById("f-"+id); if(el){ el.scrollIntoView({block:"center",behavior:"smooth"}); el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); } });
-}
-document.addEventListener("click", e=>{ const b=e.target.closest(".rank-row,.podium [data-id]"); if(b) irAFicha(b.dataset.id); });
-document.addEventListener("keydown", e=>{ if(e.key==="Enter"){ const b=e.target.closest?.(".rank-row"); if(b) irAFicha(b.dataset.id); } });
 
 /* ---------- Catálogo ---------- */
 function chipRow(el, items, key){
@@ -401,27 +556,32 @@ function chipRow(el, items, key){
   });
   syncChips();
 }
-function syncChips(){
-  [["#fCat","cat"],["#fPrecio","precio"],["#fNivel","nivel"],["#rPrecio","rPrecio"],["#rNivel","rNivel"]].forEach(([sel,k])=>{
+function syncFiltCount(){ const n=["cat","gratis","disp","nivel"].filter(k=>st[k]).length; const el=document.getElementById("filtCount"); if(el) el.textContent = n?`(${n} activo${n>1?"s":""})`:""; }
+document.getElementById("filtToggle").addEventListener("click", e=>{ const b=document.getElementById("filtBody"); const open=b.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); });
+function syncChips(){ syncFiltCount();
+  [["#fCat","cat"],["#fGratis","gratis"],["#fDisp","disp"],["#fNivel","nivel"],["#rPrecio","rPrecio"],["#rNivel","rNivel"],["#rDisp","rDisp"]].forEach(([sel,k])=>{
     document.querySelectorAll(sel+" .chip").forEach(c=>c.setAttribute("aria-pressed", String(String(st[k])===c.dataset.val)));
   });
 }
+const okDisp = (h,d) => !d || d==="cualquiera" || h.mejorEn==="ambos" || h.mejorEn===d;
 function renderGrid(){
   const q = norm(st.q);
-  let list = ALL.filter(h => (!st.cat || h.cat===st.cat) && (!st.precio || h.precio===st.precio) && (!st.nivel || String(h.nivel)===st.nivel)
+  let list = ALL.filter(h => (!st.cat || h.cat===st.cat) && (!st.gratis || h.gratisTipo===st.gratis) && okDisp(h,st.disp) && (!st.nivel || String(h.nivel)===st.nivel)
     && (!q || norm([h.nombre,h.empresa,h.desc,h.para,(h.ejemplos||[]).join(" "),h.catNombre].join(" ")).includes(q)));
-  if(st.sort==="nombre") list.sort((a,b)=>a.nombre.localeCompare(b.nombre,"es"));
-  else if(st.sort==="fecha") list.sort((a,b)=>(b.actualizado||"").localeCompare(a.actualizado||"") || b.nota-a.nota);
-  else list.sort((a,b)=>b.nota-a.nota);
+  const by = {
+    nombre:(a,b)=>a.nombre.localeCompare(b.nombre,"es"),
+    fecha:(a,b)=>(b.actualizado||"").localeCompare(a.actualizado||"") || b.nota-a.nota,
+    precio:(a,b)=>b.notas.precio-a.notas.precio || b.nota-a.nota,
+    facilidad:(a,b)=>b.notas.facilidad-a.notas.facilidad || b.nota-a.nota,
+    nota:(a,b)=>b.nota-a.nota };
+  list.sort(by[st.sort]||by.nota);
   $("#count").textContent = `${list.length} ${list.length===1?"herramienta":"herramientas"}`;
-  $("#grid").innerHTML = list.length ? list.map(ficha).join("") : `<p class="empty">Nada coincide con esos filtros. Prueba a quitar alguno o busca otra palabra.</p>`;
+  $("#grid").innerHTML = list.length ? list.map(tarjeta).join("") : `<p class="empty">Nada coincide con esos filtros. Prueba a quitar alguno o busca otra palabra.</p>`;
 }
 let qt; $("#q").addEventListener("input", e=>{ clearTimeout(qt); qt=setTimeout(()=>{ st.q=e.target.value; renderGrid(); },150); });
 $("#sort").addEventListener("change", e=>{ st.sort=e.target.value; renderGrid(); });
 
-/* ---------- Recomendador ----------
-   Cada intención reconoce una tarea concreta y propone herramientas elegidas a mano,
-   con el motivo de cada una. Se evalúan en orden: primero las más específicas. */
+/* ---------- Recomendador ---------- */
 const INTENTS = [
  {id:"aprender-programar", titulo:"Aprender a programar", re:/(aprend|empez|curso|estudi|ensen).{0,25}(program|codig|python|javascript|html|css|java\b)|program\w* desde cero|iniciarme en la programacion/, cat:"codigo", picks:[
    ["Replit","Programas desde el navegador y ves el resultado al instante, sin instalar nada. Su asistente te explica cada paso."],
@@ -571,94 +731,124 @@ const INTENTS = [
    ["Gemini","Gratis y dentro de Google; cómodo si usas Gmail o Android."],
    ["Claude","Muy bueno escribiendo y explicando con claridad."]]},
 ];
-
 function pasaFiltros(h){
-  const okP = st.rPrecio==="cualquiera" || h.precio!=="pago";
+  const okP = st.rPrecio==="cualquiera" || h.gratisTipo==="libre" || h.gratisTipo==="util";
   const okN = st.rNivel==="cualquiera" || (st.rNivel==="nuevo" ? h.nivel===1 : h.nivel<=2);
-  return okP && okN;
+  return okP && okN && okDisp(h, st.rDisp);
 }
 function recomendar(txt){
   const t = norm(txt);
   const intent = INTENTS.find(i => i.re.test(t));
-  if(intent){
-    let elegidos = intent.picks.map(([n,why]) => ({h:byName.get(n), why})).filter(x=>x.h);
-    let validos = elegidos.filter(x=>pasaFiltros(x.h));
-    // Completa con la misma categoría si los filtros dejan menos de 3
-    if(validos.length < 3){
-      const ya = new Set(validos.map(x=>x.h.id));
-      ALL.filter(h=>h.cat===intent.cat && !ya.has(h.id) && pasaFiltros(h)).sort((a,b)=>b.nota-a.nota)
-        .slice(0, 3-validos.length).forEach(h=>validos.push({h, why:null}));
-    }
-    const descartados = elegidos.length - elegidos.filter(x=>pasaFiltros(x.h)).length;
-    return {intent, res: validos.slice(0,3), descartados};
+  if(!intent) return {intent:null, res:[]};
+  const elegidos = intent.picks.map(([n,why]) => ({h:byName.get(n), why})).filter(x=>x.h);
+  const validos = elegidos.filter(x=>pasaFiltros(x.h));
+  if(validos.length < 3){
+    const ya = new Set(validos.map(x=>x.h.id));
+    ALL.filter(h=>h.cat===intent.cat && !ya.has(h.id) && pasaFiltros(h)).sort((a,b)=>b.nota-a.nota)
+      .slice(0, 3-validos.length).forEach(h=>validos.push({h, why:null}));
   }
-  return {intent:null, res:[]};
+  return {intent, res: validos.slice(0,3), descartados: elegidos.length - elegidos.filter(x=>pasaFiltros(x.h)).length};
 }
 function motivoGenerico(h){
-  const r=[]; if(h.precio!=="pago") r.push("puedes empezar gratis"); if(h.nivel===1) r.push("es fácil de usar"); if(h.nota>=85) r.push("está entre las mejores de su campo");
+  const r=[]; if(h.gratisTipo==="libre"||h.gratisTipo==="util") r.push("tiene un plan gratis útil"); if(h.nivel===1) r.push("es fácil de usar"); if(h.nota>=85) r.push("está entre las mejores de su campo");
   return r.length ? "Encaja con tus filtros: "+r.join(", ")+"." : "Encaja con lo que buscas y con tus filtros.";
+}
+function packDeIntent(intent){
+  const mapa = {"generar-video":"cortometraje","cancion":"videoclip","subtitulos":"youtube","audio":"podcast","crear-web":"negocio","estudiar":"estudiante","aprender-programar":"programar","presentacion":"oficina","reuniones":"oficina","idiomas":"idiomas","instrumento":"musico","texto-imagen":"redes","avatar":"youtube","locucion":"youtube"};
+  return PACKS.find(p=>p.id===mapa[intent.id]);
 }
 function pintarReco(txt){
   const out = $("#recoOut");
+  const irA = () => requestAnimationFrame(()=>window.scrollTo({top: out.getBoundingClientRect().top + window.scrollY - 120, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}));
   if(!txt){ out.innerHTML=`<p class="empty">Escribe primero qué quieres hacer, por ejemplo «crear un logo para mi tienda».</p>`; return; }
   if(!ALL.length){ out.innerHTML=`<p class="empty">Las fichas aún se están cargando. Inténtalo en unos segundos.</p>`; return; }
   const {intent,res,descartados} = recomendar(txt);
   if(!intent){
     out.innerHTML = `<h2 class="h-section reco-head">No he entendido bien qué quieres hacer</h2>
-      <p class="reco-note">Prueba a decirlo con otras palabras («quiero…» + la tarea) o elige una de las ideas de arriba. También puedes buscar en el <a href="#explorar" id="goCat">catálogo</a>.</p>`;
+      <p class="reco-note">Prueba a decirlo con otras palabras («quiero…» + la tarea) o elige una de las ideas de arriba. También puedes buscarlo en el <a href="#explorar" id="goCat">catálogo</a>.</p>`;
     $("#goCat")?.addEventListener("click",e=>{e.preventDefault(); st.q=txt; $("#q").value=txt; renderGrid(); showView("explorar");});
-    requestAnimationFrame(()=>window.scrollTo({top: out.getBoundingClientRect().top + window.scrollY - 120}));
-    return;
+    irA(); return;
   }
-  const nota = descartados>0 ? `He quitado ${descartados===1?"una opción que no encaja":"opciones que no encajan"} con tu presupuesto o experiencia.` : "";
+  const nota = descartados>0 ? ` He quitado ${descartados===1?"una opción que no encaja":"opciones que no encajan"} con tus filtros.` : "";
+  const pack = packDeIntent(intent);
   out.innerHTML = `<div class="label">Tu objetivo</div><h2 class="h-section reco-head">${esc(intent.titulo)}</h2>
-    <p class="reco-note">Estas son nuestras tres propuestas, de la más recomendada a la menos. ${nota}</p>
-    ${res.length ? `<div class="grid">${res.map((x,i)=>`<div class="reco-card"><p class="why"><b>${i+1}.</b> ${esc(x.why || motivoGenerico(x.h))}</p>${ficha(x.h)}</div>`).join("")}</div>`
-      : `<p class="empty">Ninguna opción de este tipo encaja con esos filtros. Prueba con «Me da igual» en presupuesto o experiencia.</p>`}`;
-  requestAnimationFrame(()=>{ const top = out.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({top, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); });
+    <p class="reco-note">Nuestras tres propuestas, de la más recomendada a la menos.${nota} Toca una para ver su ficha completa.</p>
+    ${res.length ? `<div class="grid">${res.map((x,i)=>`<div class="reco-item"><p class="why"><b>${i+1}</b>${esc(x.why || motivoGenerico(x.h))}</p>${tarjeta(x.h)}</div>`).join("")}</div>`
+      : `<p class="empty">Ninguna opción encaja con esos filtros. Prueba con «Me da igual» en alguno de ellos.</p>`}
+    ${pack ? `<p class="reco-note" style="margin-top:18px">¿Es parte de un proyecto más grande? Mira el pack <button class="linkbtn" type="button" data-pack="${pack.id}">«${esc(pack.titulo)}»</button>, con todas las IAs que necesitas y su precio total.</p>` : ""}`;
+  irA();
 }
+document.addEventListener("click", e => { const p=e.target.closest("[data-pack]"); if(p){ showView("packs"); requestAnimationFrame(()=>document.getElementById("pack-"+p.dataset.pack)?.scrollIntoView({block:"start"})); } });
 $("#recoForm").addEventListener("submit", e=>{ e.preventDefault(); pintarReco($("#recoTxt").value.trim()); });
 $("#askForm").addEventListener("submit", e=>{ e.preventDefault(); const v=$("#askTxt").value.trim(); $("#recoTxt").value=v; showView("reco"); pintarReco(v); });
 
 const IDEAS = ["Hacer una canción para un cumpleaños","Quitar el fondo de una foto","Resumir mis apuntes para un examen","Crear la web de mi negocio","Subtitular un vídeo para Instagram","Hacer una presentación para el trabajo","Leer un PDF en voz alta","Aprender a programar","Practicar inglés hablando","Hacer un logo"];
-function ideasHTML(){ return IDEAS.map(i=>`<button type="button" class="idea">${esc(i)}</button>`).join(""); }
-$("#ideas").innerHTML = ideasHTML(); $("#ideasHome").innerHTML = ideasHTML().split("</button>").slice(0,6).join("</button>")+"</button>";
+const ideasHTML = n => IDEAS.slice(0,n).map(i=>`<button type="button" class="idea">${esc(i)}</button>`).join("");
+$("#ideas").innerHTML = ideasHTML(IDEAS.length); $("#ideasHome").innerHTML = ideasHTML(6);
 function onIdea(e){ const b=e.target.closest(".idea"); if(!b) return; $("#recoTxt").value=b.textContent; $("#askTxt").value=b.textContent; showView("reco"); pintarReco(b.textContent); }
 $("#ideas").addEventListener("click", onIdea); $("#ideasHome").addEventListener("click", onIdea);
 
-/* ---------- Consejos ---------- */
+/* ---------- Packs ---------- */
+const euros = n => n===0 ? "0 €" : `≈ ${n} €`;
+function renderPacks(){
+  $("#packs").innerHTML = PACKS.map(p=>{
+    const pasos = p.pasos.map(s=>{ const h = byName.get(s.ia) || {nombre:s.ia}; return `
+      <li><button type="button" class="step" ${h.id?`data-open="${esc(h.id)}"`:""}>${icono(h,"sm")}
+        <span style="min-width:0"><span class="sn">${esc(s.ia)}</span><br><span class="sr">${esc(s.rol)}</span></span>
+        <span class="sp">${s.precio ? `${euros(s.precio)}/mes<small>${esc(s.plan)}</small>` : `Gratis<small>&nbsp;</small>`}</span></button></li>`; }).join("");
+    return `<article class="pack" id="pack-${esc(p.id)}">
+      <div><h3>${esc(p.titulo)}</h3><p class="para">${esc(p.para)}</p></div>
+      <ol class="steps">${pasos}</ol>
+      <div class="pack-total">
+        <div class="tot free"><span class="t">Versión gratis</span><span class="v">0 €</span><span class="small">Con límites</span></div>
+        <div class="tot full"><span class="t">Versión completa</span><span class="v">${euros(p.total)}<span style="font-size:14px">/mes</span></span><span class="small">Suma de los planes básicos</span></div>
+      </div>
+      <p class="pack-note"><b>Con la versión gratis:</b> ${esc(p.notaGratis)}</p>
+    </article>`;
+  }).join("");
+}
+
+/* ---------- Guía ---------- */
 const TIPS = [
  ["Empieza por un asistente general","ChatGPT, Claude o Gemini resuelven la mayoría de tareas. Aprende a usar uno bien antes de probar diez herramientas."],
  ["Explica el contexto","Di quién eres, para qué es y cómo lo quieres. «Email formal a mi casero pidiendo arreglar la caldera, tono amable» funciona mucho mejor que «escribe un email»."],
  ["Pide cambios, no te conformes","La primera respuesta es un borrador. Pide «más corto», «más cercano» o «dame tres opciones» hasta que te guste."],
  ["Comprueba los datos importantes","La IA puede inventar cifras, fechas o citas con total seguridad. Verifica lo que vayas a publicar, firmar o decidir."],
  ["Cuidado con los datos personales","No pegues contraseñas, DNI ni datos médicos o bancarios. Para documentos sensibles, revisa la privacidad o usa una IA local."],
- ["Los planes gratis bastan para empezar","Casi todas tienen versión gratuita. Paga solo cuando te quedes corto con una herramienta que ya usas a menudo."],
- ["Mira los derechos antes de publicar","En música e imágenes no todas permiten uso comercial en el plan gratis. Adobe Firefly y ElevenLabs Music tienen las licencias más claras."],
+ ["Mira qué incluye lo «gratis»","Muchas IAs anuncian versión gratis pero solo dan unos minutos de prueba. En cada ficha te decimos qué incluye de verdad."],
+ ["Mira los derechos antes de publicar","En música, voz e imágenes, muchos planes gratis no permiten uso comercial. Adobe Firefly y ElevenLabs Music tienen las licencias más claras."],
  ["Avisa cuando algo es IA","Desde agosto de 2026 la ley europea de IA obliga a marcar el contenido generado (imágenes, voces, vídeos) en muchos usos públicos."],
  ["Las herramientas cambian cada mes","Lo que hoy es lo mejor puede no serlo en tres meses. Por eso cada ficha lleva la fecha de su última revisión."],
 ];
 const GLOS = [
  ["Prompt","La instrucción que le das a la IA."],
  ["Modelo","El «cerebro» que hay detrás de una herramienta. ChatGPT usa modelos GPT; Claude, modelos Claude."],
- ["Freemium","Gratis con límites, y con planes de pago para usarla más."],
+ ["Créditos","Moneda interna de muchas IAs: cada imagen o vídeo gasta unos cuantos. Cuando se acaban, hay que esperar o pagar."],
+ ["Marca de agua","Un logotipo o texto que la herramienta añade encima de lo que creas en el plan gratis."],
+ ["Uso comercial","Poder usar lo que creas para ganar dinero: publicarlo, venderlo o usarlo en un anuncio."],
  ["Agente","Una IA que hace tareas de varios pasos por su cuenta: buscar, crear archivos, usar apps."],
- ["Modelo abierto","Se puede descargar e instalar en tu ordenador. Más privado, pero requiere más conocimientos."],
+ ["Código abierto","Se puede descargar e instalar en tu ordenador gratis. Más privado, pero requiere más conocimientos."],
  ["Alucinación","Cuando la IA se inventa algo y lo presenta como cierto."],
- ["API","Una forma de conectar la IA a tus propias aplicaciones. Se paga por uso."],
+ ["API","Una forma de conectar la IA a tus propias aplicaciones. Se paga por uso y está pensada para programadores."],
 ];
+$("#guiaNota").innerHTML = guiaNotaHTML();
+$("#guiaGratis").innerHTML = Object.entries(GRATIS).map(([k,g])=>`<li><span><span class="pill g-${k}">${g.txt}</span></span><span>${g.expl}</span></li>`).join("");
 $("#tips").innerHTML = TIPS.map(([t,d])=>`<li><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join("");
 $("#glosario").innerHTML = GLOS.map(([t,d])=>`<div><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join("");
-chipRow($("#fPrecio"), [["gratis","Gratis"],["freemium","Gratis + pago"],["pago","De pago"]], "precio");
+
+chipRow($("#fGratis"), Object.entries(GRATIS).map(([k,g])=>[k,g.txt]), "gratis");
+chipRow($("#fDisp"), [["movil","Móvil"],["ordenador","Ordenador"]], "disp");
 chipRow($("#fNivel"), [["1","Fácil"],["2","Intermedio"],["3","Avanzado"]], "nivel");
-chipRow($("#rPrecio"), [["cualquiera","Me da igual"],["gratis","Quiero empezar gratis"]], "rPrecio");
+chipRow($("#rPrecio"), [["cualquiera","Me da igual"],["gratis","Quiero usarla gratis"]], "rPrecio");
 chipRow($("#rNivel"), [["cualquiera","Cualquiera"],["nuevo","Soy principiante"],["medio","Me defiendo"]], "rNivel");
+chipRow($("#rDisp"), [["cualquiera","Cualquiera"],["movil","Desde el móvil"],["ordenador","Desde el ordenador"]], "rDisp");
 
 /* ---------- Novedades ---------- */
 function renderLog(){
   $("#log").innerHTML = LOG.length ? LOG.map(n=>{
-    const h = byName.get(n.ia) || {nombre:n.ia||"Cualia", dominio: n.ia==="Cualia"?null:undefined};
-    return `<li>${icono(h,true)}<div><time>${fecha(n.fecha)}</time><div class="lt">${esc(n.ia||"")}</div><p>${esc(n.texto)}</p></div></li>`;
+    const h = byName.get(n.ia);
+    const ico = h ? icono(h,"sm") : icono({nombre:n.ia||"Cualia"},"sm");
+    return `<li>${ico}<div><time>${fecha(n.fecha)}</time><div class="lt">${h?`<button class="linkbtn" style="font-size:16px;text-decoration:none;color:var(--ink)" data-open="${esc(h.id)}">${esc(n.ia)}</button>`:esc(n.ia||"")}</div><p>${esc(n.texto)}</p></div></li>`;
   }).join("") : `<li>Aún no hay novedades registradas.</li>`;
 }
 function renderFresh(){
@@ -669,11 +859,12 @@ function renderFresh(){
 fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
   META = d.meta || {};
   CATS = (d.cats||[]).filter(c=>Array.isArray(c.herramientas)).sort((a,b)=>(a.orden||99)-(b.orden||99));
-  ALL = CATS.flatMap(c=>c.herramientas.map(h=>({...h, cat:c.id, catNombre:c.nombre})));
-  ALL.forEach(h=>byName.set(h.nombre,h));
+  ALL = CATS.flatMap(c=>c.herramientas.map(h=>({notas:{calidad:0,facilidad:0,precio:0}, ...h, cat:c.id, catNombre:c.nombre})));
+  ALL.forEach(h=>{ byName.set(h.nombre,h); byId.set(h.id,h); });
   LOG = (d.novedades||[]).slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
+  PACKS = d.packs || [];
   chipRow($("#fCat"), CATS.map(c=>[c.id,c.nombre]), "cat");
-  renderRanking(); renderGrid(); renderFresh(); renderLog();
+  renderRanking(); renderGrid(); renderFresh(); renderLog(); renderPacks();
 }).catch(()=>{ $("#fresh").textContent = "No se pudieron cargar las fichas. Recarga la página."; });
 </script>
 </body>
