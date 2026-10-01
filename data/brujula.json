@@ -131,7 +131,9 @@
      ],
      "slug": "chatgpt",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-02",
@@ -178,7 +180,9 @@
      ],
      "slug": "claude",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-03",
@@ -225,7 +229,9 @@
      ],
      "slug": "gemini",
      "afiliado": "",
-     "precioMes": 22
+     "precioMes": 22,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-04",
@@ -272,7 +278,9 @@
      ],
      "slug": "microsoft-copilot",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-05",
@@ -319,7 +327,9 @@
      ],
      "slug": "perplexity",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-06",
@@ -366,7 +376,9 @@
      ],
      "slug": "grok",
      "afiliado": "",
-     "precioMes": 30
+     "precioMes": 30,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-07",
@@ -412,7 +424,9 @@
      ],
      "slug": "meta-ai",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-08",
@@ -457,7 +471,9 @@
      ],
      "slug": "deepseek",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-09",
@@ -502,7 +518,9 @@
      ],
      "slug": "le-chat",
      "afiliado": "",
-     "precioMes": 15
+     "precioMes": 15,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-10",
@@ -547,7 +565,9 @@
      ],
      "slug": "qwen-chat",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-11",
@@ -592,7 +612,9 @@
      ],
      "slug": "kimi",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-12",
@@ -636,7 +658,9 @@
      ],
      "slug": "z-ai-glm",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-13",
@@ -681,7 +705,9 @@
      ],
      "slug": "poe",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-14",
@@ -725,7 +751,9 @@
      ],
      "slug": "duck-ai",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-15",
@@ -769,7 +797,9 @@
      ],
      "slug": "lumo",
      "afiliado": "",
-     "precioMes": 13
+     "precioMes": 13,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "chat-16",
@@ -814,7 +844,9 @@
      ],
      "slug": "siri-con-apple-intelligence",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-17",
@@ -858,7 +890,9 @@
      ],
      "slug": "alexa",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "chat-18",
@@ -902,7 +936,9 @@
      ],
      "slug": "brave-leo",
      "afiliado": "",
-     "precioMes": 15
+     "precioMes": 15,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "chat-19",
@@ -947,7 +983,9 @@
      ],
      "slug": "opera-aria",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-20",
@@ -991,7 +1029,9 @@
      ],
      "slug": "you-com",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "chat-21",
@@ -1035,7 +1075,9 @@
      ],
      "slug": "venice",
      "afiliado": "",
-     "precioMes": 18
+     "precioMes": 18,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "chat-22",
@@ -1079,7 +1121,9 @@
      ],
      "slug": "pi",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-23",
@@ -1123,7 +1167,9 @@
      ],
      "slug": "character-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "chat-24",
@@ -1166,7 +1212,9 @@
      ],
      "slug": "openrouter",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "chat-25",
@@ -1208,7 +1256,9 @@
      ],
      "slug": "t3-chat",
      "afiliado": "",
-     "precioMes": 8
+     "precioMes": 8,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
     },
     {
      "id": "chat-26",
@@ -1251,7 +1301,9 @@
      ],
      "slug": "lm-studio",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-27",
@@ -1294,7 +1346,9 @@
      ],
      "slug": "ollama",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-28",
@@ -1337,7 +1391,9 @@
      ],
      "slug": "jan",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-29",
@@ -1379,7 +1435,9 @@
      ],
      "slug": "gpt4all",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "chat-30",
@@ -1421,7 +1479,9 @@
      ],
      "slug": "msty",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     }
    ],
    "actualizado": "2026-09-29",
@@ -1477,7 +1537,9 @@
      ],
      "slug": "nano-banana-2",
      "afiliado": "",
-     "precioMes": 22
+     "precioMes": 22,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "imagen-02",
@@ -1523,7 +1585,9 @@
      ],
      "slug": "gpt-image-2",
      "afiliado": "",
-     "precioMes": 23
+     "precioMes": 23,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-03",
@@ -1567,7 +1631,9 @@
      ],
      "slug": "midjourney",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "El plan básico da un número limitado de horas de generación rápida al mes. Si haces muchas imágenes, necesitarás un plan superior o comprar horas extra."
     },
     {
      "id": "imagen-04",
@@ -1610,7 +1676,9 @@
      ],
      "slug": "flux-2-pro",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "imagen-05",
@@ -1656,7 +1724,9 @@
      ],
      "slug": "adobe-firefly",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos mensuales; cada imagen o edición gasta uno o varios. Si se acaban, hay que comprar más o subir de plan."
     },
     {
      "id": "imagen-06",
@@ -1700,7 +1770,9 @@
      ],
      "slug": "nano-banana-pro",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-07",
@@ -1745,7 +1817,9 @@
      ],
      "slug": "ideogram",
      "afiliado": "",
-     "precioMes": 8
+     "precioMes": 8,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-08",
@@ -1789,7 +1863,9 @@
      ],
      "slug": "recraft",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-09",
@@ -1834,7 +1910,9 @@
      ],
      "slug": "leonardo-ai",
      "afiliado": "",
-     "precioMes": 30
+     "precioMes": 30,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-10",
@@ -1877,7 +1955,9 @@
      ],
      "slug": "stable-diffusion-3-5",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "imagen-11",
@@ -1922,7 +2002,9 @@
      ],
      "slug": "meta-muse-image",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "imagen-12",
@@ -1966,7 +2048,9 @@
      ],
      "slug": "grok-imagine",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-13",
@@ -2011,7 +2095,9 @@
      ],
      "slug": "canva-magic-media",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-14",
@@ -2054,7 +2140,9 @@
      ],
      "slug": "krea",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-15",
@@ -2098,7 +2186,9 @@
      ],
      "slug": "freepik-ai",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-16",
@@ -2141,7 +2231,9 @@
      ],
      "slug": "magnific",
      "afiliado": "",
-     "precioMes": 39
+     "precioMes": 39,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-17",
@@ -2185,7 +2277,9 @@
      ],
      "slug": "microsoft-designer",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "imagen-18",
@@ -2229,7 +2323,9 @@
      ],
      "slug": "photoroom",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "imagen-19",
@@ -2273,7 +2369,9 @@
      ],
      "slug": "clipdrop",
      "afiliado": "",
-     "precioMes": 9
+     "precioMes": 9,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-20",
@@ -2317,7 +2415,9 @@
      ],
      "slug": "seedream",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-21",
@@ -2361,7 +2461,9 @@
      ],
      "slug": "qwen-image",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "imagen-22",
@@ -2404,7 +2506,9 @@
      ],
      "slug": "luma-photon",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-23",
@@ -2448,7 +2552,9 @@
      ],
      "slug": "runway-imagen",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-24",
@@ -2491,7 +2597,9 @@
      ],
      "slug": "comfyui",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "imagen-25",
@@ -2534,7 +2642,9 @@
      ],
      "slug": "topaz-gigapixel",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "imagen-26",
@@ -2579,7 +2689,9 @@
      ],
      "slug": "remove-bg",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "imagen-27",
@@ -2623,7 +2735,9 @@
      ],
      "slug": "nightcafe",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-28",
@@ -2666,7 +2780,9 @@
      ],
      "slug": "playground",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-29",
@@ -2709,7 +2825,9 @@
      ],
      "slug": "kolors",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada imagen gasta uno o varios. Si generas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "imagen-30",
@@ -2752,7 +2870,9 @@
      ],
      "slug": "hunyuan-image",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     }
    ],
    "actualizado": "2026-09-29",
@@ -2806,7 +2926,9 @@
      ],
      "slug": "veo-3-1",
      "afiliado": "",
-     "precioMes": 22
+     "precioMes": 22,
+     "consumo": "creditos",
+     "consumoTxt": "El plan de Google AI incluye un número limitado de vídeos al mes. Para generar más hay que subir a un plan superior o comprar créditos."
     },
     {
      "id": "video-02",
@@ -2851,7 +2973,9 @@
      ],
      "slug": "kling-3-0",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "El plan de pago da un número de créditos al mes y cada vídeo gasta varios: se acaban rápido. Si generas mucho, tendrás que comprar créditos extra o subir de plan."
     },
     {
      "id": "video-03",
@@ -2895,7 +3019,9 @@
      ],
      "slug": "seedance-2-5",
      "afiliado": "",
-     "precioMes": 18
+     "precioMes": 18,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-04",
@@ -2940,7 +3066,9 @@
      ],
      "slug": "runway",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Los créditos mensuales dan para pocos minutos de vídeo. Trabajar en serio suele exigir el plan ilimitado o comprar más créditos."
     },
     {
      "id": "video-05",
@@ -2984,7 +3112,9 @@
      ],
      "slug": "heygen",
      "afiliado": "",
-     "precioMes": 29
+     "precioMes": 29,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de minutos o créditos de vídeo al mes; si los superas, hay que pagar más."
     },
     {
      "id": "video-06",
@@ -3027,7 +3157,9 @@
      ],
      "slug": "synthesia",
      "afiliado": "",
-     "precioMes": 29
+     "precioMes": 29,
+     "consumo": "creditos",
+     "consumoTxt": "Los planes incluyen unos minutos de vídeo al mes; más minutos cuestan más."
     },
     {
      "id": "video-07",
@@ -3071,7 +3203,9 @@
      ],
      "slug": "luma-dream-machine",
      "afiliado": "",
-     "precioMes": 30
+     "precioMes": 30,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-08",
@@ -3115,7 +3249,9 @@
      ],
      "slug": "hailuo-minimax",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-09",
@@ -3159,7 +3295,9 @@
      ],
      "slug": "pika",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-10",
@@ -3203,7 +3341,9 @@
      ],
      "slug": "wan",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "video-11",
@@ -3246,7 +3386,9 @@
      ],
      "slug": "grok-imagine-video",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-12",
@@ -3290,7 +3432,9 @@
      ],
      "slug": "pixverse",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-13",
@@ -3333,7 +3477,9 @@
      ],
      "slug": "higgsfield",
      "afiliado": "",
-     "precioMes": 15
+     "precioMes": 15,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-14",
@@ -3379,7 +3525,9 @@
      ],
      "slug": "capcut",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "video-15",
@@ -3423,7 +3571,9 @@
      ],
      "slug": "descript",
      "afiliado": "",
-     "precioMes": 16
+     "precioMes": 16,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-16",
@@ -3466,7 +3616,9 @@
      ],
      "slug": "opus-clip",
      "afiliado": "",
-     "precioMes": 15
+     "precioMes": 15,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-17",
@@ -3510,7 +3662,9 @@
      ],
      "slug": "captions",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-18",
@@ -3553,7 +3707,9 @@
      ],
      "slug": "invideo-ai",
      "afiliado": "",
-     "precioMes": 28
+     "precioMes": 28,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-19",
@@ -3597,7 +3753,9 @@
      ],
      "slug": "canva-video",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-20",
@@ -3641,7 +3799,9 @@
      ],
      "slug": "adobe-firefly-video",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-21",
@@ -3684,7 +3844,9 @@
      ],
      "slug": "ltx-studio",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-22",
@@ -3727,7 +3889,9 @@
      ],
      "slug": "vidu",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-23",
@@ -3769,7 +3933,9 @@
      ],
      "slug": "happyhorse",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-24",
@@ -3812,7 +3978,9 @@
      ],
      "slug": "hedra",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-25",
@@ -3855,7 +4023,9 @@
      ],
      "slug": "d-id",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-26",
@@ -3898,7 +4068,9 @@
      ],
      "slug": "veed",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-27",
@@ -3941,7 +4113,9 @@
      ],
      "slug": "kapwing",
      "afiliado": "",
-     "precioMes": 16
+     "precioMes": 16,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-28",
@@ -3984,7 +4158,9 @@
      ],
      "slug": "topaz-video-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "video-29",
@@ -4026,7 +4202,9 @@
      ],
      "slug": "midjourney-video",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos: cada vídeo gasta varios y los del plan se acaban rápido. Si trabajas mucho, tendrás que comprar más o subir de plan."
     },
     {
      "id": "video-30",
@@ -4068,7 +4246,9 @@
      ],
      "slug": "rask-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Se paga por minutos de vídeo doblado: doblar mucho contenido sube el precio."
     }
    ],
    "actualizado": "2026-09-29",
@@ -4124,7 +4304,9 @@
      ],
      "slug": "suno",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "El plan Pro da créditos para un número de canciones al mes y las descargas son limitadas. Si haces muchas, tendrás que comprar créditos o pagar descargas extra."
     },
     {
      "id": "musica-02",
@@ -4168,7 +4350,9 @@
      ],
      "slug": "elevenlabs-music",
      "afiliado": "",
-     "precioMes": 6
+     "precioMes": 6,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-03",
@@ -4211,7 +4395,9 @@
      ],
      "slug": "udio",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-04",
@@ -4254,7 +4440,9 @@
      ],
      "slug": "google-flow-music",
      "afiliado": "",
-     "precioMes": 6
+     "precioMes": 6,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-05",
@@ -4298,7 +4486,9 @@
      ],
      "slug": "mureka",
      "afiliado": "",
-     "precioMes": 8
+     "precioMes": 8,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-06",
@@ -4340,7 +4530,9 @@
      ],
      "slug": "soundraw",
      "afiliado": "",
-     "precioMes": 17
+     "precioMes": 17,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-07",
@@ -4384,7 +4576,9 @@
      ],
      "slug": "aiva",
      "afiliado": "",
-     "precioMes": 11
+     "precioMes": 11,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-08",
@@ -4426,7 +4620,9 @@
      ],
      "slug": "beatoven-ai",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-09",
@@ -4469,7 +4665,9 @@
      ],
      "slug": "mubert",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-10",
@@ -4512,7 +4710,9 @@
      ],
      "slug": "stable-audio",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-11",
@@ -4554,7 +4754,9 @@
      ],
      "slug": "treblo",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-12",
@@ -4596,7 +4798,9 @@
      ],
      "slug": "ace-step",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-13",
@@ -4638,7 +4842,9 @@
      ],
      "slug": "musicgen",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-14",
@@ -4681,7 +4887,9 @@
      ],
      "slug": "boomy",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-15",
@@ -4723,7 +4931,9 @@
      ],
      "slug": "loudly",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-16",
@@ -4766,7 +4976,9 @@
      ],
      "slug": "soundful",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-17",
@@ -4813,7 +5025,9 @@
      ],
      "slug": "moises",
      "afiliado": "",
-     "precioMes": 5
+     "precioMes": 5,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-18",
@@ -4857,7 +5071,9 @@
      ],
      "slug": "lalal-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Se paga por minutos de audio procesado."
     },
     {
      "id": "musica-19",
@@ -4900,7 +5116,9 @@
      ],
      "slug": "landr",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-20",
@@ -4942,7 +5160,9 @@
      ],
      "slug": "izotope-ozone",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-21",
@@ -4986,7 +5206,9 @@
      ],
      "slug": "bandlab-songstarter",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-22",
@@ -5028,7 +5250,9 @@
      ],
      "slug": "kits-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-23",
@@ -5071,7 +5295,9 @@
      ],
      "slug": "splice",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-24",
@@ -5115,7 +5341,9 @@
      ],
      "slug": "chordify",
      "afiliado": "",
-     "precioMes": 4
+     "precioMes": 4,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-25",
@@ -5157,7 +5385,9 @@
      ],
      "slug": "magenta-rt",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-26",
@@ -5199,7 +5429,9 @@
      ],
      "slug": "musicfy",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o descargas limitadas al mes. Si haces muchas canciones, tendrás que comprar más."
     },
     {
      "id": "musica-27",
@@ -5241,7 +5473,9 @@
      ],
      "slug": "boppy",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-28",
@@ -5283,7 +5517,9 @@
      ],
      "slug": "samplab",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "musica-29",
@@ -5325,7 +5561,9 @@
      ],
      "slug": "basic-pitch",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "musica-30",
@@ -5367,7 +5605,9 @@
      ],
      "slug": "audioshake",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     }
    ],
    "actualizado": "2026-09-29",
@@ -5423,7 +5663,9 @@
      ],
      "slug": "elevenlabs",
      "afiliado": "",
-     "precioMes": 6
+     "precioMes": 6,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de caracteres (minutos de voz) al mes. Un audiolibro o mucho doblaje los agota rápido y obliga a subir de plan."
     },
     {
      "id": "voz-02",
@@ -5466,7 +5708,9 @@
      ],
      "slug": "cartesia",
      "afiliado": "",
-     "precioMes": 4
+     "precioMes": 4,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-03",
@@ -5509,7 +5753,9 @@
      ],
      "slug": "gemini-tts",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-04",
@@ -5553,7 +5799,9 @@
      ],
      "slug": "voz-de-chatgpt",
      "afiliado": "",
-     "precioMes": 23
+     "precioMes": 23,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-05",
@@ -5595,7 +5843,9 @@
      ],
      "slug": "inworld-tts",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-06",
@@ -5638,7 +5888,9 @@
      ],
      "slug": "hume",
      "afiliado": "",
-     "precioMes": 3
+     "precioMes": 3,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye unos minutos de audio al mes. Si los superas, hay que subir de plan o pagar más."
     },
     {
      "id": "voz-07",
@@ -5681,7 +5933,9 @@
      ],
      "slug": "fish-audio",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye unos minutos de audio al mes. Si los superas, hay que subir de plan o pagar más."
     },
     {
      "id": "voz-08",
@@ -5726,7 +5980,9 @@
      ],
      "slug": "speechify",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-09",
@@ -5768,7 +6024,9 @@
      ],
      "slug": "murf",
      "afiliado": "",
-     "precioMes": 19
+     "precioMes": 19,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye unos minutos de audio al mes. Si los superas, hay que subir de plan o pagar más."
     },
     {
      "id": "voz-10",
@@ -5810,7 +6068,9 @@
      ],
      "slug": "wellsaid",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-11",
@@ -5852,7 +6112,9 @@
      ],
      "slug": "chatterbox",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "voz-12",
@@ -5894,7 +6156,9 @@
      ],
      "slug": "kokoro",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "voz-13",
@@ -5936,7 +6200,9 @@
      ],
      "slug": "qwen-audio-tts",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-14",
@@ -5978,7 +6244,9 @@
      ],
      "slug": "rime",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-15",
@@ -6020,7 +6288,9 @@
      ],
      "slug": "deepgram",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-16",
@@ -6063,7 +6333,9 @@
      ],
      "slug": "whisper",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "voz-17",
@@ -6105,7 +6377,9 @@
      ],
      "slug": "assemblyai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-18",
@@ -6147,7 +6421,9 @@
      ],
      "slug": "speechmatics",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-19",
@@ -6189,7 +6465,9 @@
      ],
      "slug": "adobe-podcast",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-20",
@@ -6232,7 +6510,9 @@
      ],
      "slug": "krisp",
      "afiliado": "",
-     "precioMes": 8
+     "precioMes": 8,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-21",
@@ -6274,7 +6554,9 @@
      ],
      "slug": "auphonic",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-22",
@@ -6318,7 +6600,9 @@
      ],
      "slug": "wispr-flow",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye unos minutos de audio al mes. Si los superas, hay que subir de plan o pagar más."
     },
     {
      "id": "voz-23",
@@ -6360,7 +6644,9 @@
      ],
      "slug": "macwhisper",
      "afiliado": "",
-     "precioMes": 6
+     "precioMes": 6,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-24",
@@ -6402,7 +6688,9 @@
      ],
      "slug": "voicemod",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-25",
@@ -6444,7 +6732,9 @@
      ],
      "slug": "azure-ai-speech",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-26",
@@ -6486,7 +6776,9 @@
      ],
      "slug": "amazon-polly",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "voz-27",
@@ -6528,7 +6820,9 @@
      ],
      "slug": "sesame",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "voz-28",
@@ -6570,7 +6864,9 @@
      ],
      "slug": "lovo-genny",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye unos minutos de audio al mes. Si los superas, hay que subir de plan o pagar más."
     },
     {
      "id": "voz-29",
@@ -6614,7 +6910,9 @@
      ],
      "slug": "naturalreader",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "voz-30",
@@ -6656,7 +6954,9 @@
      ],
      "slug": "gradium",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     }
    ],
    "actualizado": "2026-09-29",
@@ -6713,7 +7013,9 @@
      ],
      "slug": "claude-code",
      "afiliado": "",
-     "precioMes": 22
+     "precioMes": 22,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija con límite de uso. Si programas muchas horas al día puede quedarse corto y hay que subir a un plan superior."
     },
     {
      "id": "codigo-02",
@@ -6756,7 +7058,9 @@
      ],
      "slug": "cursor",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija con límite de uso. Si programas muchas horas al día puede quedarse corto y hay que subir a un plan superior."
     },
     {
      "id": "codigo-03",
@@ -6799,7 +7103,9 @@
      ],
      "slug": "opencode",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-04",
@@ -6843,7 +7149,9 @@
      ],
      "slug": "codex",
      "afiliado": "",
-     "precioMes": 23
+     "precioMes": 23,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija con límite de uso. Si programas muchas horas al día puede quedarse corto y hay que subir a un plan superior."
     },
     {
      "id": "codigo-05",
@@ -6887,7 +7195,9 @@
      ],
      "slug": "github-copilot",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija con límite de uso. Si programas muchas horas al día puede quedarse corto y hay que subir a un plan superior."
     },
     {
      "id": "codigo-06",
@@ -6929,7 +7239,9 @@
      ],
      "slug": "windsurf",
      "afiliado": "",
-     "precioMes": 60
+     "precioMes": 60,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de mensajes o créditos. Los proyectos grandes los gastan rápido y hay que comprar más."
     },
     {
      "id": "codigo-07",
@@ -6971,7 +7283,9 @@
      ],
      "slug": "antigravity",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-08",
@@ -7015,7 +7329,9 @@
      ],
      "slug": "lovable",
      "afiliado": "",
-     "precioMes": 30
+     "precioMes": 30,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan da un número de mensajes o créditos al mes. Una web con muchos cambios los gasta rápido y hay que comprar más."
     },
     {
      "id": "codigo-09",
@@ -7058,7 +7374,9 @@
      ],
      "slug": "bolt-new",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de mensajes o créditos. Los proyectos grandes los gastan rápido y hay que comprar más."
     },
     {
      "id": "codigo-10",
@@ -7101,7 +7419,9 @@
      ],
      "slug": "v0",
      "afiliado": "",
-     "precioMes": 5
+     "precioMes": 5,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de mensajes o créditos. Los proyectos grandes los gastan rápido y hay que comprar más."
     },
     {
      "id": "codigo-11",
@@ -7145,7 +7465,9 @@
      ],
      "slug": "replit",
      "afiliado": "",
-     "precioMes": 25
+     "precioMes": 25,
+     "consumo": "creditos",
+     "consumoTxt": "La cuota incluye créditos para su asistente de IA; los proyectos grandes los agotan y se paga el uso extra."
     },
     {
      "id": "codigo-12",
@@ -7187,7 +7509,9 @@
      ],
      "slug": "coderabbit",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "codigo-13",
@@ -7230,7 +7554,9 @@
      ],
      "slug": "kimi-code",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-14",
@@ -7272,7 +7598,9 @@
      ],
      "slug": "kiro",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-15",
@@ -7314,7 +7642,9 @@
      ],
      "slug": "cline",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-16",
@@ -7356,7 +7686,9 @@
      ],
      "slug": "aider",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-17",
@@ -7398,7 +7730,9 @@
      ],
      "slug": "zed",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-18",
@@ -7440,7 +7774,9 @@
      ],
      "slug": "jetbrains-ai-junie",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-19",
@@ -7482,7 +7818,9 @@
      ],
      "slug": "tabnine",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-20",
@@ -7525,7 +7863,9 @@
      ],
      "slug": "warp",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-21",
@@ -7567,7 +7907,9 @@
      ],
      "slug": "continue",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-22",
@@ -7609,7 +7951,9 @@
      ],
      "slug": "roo-code",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-23",
@@ -7652,7 +7996,9 @@
      ],
      "slug": "base44",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de mensajes o créditos. Los proyectos grandes los gastan rápido y hay que comprar más."
     },
     {
      "id": "codigo-24",
@@ -7695,7 +8041,9 @@
      ],
      "slug": "bubble",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-25",
@@ -7737,7 +8085,9 @@
      ],
      "slug": "firebase-studio",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "codigo-26",
@@ -7779,7 +8129,9 @@
      ],
      "slug": "qodo",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-27",
@@ -7821,7 +8173,9 @@
      ],
      "slug": "amp",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "uso",
+     "consumoTxt": "Se paga según lo que uses (por imagen, por minuto o por texto). El coste real depende de cuánto trabajes con ella."
     },
     {
      "id": "codigo-28",
@@ -7863,7 +8217,9 @@
      ],
      "slug": "devin",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Cada plan incluye un número de mensajes o créditos. Los proyectos grandes los gastan rápido y hay que comprar más."
     },
     {
      "id": "codigo-29",
@@ -7906,7 +8262,9 @@
      ],
      "slug": "figma-make",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "codigo-30",
@@ -7950,7 +8308,9 @@
      ],
      "slug": "framer-ai",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     }
    ],
    "actualizado": "2026-09-29",
@@ -8006,7 +8366,9 @@
      ],
      "slug": "gemini-notebook",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-02",
@@ -8049,7 +8411,9 @@
      ],
      "slug": "elicit",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-03",
@@ -8093,7 +8457,9 @@
      ],
      "slug": "consensus",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-04",
@@ -8135,7 +8501,9 @@
      ],
      "slug": "scispace",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-05",
@@ -8177,7 +8545,9 @@
      ],
      "slug": "semantic-scholar",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "estudio-06",
@@ -8219,7 +8589,9 @@
      ],
      "slug": "scite",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-07",
@@ -8261,7 +8633,9 @@
      ],
      "slug": "researchrabbit",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "estudio-08",
@@ -8303,7 +8677,9 @@
      ],
      "slug": "connected-papers",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-09",
@@ -8345,7 +8721,9 @@
      ],
      "slug": "undermind",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-10",
@@ -8389,7 +8767,9 @@
      ],
      "slug": "khanmigo",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-11",
@@ -8433,7 +8813,9 @@
      ],
      "slug": "duolingo-max",
      "afiliado": "",
-     "precioMes": 14
+     "precioMes": 14,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-12",
@@ -8475,7 +8857,9 @@
      ],
      "slug": "speak",
      "afiliado": "",
-     "precioMes": 15
+     "precioMes": 15,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-13",
@@ -8517,7 +8901,9 @@
      ],
      "slug": "praktika",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-14",
@@ -8561,7 +8947,9 @@
      ],
      "slug": "quizlet",
      "afiliado": "",
-     "precioMes": 8
+     "precioMes": 8,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-15",
@@ -8603,7 +8991,9 @@
      ],
      "slug": "photomath",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-16",
@@ -8647,7 +9037,9 @@
      ],
      "slug": "wolfram-alpha",
      "afiliado": "",
-     "precioMes": 7
+     "precioMes": 7,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-17",
@@ -8690,7 +9082,9 @@
      ],
      "slug": "gauth",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-18",
@@ -8733,7 +9127,9 @@
      ],
      "slug": "symbolab",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-19",
@@ -8776,7 +9172,9 @@
      ],
      "slug": "chatpdf",
      "afiliado": "",
-     "precioMes": 7
+     "precioMes": 7,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-20",
@@ -8818,7 +9216,9 @@
      ],
      "slug": "humata",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-21",
@@ -8862,7 +9262,9 @@
      ],
      "slug": "kagi",
      "afiliado": "",
-     "precioMes": 5
+     "precioMes": 5,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-22",
@@ -8905,7 +9307,9 @@
      ],
      "slug": "liner",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-23",
@@ -8949,7 +9353,9 @@
      ],
      "slug": "readwise-reader",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-24",
@@ -8992,7 +9398,9 @@
      ],
      "slug": "coursera-coach",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-25",
@@ -9037,7 +9445,9 @@
      ],
      "slug": "deepl",
      "afiliado": "",
-     "precioMes": 9
+     "precioMes": 9,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-26",
@@ -9081,7 +9491,9 @@
      ],
      "slug": "google-lens",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "estudio-27",
@@ -9124,7 +9536,9 @@
      ],
      "slug": "paperpal",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-28",
@@ -9166,7 +9580,9 @@
      ],
      "slug": "scholarcy",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-29",
@@ -9209,7 +9625,9 @@
      ],
      "slug": "talkpal",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "estudio-30",
@@ -9252,7 +9670,9 @@
      ],
      "slug": "brainly",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     }
    ],
    "actualizado": "2026-09-29",
@@ -9306,7 +9726,9 @@
      ],
      "slug": "gamma",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-02",
@@ -9351,7 +9773,9 @@
      ],
      "slug": "notion-ai",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-03",
@@ -9397,7 +9821,9 @@
      ],
      "slug": "canva-magic-studio",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-04",
@@ -9441,7 +9867,9 @@
      ],
      "slug": "grammarly",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-05",
@@ -9485,7 +9913,9 @@
      ],
      "slug": "otter-ai",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-06",
@@ -9528,7 +9958,9 @@
      ],
      "slug": "fireflies",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-07",
@@ -9571,7 +10003,9 @@
      ],
      "slug": "granola",
      "afiliado": "",
-     "precioMes": 14
+     "precioMes": 14,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-08",
@@ -9614,7 +10048,9 @@
      ],
      "slug": "fathom",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-09",
@@ -9657,7 +10093,9 @@
      ],
      "slug": "tl-dv",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-10",
@@ -9700,7 +10138,9 @@
      ],
      "slug": "zapier",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "creditos",
+     "consumoTxt": "El precio depende de cuántas tareas automáticas hagas al mes; si haces muchas, sube de plan."
     },
     {
      "id": "trabajo-11",
@@ -9742,7 +10182,9 @@
      ],
      "slug": "make",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-12",
@@ -9786,7 +10228,9 @@
      ],
      "slug": "n8n",
      "afiliado": "",
-     "precioMes": 0
+     "precioMes": 0,
+     "consumo": "gratis",
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
     },
     {
      "id": "trabajo-13",
@@ -9828,7 +10272,9 @@
      ],
      "slug": "beautiful-ai",
      "afiliado": "",
-     "precioMes": 12
+     "precioMes": 12,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-14",
@@ -9870,7 +10316,9 @@
      ],
      "slug": "napkin-ai",
      "afiliado": "",
-     "precioMes": 10
+     "precioMes": 10,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-15",
@@ -9914,7 +10362,9 @@
      ],
      "slug": "figma-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-16",
@@ -9958,7 +10408,9 @@
      ],
      "slug": "miro-ai",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-17",
@@ -10003,7 +10455,9 @@
      ],
      "slug": "superhuman",
      "afiliado": "",
-     "precioMes": 30
+     "precioMes": 30,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-18",
@@ -10047,7 +10501,9 @@
      ],
      "slug": "motion",
      "afiliado": "",
-     "precioMes": 19
+     "precioMes": 19,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-19",
@@ -10089,7 +10545,9 @@
      ],
      "slug": "reclaim",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-20",
@@ -10133,7 +10591,9 @@
      ],
      "slug": "clickup-brain",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-21",
@@ -10176,7 +10636,9 @@
      ],
      "slug": "jasper",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-22",
@@ -10218,7 +10680,9 @@
      ],
      "slug": "glean",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-23",
@@ -10260,7 +10724,9 @@
      ],
      "slug": "lindy",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-24",
@@ -10303,7 +10769,9 @@
      ],
      "slug": "manus",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-25",
@@ -10346,7 +10814,9 @@
      ],
      "slug": "genspark",
      "afiliado": "",
-     "precioMes": 25
+     "precioMes": 25,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-26",
@@ -10388,7 +10858,9 @@
      ],
      "slug": "julius-ai",
      "afiliado": "",
-     "precioMes": 20
+     "precioMes": 20,
+     "consumo": "creditos",
+     "consumoTxt": "Funciona con créditos o un límite de uso al mes. Si lo usas mucho, tendrás que subir de plan."
     },
     {
      "id": "trabajo-27",
@@ -10431,7 +10903,9 @@
      ],
      "slug": "quillbot",
      "afiliado": "",
-     "precioMes": 9
+     "precioMes": 9,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-28",
@@ -10474,7 +10948,9 @@
      ],
      "slug": "wordtune",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-29",
@@ -10518,7 +10994,9 @@
      ],
      "slug": "taskade",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     },
     {
      "id": "trabajo-30",
@@ -10563,7 +11041,9 @@
      ],
      "slug": "microsoft-365-copilot",
      "afiliado": "",
-     "precioMes": null
+     "precioMes": null,
+     "consumo": "fijo",
+     "consumoTxt": "Cuota fija: pagas lo mismo cada mes y para un uso normal no hay costes extra."
     }
    ],
    "actualizado": "2026-09-29",

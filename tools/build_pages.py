@@ -65,7 +65,7 @@ for c in d["cats"]:
 <p class="lead">{e(h['desc'])}</p>
 <div class="row"><span class="pill">Nota {h['nota']}/100</span><span class="pill">{e(GRATIS.get(h['gratisTipo'],''))}</span><span class="pill">{e(MEJOR.get(h.get('mejorEn'),''))}</span><span class="pill">{e(NIVEL.get(h.get('nivel'),''))}</span></div>
 <h2>¿Es gratis {e(h['nombre'])}?</h2><p><b>{e(GRATIS.get(h['gratisTipo'],''))}.</b> {e(h.get('gratisTxt'))}</p>
-<h2>Precio</h2><p>{e(h['precioTxt'])} (orientativo).</p>
+<h2>Precio</h2><p>{e(h['precioTxt'])} (orientativo).</p>{('<p><b>⚠ Puede costar más:</b> '+e(h.get('consumoTxt'))+'</p>') if h.get('consumo') in ('creditos','uso') else ''}
 <div class="pc"><div class="card pro"><h2>Ventajas</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('pros',[]))}</ul></div>
 <div class="card con"><h2>Desventajas</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('contras',[]))}</ul></div></div>
 <h2>Para quién es</h2><p>{e(h['para'])}</p>

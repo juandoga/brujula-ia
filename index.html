@@ -286,6 +286,11 @@ select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;bac
 .hist li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;font-size:14px}
 .hist time{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px}
 .afil{font-size:12px;color:var(--muted)}
+.aviso-coste{display:grid;gap:4px;background:var(--warn-soft);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:15px}
+.aviso-coste b{color:var(--warn)}
+.sp .extra{display:block;font-size:11px;font-weight:700;color:var(--warn);white-space:normal;line-height:1.2;margin-top:2px}
+.step .sp{max-width:7.5em}
+.pack-extra{margin:0;font-size:14px;background:var(--warn-soft);color:var(--ink);border-radius:10px;padding:10px 12px}
 /* Consejos y guías */
 .tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .tips li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
@@ -401,6 +406,7 @@ footer.note p{max-width:78ch;margin:0 0 8px}
       </div>
       <ul class="b-list" id="bList"></ul>
       <div class="b-total" id="bTotal"></div>
+      <p class="pack-extra" id="bExtra" hidden></p>
       <div class="b-actions">
         <button type="button" class="btn" id="bShare">Copiar enlace para compartir</button>
         <button type="button" class="btn-sec" id="bClear">Vaciar</button>
@@ -451,6 +457,14 @@ footer.note p{max-width:78ch;margin:0 0 8px}
     <div style="display:grid;gap:36px">
       <div><h2 class="h-section" style="margin-bottom:12px">Cómo se calcula la nota</h2><div id="guiaNota"></div></div>
       <div><h2 class="h-section" style="margin-bottom:12px">Qué significa cada tipo de «gratis»</h2><ul class="legend" id="guiaGratis"></ul></div>
+      <div><h2 class="h-section" style="margin-bottom:12px">Por qué el precio puede ser mayor</h2>
+        <p style="margin:0 0 12px;max-width:65ch">El precio que mostramos es el del plan de pago más básico. Pero no todas las IAs cobran igual:</p>
+        <ul class="legend">
+          <li><b>Cuota fija</b><span>Pagas lo mismo cada mes. Para un uso normal no hay sorpresas (por ejemplo, ChatGPT o Canva).</span></li>
+          <li><b>⚠ Funciona con créditos</b><span>El plan incluye unos créditos al mes y cada imagen, vídeo o canción gasta varios. Si trabajas mucho se acaban y hay que comprar más (por ejemplo, Kling, Suno o Midjourney).</span></li>
+          <li><b>⚠ Pago por uso</b><span>Pagas según lo que uses, como la luz. El coste depende de cuánto trabajes con ella.</span></li>
+        </ul>
+        <p class="small" style="margin-top:10px">Consejo: empieza con el plan más barato y mira cuánto te dura antes de pagar más.</p></div>
       <div><h2 class="h-section" style="margin-bottom:12px">Consejos para empezar</h2><ul class="tips" id="tips"></ul></div>
       <div><h2 class="h-section">Glosario básico</h2><dl class="glosario" id="glosario"></dl></div>
     </div>
@@ -490,6 +504,12 @@ const GRATIS = {
   prueba:  {txt:"Solo prueba",       corto:"Solo prueba",      expl:"Solo tiene unos créditos iniciales o unos días de prueba. Para usarla habitualmente hay que pagar."},
   no:      {txt:"De pago",           corto:"De pago",          expl:"No tiene versión gratis. Hay que pagar desde el principio."},
 };
+const CONSUMO = {
+  gratis:  {txt:"Sin costes extra",        corto:"",                 expl:"Se puede usar gratis, sin sorpresas."},
+  fijo:    {txt:"Cuota fija",              corto:"",                 expl:"Pagas lo mismo cada mes; para un uso normal no hay costes extra."},
+  creditos:{txt:"Funciona con créditos",   corto:"Gasta créditos",   expl:"El plan incluye unos créditos al mes. Si trabajas mucho se acaban y hay que comprar más o subir de plan, así que puede costar más que el precio de partida."},
+  uso:     {txt:"Pago por uso",            corto:"Pago por uso",     expl:"Pagas según lo que uses. El coste real depende de cuánto trabajes con ella."},
+};
 const MEJOR = {ordenador:"Mejor en ordenador", movil:"Mejor en móvil", ambos:"Móvil y ordenador"};
 const PLAT = {web:"Web", movil:"App móvil", escritorio:"App de escritorio"};
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -511,6 +531,7 @@ function icono(h, size){
   return `<span class="${cls}" aria-hidden="true"><img src="${src}" alt="" loading="lazy" width="32" height="32"
     onerror="this.parentNode.classList.add('mono');this.parentNode.style.setProperty('--mono-bg','${col}');this.outerHTML='<span>${letra}</span>'"></span>`;
 }
+const consumoPill = h => (h.consumo==="creditos"||h.consumo==="uso") ? `<span class="pill g-limitado" title="${esc(CONSUMO[h.consumo].expl)}">⚠ ${esc(CONSUMO[h.consumo].corto)}</span>` : "";
 const gratisPill = h => `<span class="pill g-${h.gratisTipo}" title="${esc(GRATIS[h.gratisTipo]?.expl||"")}">${esc(GRATIS[h.gratisTipo]?.corto||"")}</span>`;
 
 /* ---------- Pestañas ---------- */
@@ -534,7 +555,7 @@ function tarjeta(h){
       <div style="min-width:0"><h3 class="c-title">${esc(h.nombre)}</h3><div class="c-sub">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
       <span class="nota-chip" title="Nota de Cualia sobre 100">${h.nota}</span></div>
     <p class="c-desc">${esc(h.desc)}</p>
-    <div class="c-tags">${gratisPill(h)}<span class="pill">${esc(MEJOR[h.mejorEn]||"")}</span><span class="pill">${NIVEL[h.nivel]||""}</span></div>
+    <div class="c-tags">${gratisPill(h)}${consumoPill(h)}<span class="pill">${esc(MEJOR[h.mejorEn]||"")}</span><span class="pill">${NIVEL[h.nivel]||""}</span></div>
     <span class="c-more">Ver ficha completa →</span>
   </button>`;
 }
@@ -574,6 +595,7 @@ function abrirFicha(id){
         <div class="fact"><span class="label">Precio</span><span class="v">${esc(h.precioTxt)}</span><span class="d">Orientativo, puede variar por país.</span></div>
         <div class="fact"><span class="label">Dónde usarla</span><span class="v">${esc(MEJOR[h.mejorEn]||"")}</span><span class="d">${(h.plataformas||[]).map(p=>PLAT[p]).join(" · ")}</span></div>
       </div>
+      ${(h.consumo==="creditos"||h.consumo==="uso") ? `<div class="aviso-coste"><b>⚠ Puede costar más que el precio de partida</b><span>${esc(h.consumoTxt||CONSUMO[h.consumo].expl)}</span></div>` : (h.consumoTxt && h.consumo==="fijo" ? `<p class="small" style="margin:0">💳 ${esc(h.consumoTxt)}</p>` : "")}
       <div class="proscons">
         <div class="pc pro"><h4>Ventajas</h4><ul>${(h.pros||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
         <div class="pc con"><h4>Desventajas</h4><ul>${(h.contras||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
@@ -1037,6 +1059,9 @@ function renderBuilder(){
   $("#bList").innerHTML = list || `<li><p class="b-empty">Aún no has añadido ninguna IA. Búscala arriba o pulsa «+ Añadir a mi pack» en cualquier ficha.</p></li>`;
   const {t,faltan} = totalPack();
   $("#bTotal").innerHTML = `<span><span class="label">Total al mes</span><br><span class="small">${MIPACK.items.length} ${MIPACK.items.length===1?"IA":"IAs"}${faltan?` · falta el precio de ${faltan}`:""}</span></span><span class="v">≈ ${t.toLocaleString("es-ES")} €</span>`;
+  const cred = MIPACK.items.filter(x=>!x.gratis && ["creditos","uso"].includes(byId.get(x.id)?.consumo)).map(x=>byId.get(x.id).nombre);
+  const bx = document.getElementById("bExtra");
+  if(bx){ bx.hidden = !cred.length; bx.innerHTML = cred.length ? `<b>⚠ Ojo:</b> ${esc(listaY(cred))} ${cred.length>1?"cobran":"cobra"} por créditos o por uso. Si trabajas mucho, el gasto real será mayor que este total.` : ""; }
   $("#bShare").disabled = !MIPACK.items.length; $("#bClear").disabled = !MIPACK.items.length;
 }
 $("#bName").addEventListener("input", e=>{ MIPACK.nombre = e.target.value.slice(0,60); guardarPack(); });
@@ -1089,19 +1114,22 @@ function leerPackCompartido(){
 
 /* ---------- Packs ---------- */
 const euros = n => n===0 ? "0 €" : `≈ ${n} €`;
+const listaY = a => a.length<2 ? a.join("") : a.slice(0,-1).join(", ")+" y "+a[a.length-1];
 function renderPacks(){
   $("#packs").innerHTML = PACKS.map(p=>{
     const iconos = p.pasos.map(s=>icono(byName.get(s.ia)||{nombre:s.ia},"sm")).join("");
     const pasos = p.pasos.map(s=>{ const h = byName.get(s.ia) || {nombre:s.ia}; return `
       <li><button type="button" class="step" ${h.id?`data-open="${esc(h.id)}"`:""}>${icono(h,"sm")}
         <span style="min-width:0"><span class="sn">${esc(s.ia)}</span><br><span class="sr">${esc(s.rol)}</span></span>
-        <span class="sp">${s.precio ? `${euros(s.precio)}/mes<small>${esc(s.plan)}</small>` : `Gratis<small>&nbsp;</small>`}</span></button></li>`; }).join("");
+        <span class="sp">${s.precio ? `${euros(s.precio)}/mes<small>${esc(s.plan)}</small>` : `Gratis<small>&nbsp;</small>`}${h.consumo==="creditos"&&s.precio?`<span class="extra">+ créditos si lo usas mucho</span>`:""}</span></button></li>`; }).join("");
+    const conCred = p.pasos.filter(s=>s.precio && byName.get(s.ia)?.consumo==="creditos").map(s=>s.ia);
+    const extra = conCred.length ? `<p class="pack-extra"><b>⚠ Ojo:</b> ${esc(listaY(conCred))} ${conCred.length>1?"funcionan":"funciona"} con créditos. El precio es el de partida: si trabajas mucho, se acaban y tendrás que comprar más.</p>` : "";
     return `<details class="pack" id="pack-${esc(p.id)}">
       <summary class="pack-sum">
         <span class="pack-head"><span class="pack-h3">${esc(p.titulo)}</span><span class="pack-chev" aria-hidden="true"></span></span>
         <span class="para">${esc(p.para)}</span>
         <span class="pack-row"><span class="pack-icons">${iconos}</span>
-          <span class="pack-prices"><span class="pill g-libre">Gratis: 0 €</span><span class="pill">Completo: ${euros(p.total)}/mes</span></span></span>
+          <span class="pack-prices"><span class="pill g-libre">Gratis: 0 €</span><span class="pill">Completo: ${euros(p.total)}/mes${conCred.length?" o más":""}</span></span></span>
         <span class="c-more pack-cta"></span>
       </summary>
       <div class="pack-body">
@@ -1110,6 +1138,7 @@ function renderPacks(){
           <div class="tot free"><span class="t">Versión gratis</span><span class="v">0 €</span><span class="small">Con límites</span></div>
           <div class="tot full"><span class="t">Versión completa</span><span class="v">${euros(p.total)}<span style="font-size:14px">/mes</span></span><span class="small">Suma de los planes básicos</span></div>
         </div>
+        ${extra}
         <p class="pack-note"><b>Con la versión gratis:</b> ${esc(p.notaGratis)}</p>
       </div>
     </details>`;
