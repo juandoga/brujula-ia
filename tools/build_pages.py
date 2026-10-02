@@ -21,7 +21,7 @@ CSS = """:root{--bg:#F4F5F9;--card:#fff;--ink:#11151C;--ink2:#2E3746;--muted:#66
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink2);font:16px/1.55 "Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif}
 .w{max-width:760px;margin:0 auto;padding:20px 16px 60px}a{color:var(--accent)}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}
-.logo{font:800 24px "Bricolage Grotesque","Segoe UI",sans-serif;color:var(--ink);text-decoration:none;letter-spacing:-.03em}.logo span{color:var(--accent)}
+.logo{display:inline-flex;align-items:center;gap:8px;font:800 24px "Bricolage Grotesque","Segoe UI",sans-serif;color:var(--ink);text-decoration:none;letter-spacing:-.03em}.logo span{color:var(--accent)}
 h1,h2{color:var(--ink);font-family:"Bricolage Grotesque","Segoe UI",sans-serif;line-height:1.15;margin:0}h1{font-size:34px;font-weight:800}h2{font-size:20px;margin:26px 0 8px}
 .sub{color:var(--muted);margin:6px 0 16px}.lead{font-size:18px;color:var(--ink)}
 .card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;margin:12px 0}
@@ -36,9 +36,9 @@ def pagina(ruta, titulo, desc, cuerpo, canon):
     doc = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(titulo)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{e(canon)}">
 <meta property="og:title" content="{e(titulo)}"><meta property="og:description" content="{e(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="{e(canon)}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235B3FD9'/%3E%3Ctext x='50' y='70' font-family='Arial Black,Arial' font-size='60' font-weight='900' text-anchor='middle' fill='%23fff'%3Ec%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235B3FD9'/%3E%3Ccircle cx='50' cy='50' r='25' fill='none' stroke='%23fff' stroke-width='13' stroke-linecap='round' stroke-dasharray='117.8 157.1' transform='rotate(-90 50 50)'/%3E%3Ccircle cx='32.3' cy='32.3' r='8' fill='%23FFC94A'/%3E%3C/svg%3E">
 <style>{CSS}</style></head><body><div class="w">
-<div class="top"><a class="logo" href="{SITE}/">Cual<span>ia</span></a><a href="{SITE}/">¿Qué IA uso para esto?</a></div>
+<div class="top"><a class="logo" href="{SITE}/"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" style="flex:0 0 auto"><rect width="100" height="100" rx="24" fill="#5B3FD9"/><circle cx="50" cy="50" r="25" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-dasharray="117.8 157.1" transform="rotate(-90 50 50)"/><circle cx="32.3" cy="32.3" r="8" fill="#FFC94A"/></svg><b>Cual<span>ia</span></b></a><a href="{SITE}/">¿Qué IA uso para esto?</a></div>
 {cuerpo}
 <p class="small" style="margin-top:36px">Cualia es una guía independiente de herramientas de IA en español, revisada cada semana. Precios orientativos.</p>
 </div><!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "8693430a24394f339b7e26f53a417319"}}'></script><!-- End Cloudflare Web Analytics --></body></html>"""
