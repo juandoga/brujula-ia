@@ -4,404 +4,606 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Cualia · ¿Qué IA uso para esto?</title>
-<meta name="description" content="Cualia es una guía en español para elegir inteligencia artificial: 240 herramientas con lo que incluye de verdad su versión gratis, ventajas y desventajas, packs de IAs combinadas con precio total y fecha de revisión en cada ficha.">
+<meta name="description" content="Cualia es una guía en español para elegir inteligencia artificial: 240 herramientas con lo que incluye de verdad su versión gratis, ventajas y desventajas, proyectos con varias IAs y su precio total, y fecha de revisión en cada ficha.">
 <meta property="og:title" content="Cualia · ¿Qué IA uso para esto?">
-<meta property="og:description" content="240 IAs revisadas cada semana: qué incluye lo gratis, ventajas, desventajas y packs con precio total.">
+<meta property="og:description" content="240 IAs revisadas cada semana: qué incluye lo gratis, ventajas, desventajas y proyectos paso a paso con precio total.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#5B3FD9">
 <meta name="google-site-verification" content="lGrurX0rSCVIUMSArH1r9LwNm-KtGxOfC_tNUwe1gsE">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235B3FD9'/%3E%3Ctext x='50' y='70' font-family='Arial Black,Arial' font-size='60' font-weight='900' text-anchor='middle' fill='%23fff'%3Ec%3C/text%3E%3Ccircle cx='74' cy='28' r='9' fill='%23FFC94A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
-/* Layout: guía tipo FilmAffinity. Tarjetas compactas en rejilla; al tocar una, la ficha completa se abre en una ventana (hoja inferior en móvil) sin mover la página. */
+/* Cualia · diseño visual: poco texto, bloques de color por tema, tarjetas grandes y navegación inferior en el móvil. */
 :root{
-  --bg:#F4F5F9; --card:#FFFFFF; --ink:#11151C; --ink-2:#2E3746; --muted:#667085; --rule:#E1E4EC;
-  --accent:#5B3FD9; --accent-ink:#FFFFFF; --accent-soft:#ECE8FD; --gold:#FFC94A;
-  --ok:#157347; --ok-soft:#DCF3E6; --info:#1D5FB8; --info-soft:#DDEAFB; --warn:#8A5300; --warn-soft:#FCEBCF;
+  --bg:#F6F5FB; --card:#FFFFFF; --ink:#14121F; --ink-2:#2E2B3A; --muted:#4A4760; --faint:#6B6880; --rule:#E6E3F0; --rule-2:#DCD8E8;
+  --accent:#5B3FD9; --accent-2:#3F27A8; --accent-ink:#FFFFFF; --accent-soft:#EDE8FF; --ring-track:#ECE8FD; --gold:#FFC94A;
+  --hero:#14121F; --hero-2:#221F33; --hero-3:#2C2840; --hero-ink:#FFFFFF; --hero-muted:#C9C5DC; --hero-ring:#9C88FF;
+  --ok:#157347; --ok-soft:#DCF3E6; --info:#1D5FB8; --info-soft:#DDEBFF; --warn:#8A5300; --warn-soft:#FFF1D2;
   --bad:#A3261F; --bad-soft:#FBE1DE; --mark:#FFF1BF; --mark-ink:#4A3800;
   --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
-  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
-  --shadow:0 1px 2px rgba(17,21,28,.06),0 4px 16px rgba(17,21,28,.05);
-  --scrim:rgba(13,16,22,.45);
+  --shadow:0 6px 24px rgba(40,24,120,.10); --shadow-sm:0 2px 10px rgba(40,24,120,.05);
+  --scrim:rgba(13,16,22,.45); --nav-h:68px;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --bg:#0D1016; --card:#161A22; --ink:#F1F3F8; --ink-2:#C9CFDB; --muted:#8C95A6; --rule:#272D39;
-  --accent:#9C88FF; --accent-ink:#0D1016; --accent-soft:#231D45; --gold:#E9B63B;
+  --bg:#0E0D16; --card:#191726; --ink:#F3F1FA; --ink-2:#D7D3E6; --muted:#ABA6C2; --faint:#8F8AA6; --rule:#2A2740; --rule-2:#38344F;
+  --accent:#A795FF; --accent-2:#C6BAFF; --accent-ink:#0E0D16; --accent-soft:#272046; --ring-track:#2E2850; --gold:#E9B63B;
+  --hero:#211E36; --hero-2:#2B2744; --hero-3:#383354; --hero-muted:#C9C5DC;
   --ok:#6FD6A0; --ok-soft:#12291D; --info:#8DB8F5; --info-soft:#14243B; --warn:#F2B55C; --warn-soft:#30230E;
   --bad:#F59A92; --bad-soft:#3A1614; --mark:#3A3212; --mark-ink:#F7E4A0;
-  --shadow:none; --scrim:rgba(0,0,0,.6); color-scheme:dark } }
+  --shadow:none; --shadow-sm:none; --scrim:rgba(0,0,0,.6); color-scheme:dark } }
 :root[data-theme="dark"]{
-  --bg:#0D1016; --card:#161A22; --ink:#F1F3F8; --ink-2:#C9CFDB; --muted:#8C95A6; --rule:#272D39;
-  --accent:#9C88FF; --accent-ink:#0D1016; --accent-soft:#231D45; --gold:#E9B63B;
+  --bg:#0E0D16; --card:#191726; --ink:#F3F1FA; --ink-2:#D7D3E6; --muted:#ABA6C2; --faint:#8F8AA6; --rule:#2A2740; --rule-2:#38344F;
+  --accent:#A795FF; --accent-2:#C6BAFF; --accent-ink:#0E0D16; --accent-soft:#272046; --ring-track:#2E2850; --gold:#E9B63B;
+  --hero:#211E36; --hero-2:#2B2744; --hero-3:#383354; --hero-muted:#C9C5DC;
   --ok:#6FD6A0; --ok-soft:#12291D; --info:#8DB8F5; --info-soft:#14243B; --warn:#F2B55C; --warn-soft:#30230E;
   --bad:#F59A92; --bad-soft:#3A1614; --mark:#3A3212; --mark-ink:#F7E4A0;
-  --shadow:none; --scrim:rgba(0,0,0,.6); color-scheme:dark }
+  --shadow:none; --shadow-sm:none; --scrim:rgba(0,0,0,.6); color-scheme:dark }
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink-2);font-family:var(--f-body);font-size:16px;line-height:1.55}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;overflow-x:hidden;padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom,0px))}
 body.locked{overflow:hidden}
-img{max-width:100%}
 [hidden]{display:none!important}
-.wrap{max-width:1160px;margin:0 auto;padding-inline:16px}
-a{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}
 button,input,select,textarea{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:10px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--f-display);color:var(--ink);margin:0;line-height:1.1;text-wrap:balance}
+.h-hero{font-weight:800;font-size:clamp(36px,8vw,64px);letter-spacing:-.035em;line-height:1}
+.h-page{font-weight:800;font-size:clamp(30px,6vw,44px);letter-spacing:-.03em}
+.h-sec{font-weight:800;font-size:clamp(21px,3.4vw,28px);letter-spacing:-.015em}
+.h-sub{font-weight:800;font-size:20px}
+.lede{margin:10px 0 0;font-size:17px;color:var(--muted);max-width:60ch}
+.small{font-size:14px;color:var(--faint)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.eyebrow-acc{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);font-weight:700;cursor:pointer;font-size:14px}
+.linkbtn:hover{text-decoration:underline;text-underline-offset:3px}
+main{padding-block:12px 40px}
+.sec{margin-top:36px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+.sec-head a,.sec-head .linkbtn{font-size:15px;font-weight:700;flex:0 0 auto}
+.sec-sub{margin:-4px 0 14px;font-size:15px;color:var(--muted)}
 
-/* Texto */
-h1,h2,h3,h4{color:var(--ink);font-family:var(--f-display);margin:0;text-wrap:balance;line-height:1.15}
-.h-page{font-size:clamp(28px,6vw,42px);font-weight:800;letter-spacing:-.025em}
-.h-section{font-size:clamp(20px,3.6vw,26px);font-weight:800;letter-spacing:-.015em}
-.label{font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.lede{font-size:17px;color:var(--muted);max-width:62ch;margin:8px 0 0}
-.small{font-size:13px;color:var(--muted)}
-.linkbtn{background:none;border:0;padding:0;color:var(--accent);font-weight:700;cursor:pointer;text-decoration:underline;text-underline-offset:3px;font-size:14px}
-
-/* Cabecera */
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px 6px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
-.logo-mark{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;position:relative;flex:0 0 auto}
-.logo-mark b{font-family:var(--f-display);font-weight:800;font-size:24px;color:var(--accent-ink);line-height:1;margin-top:-3px}
-.logo-mark i{position:absolute;top:5px;right:5px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
-.logo-word{font-family:var(--f-display);font-weight:800;font-size:26px;letter-spacing:-.03em;line-height:1}
-.logo-word span{color:var(--accent)}
-.fresh{font-family:var(--f-mono);font-size:11px;color:var(--muted);text-align:right;line-height:1.4}
-.fresh b{color:var(--ink)}
-nav.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-block:4px 10px}
-nav.tabs::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);padding:8px 16px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15px;color:var(--ink-2)}
-.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-
-main{padding-block:28px 72px}
-section.view > header{margin-bottom:22px}
-
-/* Buscador */
-.ask{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:8px;box-shadow:var(--shadow);max-width:720px}
-.ask input{flex:1 1 220px;min-width:0;border:0;background:transparent;padding:10px;font-size:17px;color:var(--ink)}
-.ask input:focus{outline:none}
-.btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:11px 20px;font-weight:700;cursor:pointer;font-size:16px}
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:16px;padding:0 20px;min-height:50px;font-weight:700;font-size:16px;cursor:pointer;text-align:center}
 .btn:hover{filter:brightness(1.08)}
-.ideas{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.idea{background:transparent;border:1px dashed color-mix(in srgb,var(--accent) 45%,var(--rule));border-radius:999px;padding:6px 12px;font-size:14px;cursor:pointer;color:var(--ink-2)}
-.idea:hover{background:var(--accent-soft);color:var(--ink)}
-@media (max-width:640px){.ideas{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-bottom:4px}.ideas::-webkit-scrollbar{display:none}.idea{flex:0 0 auto;font-size:13px;padding:5px 11px}.reco-panel .ideas{margin-inline:-18px;padding-inline:18px}}
+.btn-sec{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--card);color:var(--ink);border:1.5px solid var(--rule-2);border-radius:16px;padding:0 18px;min-height:50px;font-weight:700;font-size:16px;cursor:pointer}
+.btn-sec.on{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.btn[disabled],.btn-sec[disabled]{opacity:.45;cursor:default}
+.back{width:44px;height:44px;border-radius:50%;background:var(--card);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:var(--ink)}
+.back.dark{background:var(--hero-3);color:#fff}
 
-/* Iconos */
-.ico{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
-.ico img{width:32px;height:32px;object-fit:contain}
-.ico.sm{width:36px;height:36px;border-radius:9px}
+/* Cabecera y navegación */
+header.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:#5B3FD9;display:grid;place-items:center;position:relative;flex:0 0 auto}
+.logo-mark b{font-family:var(--f-display);font-weight:800;font-size:22px;color:#fff;line-height:1;margin-top:-3px}
+.logo-mark i{position:absolute;top:5px;right:5px;width:8px;height:8px;border-radius:50%;background:#FFC94A}
+.logo-word{font-family:var(--f-display);font-weight:800;font-size:24px;letter-spacing:-.03em;line-height:1}
+.logo-word span{color:var(--accent)}
+.top-right{display:flex;align-items:center;gap:10px}
+.fresh-top{font-size:12px;color:var(--faint);white-space:nowrap}
+.guia-pill{font-size:14px;font-weight:700;padding:7px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent-2)}
+:root[data-theme="dark"] .guia-pill{color:var(--accent)}
+.dnav{display:none}
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:40;height:calc(var(--nav-h) + env(safe-area-inset-bottom,0px));padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.bnav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--faint);font-size:12px;font-weight:700;position:relative;border-radius:12px}
+.bnav a[aria-current="page"]{color:var(--accent)}
+.nav-count{position:absolute;top:0;left:calc(50% + 6px);min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--gold);color:#3A2A00;font-size:11px;font-weight:700;display:grid;place-items:center}
+.nav-count:empty{display:none}
+@media (min-width:900px){
+  body{padding-bottom:0}
+  .bnav,.guia-pill{display:none}
+  .dnav{display:flex;align-items:center;gap:26px;font-size:16px;font-weight:700}
+  .dnav a{color:var(--ink)}
+  .dnav a[aria-current="page"]{color:var(--accent)}
+  .dnav .pack-link{padding:9px 16px;border-radius:12px;background:var(--accent-soft);color:var(--accent-2);position:relative}
+  .dnav .pack-link .nav-count{top:-7px;left:auto;right:-8px}
+  header.top{background:var(--card);border-bottom:1px solid var(--rule)}
+  .bar{padding-block:16px}
+  .fresh-top{display:none}
+}
+
+/* Iconos de cada IA */
+.ico{flex:0 0 auto;width:46px;height:46px;border-radius:13px;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;overflow:hidden}
+.ico img{width:30px;height:30px;object-fit:contain}
+.ico.xs{width:32px;height:32px;border-radius:50%}
+.ico.xs img{width:20px;height:20px}
+.ico.sm{width:38px;height:38px;border-radius:11px}
 .ico.sm img{width:24px;height:24px}
-.ico.lg{width:60px;height:60px;border-radius:15px}
-.ico.lg img{width:40px;height:40px}
+.ico.lg{width:64px;height:64px;border-radius:18px}
+.ico.lg img{width:42px;height:42px}
 .ico.mono{background:var(--mono-bg,#5B3FD9);border-color:transparent}
 .ico.mono span{font-family:var(--f-display);font-weight:800;color:#fff;font-size:20px}
-.ico.sm.mono span{font-size:15px}
+.ico.xs.mono span{font-size:14px}
+.ico.lg.mono span{font-size:30px}
 
-/* Etiquetas de estado */
-.pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
-.g-libre{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
-.g-util{background:var(--info-soft);border-color:transparent;color:var(--info)}
-.g-limitado{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
-.g-prueba,.g-no{background:var(--bad-soft);border-color:transparent;color:var(--bad)}
-.nota-chip{min-width:44px;text-align:center;padding:4px 8px;border-radius:10px;background:var(--accent-soft);color:var(--ink);font-family:var(--f-display);font-weight:800;font-size:17px;font-variant-numeric:tabular-nums}
+/* Nota en anillo */
+.ring{position:relative;display:inline-grid;place-items:center;flex:0 0 auto}
+.ring svg{position:absolute;inset:0}
+.ring b{position:relative;font-family:var(--f-display);font-weight:800;color:inherit;font-variant-numeric:tabular-nums}
+
+/* Etiquetas */
+.gdot{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;white-space:nowrap}
+.gdot i{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+.gdot.g-libre{color:var(--ok)} .gdot.g-libre i{background:#1F9D5C}
+.gdot.g-util{color:var(--info)} .gdot.g-util i{background:#2F7FE0}
+.gdot.g-limitado{color:var(--warn)} .gdot.g-limitado i{background:#E3A21A}
+.gdot.g-prueba,.gdot.g-no{color:var(--bad)} .gdot.g-prueba i,.gdot.g-no i{background:#D0453B}
+.ctag{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--warn-soft);color:var(--warn);white-space:nowrap}
+.tagx{font-size:13px;color:var(--faint);white-space:nowrap}
 
 /* Inicio */
-.split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start;margin-top:36px}
-@media (max-width:860px){.split{grid-template-columns:1fr;gap:32px}}
-.podiums > *, .podium li, .podium li button, .split > *, .filters > *, .reco-panel > *, .frow > *, .pack > *, .sheet-body > *{min-width:0}
-body{overflow-x:hidden}
-.block-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap}
-.rank-list{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--rule);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.rank-row{display:grid;grid-template-columns:2rem 36px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--rule);cursor:pointer;width:100%;background:none;border-left:0;border-right:0;border-bottom:0;text-align:left}
-.rank-list li:first-child .rank-row{border-top:0}
-.rank-row:hover{background:var(--accent-soft)}
-.rank-pos{font-family:var(--f-display);font-weight:800;font-size:18px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
-.rank-list li:nth-child(-n+3) .rank-pos{color:var(--accent)}
-.rank-main{min-width:0}
-.rank-name{font-weight:700;color:var(--ink);font-size:16px;line-height:1.25}
-.rank-sub{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rank-tabs{margin-bottom:10px}
-@media (max-width:640px){.chips.rank-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}.rank-tabs::-webkit-scrollbar{display:none}.rank-tabs .chip{flex:0 0 auto}}
-.podiums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-@media (max-width:520px){.podiums{grid-template-columns:1fr}}
-.podium{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
-.podium h3{font-size:17px;font-weight:800;margin-bottom:10px}
-.podium ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.podium li button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:0;cursor:pointer;text-align:left}
-.podium .pn{font-weight:700;color:var(--ink);font-size:15px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.podium .pp{margin-left:auto;flex:0 0 auto}
-.podium .pn{flex:1 1 auto}
-
-/* Filtros */
-.filters{display:grid;gap:14px;margin-bottom:20px;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-.search{width:100%;padding:12px 14px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);font-size:16px;color:var(--ink)}
-.frow{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;align-items:start}
-@media (max-width:520px){.frow{grid-template-columns:1fr;gap:6px}}
-.frow .label{padding-top:8px;color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{border:1px solid var(--rule);background:var(--bg);padding:6px 12px;border-radius:999px;cursor:pointer;font-size:14px;color:var(--ink-2)}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
-select.sort{padding:7px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--bg);color:var(--ink)}
-.filt-toggle{display:none;justify-self:start;border:1px solid var(--rule);background:var(--bg);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer;color:var(--ink)}
-.filt-body{display:grid;gap:14px}
-@media (max-width:640px){.filt-toggle{display:inline-block}.filt-body:not(.open){display:none}}
-.count{font-size:14px;color:var(--muted);margin:0 0 12px}
-
-/* Tarjetas compactas */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
-@media (max-width:400px){.grid{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0;box-shadow:var(--shadow);cursor:pointer;text-align:left;width:100%;color:inherit}
-.card:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--rule))}
-.c-head{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center}
-.c-title{font-size:18px;font-weight:800;line-height:1.2}
-.c-sub{font-size:13px;color:var(--muted)}
-.c-desc{margin:0;font-size:15px;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.c-tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.c-more{font-size:13px;font-weight:700;color:var(--accent)}
-
-/* Ventana de ficha */
-.scrim{position:fixed;inset:0;background:var(--scrim);z-index:50;display:flex;align-items:center;justify-content:center;padding:24px}
-.sheet{background:var(--card);color:var(--ink-2);width:min(720px,100%);max-height:calc(100vh - 48px);overflow:auto;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;overscroll-behavior:contain}
-@media (max-width:640px){
-  .scrim{align-items:flex-end;padding:0}
-  .sheet{border-radius:20px 20px 0 0;max-height:92vh;padding-bottom:env(safe-area-inset-bottom,0px)}
+.hero{display:grid;gap:22px;padding-top:14px}
+.hero-main{display:flex;flex-direction:column;gap:14px;min-width:0}
+.hero-main .lede{margin:0}
+.ask{display:flex;align-items:center;gap:8px;background:var(--card);border-radius:18px;padding:8px 8px 8px 16px;box-shadow:var(--shadow);border:1px solid transparent}
+:root[data-theme="dark"] .ask{border-color:var(--rule)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .ask{border-color:var(--rule)} }
+.ask svg{flex:0 0 auto;color:var(--faint)}
+.ask input{flex:1 1 auto;min-width:0;border:0;outline:none;background:transparent;font-size:17px;color:var(--ink);padding:10px 0}
+.ask-go{flex:0 0 auto;width:48px;height:48px;border:0;border-radius:14px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;cursor:pointer}
+.ask-go span{display:none}
+.ideas{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+.ideas::-webkit-scrollbar{display:none}
+.idea{flex:0 0 auto;padding:8px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent-2);border:0;font-size:14px;font-weight:700;cursor:pointer}
+:root[data-theme="dark"] .idea{color:var(--accent)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .idea,:root:not([data-theme="light"]) .guia-pill{color:var(--accent)} }
+.fresh{margin:0;font-size:13px;color:var(--faint)}
+.fresh b{color:var(--ink)}
+.starter{display:none}
+.st-box{padding:20px;border-radius:26px;background:var(--hero);color:var(--hero-ink);display:flex;flex-direction:column;gap:12px}
+.st-box p{margin:-4px 0 4px;color:var(--hero-muted);font-size:15px}
+.st-row{display:flex;align-items:center;gap:14px;padding:12px;border-radius:18px;background:var(--card);border:0;width:100%;cursor:pointer;text-align:left;color:var(--ink)}
+.st-box .st-row{background:var(--hero-2);color:#fff}
+.st-row .t{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.st-row .t b{font-size:17px}
+.st-row .t span{font-size:14px;color:var(--muted)}
+.st-box .st-row .t span{color:var(--hero-muted)}
+.st-mobile{display:flex;flex-direction:column;gap:10px}
+@media (min-width:900px){
+  .hero{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:48px}
+  .hero-main{gap:18px}
+  .ask{padding:10px 10px 10px 20px;border-radius:20px}
+  .ask-go{width:auto;padding:0 22px;height:52px;font-weight:700;font-size:16px}
+  .ask-go svg{display:none} .ask-go span{display:inline}
+  .ideas{flex-wrap:wrap;overflow:visible;margin:0;padding:0}
+  .starter{display:block}
+  .sec-starter{display:none}
 }
-.sheet-top{position:sticky;top:0;z-index:1;background:var(--card);display:grid;grid-template-columns:60px minmax(0,1fr) auto;gap:14px;align-items:center;padding:18px 18px 14px;border-bottom:1px solid var(--rule)}
-.sheet-top h2{font-size:24px;font-weight:800}
-.close{width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:var(--bg);cursor:pointer;font-size:20px;line-height:1;color:var(--ink)}
-.sheet-body{padding:18px;display:grid;gap:22px}
-.s-desc{margin:0;font-size:17px;color:var(--ink);line-height:1.5}
-.s-block{display:grid;gap:8px}
-.s-block h3{font-size:17px;font-weight:800}
-.s-block p{margin:0}
-.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-@media (max-width:520px){.facts{grid-template-columns:1fr}}
-.fact{background:var(--bg);border:1px solid var(--rule);border-radius:12px;padding:12px;display:grid;gap:4px;align-content:start}
-.fact .v{font-weight:700;color:var(--ink);font-size:15px}
-.fact .d{font-size:13px;color:var(--muted)}
-.proscons{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media (max-width:520px){.proscons{grid-template-columns:1fr}}
-.pc{border-radius:12px;padding:12px 14px}
-.pc.pro{background:var(--ok-soft)} .pc.con{background:var(--bad-soft)}
-.pc h4{font-size:15px;margin-bottom:6px}
-.pc.pro h4{color:var(--ok)} .pc.con h4{color:var(--bad)}
-.pc ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:15px;color:var(--ink)}
-.score-box{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:14px}
-.score-big{font-family:var(--f-display);font-weight:800;font-size:44px;color:var(--ink);line-height:1;text-align:center}
-.score-big small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;color:var(--muted);margin-top:4px}
-.bars{display:grid;gap:8px}
-.bar-row{display:grid;grid-template-columns:10em minmax(0,1fr) 3em;gap:8px;align-items:center;font-size:14px}
-.bar-row .track{height:8px;border-radius:4px;background:var(--rule);overflow:hidden}
-.bar-row .track i{display:block;height:100%;background:var(--accent);border-radius:4px}
-.bar-row b{font-variant-numeric:tabular-nums;color:var(--ink);text-align:right}
-.bar-row > span:first-child{white-space:nowrap}
-@media (max-width:520px){.score-box{grid-template-columns:1fr;justify-items:stretch}.score-big{justify-self:start;text-align:left}.score-big small{display:inline;margin-left:6px}}
-.ejemplos{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
-.ejemplos li{font-size:14px;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:4px 10px;color:var(--ink-2)}
-.novedad{margin:0;font-size:15px;background:var(--mark);color:var(--mark-ink);padding:10px 12px;border-radius:10px}
-.novedad b{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-right:6px}
-.s-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--rule)}
-.f-date{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
-.f-date b{color:var(--ink)}
-.f-link{font-weight:700;text-decoration:none;font-size:15px;padding:10px 16px;border-radius:12px;background:var(--accent);color:var(--accent-ink)}
+
+/* Temas */
+.temas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tema{--t-bg:#EDE8FF;--t-c:#5B3FD9;display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:108px;padding:14px;border-radius:20px;background:var(--t-bg);color:#14121F;min-width:0}
+.tema-ico{width:42px;height:42px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--t-c);flex:0 0 auto}
+.tema-n{font-weight:700;font-size:16px;line-height:1.2}
+.tema-c{font-size:13px;color:#4A4760;margin-top:-6px}
+@media (min-width:700px){.temas{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+@media (min-width:900px){.tema{flex-direction:row;align-items:center;justify-content:flex-start;min-height:92px;padding:18px;gap:14px}.tema-ico{width:48px;height:48px;border-radius:14px}.tema-txt{display:flex;flex-direction:column;gap:2px}.tema-c{margin:0}}
+.tema-txt{display:flex;flex-direction:column;gap:8px}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .tema{background:color-mix(in srgb,var(--t-c) 30%,var(--card));color:var(--ink)} :root:not([data-theme="light"]) .tema-c{color:var(--muted)} }
+:root[data-theme="dark"] .tema{background:color-mix(in srgb,var(--t-c) 30%,var(--card));color:var(--ink)}
+:root[data-theme="dark"] .tema-c{color:var(--muted)}
+
+/* Proyectos (packs) */
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:-16px;padding:2px 16px 6px}
+.rail::-webkit-scrollbar{display:none}
+.rail .proj{flex:0 0 272px;scroll-snap-align:start}
+.proj{display:flex;flex-direction:column;gap:16px;padding:18px;border-radius:22px;background:var(--card);color:var(--ink);box-shadow:var(--shadow-sm);border:1px solid var(--rule);min-width:0}
+.proj.dark{background:var(--hero);color:#fff;border-color:transparent}
+.proj-t{font-family:var(--f-display);font-weight:800;font-size:21px;line-height:1.15}
+.proj-ias{display:flex;align-items:center;gap:14px}
+.stack{display:flex;align-items:center}
+.stack .ico{margin-right:-8px;border:3px solid var(--card);background:#fff}
+.proj.dark .stack .ico{border-color:var(--hero)}
+.stack-n{font-size:14px;color:var(--muted);margin-left:6px}
+.proj.dark .stack-n{color:var(--hero-muted)}
+.proj-p{display:flex;gap:8px;flex-wrap:wrap}
+.pp{padding:6px 10px;border-radius:10px;font-size:13px;font-weight:700}
+.pp.free{background:var(--ok-soft);color:var(--ok)}
+.pp.full{background:var(--accent-soft);color:var(--accent-2)}
+.proj.dark .pp.free{background:#1F5E3E;color:#C8F2DA}
+.proj.dark .pp.full{background:var(--hero-3);color:#fff}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+@media (max-width:380px){.proj-grid{grid-template-columns:1fr}}
+@media (min-width:900px){.rail.home{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:0;padding:0;gap:16px}.rail.home .proj:nth-child(n+7){display:none}}
+.projlink{display:flex;align-items:center;gap:14px;padding:16px;border-radius:18px;background:var(--accent-soft);color:var(--ink);margin-top:16px}
+.projlink .pl-ico{width:44px;height:44px;border-radius:12px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex:0 0 auto}
+.projlink .t{flex:1 1 auto;display:flex;flex-direction:column;gap:2px;min-width:0}
+.projlink .t span{font-size:13px;color:var(--muted)}
+.projlink .t b{font-size:16px}
+.projlink > svg{color:var(--accent);flex:0 0 auto}
+.create-card{display:flex;align-items:center;gap:14px;padding:18px;border-radius:22px;background:var(--hero);color:#fff;margin:20px 0 26px}
+.create-card .t{flex:1 1 auto;display:flex;flex-direction:column;gap:4px;min-width:0}
+.create-card .t b{font-family:var(--f-display);font-size:21px;font-weight:800}
+.create-card .t span{color:var(--hero-muted);font-size:15px}
+.create-card .go{width:46px;height:46px;border-radius:50%;background:var(--gold);color:#3A2A00;display:grid;place-items:center;flex:0 0 auto}
+
+/* Listas de IAs */
+.list{display:flex;flex-direction:column;gap:10px}
+.list.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:10px}
+@media (max-width:400px){.list.cols{grid-template-columns:1fr}}
+.row{display:flex;align-items:center;gap:12px;padding:12px;border-radius:18px;background:var(--card);border:1px solid var(--rule);width:100%;cursor:pointer;text-align:left;color:var(--ink);min-width:0}
+.row:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--rule))}
+.row-pos{flex:0 0 auto;width:24px;text-align:center;font-family:var(--f-display);font-weight:800;font-size:16px;color:var(--faint)}
+.row-main{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.row-name{font-weight:700;font-size:16px;line-height:1.25}
+.row-sub{font-size:14px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.row-tags{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.row-nota{flex:0 0 auto;font-family:var(--f-display);font-weight:800;font-size:19px;min-width:2ch;text-align:right;font-variant-numeric:tabular-nums}
+.more{margin:12px auto 0;display:flex;background:none;border:0;color:var(--accent);font-weight:700;font-size:15px;cursor:pointer;padding:10px 16px}
+.banner{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:28px;padding:18px;border-radius:18px;background:var(--card);border:1px solid var(--rule);color:var(--ink);font-weight:700}
+.banner span{font-weight:400;color:var(--muted);font-size:14px;display:block}
+.banner svg{color:var(--accent);flex:0 0 auto}
+
+/* Buscador de Explorar y catálogo */
+.searchbox{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:0 14px;margin:18px 0 22px}
+.searchbox svg{color:var(--faint);flex:0 0 auto}
+.searchbox input{flex:1 1 auto;min-width:0;border:0;outline:none;background:transparent;padding:14px 0;font-size:16px;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:9px 14px;border-radius:999px;border:1.5px solid var(--rule-2);background:var(--card);color:var(--ink);font-size:14px;font-weight:700;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:20px;padding:18px;display:grid;gap:14px;box-shadow:var(--shadow-sm)}
+.panel > *{min-width:0}
+.frow{display:grid;grid-template-columns:8em minmax(0,1fr);gap:10px;align-items:start}
+.frow > .fl{padding-top:9px;font-size:14px;font-weight:700;color:var(--muted)}
+@media (max-width:560px){.frow{grid-template-columns:1fr;gap:6px}.frow > .fl{padding-top:0}}
+select.sort{padding:9px 12px;border:1.5px solid var(--rule-2);border-radius:12px;background:var(--card);color:var(--ink);font-weight:700}
+.filt-toggle{display:none;justify-self:start}
+.filt-body{display:grid;gap:14px}
+@media (max-width:640px){.filt-toggle{display:inline-flex;min-height:42px}.filt-body:not(.open){display:none}}
+.count{font-size:14px;color:var(--faint);margin:16px 0 10px}
+
+/* Página de un tema */
+.tema-hero{--t-bg:#EDE8FF;--t-c:#5B3FD9;background:var(--t-bg);color:#14121F;margin:-12px -16px 0;padding:14px 16px 24px;border-radius:0 0 28px 28px;display:flex;flex-direction:column;gap:14px}
+.tema-hero .back{background:#fff;color:#14121F}
+.tema-id{display:flex;align-items:center;gap:14px}
+.tema-id .tema-ico{width:58px;height:58px;border-radius:16px}
+.tema-id h1{font-size:clamp(30px,6vw,42px);font-weight:800;letter-spacing:-.02em;color:#14121F}
+.tema-id p{margin:4px 0 0;font-size:15px;color:#3A384A}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .tema-hero{background:color-mix(in srgb,var(--t-c) 30%,var(--card));color:var(--ink)} :root:not([data-theme="light"]) .tema-id h1{color:var(--ink)} :root:not([data-theme="light"]) .tema-id p{color:var(--muted)} }
+:root[data-theme="dark"] .tema-hero{background:color-mix(in srgb,var(--t-c) 30%,var(--card));color:var(--ink)}
+:root[data-theme="dark"] .tema-id h1{color:var(--ink)} :root[data-theme="dark"] .tema-id p{color:var(--muted)}
+@media (min-width:700px){.tema-hero{margin:12px 0 0;border-radius:28px;padding:20px 24px 28px}}
+.tema-body{max-width:820px}
+.tema-filters{margin:18px 0 6px}
+.feat{display:flex;flex-direction:column;gap:14px;padding:18px;border-radius:22px;background:var(--hero);color:#fff;border:0;width:100%;text-align:left;cursor:pointer;margin-top:12px}
+.feat-badge{align-self:flex-start;padding:5px 10px;border-radius:999px;background:var(--gold);color:#3A2A00;font-size:12px;font-weight:700}
+.feat-row{display:flex;align-items:center;gap:14px;min-width:0}
+.feat-row .t{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.feat-name{font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1.1}
+.feat-desc{font-size:15px;color:var(--hero-muted)}
+.feat-tags{display:flex;gap:8px;flex-wrap:wrap}
+.dtag{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:10px;background:var(--hero-3);font-size:13px;font-weight:700;color:#fff}
+.dtag .gdot{color:#FFE08A}
+.dtag.warn{background:#3A2E0E;color:#FFE08A}
+
+/* Página de un proyecto */
+.proj-page{max-width:760px}
+.proj-hero{background:var(--hero);color:#fff;margin:-12px -16px 0;padding:14px 16px 26px;border-radius:0 0 28px 28px;display:flex;flex-direction:column;gap:14px}
+.proj-hero h1{color:#fff;font-size:clamp(30px,6vw,42px);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.proj-hero p{margin:0;color:var(--hero-muted);font-size:16px}
+@media (min-width:700px){.proj-hero{margin:12px 0 0;border-radius:28px;padding:22px 26px 28px}}
+.seg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:4px;border-radius:14px;background:var(--hero-3);max-width:360px}
+.seg button{height:44px;border:0;border-radius:11px;background:transparent;color:var(--hero-muted);font-weight:700;font-size:15px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:#fff;color:#14121F}
+.timeline{list-style:none;margin:24px 0 0;padding:0}
+.tl{display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;position:relative;padding-bottom:16px}
+.tl:not(:last-child)::before{content:"";position:absolute;left:16px;top:40px;bottom:2px;width:2px;background:color-mix(in srgb,var(--accent) 30%,var(--rule))}
+.tl-n{width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:16px}
+.tl-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:14px;border-radius:18px;background:var(--card);border:1px solid var(--rule);width:100%;text-align:left;cursor:pointer;color:var(--ink)}
+.tl-card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--rule))}
+.tl-main{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tl-name{font-weight:700;font-size:16px}
+.tl-rol{font-size:14px;color:var(--muted)}
+.tl-price{font-family:var(--f-display);font-weight:800;font-size:17px;white-space:nowrap;text-align:right}
+.tl-price.free{color:var(--ok)}
+.tl-det{grid-column:2 / -1;font-size:13px;color:var(--faint)}
+.tl-extra{display:inline-block;color:var(--warn);font-weight:700}
+.total{padding:18px;border-radius:22px;background:var(--accent-soft);display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.total.free{background:var(--ok-soft)}
+.total .tr{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.total .tr span{font-weight:700}
+.total .tr b{font-family:var(--f-display);font-weight:800;font-size:36px;font-variant-numeric:tabular-nums}
+.total p{margin:0;font-size:15px;color:var(--ink-2)}
+.proj-actions{display:flex;gap:10px;margin-top:16px}
+.proj-actions .btn{flex:1 1 auto}
+.proj-actions .btn-sec{flex:0 0 auto;width:54px;padding:0}
 
 /* Recomendador */
-.reco-panel{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;display:grid;gap:14px;box-shadow:var(--shadow);margin-bottom:24px}
-.reco-panel textarea{width:100%;min-height:76px;padding:12px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);resize:vertical;font-size:16px;color:var(--ink)}
-.reco-head{margin:0 0 6px}
-.reco-note{margin:0 0 16px;color:var(--muted);max-width:65ch}
-.reco-aviso{margin:0 0 14px;max-width:70ch;background:var(--info-soft);color:var(--ink);border-radius:10px;padding:10px 12px;font-size:15px}
-.reco-list{display:grid;gap:12px}
-.reco-item{display:grid;gap:8px}
-.why{margin:0;font-size:15px;color:var(--ink)}
-.why b{color:var(--accent);font-family:var(--f-display);font-size:18px;margin-right:4px}
+.page-head{display:flex;flex-direction:column;gap:14px;padding-top:6px;margin-bottom:18px}
+.reco-panel textarea{width:100%;min-height:80px;padding:12px 14px;border:1.5px solid var(--rule-2);border-radius:14px;background:var(--bg);resize:vertical;font-size:17px;color:var(--ink)}
+.reco-panel .ideas{margin-inline:-18px;padding-inline:18px}
+.reco-res{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+.reco-aviso{margin:0;background:var(--info-soft);color:var(--ink);border-radius:14px;padding:12px 14px;font-size:15px;max-width:70ch}
+.reco-list{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:10px}
+@media (min-width:900px){.reco-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.reco-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px 12px;align-items:center;padding:16px;border-radius:20px;background:var(--card);border:1px solid var(--rule);width:100%;height:100%;text-align:left;cursor:pointer;color:var(--ink);align-content:start}
+.reco-card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--rule))}
+.reco-card .rc-top{grid-column:1 / -1;display:flex;align-items:center;gap:12px;min-width:0}
+.reco-card .rc-num{width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:14px;flex:0 0 auto}
+.reco-card .rc-name{flex:1 1 auto;min-width:0;font-weight:700;font-size:18px}
+.reco-card .rc-why{grid-column:1 / -1;margin:0;font-size:15px;color:var(--ink-2)}
+.reco-card .row-tags{grid-column:1 / -1}
 
-/* Packs */
-.packs{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
-@media (max-width:400px){.packs{grid-template-columns:1fr}}
-.pack{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px;box-shadow:var(--shadow);display:grid;gap:14px;align-content:start;min-width:0}
-.pack h3{font-size:20px;font-weight:800}
-.pack .para{margin:4px 0 0;color:var(--muted);font-size:15px}
-.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:paso}
-.step{display:grid;grid-template-columns:1.6rem 36px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--rule);counter-increment:paso;cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left}
-.step::before{content:counter(paso);font-family:var(--f-display);font-weight:800;color:var(--muted);text-align:center}
-.step .sn{font-weight:700;color:var(--ink);font-size:15px}
-.step .sr{font-size:13px;color:var(--muted)}
-.step .sp{font-size:13px;font-weight:700;color:var(--ink);white-space:nowrap;text-align:right}
-.step .sp small{display:block;font-weight:400;color:var(--muted)}
-.pack-total{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tot{border-radius:12px;padding:12px;display:grid;gap:2px}
-.tot.free{background:var(--ok-soft)} .tot.full{background:var(--accent-soft)}
-.tot .t{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.tot .v{font-family:var(--f-display);font-weight:800;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
-.pack-note{margin:0;font-size:14px;color:var(--ink-2)}
-
-
-.pack{padding:0;gap:0}
-.pack-sum{list-style:none;cursor:pointer;display:grid;gap:10px;padding:18px}
-.pack-sum::-webkit-details-marker{display:none}
-.pack-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
-.pack-h3{font-family:var(--f-display);font-weight:800;font-size:20px;color:var(--ink);line-height:1.2}
-.pack-chev{flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--accent-soft);position:relative}
-.pack-chev::after{content:"";position:absolute;left:50%;top:45%;width:9px;height:9px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:translate(-50%,-50%) rotate(45deg);transition:transform .15s}
-.pack[open] .pack-chev::after{transform:translate(-50%,-20%) rotate(-135deg)}
-.pack-sum .para{margin:0;color:var(--muted);font-size:15px}
-.pack-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
-.pack-icons{display:flex;gap:4px}
-.pack-icons .ico.sm{width:30px;height:30px;border-radius:8px}
-.pack-icons .ico.sm img{width:20px;height:20px}
-.pack-prices{display:flex;gap:6px;flex-wrap:wrap}
-.pack-cta::before{content:"Ver los pasos y precios →"}
-.pack[open] .pack-cta::before{content:"Ocultar"}
-.pack-body{display:grid;gap:14px;padding:0 18px 18px}
-
-.builder{background:var(--card);border:2px solid var(--accent-soft);border-radius:18px;padding:18px;display:grid;gap:12px;box-shadow:var(--shadow)}
+/* Mi pack */
+.builder{background:var(--card);border:1px solid var(--rule);border-radius:22px;padding:18px;display:grid;gap:14px;box-shadow:var(--shadow-sm);max-width:760px}
 .builder > *{min-width:0}
-.shared-note{margin:0;background:var(--accent-soft);color:var(--ink);border-radius:10px;padding:10px 12px;font-size:15px}
+.fl-lab{font-size:14px;font-weight:700;color:var(--muted)}
+.input{width:100%;padding:13px 14px;border:1.5px solid var(--rule-2);border-radius:14px;background:var(--bg);font-size:16px;color:var(--ink)}
+.shared-note{margin:0;background:var(--accent-soft);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:15px}
 .b-add{position:relative}
-.b-suggest{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;list-style:none;margin:0;padding:6px;background:var(--card);border:1px solid var(--rule);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.15);max-height:300px;overflow:auto}
-.b-suggest button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:8px;border-radius:8px;cursor:pointer;text-align:left;color:var(--ink)}
+.b-suggest{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;list-style:none;margin:0;padding:6px;background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.15);max-height:320px;overflow:auto}
+.b-suggest button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:8px;border-radius:10px;cursor:pointer;text-align:left;color:var(--ink)}
 .b-suggest button:hover,.b-suggest button:focus-visible{background:var(--accent-soft)}
-.b-suggest .bs-sub{font-size:12px;color:var(--muted)}
-.b-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.b-item{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:6px 10px;align-items:center;padding:10px 0;border-top:1px solid var(--rule)}
-.b-item .bn{font-weight:700;color:var(--ink);background:none;border:0;padding:0;cursor:pointer;text-align:left;font-size:15px}
-.b-item .bsub{font-size:12px;color:var(--muted)}
+.b-suggest .bs-sub{font-size:12px;color:var(--faint)}
+.b-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.b-item{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:8px 12px;align-items:center;padding:12px;border-radius:16px;background:var(--bg)}
+.b-item .bn{font-weight:700;color:var(--ink);background:none;border:0;padding:0;cursor:pointer;text-align:left;font-size:16px}
+.b-item .bsub{font-size:13px;color:var(--faint)}
 .b-price{grid-column:2 / -1;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .b-amount{display:flex;align-items:center;gap:6px}
-.b-price input[type=number]{width:4.6em;padding:6px 8px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
-.b-price label{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:4px;white-space:nowrap}
-.b-del{width:30px;height:30px;border-radius:50%;border:1px solid var(--rule);background:var(--bg);cursor:pointer;color:var(--muted)}
-.b-empty{color:var(--muted);font-size:15px;padding:8px 0;margin:0}
-.b-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;background:var(--accent-soft);border-radius:12px;padding:12px 14px}
-.b-total .v{font-family:var(--f-display);font-weight:800;font-size:28px;color:var(--ink);font-variant-numeric:tabular-nums}
-.b-actions{display:flex;gap:8px;flex-wrap:wrap}
-.btn-sec{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:12px;padding:11px 18px;font-weight:700;cursor:pointer}
-.add-pack{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer;font-size:15px}
-.hist{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.hist li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;font-size:14px}
-.hist time{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px}
-.afil{font-size:12px;color:var(--muted)}
-.aviso-coste{display:grid;gap:4px;background:var(--warn-soft);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:15px}
+.b-price input[type=number]{width:4.8em;padding:7px 9px;border:1.5px solid var(--rule-2);border-radius:10px;background:var(--card);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.b-price label{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:6px;white-space:nowrap}
+.b-del{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule-2);background:var(--card);cursor:pointer;color:var(--faint)}
+.b-empty{color:var(--muted);font-size:15px;padding:6px 0;margin:0}
+.b-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;background:var(--accent-soft);border-radius:18px;padding:16px 18px}
+.b-total .label{font-weight:700}
+.b-total .v{font-family:var(--f-display);font-weight:800;font-size:34px;color:var(--ink);font-variant-numeric:tabular-nums}
+.b-actions{display:flex;gap:10px;flex-wrap:wrap}
+.pack-extra{margin:0;font-size:15px;background:var(--warn-soft);color:var(--ink);border-radius:14px;padding:12px 14px}
+.pack-extra b{color:var(--warn)}
+
+/* Ficha */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:60;display:flex;align-items:center;justify-content:center;padding:24px}
+.sheet{background:var(--bg);color:var(--ink);width:min(560px,100%);max-height:calc(100vh - 48px);overflow:auto;border-radius:26px;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;overscroll-behavior:contain;display:flex;flex-direction:column}
+@media (max-width:640px){
+  .scrim{align-items:flex-end;padding:0}
+  .sheet{border-radius:24px 24px 0 0;max-height:94vh;max-height:94dvh}
+}
+.sh-bar{position:sticky;top:0;z-index:2;height:0;display:flex;justify-content:flex-end}
+.close{margin:12px 12px 0 0;width:40px;height:40px;border-radius:50%;border:0;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(6px);cursor:pointer;font-size:18px;line-height:1;color:var(--ink);box-shadow:0 1px 6px rgba(0,0,0,.12)}
+.sh-top{background:var(--card);padding:22px 18px 20px;border-radius:0 0 26px 26px;display:flex;flex-direction:column;gap:14px}
+.sh-head{display:flex;align-items:center;gap:14px;padding-right:44px}
+.sh-id{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.sh-id h2{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.sh-id span{font-size:14px;color:var(--muted)}
+.sh-desc{margin:0;font-size:18px;line-height:1.45;color:var(--ink)}
+.sh-body{padding:16px 18px 8px;display:flex;flex-direction:column;gap:18px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.tile{padding:12px;border-radius:16px;background:var(--card);display:flex;flex-direction:column;gap:6px;color:var(--accent);min-width:0}
+.tile b{font-size:14px;color:var(--ink);line-height:1.25}
+.tile.g-libre{background:var(--ok-soft);color:var(--ok)} .tile.g-util{background:var(--info-soft);color:var(--info)}
+.tile.g-limitado{background:var(--warn-soft);color:var(--warn)} .tile.g-prueba,.tile.g-no{background:var(--bad-soft);color:var(--bad)}
+.tile[class*="g-"] b{color:inherit}
+.box{padding:16px;border-radius:18px;background:var(--card);display:flex;flex-direction:column;gap:10px}
+.box h3,.sblock h3{font-size:19px;font-weight:800}
+.box p{margin:0}
+.box-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:10px;border-top:1px solid var(--rule)}
+.box-row span{font-size:14px;color:var(--muted)}
+.box-row b{font-family:var(--f-display);font-weight:800;font-size:18px;text-align:right}
+.aviso-coste{display:flex;flex-direction:column;gap:4px;background:var(--warn-soft);color:var(--ink);border-radius:18px;padding:14px 16px;font-size:15px}
 .aviso-coste b{color:var(--warn)}
-.sp .extra{display:block;font-size:11px;font-weight:700;color:var(--warn);white-space:normal;line-height:1.2;margin-top:2px}
-.step .sp{max-width:7.5em}
-.pack-extra{margin:0;font-size:14px;background:var(--warn-soft);color:var(--ink);border-radius:10px;padding:10px 12px}
-/* Consejos y guías */
-.tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.tips li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.sblock{display:flex;flex-direction:column;gap:10px}
+.sblock > p{margin:0;font-size:16px}
+.sb-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.ejemplos{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.ejemplos li{padding:8px 13px;border-radius:999px;background:var(--ok-soft);color:var(--ok);font-size:14px;font-weight:700}
+.pc{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.pc li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.pc li svg{flex:0 0 auto;margin-top:1px}
+.pc.pro svg{color:var(--ok)} .pc.con svg{color:var(--bad)}
+.box hr{border:0;height:1px;background:var(--rule);margin:2px 0;width:100%}
+.bars{display:flex;flex-direction:column;gap:12px}
+.bar-row{display:grid;grid-template-columns:7.2em minmax(0,1fr) 2.2em;gap:10px;align-items:center;font-size:15px}
+.bar-row .w{font-size:12px;color:var(--faint);display:block;line-height:1.1}
+.bar-row .track{height:10px;border-radius:5px;background:var(--ring-track);overflow:hidden}
+.bar-row .track i{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bar-row b{text-align:right;font-variant-numeric:tabular-nums}
+.novedad{margin:0;font-size:15px;background:var(--mark);color:var(--mark-ink);padding:12px 14px;border-radius:14px}
+.hist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.hist li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;font-size:14px}
+.hist time{font-size:13px;color:var(--faint)}
+.sh-meta{margin:0;font-size:13px;color:var(--faint)}
+.afil{font-size:12px;color:var(--faint);margin:0}
+.sh-cta{position:sticky;bottom:0;z-index:2;display:flex;gap:10px;padding:12px 18px calc(14px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--rule);margin-top:10px}
+.sh-cta .btn{flex:1 1 auto;min-height:54px;font-size:17px}
+.sh-cta .btn-sec{flex:0 0 auto;min-height:54px}
+.legend{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.legend li{display:grid;grid-template-columns:11em minmax(0,1fr);gap:12px;align-items:start;font-size:15px}
+@media (max-width:560px){.legend li{grid-template-columns:1fr;gap:4px}}
+.legend .gdot{font-size:15px}
+
+/* Guía y novedades */
+.guide{display:grid;gap:36px;max-width:900px}
+.guide .box{gap:12px}
+.tips{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.tips li{background:var(--card);border-radius:18px;padding:16px}
 .tips h3{font-size:18px;font-weight:800;margin-bottom:6px}
-.tips p{margin:0;font-size:15px}
-.glosario{margin-top:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 28px}
+.tips p{margin:0;font-size:15px;color:var(--ink-2)}
+.glosario{margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:4px 28px}
 .glosario div{padding:12px 0;border-top:1px solid var(--rule)}
-.glosario dt{font-weight:700;color:var(--ink);font-size:16px}
-.glosario dd{margin:2px 0 0;font-size:15px}
-.legend{display:grid;gap:10px;margin:0;padding:0;list-style:none}
-.legend li{display:grid;grid-template-columns:10.5em minmax(0,1fr);gap:12px;align-items:start;font-size:15px}
-@media (max-width:520px){.legend li{grid-template-columns:1fr;gap:4px}}
-
-/* Novedades */
+.glosario dt{font-weight:700;font-size:16px}
+.glosario dd{margin:2px 0 0;font-size:15px;color:var(--ink-2)}
 .log{list-style:none;padding:0;margin:0;display:grid;gap:10px;max-width:760px}
-.log li{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:start}
-.log time{font-family:var(--f-mono);font-size:11px;color:var(--muted);display:block}
-.log .lt{font-weight:700;color:var(--ink)}
-.log p{margin:2px 0 0;font-size:15px}
-
-.empty{padding:28px 0;color:var(--muted);max-width:60ch}
-footer.note{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-block:20px 40px;margin-top:40px}
-footer.note p{max-width:78ch;margin:0 0 8px}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.log li{background:var(--card);border-radius:16px;padding:12px 14px;display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:start}
+.log time{font-size:12px;color:var(--faint);display:block}
+.log .lt{font-weight:700}
+.log p{margin:2px 0 0;font-size:15px;color:var(--ink-2)}
+.guide-card{display:flex;align-items:center;gap:14px;padding:18px;border-radius:20px;background:var(--card);border:1px solid var(--rule);color:var(--ink)}
+.guide-card .gi{width:46px;height:46px;border-radius:14px;background:#FFF2C4;color:#8A6200;display:grid;place-items:center;flex:0 0 auto}
+.guide-card .t{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.guide-card .t b{font-size:17px}
+.guide-card .t span{font-size:14px;color:var(--muted)}
+.guide-card > svg{color:var(--accent);flex:0 0 auto}
+.two{display:grid;gap:14px;align-items:start}
+@media (min-width:900px){.two{grid-template-columns:1fr 1fr}}
+.empty{padding:20px 0;color:var(--muted);max-width:60ch}
+footer.foot{font-size:13px;color:var(--faint);border-top:1px solid var(--rule);padding-top:20px;margin-top:48px}
+footer.foot p{max-width:78ch;margin:0 0 8px}
+footer.foot nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:14px;font-weight:700}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <header class="top">
-  <div class="wrap">
-    <div class="bar">
-      <a class="logo" href="#ranking" aria-label="Cualia, inicio">
-        <span class="logo-mark" aria-hidden="true"><b>c</b><i></i></span>
-        <span class="logo-word">Cual<span>ia</span></span>
-      </a>
-      <div class="fresh" id="fresh">Cargando fichas…</div>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio" aria-label="Cualia, inicio">
+      <span class="logo-mark" aria-hidden="true"><b>c</b><i></i></span>
+      <span class="logo-word">Cual<span>ia</span></span>
+    </a>
+    <div class="top-right">
+      <span class="fresh-top" id="freshTop"></span>
+      <a class="guia-pill" href="#guia" data-nav="guia">Guía</a>
+      <nav class="dnav" aria-label="Secciones">
+        <a href="#inicio" data-nav="inicio">Inicio</a>
+        <a href="#explorar" data-nav="explorar">Explorar</a>
+        <a href="#proyectos" data-nav="proyectos">Proyectos</a>
+        <a href="#guia" data-nav="guia">Guía</a>
+        <a href="#mipack" data-nav="mipack" class="pack-link">Mi pack<span class="nav-count"></span></a>
+      </nav>
     </div>
-    <nav class="tabs" role="tablist" aria-label="Secciones">
-      <button class="tab" role="tab" data-v="ranking" aria-selected="true">Inicio</button>
-      <button class="tab" role="tab" data-v="reco" aria-selected="false">¿Cuál uso?</button>
-      <button class="tab" role="tab" data-v="packs" aria-selected="false">Packs</button>
-      <button class="tab" role="tab" data-v="explorar" aria-selected="false">Catálogo</button>
-      <button class="tab" role="tab" data-v="consejos" aria-selected="false">Guía</button>
-      <button class="tab" role="tab" data-v="novedades" aria-selected="false">Novedades</button>
-    </nav>
   </div>
 </header>
 
 <main class="wrap">
   <!-- INICIO -->
-  <section class="view" id="v-ranking">
-    <header>
-      <div class="label">Guía de inteligencia artificial para empezar</div>
-      <h1 class="h-page" style="margin-top:6px">¿Qué IA uso para esto?</h1>
-      <p class="lede">Dinos qué quieres hacer y te decimos qué herramienta usar, qué incluye de verdad su versión gratis y cuánto cuesta. 240 IAs revisadas cada semana.</p>
-      <form class="ask" id="askForm">
-        <input id="askTxt" type="text" placeholder="Ej.: quiero hacer una canción para un cumpleaños" aria-label="¿Qué quieres hacer?">
-        <button class="btn" type="submit">Recomiéndame</button>
-      </form>
-      <div class="ideas" id="ideasHome"></div>
-    </header>
-
-    <div class="split">
-      <div>
-        <div class="block-title"><h2 class="h-section" id="rankTitle">Ranking general</h2><button class="linkbtn" type="button" data-explica="nota">¿De dónde sale la nota?</button></div>
-        <div class="chips rank-tabs" id="rankTabs" role="group" aria-label="Elegir ranking"></div>
-        <p class="small" id="rankHelp" style="margin:0 0 10px"></p>
-        <ol class="rank-list" id="rankList"><li class="empty" style="padding:20px">Cargando el ranking…</li></ol>
+  <section class="view" id="v-inicio">
+    <div class="hero">
+      <div class="hero-main">
+        <h1 class="h-hero">¿Qué quieres hacer?</h1>
+        <p class="lede">Te decimos qué IA usar y cuánto cuesta de verdad.</p>
+        <form class="ask" id="askForm" role="search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <label class="sr" for="askTxt">¿Qué quieres hacer?</label>
+          <input id="askTxt" type="text" placeholder="Ej.: hacer una canción para un cumpleaños" autocomplete="off">
+          <button class="ask-go" type="submit" aria-label="Recomiéndame"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Recomiéndame</span></button>
+        </form>
+        <div class="ideas" id="ideasHome"></div>
+        <p class="fresh" id="fresh">Cargando fichas…</p>
       </div>
-      <div>
-        <div class="block-title"><h2 class="h-section">Lo mejor de cada campo</h2></div>
-        <div class="podiums" id="podiums"></div>
-      </div>
+      <aside class="starter" aria-label="Para empezar"><div class="st-box"><span class="eyebrow">Para empezar, una de estas</span><p>Sirven para casi todo y son gratis para empezar.</p><div class="st-list" id="starterDark" style="display:flex;flex-direction:column;gap:10px"></div></div></aside>
     </div>
+
+    <section class="sec">
+      <div class="sec-head"><h2 class="h-sec">Explora por tema</h2><a href="#explorar">Ranking</a></div>
+      <div class="temas" id="temasHome"></div>
+    </section>
+
+    <section class="sec">
+      <div class="sec-head"><h2 class="h-sec">Proyectos paso a paso</h2><a href="#proyectos" id="projAll">Ver todos</a></div>
+      <p class="sec-sub">Las IAs que necesitas para algo concreto, con el precio total.</p>
+      <div class="rail home" id="projRail"></div>
+    </section>
+
+    <section class="sec sec-starter">
+      <h2 class="h-sec">Para empezar, una de estas</h2>
+      <p class="sec-sub" style="margin-top:6px">Sirven para casi todo y son gratis para empezar.</p>
+      <div class="st-mobile" id="starterLight"></div>
+    </section>
+
+    <section class="sec two">
+      <a class="guide-card" href="#guia"><span class="gi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-5a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h5z"/></svg></span><span class="t"><b>¿Primera vez con la IA?</b><span>Qué significa cada dato, cómo puntuamos y consejos para empezar.</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <div>
+        <div class="sec-head" style="margin-bottom:10px"><h2 class="h-sub">Lo último</h2><a href="#novedades">Ver novedades</a></div>
+        <ul class="log" id="logHome"></ul>
+      </div>
+    </section>
   </section>
 
   <!-- RECOMENDADOR -->
   <section class="view" id="v-reco" hidden>
-    <header>
-      <div class="label">Recomendador</div>
-      <h1 class="h-page" style="margin-top:6px">¿Qué quieres hacer?</h1>
-      <p class="lede">Escríbelo con tus palabras. Te proponemos las tres herramientas que mejor encajan, adaptadas a tu presupuesto y experiencia.</p>
-    </header>
-    <form class="reco-panel" id="recoForm">
-      <label for="recoTxt" class="label">Tu objetivo</label>
+    <div class="page-head">
+      <a class="back" href="#inicio" data-back="inicio" aria-label="Volver"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+      <div><h1 class="h-page">¿Qué quieres hacer?</h1><p class="lede">Escríbelo con tus palabras y te proponemos las IAs que mejor encajan.</p></div>
+    </div>
+    <form class="panel reco-panel" id="recoForm">
+      <label for="recoTxt" class="fl-lab">Tu objetivo</label>
       <textarea id="recoTxt" placeholder="Ej.: quiero aprender a programar desde cero"></textarea>
-      <div class="ideas" id="ideas" style="margin-top:0"></div>
-      <div class="frow"><span class="label">Presupuesto</span><div class="chips" id="rPrecio"></div></div>
-      <div class="frow"><span class="label">Experiencia</span><div class="chips" id="rNivel"></div></div>
-      <div class="frow"><span class="label">Dispositivo</span><div class="chips" id="rDisp"></div></div>
+      <div class="ideas" id="ideas"></div>
+      <div class="frow"><span class="fl">Presupuesto</span><div class="chips" id="rPrecio"></div></div>
+      <div class="frow"><span class="fl">Experiencia</span><div class="chips" id="rNivel"></div></div>
+      <div class="frow"><span class="fl">Dispositivo</span><div class="chips" id="rDisp"></div></div>
       <div><button class="btn" type="submit">Recomiéndame</button></div>
     </form>
     <div id="recoOut" aria-live="polite"></div>
   </section>
 
-  <!-- PACKS -->
-  <section class="view" id="v-packs" hidden>
-    <header>
-      <div class="label">IAs que funcionan juntas</div>
-      <h1 class="h-page" style="margin-top:6px">Packs para cada proyecto</h1>
-      <p class="lede">Muchos proyectos necesitan varias IAs. Aquí tienes combinaciones probadas, paso a paso, con lo que puedes hacer gratis y lo que cuesta al mes la versión completa.</p>
-    </header>
-    <section class="builder" id="builder" aria-labelledby="builderTitle">
-      <div class="builder-head">
-        <div><div class="label">Tu combinación</div><h2 class="h-section" id="builderTitle">Crea tu pack</h2>
-          <p class="small" style="margin:4px 0 0">Elige las IAs que vas a usar y te sumamos lo que cuesta al mes. Se guarda en este dispositivo y puedes compartirlo con un enlace.</p></div>
+  <!-- EXPLORAR -->
+  <section class="view" id="v-explorar" hidden>
+    <div class="page-head"><div><h1 class="h-page">Explorar</h1><p class="lede">Las 240 IAs, ordenadas por temas y por nota.</p></div></div>
+    <div class="searchbox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label class="sr" for="exQ">Buscar una IA</label><input id="exQ" type="search" placeholder="Busca una IA o una tarea: logo, subtítulos…" autocomplete="off"></div>
+    <div id="exResults" hidden></div>
+    <div id="exDefault">
+      <div class="temas" id="temasEx"></div>
+      <section class="sec">
+        <div class="sec-head"><h2 class="h-sec">Ranking general</h2><button class="linkbtn" type="button" data-explica>¿De dónde sale la nota?</button></div>
+        <p class="sec-sub">Todas juntas. Suben las que sirven para muchas cosas; para una tarea concreta, entra en su tema.</p>
+        <div class="list cols" id="rankList"><p class="empty">Cargando el ranking…</p></div>
+        <button class="more" type="button" id="rankMore">Ver el top 25</button>
+      </section>
+      <a class="banner" href="#todas"><span>Ver las 240 con filtros<span>Por precio, nivel, móvil u ordenador</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  <!-- UN TEMA -->
+  <section class="view" id="v-tema" hidden><div id="temaOut"></div></section>
+
+  <!-- TODAS -->
+  <section class="view" id="v-todas" hidden>
+    <div class="page-head">
+      <a class="back" href="#explorar" data-back="explorar" aria-label="Volver"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+      <div><h1 class="h-page">Todas las IAs</h1><p class="lede">Filtra por lo que te importa. Toca una para ver su ficha.</p></div>
+    </div>
+    <div class="panel">
+      <input class="input" id="q" type="search" placeholder="Busca por nombre o tarea: subtítulos, logo, podcast…" aria-label="Buscar">
+      <button type="button" class="btn-sec filt-toggle" id="filtToggle" aria-expanded="false" aria-controls="filtBody">Filtros <span id="filtCount"></span></button>
+      <div class="filt-body" id="filtBody">
+        <div class="frow"><span class="fl">Tema</span><div class="chips" id="fCat"></div></div>
+        <div class="frow"><span class="fl">Versión gratis</span><div class="chips" id="fGratis"></div></div>
+        <div class="frow"><span class="fl">Mejor en</span><div class="chips" id="fDisp"></div></div>
+        <div class="frow"><span class="fl">Nivel</span><div class="chips" id="fNivel"></div></div>
+        <div class="frow"><span class="fl">Orden</span><div>
+          <select class="sort" id="sort" aria-label="Ordenar">
+            <option value="nota">Mejor nota</option>
+            <option value="precio">Mejor relación calidad-precio</option>
+            <option value="facilidad">Más fáciles</option>
+            <option value="nombre">Nombre (A–Z)</option>
+            <option value="fecha">Revisadas más recientemente</option>
+          </select></div></div>
       </div>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="list cols" id="grid"></div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="view" id="v-proyectos" hidden>
+    <div class="page-head"><div><h1 class="h-page">Proyectos paso a paso</h1><p class="lede">Muchos proyectos necesitan varias IAs. Aquí tienes combinaciones probadas, con lo que puedes hacer gratis y lo que cuesta al mes la versión completa.</p></div></div>
+    <a class="create-card" href="#mipack"><span class="t"><b>Crea tu propio pack</b><span>Junta las IAs que usas y te sumamos lo que cuestan al mes.</span></span><span class="go"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <div class="proj-grid" id="packs"></div>
+    <p class="small" style="margin-top:18px;max-width:75ch">Precios aproximados al mes en euros, con el plan de pago más básico que sirve para ese uso. Algunos se cobran en dólares y el importe final puede variar con el cambio y el IVA. Pagando por año suele salir más barato.</p>
+  </section>
+
+  <!-- UN PROYECTO -->
+  <section class="view" id="v-proyecto" hidden><div class="proj-page" id="projOut"></div></section>
+
+  <!-- MI PACK -->
+  <section class="view" id="v-mipack" hidden>
+    <div class="page-head"><div><h1 class="h-page">Mi pack</h1><p class="lede">Elige las IAs que vas a usar y te sumamos lo que cuestan al mes. Se guarda en este dispositivo y puedes compartirlo con un enlace.</p></div></div>
+    <section class="builder" id="builder" aria-label="Crea tu pack">
       <p class="shared-note" id="sharedNote" hidden></p>
-      <label class="label" for="bName" style="color:var(--muted)">Nombre del pack</label>
-      <input id="bName" class="search" type="text" maxlength="60" placeholder="Ej.: Mi pack para hacer vídeos">
+      <label class="fl-lab" for="bName">Nombre del pack</label>
+      <input id="bName" class="input" type="text" maxlength="60" placeholder="Ej.: Mi pack para hacer vídeos">
       <div class="b-add">
-        <input id="bSearch" class="search" type="search" placeholder="Añadir una IA: escribe su nombre…" aria-label="Buscar una IA para añadir" autocomplete="off">
+        <input id="bSearch" class="input" type="search" placeholder="Añadir una IA: escribe su nombre…" aria-label="Buscar una IA para añadir" autocomplete="off">
         <ul class="b-suggest" id="bSuggest" hidden></ul>
       </div>
       <ul class="b-list" id="bList"></ul>
@@ -411,81 +613,58 @@ footer.note p{max-width:78ch;margin:0 0 8px}
         <button type="button" class="btn" id="bShare">Copiar enlace para compartir</button>
         <button type="button" class="btn-sec" id="bClear">Vaciar</button>
       </div>
-      <p class="small" id="bMsg" aria-live="polite"></p>
+      <p class="small" id="bMsg" aria-live="polite" style="margin:0"></p>
     </section>
-    <h2 class="h-section" style="margin:32px 0 12px">Packs recomendados</h2>
-    <div class="packs" id="packs"></div>
-    <p class="small" style="margin-top:16px;max-width:75ch">Precios aproximados al mes en euros, con el plan de pago más básico que sirve para ese uso. Algunos se cobran en dólares y el importe final puede variar con el cambio y el IVA. Pagando por año suele salir más barato.</p>
-  </section>
-
-  <!-- CATÁLOGO -->
-  <section class="view" id="v-explorar" hidden>
-    <header>
-      <div class="label">Catálogo completo</div>
-      <h1 class="h-page" style="margin-top:6px">Todas las IAs</h1>
-      <p class="lede">Toca cualquier IA para ver su ficha completa: qué incluye gratis, ventajas, desventajas y de dónde sale su nota.</p>
-    </header>
-    <div class="filters">
-      <input class="search" id="q" type="search" placeholder="Busca por nombre o tarea: subtítulos, logo, podcast…" aria-label="Buscar">
-      <button type="button" class="filt-toggle" id="filtToggle" aria-expanded="false" aria-controls="filtBody">Filtros <span id="filtCount"></span></button>
-      <div class="filt-body" id="filtBody">
-      <div class="frow"><span class="label">Campo</span><div class="chips" id="fCat"></div></div>
-      <div class="frow"><span class="label">Versión gratis</span><div class="chips" id="fGratis"></div></div>
-      <div class="frow"><span class="label">Mejor en</span><div class="chips" id="fDisp"></div></div>
-      <div class="frow"><span class="label">Nivel</span><div class="chips" id="fNivel"></div></div>
-      <div class="frow"><span class="label">Orden</span><div>
-        <select class="sort" id="sort" aria-label="Ordenar">
-          <option value="nota">Mejor nota</option>
-          <option value="precio">Mejor relación calidad-precio</option>
-          <option value="facilidad">Más fáciles</option>
-          <option value="nombre">Nombre (A–Z)</option>
-          <option value="fecha">Revisadas más recientemente</option>
-        </select></div></div>
-      </div>
-    </div>
-    <p class="count" id="count"></p>
-    <div class="grid" id="grid"></div>
+    <section class="sec">
+      <div class="sec-head"><h2 class="h-sub">¿Sin ideas? Parte de un proyecto</h2><a href="#proyectos">Ver todos</a></div>
+      <div class="rail" id="projRail2"></div>
+    </section>
   </section>
 
   <!-- GUÍA -->
-  <section class="view" id="v-consejos" hidden>
-    <header>
-      <div class="label">Para entenderlo todo</div>
-      <h1 class="h-page" style="margin-top:6px">Guía</h1>
-      <p class="lede">Qué significa cada dato de las fichas y consejos para empezar.</p>
-    </header>
-    <div style="display:grid;gap:36px">
-      <div><h2 class="h-section" style="margin-bottom:12px">Cómo se calcula la nota</h2><div id="guiaNota"></div></div>
-      <div><h2 class="h-section" style="margin-bottom:12px">Qué significa cada tipo de «gratis»</h2><ul class="legend" id="guiaGratis"></ul></div>
-      <div><h2 class="h-section" style="margin-bottom:12px">Por qué el precio puede ser mayor</h2>
-        <p style="margin:0 0 12px;max-width:65ch">El precio que mostramos es el del plan de pago más básico. Pero no todas las IAs cobran igual:</p>
+  <section class="view" id="v-guia" hidden>
+    <div class="page-head"><div><h1 class="h-page">Guía</h1><p class="lede">Qué significa cada dato de las fichas y consejos para empezar.</p></div></div>
+    <div class="guide">
+      <div><h2 class="h-sec" style="margin-bottom:12px">Cómo se calcula la nota</h2><div class="box" id="guiaNota"></div></div>
+      <div><h2 class="h-sec" style="margin-bottom:12px">Qué significa cada tipo de «gratis»</h2><div class="box"><ul class="legend" id="guiaGratis"></ul></div></div>
+      <div><h2 class="h-sec" style="margin-bottom:12px">Por qué el precio puede ser mayor</h2>
+        <div class="box">
+        <p style="max-width:65ch">El precio que mostramos es el del plan de pago más básico. Pero no todas las IAs cobran igual:</p>
         <ul class="legend">
           <li><b>Cuota fija</b><span>Pagas lo mismo cada mes. Para un uso normal no hay sorpresas (por ejemplo, ChatGPT o Canva).</span></li>
           <li><b>⚠ Funciona con créditos</b><span>El plan incluye unos créditos al mes y cada imagen, vídeo o canción gasta varios. Si trabajas mucho se acaban y hay que comprar más (por ejemplo, Kling, Suno o Midjourney).</span></li>
           <li><b>⚠ Pago por uso</b><span>Pagas según lo que uses, como la luz. El coste depende de cuánto trabajes con ella.</span></li>
         </ul>
-        <p class="small" style="margin-top:10px">Consejo: empieza con el plan más barato y mira cuánto te dura antes de pagar más.</p></div>
-      <div><h2 class="h-section" style="margin-bottom:12px">Consejos para empezar</h2><ul class="tips" id="tips"></ul></div>
-      <div><h2 class="h-section">Glosario básico</h2><dl class="glosario" id="glosario"></dl></div>
+        <p class="small">Consejo: empieza con el plan más barato y mira cuánto te dura antes de pagar más.</p></div></div>
+      <div><h2 class="h-sec" style="margin-bottom:12px">Consejos para empezar</h2><ul class="tips" id="tips"></ul></div>
+      <div><h2 class="h-sec" style="margin-bottom:6px">Glosario básico</h2><dl class="glosario" id="glosario"></dl></div>
+      <a class="guide-card" href="#novedades"><span class="gi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6-5.3-3-5.3 3 1.2-6L3.4 9.3l6-.7z"/></svg></span><span class="t"><b>Novedades</b><span>Lo que ha cambiado en cada revisión semanal.</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
     </div>
   </section>
 
   <!-- NOVEDADES -->
   <section class="view" id="v-novedades" hidden>
-    <header>
-      <div class="label">Actualidad</div>
-      <h1 class="h-page" style="margin-top:6px">Novedades</h1>
-      <p class="lede">Lo que ha cambiado en las IAs y en el catálogo en cada revisión semanal.</p>
-    </header>
+    <div class="page-head">
+      <a class="back" href="#guia" data-back="inicio" aria-label="Volver"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+      <div><h1 class="h-page">Novedades</h1><p class="lede">Lo que ha cambiado en las IAs y en el catálogo en cada revisión semanal.</p></div>
+    </div>
     <ul class="log" id="log"><li>Cargando…</li></ul>
   </section>
 
-  <footer class="note">
-    <p><b>Nota.</b> Va de 0 a 100 y combina calidad (40 %), versatilidad (20 %), facilidad de uso (20 %) y relación calidad-precio (20 %). Cada parte es una valoración de Cualia del 0 al 10. <button class="linkbtn" type="button" data-explica="nota">Ver explicación</button></p>
+  <footer class="foot">
+    <nav aria-label="Más"><a href="#guia">Guía</a><a href="#novedades">Novedades</a><a href="#todas">Todas las IAs</a><a href="#proyectos">Proyectos</a></nav>
+    <p><b>Nota.</b> Va de 0 a 100 y combina calidad (40 %), versatilidad (20 %), facilidad de uso (20 %) y relación calidad-precio (20 %). Cada parte es una valoración de Cualia del 0 al 10. <button class="linkbtn" type="button" data-explica>Ver explicación</button></p>
     <p>Los precios son orientativos: varían por país y cambian a menudo. «Verificado» indica que la ficha se contrastó con fuentes en su última revisión; «pendiente de verificar», que aún no se ha comprobado en detalle.</p>
     <p>Cualia no tiene relación comercial con ninguna de estas empresas. Los logotipos pertenecen a sus propietarios y se muestran solo para identificar cada herramienta.</p>
   </footer>
 </main>
+
+<nav class="bnav" aria-label="Secciones">
+  <a href="#inicio" data-nav="inicio"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>Inicio</a>
+  <a href="#explorar" data-nav="explorar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Explorar</a>
+  <a href="#proyectos" data-nav="proyectos"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg>Proyectos</a>
+  <a href="#mipack" data-nav="mipack"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7zM9 8a3 3 0 0 1 6 0"/></svg>Mi pack<span class="nav-count"></span></a>
+</nav>
 
 <div class="scrim" id="scrim" hidden>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></div>
@@ -493,8 +672,10 @@ footer.note p{max-width:78ch;margin:0 0 8px}
 
 <script>
 const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
 const MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sept","oct","nov","dic"];
 const fecha = iso => { if(!iso) return "—"; const [y,m,d] = iso.split("-").map(Number); return `${d} ${MESES[m-1]} ${y}`; };
+const fechaCorta = iso => { if(!iso) return ""; const [y,m,d] = iso.split("-").map(Number); return `${d} ${MESES[m-1]}`; };
 const diasDesde = iso => Math.floor((Date.now() - new Date(iso+"T12:00:00").getTime())/86400000);
 const NIVEL = {1:"Fácil",2:"Intermedio",3:"Avanzado"};
 const GRATIS = {
@@ -518,8 +699,38 @@ const norm = s => String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/
 let CATS = [], ALL = [], META = {}, LOG = [], PACKS = [];
 const byName = new Map(), byId = new Map();
 const st = {q:"", cat:null, gratis:null, disp:null, nivel:null, sort:"nota", rPrecio:"cualquiera", rNivel:"cualquiera", rDisp:"cualquiera"};
+const byNota = (a,b) => b.nota-a.nota || b.notas.calidad-a.notas.calidad;
 
-/* ---------- Iconos ---------- */
+/* ---------- Dibujos ---------- */
+const P = {
+  chat:"M4 5h16v11H9l-5 4V5z",
+  imagen:"M4 5h16v14H4zM8.5 10.5a1.5 1.5 0 1 0 0-.01M20 15l-5-5-9 9",
+  video:"M3 6h13v12H3zM16 10l5-3v10l-5-3",
+  musica:"M9 18V6l11-2v12M9 18a3 3 0 1 1-3-3 3 3 0 0 1 3 3zM20 16a3 3 0 1 1-3-3 3 3 0 0 1 3 3z",
+  voz:"M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3",
+  codigo:"M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14",
+  estudio:"M4 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-5a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h5z",
+  trabajo:"M4 8h16v11H4zM9 8V5h6v3M4 13h16",
+  back:"M19 12H5M11 6l-6 6 6 6", next:"M9 6l6 6-6 6", arrow:"M5 12h14M13 6l6 6-6 6",
+  layers:"M12 3l9 5-9 5-9-5zM3 13l9 5 9-5", share:"M12 15V3M7 8l5-5 5 5M5 13v7h14v-7",
+  check:"M5 12l5 5 9-10", minus:"M6 12h12",
+  gift:"M20 12v8H4v-8M2 7h20v5H2zM12 22V7M12 7H8a2 2 0 1 1 2-3l2 3 2-3a2 2 0 1 1 2 3z",
+  phone:"M7 3h10v18H7zM11 18h2", laptop:"M4 5h16v10H4zM2 19h20", star:"M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6-5.3-3-5.3 3 1.2-6L3.4 9.3l6-.7z",
+};
+const svg = (d, s=22, sw=2) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
+const TEMAS = {
+  chat:{corto:"Escribir y conversar", bg:"#EDE8FF", c:"#5B3FD9"},
+  imagen:{corto:"Imágenes", bg:"#FFE9D6", c:"#B5530F"},
+  video:{corto:"Vídeo", bg:"#FFE0E7", c:"#B4234B"},
+  musica:{corto:"Música", bg:"#DDF3E6", c:"#167048"},
+  voz:{corto:"Voz y audio", bg:"#DDEBFF", c:"#1D5FB8"},
+  codigo:{corto:"Programar y crear apps", bg:"#E9E8EF", c:"#2E2B3A"},
+  estudio:{corto:"Estudiar", bg:"#FFF2C4", c:"#8A6200"},
+  trabajo:{corto:"Trabajo", bg:"#D8F2F2", c:"#0E6E6E"},
+};
+const tema = id => TEMAS[id] || {corto:(CATS.find(c=>c.id===id)||{}).nombre||"", bg:"#EDE8FF", c:"#5B3FD9"};
+const temaVars = id => `--t-bg:${tema(id).bg};--t-c:${tema(id).c}`;
+
 const PALETA = ["#5B3FD9","#0E7C66","#C2410C","#1D4ED8","#9D174D","#4D7C0F","#7C3AED","#B45309","#0F766E","#BE123C"];
 function monoColor(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))>>>0; return PALETA[h%PALETA.length]; }
 function icono(h, size){
@@ -531,34 +742,46 @@ function icono(h, size){
   return `<span class="${cls}" aria-hidden="true"><img src="${src}" alt="" loading="lazy" width="32" height="32"
     onerror="this.parentNode.classList.add('mono');this.parentNode.style.setProperty('--mono-bg','${col}');this.outerHTML='<span>${letra}</span>'"></span>`;
 }
-const consumoPill = h => (h.consumo==="creditos"||h.consumo==="uso") ? `<span class="pill g-limitado" title="${esc(CONSUMO[h.consumo].expl)}">⚠ ${esc(CONSUMO[h.consumo].corto)}</span>` : "";
-const gratisPill = h => `<span class="pill g-${h.gratisTipo}" title="${esc(GRATIS[h.gratisTipo]?.expl||"")}">${esc(GRATIS[h.gratisTipo]?.corto||"")}</span>`;
-
-/* ---------- Pestañas ---------- */
-const VIEWS = ["ranking","reco","packs","explorar","consejos","novedades"];
-function showView(v, scroll=true){
-  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.v===v));
-  document.querySelectorAll("section.view").forEach(s => s.hidden = s.id !== "v-"+v);
-  try{ localStorage.setItem("cualia-tab", v); }catch(e){}
-  if(scroll) window.scrollTo({top:0});
+function ring(n, size=46, dark=false){
+  const sw = size>=60 ? 6.5 : 4.5, c = size/2, r = c - sw/2 - .5, C = 2*Math.PI*r;
+  return `<span class="ring" style="width:${size}px;height:${size}px" title="Nota de Cualia: ${n} sobre 100"><svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" aria-hidden="true"><circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="var(${dark?"--hero-3":"--ring-track"})" stroke-width="${sw}"/><circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="var(${dark?"--hero-ring":"--accent"})" stroke-width="${sw}" stroke-linecap="round" stroke-dasharray="${(C*n/100).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${c} ${c})"/></svg><b style="font-size:${Math.round(size*.34)}px">${n}</b></span>`;
 }
-document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => showView(t.dataset.v)));
-(() => { const h = location.hash.slice(1); let v = VIEWS.includes(h) ? h : null;
-  if(!v){ try{ v = localStorage.getItem("cualia-tab"); }catch(e){} }
-  if(v && VIEWS.includes(v)) showView(v,false); })();
-$(".logo").addEventListener("click", e => { e.preventDefault(); showView("ranking"); });
+const gratisDot = h => `<span class="gdot g-${esc(h.gratisTipo)}" title="${esc(GRATIS[h.gratisTipo]?.expl||"")}"><i></i>${esc(GRATIS[h.gratisTipo]?.corto||"")}</span>`;
+const caro = h => h.consumo==="creditos" || h.consumo==="uso";
+const consumoTag = h => caro(h) ? `<span class="ctag" title="${esc(CONSUMO[h.consumo].expl)}">⚠ ${esc(CONSUMO[h.consumo].corto)}</span>` : "";
+const euros = n => n===0 ? "0 €" : `≈ ${n} €`;
+const listaY = a => a.length<2 ? a.join("") : a.slice(0,-1).join(", ")+" y "+a[a.length-1];
 
-/* ---------- Tarjeta compacta ---------- */
-function tarjeta(h){
-  return `<button type="button" class="card" data-open="${esc(h.id)}">
-    <div class="c-head">${icono(h)}
-      <div style="min-width:0"><h3 class="c-title">${esc(h.nombre)}</h3><div class="c-sub">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
-      <span class="nota-chip" title="Nota de Cualia sobre 100">${h.nota}</span></div>
-    <p class="c-desc">${esc(h.desc)}</p>
-    <div class="c-tags">${gratisPill(h)}${consumoPill(h)}<span class="pill">${esc(MEJOR[h.mejorEn]||"")}</span><span class="pill">${NIVEL[h.nivel]||""}</span></div>
-    <span class="c-more">Ver ficha completa →</span>
-  </button>`;
+/* Fila de una IA en una lista */
+function fila(h, pos, sub){
+  return `<button type="button" class="row" data-open="${esc(h.id)}">${pos?`<span class="row-pos">${pos}</span>`:""}${icono(h)}
+    <span class="row-main"><span class="row-name">${esc(h.nombre)}</span><span class="row-sub">${esc(sub ?? h.desc)}</span><span class="row-tags">${gratisDot(h)}${consumoTag(h)}</span></span>
+    <span class="row-nota" title="Nota de Cualia sobre 100">${h.nota}</span></button>`;
 }
+
+/* ---------- Navegación ---------- */
+const VIEWS = ["inicio","reco","explorar","tema","todas","proyectos","proyecto","mipack","guia","novedades"];
+const ALIAS = {ranking:"inicio", consejos:"guia", packs:"proyectos", catalogo:"todas"};
+const NAVOF = {inicio:"inicio",reco:"inicio",explorar:"explorar",tema:"explorar",todas:"explorar",proyectos:"proyectos",proyecto:"proyectos",mipack:"mipack",guia:"guia",novedades:"guia"};
+let route = {v:"inicio", arg:null}, navCount = 0;
+function parseHash(){
+  const [v0, arg] = decodeURIComponent(location.hash.slice(1)).split("/");
+  let v = ALIAS[v0] || v0; if(!VIEWS.includes(v)) v = "inicio";
+  return {v, arg: arg || null};
+}
+function go(path){ if(location.hash.slice(1) === path) render(true); else location.hash = path; }
+function render(scroll){
+  route = parseHash();
+  $$("section.view").forEach(s => s.hidden = s.id !== "v-"+route.v);
+  $$("[data-nav]").forEach(a => { if(a.dataset.nav === NAVOF[route.v]) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  if(ALL.length){ if(route.v==="tema") renderTema(); if(route.v==="proyecto") renderProyecto(); }
+  if(scroll) window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", () => { navCount++; if(!$("#scrim").hidden) cerrarVentana(); render(true); });
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-back]"); if(!b) return;
+  e.preventDefault(); if(navCount > 0) history.back(); else go(b.dataset.back);
+});
 
 /* ---------- Ventana de ficha ---------- */
 let lastFocus = null;
@@ -575,48 +798,52 @@ $("#scrim").addEventListener("click", e => { if(e.target.id==="scrim" || e.targe
 document.addEventListener("keydown", e => { if(e.key==="Escape" && !$("#scrim").hidden) cerrarVentana(); });
 
 function barras(n){
-  const fila = (k,label,peso) => `<div class="bar-row"><span>${label} <span class="small">(${peso})</span></span><span class="track"><i style="width:${n[k]*10}%"></i></span><b>${n[k]}/10</b></div>`;
+  const fila = (k,label,peso) => `<div class="bar-row"><span>${label}<span class="w">cuenta un ${peso}</span></span><span class="track"><i style="width:${n[k]*10}%"></i></span><b>${n[k]}</b></div>`;
   return `<div class="bars">${fila("calidad","Calidad","40 %")}${fila("versatilidad","Versatilidad","20 %")}${fila("facilidad","Facilidad","20 %")}${fila("precio","Precio","20 %")}</div>`;
 }
+const packBtn = id => enPack(id) ? `<button type="button" class="btn-sec on" data-addpack="${esc(id)}">✓ En tu pack</button>` : `<button type="button" class="btn-sec" data-addpack="${esc(id)}">+ Mi pack</button>`;
 function abrirFicha(id){
   const h = byId.get(id); if(!h) return;
   setTimeout(()=>pintarHistorial(id),0);
   const n = h.notas || {calidad:0,versatilidad:0,facilidad:0,precio:0};
   const dias = diasDesde(h.actualizado);
+  const T = tema(h.cat);
+  const plat = (h.plataformas||[]).map(p=>PLAT[p]).filter(Boolean).join(" · ");
   abrirVentana(`
-    <div class="sheet-top">${icono(h,"lg")}
-      <div style="min-width:0"><h2 id="sheetTitle">${esc(h.nombre)}</h2><div class="small">${esc(h.empresa)} · ${esc(h.catNombre)}</div></div>
-      <button class="close" type="button" aria-label="Cerrar">✕</button></div>
-    <div class="sheet-body">
-      <p class="s-desc">${esc(h.desc)}</p>
-      ${h.novedad ? `<p class="novedad"><b>Novedad</b>${esc(h.novedad)}</p>` : ""}
-      <div class="facts">
-        <div class="fact"><span class="label">Versión gratis</span><span>${gratisPill(h)}</span><span class="d">${esc(h.gratisTxt)}</span></div>
-        <div class="fact"><span class="label">Precio</span><span class="v">${esc(h.precioTxt)}</span><span class="d">Orientativo, puede variar por país.</span></div>
-        <div class="fact"><span class="label">Dónde usarla</span><span class="v">${esc(MEJOR[h.mejorEn]||"")}</span><span class="d">${(h.plataformas||[]).map(p=>PLAT[p]).join(" · ")}</span></div>
+    <div class="sh-bar"><button class="close" type="button" aria-label="Cerrar">✕</button></div>
+    <div class="sh-top">
+      <div class="sh-head">${icono(h,"lg")}<div class="sh-id"><h2 id="sheetTitle">${esc(h.nombre)}</h2><span>${esc(T.corto)} · ${esc(h.empresa)}</span></div>${ring(h.nota,64)}</div>
+      <p class="sh-desc">${esc(h.desc)}</p>
+    </div>
+    <div class="sh-body">
+      <div class="tiles">
+        <div class="tile g-${esc(h.gratisTipo)}">${svg(P.gift)}<b>${esc(GRATIS[h.gratisTipo]?.corto||"")}</b></div>
+        <div class="tile">${svg(h.mejorEn==="ordenador"?P.laptop:P.phone)}<b>${esc(MEJOR[h.mejorEn]||"")}</b></div>
+        <div class="tile">${svg(P.star)}<b>${NIVEL[h.nivel]==="Fácil"?"Fácil de usar":esc(NIVEL[h.nivel]||"")}</b></div>
       </div>
-      ${(h.consumo==="creditos"||h.consumo==="uso") ? `<div class="aviso-coste"><b>⚠ Puede costar más que el precio de partida</b><span>${esc(h.consumoTxt||CONSUMO[h.consumo].expl)}</span></div>` : (h.consumoTxt && h.consumo==="fijo" ? `<p class="small" style="margin:0">💳 ${esc(h.consumoTxt)}</p>` : "")}
-      <div class="proscons">
-        <div class="pc pro"><h4>Ventajas</h4><ul>${(h.pros||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
-        <div class="pc con"><h4>Desventajas</h4><ul>${(h.contras||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      ${h.novedad ? `<p class="novedad"><b>Novedad:</b> ${esc(h.novedad)}</p>` : ""}
+      <div class="box">
+        <h3>¿Qué puedo hacer gratis?</h3>
+        <p>${esc(h.gratisTxt)}</p>
+        <p class="small">${esc(GRATIS[h.gratisTipo]?.txt||"")}: ${esc(GRATIS[h.gratisTipo]?.expl||"")}</p>
+        <div class="box-row"><span>Plan de pago</span><b>${esc(h.precioTxt)}</b></div>
       </div>
-      <div class="s-block"><h3>Ideal para</h3><p>${esc(h.para)}</p></div>
-      ${h.ejemplos?.length ? `<div class="s-block"><h3>Ejemplos de uso</h3><ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
-      <div class="s-block"><h3>Nota: ${h.nota} sobre 100</h3>
-        <div class="score-box"><div class="score-big">${h.nota}<small>NOTA</small></div>${barras(n)}</div>
-        <p class="small">Calidad ${n.calidad} × 4 + versatilidad ${n.versatilidad} × 2 + facilidad ${n.facilidad} × 2 + precio ${n.precio} × 2 = ${h.nota}. <button class="linkbtn" type="button" data-explica="nota">¿Qué mide cada parte?</button></p>
-      </div>
-      <p class="small" style="margin:0"><a href="ia/${esc(h.slug)}/">Página de ${esc(h.nombre)} para compartir</a></p>
-      <div class="s-block"><h3>Dificultad</h3><p>${NIVEL[h.nivel]||""}${h.nivel===1?": pensada para cualquiera, sin conocimientos previos.":h.nivel===2?": conviene tener algo de soltura con la tecnología.":": para usuarios técnicos o con experiencia."}</p></div>
-      <div class="s-block" id="histBlock" hidden><h3>Historial de precio y plan gratis</h3><ul class="hist" id="histList"></ul></div>
-      <div class="s-foot">
-        <span class="f-date">Revisado el <b>${fecha(h.actualizado)}</b> · ${h.verificado?"✓ verificado con fuentes":"pendiente de verificar"}${dias>30?" · desactualizado":""}</span>
-        <span style="display:flex;gap:8px;flex-wrap:wrap">
-          <button type="button" class="add-pack" data-addpack="${esc(h.id)}">${enPack(h.id)?"✓ En tu pack":"+ Añadir a mi pack"}</button>
-          ${h.web ? `<a class="f-link" href="${esc(h.afiliado||h.web)}" target="_blank" rel="noopener${h.afiliado?" sponsored":""}" data-go="${esc(h.id)}">Ir a ${esc(h.nombre)} ↗</a>` : ""}
-        </span>
-      </div>
+      ${caro(h) ? `<div class="aviso-coste"><b>⚠ Puede costar más que el precio de partida</b><span>${esc(h.consumoTxt||CONSUMO[h.consumo].expl)}</span></div>` : (h.consumoTxt && h.consumo==="fijo" ? `<p class="small" style="margin:0">💳 ${esc(h.consumoTxt)}</p>` : "")}
+      <div class="sblock"><h3>Ideal para</h3><p>${esc(h.para)}</p>
+        ${h.ejemplos?.length ? `<ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul>` : ""}</div>
+      <div class="sblock"><h3>Lo bueno y lo malo</h3>
+        <div class="box"><ul class="pc pro">${(h.pros||[]).map(x=>`<li>${svg(P.check,20,2.6)}<span>${esc(x)}</span></li>`).join("")}</ul><hr>
+        <ul class="pc con">${(h.contras||[]).map(x=>`<li>${svg(P.minus,20,2.6)}<span>${esc(x)}</span></li>`).join("")}</ul></div></div>
+      <div class="sblock"><div class="sb-head"><h3>¿Por qué un ${h.nota}?</h3><button class="linkbtn" type="button" data-explica>Cómo puntuamos</button></div>
+        <div class="box">${barras(n)}<p class="small">Calidad ${n.calidad} × 4 + versatilidad ${n.versatilidad} × 2 + facilidad ${n.facilidad} × 2 + precio ${n.precio} × 2 = ${h.nota}</p></div></div>
+      <div class="sblock"><h3>Dónde y para quién</h3><p>${plat ? `Disponible en: ${esc(plat)}. ` : ""}${NIVEL[h.nivel]||""}${h.nivel===1?": pensada para cualquiera, sin conocimientos previos.":h.nivel===2?": conviene tener algo de soltura con la tecnología.":": para usuarios técnicos o con experiencia."}</p></div>
+      <div class="sblock" id="histBlock" hidden><h3>Historial de precio y plan gratis</h3><div class="box"><ul class="hist" id="histList"></ul></div></div>
+      <p class="sh-meta">Revisado el ${fecha(h.actualizado)} · ${h.verificado?"✓ verificado con fuentes":"pendiente de verificar"}${dias>30?" · desactualizado":""} · <a href="ia/${esc(h.slug)}/">Página para compartir</a></p>
       ${h.afiliado ? `<p class="afil">Enlace de afiliado: si contratas desde aquí, Cualia puede recibir una comisión sin que a ti te cueste más. No influye en la nota.</p>` : ""}
+    </div>
+    <div class="sh-cta">
+      ${h.web ? `<a class="btn" href="${esc(h.afiliado||h.web)}" target="_blank" rel="noopener${h.afiliado?" sponsored":""}">Probar ${esc(h.nombre)} ↗</a>` : ""}
+      ${packBtn(h.id)}
     </div>`);
 }
 let HIST = null;
@@ -636,46 +863,102 @@ function pintarHistorial(id){
   });
 }
 function explicarNota(){
-  abrirVentana(`<div class="sheet-top" style="grid-template-columns:minmax(0,1fr) auto"><h2 id="sheetTitle">¿De dónde sale la nota?</h2><button class="close" type="button" aria-label="Cerrar">✕</button></div>
-    <div class="sheet-body">${guiaNotaHTML()}</div>`);
+  abrirVentana(`<div class="sh-bar"><button class="close" type="button" aria-label="Cerrar">✕</button></div>
+    <div class="sh-top"><h2 id="sheetTitle" style="font-size:26px;padding-right:44px">¿De dónde sale la nota?</h2></div>
+    <div class="sh-body" style="padding-bottom:24px"><div class="box">${guiaNotaHTML()}</div></div>`);
 }
 function guiaNotaHTML(){
-  return `<p style="margin:0 0 12px;max-width:65ch">Cada IA recibe cuatro puntuaciones del 0 al 10. La nota final, sobre 100, es: <b>calidad × 4 + versatilidad × 2 + facilidad × 2 + precio × 2</b>. Una IA perfecta en todo sacaría 100.</p>
+  return `<p style="max-width:65ch">Cada IA recibe cuatro puntuaciones del 0 al 10. La nota final, sobre 100, es: <b>calidad × 4 + versatilidad × 2 + facilidad × 2 + precio × 2</b>. Una IA perfecta en todo sacaría 100.</p>
     <ul class="legend">
-      <li><b>Calidad (40 %)</b><span>Lo bien que hace su trabajo comparada con las demás de su campo: resultados, fiabilidad y funciones.</span></li>
+      <li><b>Calidad (40 %)</b><span>Lo bien que hace su trabajo comparada con las demás de su tema: resultados, fiabilidad y funciones.</span></li>
       <li><b>Versatilidad (20 %)</b><span>Para cuántas cosas distintas sirve. Un asistente como ChatGPT, que escribe, analiza, crea imágenes y más, saca un 10; una herramienta que solo quita fondos de fotos saca un 1.</span></li>
       <li><b>Facilidad (20 %)</b><span>Lo fácil que es para alguien que empieza: si se entiende a la primera, si está en español, si hay que instalar algo.</span></li>
       <li><b>Precio (20 %)</b><span>Lo que obtienes por lo que pagas. Un plan gratis útil puntúa alto; una prueba de dos minutos o un precio alto puntúan bajo.</span></li>
     </ul>
-    <p class="small" style="margin-top:12px">Por eso en el ranking general suben las IAs que sirven para muchas cosas. Si buscas la mejor para una tarea concreta, mira el ranking de su campo: ahí se comparan herramientas que hacen lo mismo. Son valoraciones de Cualia basadas en pruebas, comparativas y rankings públicos, y se revisan cada semana.</p>`;
+    <p class="small">Por eso en el ranking general suben las IAs que sirven para muchas cosas. Si buscas la mejor para una tarea concreta, entra en su tema: ahí se comparan herramientas que hacen lo mismo. Son valoraciones de Cualia basadas en pruebas, comparativas y rankings públicos, y se revisan cada semana.</p>`;
 }
 document.addEventListener("click", e => {
-  const r = e.target.closest("[data-rank]"); if(r){ rankCat = r.dataset.rank || null; renderRanking(); return; }
   const o = e.target.closest("[data-open]"); if(o){ abrirFicha(o.dataset.open); return; }
-  const x = e.target.closest("[data-explica]"); if(x){ explicarNota(); }
+  const x = e.target.closest("[data-explica]"); if(x){ explicarNota(); return; }
+  const a = e.target.closest("[data-addpack]"); if(a){ const id = a.dataset.addpack; if(enPack(id)) quitarPack(id); else addPack(id); a.outerHTML = packBtn(id); return; }
 });
 
 /* ---------- Inicio ---------- */
-let rankCat = null;
-function renderRanking(){
-  const tabs = [[null,"General"], ...CATS.map(c=>[c.id,c.nombre])];
-  $("#rankTabs").innerHTML = tabs.map(([id,n])=>`<button type="button" class="chip" data-rank="${id??""}" aria-pressed="${String(rankCat===id)}">${esc(n)}</button>`).join("");
-  const cat = CATS.find(c=>c.id===rankCat);
-  $("#rankTitle").textContent = cat ? `Ranking: ${cat.nombre}` : "Ranking general";
-  $("#rankHelp").textContent = cat ? `Las mejores de este campo, comparadas entre herramientas que hacen lo mismo.` : `Todas las IAs juntas. Suben las que sirven para muchas cosas; para una tarea concreta, elige su campo.`;
-  const lista = (cat ? ALL.filter(h=>h.cat===cat.id) : ALL).slice().sort((a,b)=>b.nota-a.nota || b.notas.calidad-a.notas.calidad);
-  const top = lista.slice(0, cat ? 30 : 25);
-  $("#rankList").innerHTML = top.map((h,i)=>`<li><button type="button" class="rank-row" data-open="${esc(h.id)}">
-    <span class="rank-pos">${i+1}</span>${icono(h,"sm")}
-    <div class="rank-main"><div class="rank-name">${esc(h.nombre)}</div><div class="rank-sub">${cat?"":esc(h.catNombre)+" · "}${esc(GRATIS[h.gratisTipo]?.corto||"")}</div></div>
-    <span class="nota-chip">${h.nota}</span></button></li>`).join("");
-  $("#podiums").innerHTML = CATS.map(c=>{
-    const t = ALL.filter(h=>h.cat===c.id).sort((a,b)=>b.nota-a.nota).slice(0,3);
-    return `<div class="podium"><h3>${esc(c.nombre)}</h3><ol>${t.map(h=>`<li><button type="button" data-open="${esc(h.id)}">${icono(h,"sm")}<span class="pn">${esc(h.nombre)}</span><span class="pp">${gratisPill(h)}</span></button></li>`).join("")}</ol></div>`;
-  }).join("");
+const STARTER = [["ChatGPT","El más completo para todo"],["Claude","El que mejor escribe"],["Gemini","Integrado en Google"]];
+function temaTile(c){
+  const n = (c.herramientas||[]).length;
+  return `<a class="tema" href="#tema/${esc(c.id)}" style="${temaVars(c.id)}"><span class="tema-ico">${svg(P[c.id]||P.chat)}</span><span class="tema-txt"><span class="tema-n">${esc(tema(c.id).corto)}</span><span class="tema-c">${n} IAs</span></span></a>`;
+}
+function stack(p){ return `<span class="stack">${p.pasos.slice(0,5).map(s=>icono(byName.get(s.ia)||{nombre:s.ia},"xs")).join("")}</span><span class="stack-n">${p.pasos.length} IAs</span>`; }
+const credPack = p => p.pasos.filter(s=>s.precio && byName.get(s.ia)?.consumo==="creditos").map(s=>s.ia);
+function projCard(p, dark){
+  const cred = credPack(p).length;
+  return `<a class="proj${dark?" dark":""}" href="#proyecto/${esc(p.id)}"><span class="proj-t">${esc(p.titulo)}</span><span class="proj-ias">${stack(p)}</span>
+    <span class="proj-p"><span class="pp free">Gratis: 0 €</span><span class="pp full">Completo: ${euros(p.total)}${cred?"+":""}/mes</span></span></a>`;
+}
+function projLink(p){
+  return `<a class="projlink" href="#proyecto/${esc(p.id)}"><span class="pl-ico">${svg(P.layers)}</span><span class="t"><span>¿Tienes un proyecto?</span><b>${esc(p.titulo)}, paso a paso</b></span>${svg(P.next,20,2.4)}</a>`;
+}
+function renderInicio(){
+  const temas = CATS.map(temaTile).join("");
+  $("#temasHome").innerHTML = temas; $("#temasEx").innerHTML = temas;
+  $("#projRail").innerHTML = PACKS.map(p=>projCard(p,true)).join("");
+  $("#projRail2").innerHTML = PACKS.map(p=>projCard(p,true)).join("");
+  $("#projAll").textContent = `Ver los ${PACKS.length}`;
+  const st = STARTER.map(([n,f])=>[byName.get(n),f]).filter(x=>x[0]).sort((a,b)=>b[0].nota-a[0].nota);
+  const fila = dark => st.map(([h,f])=>`<button type="button" class="st-row" data-open="${esc(h.id)}">${icono(h)}<span class="t"><b>${esc(h.nombre)}</b><span>${esc(f)}</span></span>${ring(h.nota,46,dark)}</button>`).join("");
+  $("#starterDark").innerHTML = fila(true); $("#starterLight").innerHTML = fila(false);
+  $("#logHome").innerHTML = logItems(LOG.slice(0,3));
 }
 
-/* ---------- Catálogo ---------- */
+/* ---------- Explorar ---------- */
+let rankN = 10;
+function renderRanking(){
+  const lista = ALL.slice().sort(byNota).slice(0, rankN);
+  $("#rankList").innerHTML = lista.map((h,i)=>fila(h, i+1, tema(h.cat).corto)).join("");
+  $("#rankMore").textContent = rankN===10 ? "Ver el top 25" : "Ver solo el top 10";
+}
+$("#rankMore").addEventListener("click", ()=>{ rankN = rankN===10 ? 25 : 10; renderRanking(); });
+const coincide = (h,q) => norm([h.nombre,h.empresa,h.desc,h.para,(h.ejemplos||[]).join(" "),h.catNombre,tema(h.cat).corto].join(" ")).includes(q);
+let exT; $("#exQ").addEventListener("input", e=>{ clearTimeout(exT); exT = setTimeout(()=>{
+  const q = norm(e.target.value.trim()); const out = $("#exResults");
+  $("#exDefault").hidden = !!q; out.hidden = !q; if(!q) return;
+  const res = ALL.filter(h=>coincide(h,q)).sort(byNota);
+  out.innerHTML = res.length
+    ? `<p class="count" style="margin-top:0">${res.length} ${res.length===1?"resultado":"resultados"}</p><div class="list cols">${res.slice(0,40).map(h=>fila(h)).join("")}</div>${res.length>40?`<a class="banner" href="#todas" id="exAll"><span>Ver los ${res.length} con filtros</span>${svg(P.next,20,2.4)}</a>`:""}`
+    : `<p class="empty">No encontramos nada con «${esc(e.target.value)}». Prueba con otra palabra o <a href="#reco" id="exReco">cuéntanos qué quieres hacer</a>.</p>`;
+  $("#exAll")?.addEventListener("click", ()=>{ st.q = e.target.value; $("#q").value = e.target.value; renderGrid(); });
+  $("#exReco")?.addEventListener("click", ()=>{ $("#recoTxt").value = e.target.value; setTimeout(()=>pintarReco(e.target.value),0); });
+}, 150); });
+
+/* ---------- Un tema ---------- */
+const temaF = {gratis:false, facil:false, movil:false};
+function renderTema(){
+  const cat = CATS.find(c=>c.id===route.arg); if(!cat){ go("explorar"); return; }
+  const T = tema(cat.id);
+  const todas = ALL.filter(h=>h.cat===cat.id).sort(byNota);
+  const lista = todas.filter(h => (!temaF.gratis || h.gratisTipo==="libre" || h.gratisTipo==="util") && (!temaF.facil || h.nivel===1) && (!temaF.movil || h.mejorEn!=="ordenador"));
+  const [top, ...rest] = lista;
+  const rel = PACKS.map(p=>({p, n:p.pasos.filter(s=>byName.get(s.ia)?.cat===cat.id).length})).filter(x=>x.n).sort((a,b)=>b.n-a.n).slice(0,2);
+  $("#temaOut").innerHTML = `
+    <div class="tema-hero" style="${temaVars(cat.id)}">
+      <a class="back" href="#explorar" data-back="explorar" aria-label="Volver">${svg(P.back,22,2.2)}</a>
+      <div class="tema-id"><span class="tema-ico">${svg(P[cat.id]||P.chat,30)}</span><div><h1>${esc(T.corto)}</h1><p>${esc(cat.desc||"")}</p></div></div>
+    </div>
+    <div class="tema-body">
+      <div class="chips tema-filters" role="group" aria-label="Filtrar">${[["gratis","Gratis útil"],["facil","Fácil"],["movil","En el móvil"]].map(([k,l])=>`<button type="button" class="chip" data-tf="${k}" aria-pressed="${temaF[k]}">${l}</button>`).join("")}</div>
+      <p class="small" style="margin:6px 0 0">${lista.length===todas.length ? `Las ${todas.length} IAs de este tema, ordenadas por nota` : `${lista.length} de ${todas.length} IAs con esos filtros`}</p>
+      ${top ? `<button type="button" class="feat" data-open="${esc(top.id)}"><span class="feat-badge">La nº 1 en ${esc(T.corto)}${lista.length<todas.length?" con esos filtros":""}</span>
+        <span class="feat-row">${icono(top,"lg")}<span class="t"><span class="feat-name">${esc(top.nombre)}</span><span class="feat-desc">${esc(top.desc)}</span></span>${ring(top.nota,56,true)}</span>
+        <span class="feat-tags"><span class="dtag">${gratisDot(top)}</span><span class="dtag">${NIVEL[top.nivel]||""}</span><span class="dtag">${esc(MEJOR[top.mejorEn]||"")}</span>${caro(top)?`<span class="dtag warn">⚠ ${esc(CONSUMO[top.consumo].corto)}</span>`:""}</span></button>`
+        : `<p class="empty">Ninguna IA de este tema cumple esos filtros. Prueba a quitar alguno.</p>`}
+      ${rest.length ? `<h2 class="h-sub" style="margin:26px 0 12px">También muy buenas</h2><div class="list">${rest.map((h,i)=>fila(h,i+2)).join("")}</div>` : ""}
+      ${rel.map(x=>projLink(x.p)).join("")}
+    </div>`;
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-tf]"); if(b){ temaF[b.dataset.tf] = !temaF[b.dataset.tf]; renderTema(); } });
+
+/* ---------- Todas (catálogo con filtros) ---------- */
 function chipRow(el, items, key){
   el.innerHTML = "";
   const toggle = !key.startsWith("r");
@@ -686,27 +969,26 @@ function chipRow(el, items, key){
   });
   syncChips();
 }
-function syncFiltCount(){ const n=["cat","gratis","disp","nivel"].filter(k=>st[k]).length; const el=document.getElementById("filtCount"); if(el) el.textContent = n?`(${n} activo${n>1?"s":""})`:""; }
-document.getElementById("filtToggle").addEventListener("click", e=>{ const b=document.getElementById("filtBody"); const open=b.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); });
+function syncFiltCount(){ const n=["cat","gratis","disp","nivel"].filter(k=>st[k]).length; const el=$("#filtCount"); if(el) el.textContent = n?`(${n} activo${n>1?"s":""})`:""; }
+$("#filtToggle").addEventListener("click", e=>{ const open=$("#filtBody").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); });
 function syncChips(){ syncFiltCount();
   [["#fCat","cat"],["#fGratis","gratis"],["#fDisp","disp"],["#fNivel","nivel"],["#rPrecio","rPrecio"],["#rNivel","rNivel"],["#rDisp","rDisp"]].forEach(([sel,k])=>{
-    document.querySelectorAll(sel+" .chip").forEach(c=>c.setAttribute("aria-pressed", String(String(st[k])===c.dataset.val)));
+    $$(sel+" .chip").forEach(c=>c.setAttribute("aria-pressed", String(String(st[k])===c.dataset.val)));
   });
 }
 const okDisp = (h,d) => !d || d==="cualquiera" || h.mejorEn==="ambos" || h.mejorEn===d;
 function renderGrid(){
   const q = norm(st.q);
-  let list = ALL.filter(h => (!st.cat || h.cat===st.cat) && (!st.gratis || h.gratisTipo===st.gratis) && okDisp(h,st.disp) && (!st.nivel || String(h.nivel)===st.nivel)
-    && (!q || norm([h.nombre,h.empresa,h.desc,h.para,(h.ejemplos||[]).join(" "),h.catNombre].join(" ")).includes(q)));
+  let list = ALL.filter(h => (!st.cat || h.cat===st.cat) && (!st.gratis || h.gratisTipo===st.gratis) && okDisp(h,st.disp) && (!st.nivel || String(h.nivel)===st.nivel) && (!q || coincide(h,q)));
   const by = {
     nombre:(a,b)=>a.nombre.localeCompare(b.nombre,"es"),
     fecha:(a,b)=>(b.actualizado||"").localeCompare(a.actualizado||"") || b.nota-a.nota,
     precio:(a,b)=>b.notas.precio-a.notas.precio || b.nota-a.nota,
     facilidad:(a,b)=>b.notas.facilidad-a.notas.facilidad || b.nota-a.nota,
-    nota:(a,b)=>b.nota-a.nota };
+    nota:byNota };
   list.sort(by[st.sort]||by.nota);
   $("#count").textContent = `${list.length} ${list.length===1?"herramienta":"herramientas"}`;
-  $("#grid").innerHTML = list.length ? list.map(tarjeta).join("") : `<p class="empty">Nada coincide con esos filtros. Prueba a quitar alguno o busca otra palabra.</p>`;
+  $("#grid").innerHTML = list.length ? list.map(h=>fila(h, null, `${tema(h.cat).corto} · ${h.desc}`)).join("") : `<p class="empty">Nada coincide con esos filtros. Prueba a quitar alguno o busca otra palabra.</p>`;
 }
 let qt; $("#q").addEventListener("input", e=>{ clearTimeout(qt); qt=setTimeout(()=>{ st.q=e.target.value; renderGrid(); },150); });
 $("#sort").addEventListener("change", e=>{ st.sort=e.target.value; renderGrid(); });
@@ -1002,32 +1284,35 @@ function packDeIntent(intent){
 }
 function pintarReco(txt){
   const out = $("#recoOut");
-  const irA = () => requestAnimationFrame(()=>window.scrollTo({top: out.getBoundingClientRect().top + window.scrollY - 120, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}));
+  const irA = () => requestAnimationFrame(()=>window.scrollTo({top: out.getBoundingClientRect().top + window.scrollY - 90, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}));
   if(!txt){ out.innerHTML=`<p class="empty">Escribe primero qué quieres hacer, por ejemplo «crear un logo para mi tienda».</p>`; return; }
   if(!ALL.length){ out.innerHTML=`<p class="empty">Las fichas aún se están cargando. Inténtalo en unos segundos.</p>`; return; }
   const {intent,res,descartados,modo} = recomendar(txt);
   const filt = descartados>0 ? ` He quitado ${descartados===1?"una opción que no encaja":"opciones que no encajan"} con tus filtros.` : "";
   const pack = modo==="exacto" ? packDeIntent(intent) : null;
-  out.innerHTML = `<div class="label">Tu objetivo</div><h2 class="h-section reco-head">${esc(intent.titulo)}</h2>
+  out.innerHTML = `<div class="reco-res"><span class="eyebrow-acc">Tu objetivo</span><h2 class="h-sec">${esc(intent.titulo)}</h2>
     ${intent.nota ? `<p class="reco-aviso">${esc(intent.nota)}</p>` : ""}
-    <p class="reco-note">Nuestras tres propuestas, de la más recomendada a la menos.${filt} Toca una para ver su ficha completa.</p>
-    ${res.length ? `<div class="grid">${res.map((x,i)=>`<div class="reco-item"><p class="why"><b>${i+1}</b>${esc(x.why || motivoGenerico(x.h))}</p>${tarjeta(x.h)}</div>`).join("")}</div>`
+    <p class="small" style="margin:0">De la más recomendada a la menos.${filt} Toca una para ver su ficha.</p>
+    ${res.length ? `<ol class="reco-list">${res.map((x,i)=>`<li><button type="button" class="reco-card" data-open="${esc(x.h.id)}">
+        <span class="rc-top"><span class="rc-num">${i+1}</span>${icono(x.h)}<span class="rc-name">${esc(x.h.nombre)}</span>${ring(x.h.nota,44)}</span>
+        <p class="rc-why">${esc(x.why || motivoGenerico(x.h))}</p>
+        <span class="row-tags">${gratisDot(x.h)}${consumoTag(x.h)}<span class="tagx">${esc(MEJOR[x.h.mejorEn]||"")}</span></span></button></li>`).join("")}</ol>`
       : `<p class="empty">Ninguna opción encaja con esos filtros. Prueba con «Me da igual» en alguno de ellos.</p>`}
-    ${pack ? `<p class="reco-note" style="margin-top:18px">¿Es parte de un proyecto más grande? Mira el pack <button class="linkbtn" type="button" data-pack="${pack.id}">«${esc(pack.titulo)}»</button>, con todas las IAs que necesitas y su precio total.</p>` : ""}
-    ${modo!=="exacto" ? `<p class="reco-note" style="margin-top:18px">¿No es lo que buscabas? Prueba a describirlo con otras palabras o <button class="linkbtn" type="button" id="goCat">búscalo en el catálogo</button>.</p>` : ""}`;
-  $("#goCat")?.addEventListener("click",()=>{ st.q=txt; $("#q").value=txt; renderGrid(); showView("explorar"); });
+    ${pack ? projLink(pack) : ""}
+    ${modo!=="exacto" ? `<p class="small" style="margin-top:10px">¿No es lo que buscabas? Prueba a describirlo con otras palabras o <button class="linkbtn" type="button" id="goCat">búscalo en el catálogo</button>.</p>` : ""}</div>`;
+  $("#goCat")?.addEventListener("click",()=>{ st.q=txt; $("#q").value=txt; renderGrid(); go("todas"); });
   irA();
 }
-document.addEventListener("click", e => { const p=e.target.closest("[data-pack]"); if(p){ showView("packs"); requestAnimationFrame(()=>{ const el=document.getElementById("pack-"+p.dataset.pack); if(el){ el.open=true; el.scrollIntoView({block:"start"}); window.scrollBy(0,-120); } }); } });
 $("#recoForm").addEventListener("submit", e=>{ e.preventDefault(); pintarReco($("#recoTxt").value.trim()); });
-$("#askForm").addEventListener("submit", e=>{ e.preventDefault(); const v=$("#askTxt").value.trim(); $("#recoTxt").value=v; showView("reco"); pintarReco(v); });
+$("#askForm").addEventListener("submit", e=>{ e.preventDefault(); const v=$("#askTxt").value.trim(); $("#recoTxt").value=v; go("reco"); setTimeout(()=>pintarReco(v),60); });
 
 const IDEAS = ["Hacer una canción para un cumpleaños","Quitar el fondo de una foto","Resumir mis apuntes para un examen","Crear la web de mi negocio","Subtitular un vídeo para Instagram","Hacer una presentación para el trabajo","Leer un PDF en voz alta","Aprender a programar","Practicar inglés hablando","Hacer un logo"];
 const ideasHTML = n => IDEAS.slice(0,n).map(i=>`<button type="button" class="idea">${esc(i)}</button>`).join("");
 $("#ideas").innerHTML = ideasHTML(IDEAS.length); $("#ideasHome").innerHTML = ideasHTML(6);
-function onIdea(e){ const b=e.target.closest(".idea"); if(!b) return; $("#recoTxt").value=b.textContent; $("#askTxt").value=b.textContent; showView("reco"); pintarReco(b.textContent); }
+function onIdea(e){ const b=e.target.closest(".idea"); if(!b) return; $("#recoTxt").value=b.textContent; $("#askTxt").value=b.textContent; go("reco"); setTimeout(()=>pintarReco(b.textContent),60); }
 $("#ideas").addEventListener("click", onIdea); $("#ideasHome").addEventListener("click", onIdea);
 
+/* ---------- Mi pack ---------- */
 /* ---------- Crea tu pack ---------- */
 let MIPACK = {nombre:"", items:[]};   // items: {id, precio (número o null), gratis (bool)}
 function guardarPack(){ try{ localStorage.setItem("cualia-mipack", JSON.stringify(MIPACK)); }catch(e){} }
@@ -1056,13 +1341,13 @@ function renderBuilder(){
         ${h.gratisTipo!=="no" ? `<label><input type="checkbox" data-bgratis="${esc(h.id)}" ${x.gratis?"checked":""}> Usaré lo gratis</label>` : `<span class="small">Sin versión gratis</span>`}
         <span class="b-amount">${x.gratis ? `<b>0 €</b>` : `<input type="number" min="0" step="1" inputmode="decimal" aria-label="Precio al mes de ${esc(h.nombre)}" data-bprecio="${esc(h.id)}" value="${x.precio??""}" placeholder="?"><span class="small">€/mes</span>`}</span>
       </div></li>`; }).join("");
-  $("#bList").innerHTML = list || `<li><p class="b-empty">Aún no has añadido ninguna IA. Búscala arriba o pulsa «+ Añadir a mi pack» en cualquier ficha.</p></li>`;
+  $("#bList").innerHTML = list || `<li><p class="b-empty">Aún no has añadido ninguna IA. Búscala arriba o pulsa «+ Mi pack» en cualquier ficha, o añade un proyecto entero.</p></li>`;
   const {t,faltan} = totalPack();
   $("#bTotal").innerHTML = `<span><span class="label">Total al mes</span><br><span class="small">${MIPACK.items.length} ${MIPACK.items.length===1?"IA":"IAs"}${faltan?` · falta el precio de ${faltan}`:""}</span></span><span class="v">≈ ${t.toLocaleString("es-ES")} €</span>`;
   const cred = MIPACK.items.filter(x=>!x.gratis && ["creditos","uso"].includes(byId.get(x.id)?.consumo)).map(x=>byId.get(x.id).nombre);
   const bx = document.getElementById("bExtra");
   if(bx){ bx.hidden = !cred.length; bx.innerHTML = cred.length ? `<b>⚠ Ojo:</b> ${esc(listaY(cred))} ${cred.length>1?"cobran":"cobra"} por créditos o por uso. Si trabajas mucho, el gasto real será mayor que este total.` : ""; }
-  $("#bShare").disabled = !MIPACK.items.length; $("#bClear").disabled = !MIPACK.items.length;
+  syncNavCount(); $("#bShare").disabled = !MIPACK.items.length; $("#bClear").disabled = !MIPACK.items.length;
 }
 $("#bName").addEventListener("input", e=>{ MIPACK.nombre = e.target.value.slice(0,60); guardarPack(); });
 $("#bSearch").addEventListener("input", e=>{
@@ -1076,7 +1361,6 @@ document.addEventListener("click", e=>{
   const s = e.target.closest("[data-bsel]"); if(s){ addPack(s.dataset.bsel); $("#bSearch").value=""; $("#bSuggest").hidden=true; $("#bSearch").focus(); return; }
   if(!e.target.closest(".b-add")) $("#bSuggest").hidden = true;
   const d = e.target.closest("[data-bdel]"); if(d){ quitarPack(d.dataset.bdel); return; }
-  const a = e.target.closest("[data-addpack]"); if(a){ addPack(a.dataset.addpack); a.textContent="✓ En tu pack"; }
 });
 document.addEventListener("change", e=>{
   const g = e.target.closest("[data-bgratis]"); if(g){ const it = MIPACK.items.find(x=>x.id===g.dataset.bgratis); if(it){ it.gratis = g.checked; guardarPack(); renderBuilder(); } }
@@ -1094,7 +1378,7 @@ function enlacePack(){
 $("#bShare").addEventListener("click", async ()=>{
   const url = enlacePack();
   try{ await navigator.clipboard.writeText(url); $("#bMsg").textContent = "Enlace copiado. Quien lo abra verá tu pack con su precio total."; }
-  catch(e){ $("#bMsg").innerHTML = `Copia este enlace: <input class="search" style="margin-top:6px" readonly value="${esc(url)}" onclick="this.select()">`; }
+  catch(e){ $("#bMsg").innerHTML = `Copia este enlace: <input class="input" style="margin-top:6px" readonly value="${esc(url)}" onclick="this.select()">`; }
 });
 $("#bClear").addEventListener("click", ()=>{ MIPACK = {nombre:"", items:[]}; guardarPack(); renderBuilder(); $("#bMsg").textContent = "Pack vaciado."; });
 function leerPackCompartido(){
@@ -1109,41 +1393,54 @@ function leerPackCompartido(){
   const note = $("#sharedNote"); note.hidden = false;
   note.textContent = `Te han compartido ${MIPACK.nombre?`el pack «${MIPACK.nombre}»`:"un pack"}. Ya está cargado aquí: puedes cambiarlo como quieras.`;
   history.replaceState(null,"",location.pathname);
-  showView("packs",false); return true;
+  go("mipack"); return true;
 }
+function syncNavCount(){ $$(".nav-count").forEach(el => el.textContent = MIPACK.items.length || ""); }
 
-/* ---------- Packs ---------- */
-const euros = n => n===0 ? "0 €" : `≈ ${n} €`;
-const listaY = a => a.length<2 ? a.join("") : a.slice(0,-1).join(", ")+" y "+a[a.length-1];
-function renderPacks(){
-  $("#packs").innerHTML = PACKS.map(p=>{
-    const iconos = p.pasos.map(s=>icono(byName.get(s.ia)||{nombre:s.ia},"sm")).join("");
-    const pasos = p.pasos.map(s=>{ const h = byName.get(s.ia) || {nombre:s.ia}; return `
-      <li><button type="button" class="step" ${h.id?`data-open="${esc(h.id)}"`:""}>${icono(h,"sm")}
-        <span style="min-width:0"><span class="sn">${esc(s.ia)}</span><br><span class="sr">${esc(s.rol)}</span></span>
-        <span class="sp">${s.precio ? `${euros(s.precio)}/mes<small>${esc(s.plan)}</small>` : `Gratis<small>&nbsp;</small>`}${h.consumo==="creditos"&&s.precio?`<span class="extra">+ créditos si lo usas mucho</span>`:""}</span></button></li>`; }).join("");
-    const conCred = p.pasos.filter(s=>s.precio && byName.get(s.ia)?.consumo==="creditos").map(s=>s.ia);
-    const extra = conCred.length ? `<p class="pack-extra"><b>⚠ Ojo:</b> ${esc(listaY(conCred))} ${conCred.length>1?"funcionan":"funciona"} con créditos. El precio es el de partida: si trabajas mucho, se acaban y tendrás que comprar más.</p>` : "";
-    return `<details class="pack" id="pack-${esc(p.id)}">
-      <summary class="pack-sum">
-        <span class="pack-head"><span class="pack-h3">${esc(p.titulo)}</span><span class="pack-chev" aria-hidden="true"></span></span>
-        <span class="para">${esc(p.para)}</span>
-        <span class="pack-row"><span class="pack-icons">${iconos}</span>
-          <span class="pack-prices"><span class="pill g-libre">Gratis: 0 €</span><span class="pill">Completo: ${euros(p.total)}/mes${conCred.length?" o más":""}</span></span></span>
-        <span class="c-more pack-cta"></span>
-      </summary>
-      <div class="pack-body">
-        <ol class="steps">${pasos}</ol>
-        <div class="pack-total">
-          <div class="tot free"><span class="t">Versión gratis</span><span class="v">0 €</span><span class="small">Con límites</span></div>
-          <div class="tot full"><span class="t">Versión completa</span><span class="v">${euros(p.total)}<span style="font-size:14px">/mes</span></span><span class="small">Suma de los planes básicos</span></div>
-        </div>
-        ${extra}
-        <p class="pack-note"><b>Con la versión gratis:</b> ${esc(p.notaGratis)}</p>
-      </div>
-    </details>`;
-  }).join("");
+/* ---------- Proyectos ---------- */
+function renderPacks(){ $("#packs").innerHTML = PACKS.map(p=>projCard(p,false)).join(""); }
+let projModo = "completo";
+const limpiaG = g => String(g||"").replace(/^—\s*\((.*)\)$/, (m,x)=>x.charAt(0).toUpperCase()+x.slice(1));
+function renderProyecto(){
+  const p = PACKS.find(x=>x.id===route.arg); if(!p){ go("proyectos"); return; }
+  const c = projModo==="completo";
+  const cred = credPack(p);
+  const pasos = p.pasos.map((s,i)=>{ const h = byName.get(s.ia) || {nombre:s.ia}; const pago = c && s.precio;
+    return `<li class="tl"><span class="tl-n">${i+1}</span><button type="button" class="tl-card" ${h.id?`data-open="${esc(h.id)}"`:""}>${icono(h)}
+      <span class="tl-main"><span class="tl-name">${esc(s.ia)}</span><span class="tl-rol">${esc(s.rol)}</span></span>
+      <span class="tl-price${pago?"":" free"}">${pago ? euros(s.precio) : "0 €"}</span>
+      <span class="tl-det">${pago ? `Plan ${esc(s.plan)} al mes` : `Gratis: ${esc(limpiaG(s.gratis))}`}${pago && h.consumo==="creditos" ? ` · <span class="tl-extra">+ créditos si lo usas mucho</span>` : ""}</span></button></li>`; }).join("");
+  const otros = PACKS.filter(x=>x.id!==p.id).map(x=>projCard(x,false)).join("");
+  $("#projOut").innerHTML = `
+    <div class="proj-hero">
+      <a class="back dark" href="#proyectos" data-back="proyectos" aria-label="Volver">${svg(P.back,22,2.2)}</a>
+      <span class="eyebrow">Proyecto · ${p.pasos.length} pasos</span>
+      <h1>${esc(p.titulo)}</h1><p>${esc(p.para)}</p>
+      <div class="seg" role="group" aria-label="Versión"><button type="button" data-pm="gratis" aria-pressed="${!c}">Gratis</button><button type="button" data-pm="completo" aria-pressed="${c}">Completo</button></div>
+    </div>
+    <ol class="timeline">${pasos}</ol>
+    <div class="total${c?"":" free"}"><div class="tr"><span>Total al mes</span><b>${c ? euros(p.total)+(cred.length?"+":"") : "0 €"}</b></div>
+      <p>${c ? `Suma de los planes de pago más básicos: sin marcas de agua y con más usos.${cred.length ? ` <b>Ojo:</b> ${esc(listaY(cred))} ${cred.length>1?"funcionan":"funciona"} con créditos; si trabajas mucho se acaban y tendrás que comprar más.` : ""}` : `<b>Con la versión gratis:</b> ${esc(p.notaGratis||"")}`}</p></div>
+    <div class="proj-actions"><button type="button" class="btn" data-packall="${esc(p.id)}">Añadir estas IAs a mi pack</button><button type="button" class="btn-sec" data-sharepack="${esc(p.id)}" aria-label="Compartir este proyecto">${svg(P.share)}</button></div>
+    <p class="small" id="projMsg" aria-live="polite" style="margin:10px 0 0"></p>
+    <section class="sec"><h2 class="h-sub" style="margin-bottom:12px">Otros proyectos</h2><div class="rail">${otros}</div></section>`;
 }
+document.addEventListener("click", async e => {
+  const m = e.target.closest("[data-pm]"); if(m){ projModo = m.dataset.pm; renderProyecto(); return; }
+  const a = e.target.closest("[data-packall]"); if(a){
+    const p = PACKS.find(x=>x.id===a.dataset.packall); let n = 0;
+    p.pasos.forEach(s=>{ const h = byName.get(s.ia); if(!h || enPack(h.id)) return; MIPACK.items.push({id:h.id, precio: s.precio || precioBase(h), gratis: projModo==="gratis" || !s.precio}); n++; });
+    if(!MIPACK.nombre) MIPACK.nombre = p.titulo;
+    guardarPack(); renderBuilder();
+    $("#projMsg").innerHTML = n ? `Añadidas ${n} ${n===1?"IA":"IAs"} a tu pack. <a href="#mipack">Ver mi pack →</a>` : `Ya tenías todas en tu pack. <a href="#mipack">Ver mi pack →</a>`;
+    return; }
+  const s = e.target.closest("[data-sharepack]"); if(s){
+    const p = PACKS.find(x=>x.id===s.dataset.sharepack);
+    const url = new URL(`pack/${p.id}/`, location.href.split("#")[0].split("?")[0]).toString();
+    try{ if(navigator.share){ await navigator.share({title:p.titulo+" · Cualia", url}); return; } await navigator.clipboard.writeText(url); $("#projMsg").textContent = "Enlace copiado."; }
+    catch(err){ if(err && err.name==="AbortError") return; $("#projMsg").innerHTML = `Copia este enlace: <input class="input" style="margin-top:6px" readonly value="${esc(url)}" onclick="this.select()">`; }
+  }
+});
 
 /* ---------- Guía ---------- */
 const TIPS = [
@@ -1169,7 +1466,7 @@ const GLOS = [
  ["API","Una forma de conectar la IA a tus propias aplicaciones. Se paga por uso y está pensada para programadores."],
 ];
 $("#guiaNota").innerHTML = guiaNotaHTML();
-$("#guiaGratis").innerHTML = Object.entries(GRATIS).map(([k,g])=>`<li><span><span class="pill g-${k}">${g.txt}</span></span><span>${g.expl}</span></li>`).join("");
+$("#guiaGratis").innerHTML = Object.entries(GRATIS).map(([k,g])=>`<li><span><span class="gdot g-${k}"><i></i>${g.txt}</span></span><span>${g.expl}</span></li>`).join("");
 $("#tips").innerHTML = TIPS.map(([t,d])=>`<li><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join("");
 $("#glosario").innerHTML = GLOS.map(([t,d])=>`<div><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join("");
 
@@ -1181,18 +1478,21 @@ chipRow($("#rNivel"), [["cualquiera","Cualquiera"],["nuevo","Soy principiante"],
 chipRow($("#rDisp"), [["cualquiera","Cualquiera"],["movil","Desde el móvil"],["ordenador","Desde el ordenador"]], "rDisp");
 
 /* ---------- Novedades ---------- */
-function renderLog(){
-  $("#log").innerHTML = LOG.length ? LOG.map(n=>{
+function logItems(items){
+  return items.map(n=>{
     const h = byName.get(n.ia);
     const ico = h ? icono(h,"sm") : icono({nombre:n.ia||"Cualia"},"sm");
-    return `<li>${ico}<div><time>${fecha(n.fecha)}</time><div class="lt">${h?`<button class="linkbtn" style="font-size:16px;text-decoration:none;color:var(--ink)" data-open="${esc(h.id)}">${esc(n.ia)}</button>`:esc(n.ia||"")}</div><p>${esc(n.texto)}</p></div></li>`;
-  }).join("") : `<li>Aún no hay novedades registradas.</li>`;
+    return `<li>${ico}<div><time>${fecha(n.fecha)}</time><div class="lt">${h?`<button class="linkbtn" style="font-size:16px;color:var(--ink)" data-open="${esc(h.id)}">${esc(n.ia)}</button>`:esc(n.ia||"")}</div><p>${esc(n.texto)}</p></div></li>`;
+  }).join("");
 }
+function renderLog(){ $("#log").innerHTML = LOG.length ? logItems(LOG) : `<li>Aún no hay novedades registradas.</li>`; }
 function renderFresh(){
-  $("#fresh").innerHTML = META.ultimaRevision ? `${ALL.length} IAs · revisado el <b>${fecha(META.ultimaRevision)}</b>` : (ALL.length ? `${ALL.length} IAs` : "Cargando fichas…");
+  $("#fresh").innerHTML = META.ultimaRevision ? `${ALL.length} IAs · revisadas el <b>${fecha(META.ultimaRevision)}</b>` : (ALL.length ? `${ALL.length} IAs` : "Cargando fichas…");
+  $("#freshTop").textContent = META.ultimaRevision ? `Al día · ${fechaCorta(META.ultimaRevision)}` : "";
 }
 
 /* ---------- Datos ---------- */
+render(false);
 fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
   META = d.meta || {};
   CATS = (d.cats||[]).filter(c=>Array.isArray(c.herramientas)).sort((a,b)=>(a.orden||99)-(b.orden||99));
@@ -1200,12 +1500,14 @@ fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; retu
   ALL.forEach(h=>{ byName.set(h.nombre,h); byId.set(h.id,h); });
   LOG = (d.novedades||[]).slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
   PACKS = d.packs || [];
-  chipRow($("#fCat"), CATS.map(c=>[c.id,c.nombre]), "cat");
-  renderRanking(); renderGrid(); renderFresh(); renderLog(); renderPacks();
-  cargarPack(); leerPackCompartido(); renderBuilder();
+  chipRow($("#fCat"), CATS.map(c=>[c.id,tema(c.id).corto]), "cat");
+  cargarPack();
+  renderInicio(); renderRanking(); renderGrid(); renderFresh(); renderLog(); renderPacks();
+  leerPackCompartido(); renderBuilder();
+  render(false);
   const iaParam = new URLSearchParams(location.search).get("ia");
-  if(iaParam){ const x = ALL.find(h=>h.slug===iaParam); if(x){ history.replaceState(null,"",location.pathname); showView("explorar",false); abrirFicha(x.id); } }
-}).catch(()=>{ $("#fresh").textContent = "No se pudieron cargar las fichas. Recarga la página."; });
+  if(iaParam){ const x = ALL.find(h=>h.slug===iaParam); if(x){ history.replaceState(null,"",location.pathname+location.hash); abrirFicha(x.id); } }
+}).catch(err=>{ console.error(err); $("#fresh").textContent = "No se pudieron cargar las fichas. Recarga la página."; });
 </script>
 <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8693430a24394f339b7e26f53a417319"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

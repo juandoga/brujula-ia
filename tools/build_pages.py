@@ -70,7 +70,7 @@ for c in d["cats"]:
 <div class="card con"><h2>Desventajas</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('contras',[]))}</ul></div></div>
 <h2>Para quién es</h2><p>{e(h['para'])}</p>
 <h2>Ejemplos de uso</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('ejemplos',[]))}</ul>
-<h2>Nota de Cualia: {h['nota']}/100</h2><p>Calidad {n.get('calidad')}/10 · Versatilidad {n.get('versatilidad')}/10 · Facilidad {n.get('facilidad')}/10 · Precio {n.get('precio')}/10. <a href="{SITE}/#consejos">Cómo se calcula</a>.</p>
+<h2>Nota de Cualia: {h['nota']}/100</h2><p>Calidad {n.get('calidad')}/10 · Versatilidad {n.get('versatilidad')}/10 · Facilidad {n.get('facilidad')}/10 · Precio {n.get('precio')}/10. <a href="{SITE}/#guia">Cómo se calcula</a>.</p>
 {('<h2>Novedad</h2><p>'+e(h['novedad'])+'</p>') if h.get('novedad') else ''}
 {('<h2>Packs que la incluyen</h2><div class="list">'+''.join(f'<a href="{SITE}/pack/{e(p["id"])}/">{e(p["titulo"])} <span>· ≈ {p["total"]} €/mes completo</span></a>' for p in packs)+'</div>') if packs else ''}
 <h2>Alternativas a {e(h['nombre'])}</h2><div class="list">{''.join(f'<a href="{SITE}/ia/{e(a["slug"])}/">{e(a["nombre"])} <span>· nota {a["nota"]} · {e(GRATIS.get(a["gratisTipo"],""))}</span></a>' for a in alternativas)}</div>
@@ -92,7 +92,7 @@ for p in d.get("packs", []):
 <div class="row"><span class="pill">Versión gratis: 0 €</span><span class="pill">Versión completa: ≈ {p['total']} €/mes</span></div>
 <h2>Paso a paso</h2><div class="card"><table>{filas}</table></div>
 <h2>¿Se puede hacer gratis?</h2><p>{e(p['notaGratis'])}</p>
-<p><a class="cta" href="{SITE}/#packs">Ver todos los packs</a></p>"""
+<p><a class="cta" href="{SITE}/#proyectos">Ver todos los packs</a></p>"""
     titulo = f"{p['titulo']}: IAs necesarias y precio total | Cualia"
     desc = f"{p['titulo']} con inteligencia artificial: qué IAs usar en cada paso, qué se puede hacer gratis y cuánto cuesta la versión completa (≈ {p['total']} €/mes)."
     pagina(f"pack/{p['id']}/index.html", titulo, desc, cuerpo, canon)
