@@ -259,6 +259,12 @@ select.sort{padding:9px 12px;border:1.5px solid var(--rule-2);border-radius:12px
 .filt-body{display:grid;gap:14px}
 @media (max-width:640px){.filt-toggle{display:inline-flex;min-height:42px}.filt-body:not(.open){display:none}}
 .count{font-size:14px;color:var(--faint);margin:16px 0 10px}
+.cat-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding:2px 16px 4px}
+.cat-row::-webkit-scrollbar{display:none}
+.cat-row .chip{flex:0 0 auto}
+.ex-tools{display:grid;gap:12px;margin-top:12px}
+@media (min-width:641px){.ex-tools .filt-body{padding:16px}}
+@media (min-width:900px){.cat-row{flex-wrap:wrap;overflow:visible;margin:0;padding:0}}
 
 /* Página de un tema */
 .tema-hero{--t-bg:#EDE8FF;--t-c:#5B3FD9;background:var(--t-bg);color:#14121F;margin:-12px -16px 0;padding:14px 16px 24px;border-radius:0 0 28px 28px;display:flex;flex-direction:column;gap:14px}
@@ -492,7 +498,7 @@ footer.foot nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-siz
     </div>
 
     <section class="sec">
-      <div class="sec-head"><h2 class="h-sec">Explora por tema</h2><a href="#explorar">Ranking</a></div>
+      <div class="sec-head"><h2 class="h-sec">Explora por tema</h2><a href="#explorar">Ver ranking</a></div>
       <div class="temas" id="temasHome"></div>
     </section>
 
@@ -537,36 +543,13 @@ footer.foot nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-siz
 
   <!-- EXPLORAR -->
   <section class="view" id="v-explorar" hidden>
-    <div class="page-head"><div><h1 class="h-page">Explorar</h1><p class="lede">Las 240 IAs, ordenadas por temas y por nota.</p></div></div>
-    <div class="searchbox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <label class="sr" for="exQ">Buscar una IA</label><input id="exQ" type="search" placeholder="Busca una IA o una tarea: logo, subtítulos…" autocomplete="off"></div>
-    <div id="exResults" hidden></div>
-    <div id="exDefault">
-      <div class="temas" id="temasEx"></div>
-      <section class="sec">
-        <div class="sec-head"><h2 class="h-sec">Ranking general</h2><button class="linkbtn" type="button" data-explica>¿De dónde sale la nota?</button></div>
-        <p class="sec-sub">Todas juntas. Suben las que sirven para muchas cosas; para una tarea concreta, entra en su tema.</p>
-        <div class="list cols" id="rankList"><p class="empty">Cargando el ranking…</p></div>
-        <button class="more" type="button" id="rankMore">Ver el top 25</button>
-      </section>
-      <a class="banner" href="#todas"><span>Ver las 240 con filtros<span>Por precio, nivel, móvil u ordenador</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
-    </div>
-  </section>
-
-  <!-- UN TEMA -->
-  <section class="view" id="v-tema" hidden><div id="temaOut"></div></section>
-
-  <!-- TODAS -->
-  <section class="view" id="v-todas" hidden>
-    <div class="page-head">
-      <a class="back" href="#explorar" data-back="explorar" aria-label="Volver"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-      <div><h1 class="h-page">Todas las IAs</h1><p class="lede">Filtra por lo que te importa. Toca una para ver su ficha.</p></div>
-    </div>
-    <div class="panel">
-      <input class="input" id="q" type="search" placeholder="Busca por nombre o tarea: subtítulos, logo, podcast…" aria-label="Buscar">
-      <button type="button" class="btn-sec filt-toggle" id="filtToggle" aria-expanded="false" aria-controls="filtBody">Filtros <span id="filtCount"></span></button>
-      <div class="filt-body" id="filtBody">
-        <div class="frow"><span class="fl">Tema</span><div class="chips" id="fCat"></div></div>
+    <div class="page-head"><div><h1 class="h-page">Explorar</h1><p class="lede">Las 240 IAs ordenadas por nota. Filtra por tema o por lo que te importa.</p></div></div>
+    <div class="searchbox" style="margin:0 0 14px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label class="sr" for="q">Buscar una IA</label><input id="q" type="search" placeholder="Busca una IA o una tarea: logo, subtítulos…" autocomplete="off"></div>
+    <div class="chips cat-row" id="fCat" role="group" aria-label="Tema"></div>
+    <div class="ex-tools">
+      <button type="button" class="btn-sec filt-toggle" id="filtToggle" aria-expanded="false" aria-controls="filtBody">Más filtros <span id="filtCount"></span></button>
+      <div class="panel filt-body" id="filtBody">
         <div class="frow"><span class="fl">Versión gratis</span><div class="chips" id="fGratis"></div></div>
         <div class="frow"><span class="fl">Mejor en</span><div class="chips" id="fDisp"></div></div>
         <div class="frow"><span class="fl">Nivel</span><div class="chips" id="fNivel"></div></div>
@@ -580,15 +563,21 @@ footer.foot nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-siz
           </select></div></div>
       </div>
     </div>
-    <p class="count" id="count"></p>
-    <div class="list cols" id="grid"></div>
+    <div class="sec-head" style="margin:22px 0 4px"><h2 class="h-sec" id="exTitle">Ranking general</h2><button class="linkbtn" type="button" data-explica>¿De dónde sale la nota?</button></div>
+    <p class="sec-sub" id="exHelp" style="margin:0 0 6px"></p>
+    <p class="count" id="count" style="margin-top:0"></p>
+    <div class="list cols" id="grid"><p class="empty">Cargando el ranking…</p></div>
+    <button class="more" type="button" id="gridMore" hidden>Ver más</button>
   </section>
+
+
+  <section class="view" id="v-tema" hidden><div id="temaOut"></div></section>
 
   <!-- PROYECTOS -->
   <section class="view" id="v-proyectos" hidden>
     <div class="page-head"><div><h1 class="h-page">Proyectos paso a paso</h1><p class="lede">Muchos proyectos necesitan varias IAs. Aquí tienes combinaciones probadas, con lo que puedes hacer gratis y lo que cuesta al mes la versión completa.</p></div></div>
-    <a class="create-card" href="#mipack"><span class="t"><b>Crea tu propio pack</b><span>Junta las IAs que usas y te sumamos lo que cuestan al mes.</span></span><span class="go"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     <div class="proj-grid" id="packs"></div>
+    <a class="create-card" href="#mipack"><span class="t"><b>Crea tu propio pack</b><span>Junta las IAs que usas y te sumamos lo que cuestan al mes.</span></span><span class="go"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     <p class="small" style="margin-top:18px;max-width:75ch">Precios aproximados al mes en euros, con el plan de pago más básico que sirve para ese uso. Algunos se cobran en dólares y el importe final puede variar con el cambio y el IVA. Pagando por año suele salir más barato.</p>
   </section>
 
@@ -652,7 +641,7 @@ footer.foot nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-siz
   </section>
 
   <footer class="foot">
-    <nav aria-label="Más"><a href="#guia">Guía</a><a href="#novedades">Novedades</a><a href="#todas">Todas las IAs</a><a href="#proyectos">Proyectos</a></nav>
+    <nav aria-label="Más"><a href="#guia">Guía</a><a href="#novedades">Novedades</a><a href="#explorar">Todas las IAs</a><a href="#proyectos">Proyectos</a></nav>
     <p><b>Nota.</b> Va de 0 a 100 y combina calidad (40 %), versatilidad (20 %), facilidad de uso (20 %) y relación calidad-precio (20 %). Cada parte es una valoración de Cualia del 0 al 10. <button class="linkbtn" type="button" data-explica>Ver explicación</button></p>
     <p>Los precios son orientativos: varían por país y cambian a menudo. «Verificado» indica que la ficha se contrastó con fuentes en su última revisión; «pendiente de verificar», que aún no se ha comprobado en detalle.</p>
     <p>Cualia no tiene relación comercial con ninguna de estas empresas. Los logotipos pertenecen a sus propietarios y se muestran solo para identificar cada herramienta.</p>
@@ -698,7 +687,7 @@ const norm = s => String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/
 
 let CATS = [], ALL = [], META = {}, LOG = [], PACKS = [];
 const byName = new Map(), byId = new Map();
-const st = {q:"", cat:null, gratis:null, disp:null, nivel:null, sort:"nota", rPrecio:"cualquiera", rNivel:"cualquiera", rDisp:"cualquiera"};
+const st = {q:"", cat:"", gratis:null, disp:null, nivel:null, sort:"nota", rPrecio:"cualquiera", rNivel:"cualquiera", rDisp:"cualquiera"};
 const byNota = (a,b) => b.nota-a.nota || b.notas.calidad-a.notas.calidad;
 
 /* ---------- Dibujos ---------- */
@@ -760,9 +749,9 @@ function fila(h, pos, sub){
 }
 
 /* ---------- Navegación ---------- */
-const VIEWS = ["inicio","reco","explorar","tema","todas","proyectos","proyecto","mipack","guia","novedades"];
-const ALIAS = {ranking:"inicio", consejos:"guia", packs:"proyectos", catalogo:"todas"};
-const NAVOF = {inicio:"inicio",reco:"inicio",explorar:"explorar",tema:"explorar",todas:"explorar",proyectos:"proyectos",proyecto:"proyectos",mipack:"mipack",guia:"guia",novedades:"guia"};
+const VIEWS = ["inicio","reco","explorar","tema","proyectos","proyecto","mipack","guia","novedades"];
+const ALIAS = {ranking:"inicio", consejos:"guia", packs:"proyectos", catalogo:"explorar", todas:"explorar"};
+const NAVOF = {inicio:"inicio",reco:"inicio",explorar:"explorar",tema:"inicio",proyectos:"proyectos",proyecto:"proyectos",mipack:"mipack",guia:"guia",novedades:"guia"};
 let route = {v:"inicio", arg:null}, navCount = 0;
 function parseHash(){
   const [v0, arg] = decodeURIComponent(location.hash.slice(1)).split("/");
@@ -901,7 +890,7 @@ function projLink(p){
 }
 function renderInicio(){
   const temas = CATS.map(temaTile).join("");
-  $("#temasHome").innerHTML = temas; $("#temasEx").innerHTML = temas;
+  $("#temasHome").innerHTML = temas;
   $("#projRail").innerHTML = PACKS.map(p=>projCard(p,true)).join("");
   $("#projRail2").innerHTML = PACKS.map(p=>projCard(p,true)).join("");
   $("#projAll").textContent = `Ver los ${PACKS.length}`;
@@ -912,24 +901,7 @@ function renderInicio(){
 }
 
 /* ---------- Explorar ---------- */
-let rankN = 10;
-function renderRanking(){
-  const lista = ALL.slice().sort(byNota).slice(0, rankN);
-  $("#rankList").innerHTML = lista.map((h,i)=>fila(h, i+1, tema(h.cat).corto)).join("");
-  $("#rankMore").textContent = rankN===10 ? "Ver el top 25" : "Ver solo el top 10";
-}
-$("#rankMore").addEventListener("click", ()=>{ rankN = rankN===10 ? 25 : 10; renderRanking(); });
 const coincide = (h,q) => norm([h.nombre,h.empresa,h.desc,h.para,(h.ejemplos||[]).join(" "),h.catNombre,tema(h.cat).corto].join(" ")).includes(q);
-let exT; $("#exQ").addEventListener("input", e=>{ clearTimeout(exT); exT = setTimeout(()=>{
-  const q = norm(e.target.value.trim()); const out = $("#exResults");
-  $("#exDefault").hidden = !!q; out.hidden = !q; if(!q) return;
-  const res = ALL.filter(h=>coincide(h,q)).sort(byNota);
-  out.innerHTML = res.length
-    ? `<p class="count" style="margin-top:0">${res.length} ${res.length===1?"resultado":"resultados"}</p><div class="list cols">${res.slice(0,40).map(h=>fila(h)).join("")}</div>${res.length>40?`<a class="banner" href="#todas" id="exAll"><span>Ver los ${res.length} con filtros</span>${svg(P.next,20,2.4)}</a>`:""}`
-    : `<p class="empty">No encontramos nada con «${esc(e.target.value)}». Prueba con otra palabra o <a href="#reco" id="exReco">cuéntanos qué quieres hacer</a>.</p>`;
-  $("#exAll")?.addEventListener("click", ()=>{ st.q = e.target.value; $("#q").value = e.target.value; renderGrid(); });
-  $("#exReco")?.addEventListener("click", ()=>{ $("#recoTxt").value = e.target.value; setTimeout(()=>pintarReco(e.target.value),0); });
-}, 150); });
 
 /* ---------- Un tema ---------- */
 const temaF = {gratis:false, facil:false, movil:false};
@@ -942,7 +914,7 @@ function renderTema(){
   const rel = PACKS.map(p=>({p, n:p.pasos.filter(s=>byName.get(s.ia)?.cat===cat.id).length})).filter(x=>x.n).sort((a,b)=>b.n-a.n).slice(0,2);
   $("#temaOut").innerHTML = `
     <div class="tema-hero" style="${temaVars(cat.id)}">
-      <a class="back" href="#explorar" data-back="explorar" aria-label="Volver">${svg(P.back,22,2.2)}</a>
+      <a class="back" href="#inicio" data-back="inicio" aria-label="Volver">${svg(P.back,22,2.2)}</a>
       <div class="tema-id"><span class="tema-ico">${svg(P[cat.id]||P.chat,30)}</span><div><h1>${esc(T.corto)}</h1><p>${esc(cat.desc||"")}</p></div></div>
     </div>
     <div class="tema-body">
@@ -961,15 +933,15 @@ document.addEventListener("click", e => { const b = e.target.closest("[data-tf]"
 /* ---------- Todas (catálogo con filtros) ---------- */
 function chipRow(el, items, key){
   el.innerHTML = "";
-  const toggle = !key.startsWith("r");
+  const toggle = !key.startsWith("r") && key!=="cat";
   items.forEach(([val,label])=>{
     const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=label; b.dataset.val=val;
-    b.addEventListener("click",()=>{ st[key] = (toggle && st[key]===val) ? null : val; syncChips(); if(toggle) renderGrid(); });
+    b.addEventListener("click",()=>{ st[key] = (toggle && st[key]===val) ? null : val; syncChips(); if(!key.startsWith("r")) renderGrid(); });
     el.appendChild(b);
   });
   syncChips();
 }
-function syncFiltCount(){ const n=["cat","gratis","disp","nivel"].filter(k=>st[k]).length; const el=$("#filtCount"); if(el) el.textContent = n?`(${n} activo${n>1?"s":""})`:""; }
+function syncFiltCount(){ const n=["gratis","disp","nivel"].filter(k=>st[k]).length; const el=$("#filtCount"); if(el) el.textContent = n?`(${n} activo${n>1?"s":""})`:""; }
 $("#filtToggle").addEventListener("click", e=>{ const open=$("#filtBody").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); });
 function syncChips(){ syncFiltCount();
   [["#fCat","cat"],["#fGratis","gratis"],["#fDisp","disp"],["#fNivel","nivel"],["#rPrecio","rPrecio"],["#rNivel","rNivel"],["#rDisp","rDisp"]].forEach(([sel,k])=>{
@@ -977,7 +949,9 @@ function syncChips(){ syncFiltCount();
   });
 }
 const okDisp = (h,d) => !d || d==="cualquiera" || h.mejorEn==="ambos" || h.mejorEn===d;
-function renderGrid(){
+let gridN = 25;
+function renderGrid(reset){
+  if(reset!==false) gridN = 25;
   const q = norm(st.q);
   let list = ALL.filter(h => (!st.cat || h.cat===st.cat) && (!st.gratis || h.gratisTipo===st.gratis) && okDisp(h,st.disp) && (!st.nivel || String(h.nivel)===st.nivel) && (!q || coincide(h,q)));
   const by = {
@@ -987,9 +961,18 @@ function renderGrid(){
     facilidad:(a,b)=>b.notas.facilidad-a.notas.facilidad || b.nota-a.nota,
     nota:byNota };
   list.sort(by[st.sort]||by.nota);
-  $("#count").textContent = `${list.length} ${list.length===1?"herramienta":"herramientas"}`;
-  $("#grid").innerHTML = list.length ? list.map(h=>fila(h, null, `${tema(h.cat).corto} · ${h.desc}`)).join("") : `<p class="empty">Nada coincide con esos filtros. Prueba a quitar alguno o busca otra palabra.</p>`;
+  const cat = CATS.find(c=>c.id===st.cat);
+  const otros = ["gratis","disp","nivel"].some(k=>st[k]) || q;
+  $("#exTitle").textContent = q ? "Resultados" : cat ? `Ranking: ${tema(cat.id).corto}` : "Ranking general";
+  $("#exHelp").innerHTML = q ? "" : cat ? `Las mejores de este tema, comparadas entre herramientas que hacen lo mismo. <a href="#tema/${esc(cat.id)}">Ver la página de ${esc(tema(cat.id).corto)} →</a>` : "Todas juntas. Suben las que sirven para muchas cosas; para una tarea concreta, elige un tema.";
+  $("#count").textContent = (otros || cat) ? `${list.length} ${list.length===1?"herramienta":"herramientas"}${st.sort!=="nota"?" · "+$("#sort").selectedOptions[0].text.toLowerCase():""}` : (st.sort!=="nota" ? "Orden: "+$("#sort").selectedOptions[0].text.toLowerCase() : "");
+  const pos = st.sort==="nota";
+  $("#grid").innerHTML = list.length ? list.slice(0,gridN).map((h,i)=>fila(h, pos?i+1:null, cat ? h.desc : `${tema(h.cat).corto} · ${h.desc}`)).join("") : `<p class="empty">Nada coincide. Prueba a quitar algún filtro, busca otra palabra o <a href="#reco" id="exReco">cuéntanos qué quieres hacer</a>.</p>`;
+  const more = $("#gridMore"); more.hidden = list.length <= gridN;
+  more.textContent = `Ver ${Math.min(25, list.length-gridN)} más (${list.length-gridN} restantes)`;
+  $("#exReco")?.addEventListener("click", ()=>{ $("#recoTxt").value = st.q; setTimeout(()=>pintarReco(st.q),60); });
 }
+$("#gridMore").addEventListener("click", ()=>{ gridN += 25; renderGrid(false); });
 let qt; $("#q").addEventListener("input", e=>{ clearTimeout(qt); qt=setTimeout(()=>{ st.q=e.target.value; renderGrid(); },150); });
 $("#sort").addEventListener("change", e=>{ st.sort=e.target.value; renderGrid(); });
 
@@ -1300,7 +1283,7 @@ function pintarReco(txt){
       : `<p class="empty">Ninguna opción encaja con esos filtros. Prueba con «Me da igual» en alguno de ellos.</p>`}
     ${pack ? projLink(pack) : ""}
     ${modo!=="exacto" ? `<p class="small" style="margin-top:10px">¿No es lo que buscabas? Prueba a describirlo con otras palabras o <button class="linkbtn" type="button" id="goCat">búscalo en el catálogo</button>.</p>` : ""}</div>`;
-  $("#goCat")?.addEventListener("click",()=>{ st.q=txt; $("#q").value=txt; renderGrid(); go("todas"); });
+  $("#goCat")?.addEventListener("click",()=>{ st.q=txt; $("#q").value=txt; renderGrid(); go("explorar"); });
   irA();
 }
 $("#recoForm").addEventListener("submit", e=>{ e.preventDefault(); pintarReco($("#recoTxt").value.trim()); });
@@ -1500,9 +1483,9 @@ fetch("data/brujula.json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; retu
   ALL.forEach(h=>{ byName.set(h.nombre,h); byId.set(h.id,h); });
   LOG = (d.novedades||[]).slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
   PACKS = d.packs || [];
-  chipRow($("#fCat"), CATS.map(c=>[c.id,tema(c.id).corto]), "cat");
+  chipRow($("#fCat"), [["","Todas"], ...CATS.map(c=>[c.id,tema(c.id).corto])], "cat");
   cargarPack();
-  renderInicio(); renderRanking(); renderGrid(); renderFresh(); renderLog(); renderPacks();
+  renderInicio(); renderGrid(); renderFresh(); renderLog(); renderPacks();
   leerPackCompartido(); renderBuilder();
   render(false);
   const iaParam = new URLSearchParams(location.search).get("ia");
