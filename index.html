@@ -288,6 +288,16 @@ select.sort{padding:9px 12px;border:1.5px solid var(--rule-2);border-radius:12px
 .dtag .gdot{color:#FFE08A}
 .dtag.warn{background:#3A2E0E;color:#FFE08A}
 
+.start{margin-top:18px;padding:16px;border-radius:22px;background:var(--card);border:2px solid var(--accent-soft);display:flex;flex-direction:column;gap:10px}
+.start .list{gap:8px;margin-top:4px}
+.start-row{background:var(--bg);border-color:transparent;align-items:center}
+.start-row > svg{color:var(--accent);flex:0 0 auto}
+.row-why{font-size:14px;color:var(--ink-2);line-height:1.4}
+.also{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.also li{display:flex;flex-direction:column;gap:5px;font-size:15px}
+.also-t{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:var(--t-bg);color:#14121F;font-size:13px;font-weight:700}
+.also-t svg{color:var(--t-c)}
+
 /* Página de un proyecto */
 .proj-page{max-width:760px}
 .proj-hero{background:var(--hero);color:#fff;margin:-12px -16px 0;padding:14px 16px 26px;border-radius:0 0 28px 28px;display:flex;flex-direction:column;gap:14px}
@@ -818,6 +828,7 @@ function abrirFicha(id){
       ${caro(h) ? `<div class="aviso-coste"><b>⚠ Puede costar más que el precio de partida</b><span>${esc(h.consumoTxt||CONSUMO[h.consumo].expl)}</span></div>` : (h.consumoTxt && h.consumo==="fijo" ? `<p class="small" style="margin:0">💳 ${esc(h.consumoTxt)}</p>` : "")}
       <div class="sblock"><h3>Ideal para</h3><p>${esc(h.para)}</p>
         ${h.ejemplos?.length ? `<ul class="ejemplos">${h.ejemplos.map(e=>`<li>${esc(e)}</li>`).join("")}</ul>` : ""}</div>
+      ${h.tambienEn?.length ? `<div class="sblock"><h3>También te sirve para</h3><div class="box"><ul class="also">${h.tambienEn.map(t=>`<li><a class="also-t" href="#tema/${esc(t.cat)}" style="${temaVars(t.cat)}">${svg(P[t.cat]||P.chat,15)}${esc(tema(t.cat).corto)}</a><span>${esc(t.txt)}</span></li>`).join("")}</ul></div></div>` : ""}
       <div class="sblock"><h3>Lo bueno y lo malo</h3>
         <div class="box"><ul class="pc pro">${(h.pros||[]).map(x=>`<li>${svg(P.check,20,2.6)}<span>${esc(x)}</span></li>`).join("")}</ul><hr>
         <ul class="pc con">${(h.contras||[]).map(x=>`<li>${svg(P.minus,20,2.6)}<span>${esc(x)}</span></li>`).join("")}</ul></div></div>
@@ -902,6 +913,12 @@ function renderInicio(){
 const coincide = (h,q) => norm([h.nombre,h.empresa,h.desc,h.para,(h.ejemplos||[]).join(" "),h.catNombre,tema(h.cat).corto].join(" ")).includes(q);
 
 /* ---------- Un tema ---------- */
+function empiezaHTML(cat){
+  const E = cat.empieza; if(!E?.picks?.length) return "";
+  const filas = E.picks.map(([n,why])=>{ const h = byName.get(n); if(!h) return "";
+    return `<button type="button" class="row start-row" data-open="${esc(h.id)}">${icono(h)}<span class="row-main"><span class="row-name">${esc(h.nombre)}${h.cat!==cat.id?` <span class="tagx">· ${esc(tema(h.cat).corto)}</span>`:""}</span><span class="row-why">${esc(why)}</span><span class="row-tags">${gratisDot(h)}${consumoTag(h)}</span></span>${svg(P.next,20,2.4)}</button>`; }).join("");
+  return `<div class="start"><span class="eyebrow-acc">Para empezar</span><h2 class="h-sub">${esc(E.titulo)}</h2>${E.nota?`<p class="small" style="margin:0">${esc(E.nota)}</p>`:""}<div class="list">${filas}</div></div>`;
+}
 const temaF = {gratis:false, facil:false, movil:false};
 function renderTema(){
   const cat = CATS.find(c=>c.id===route.arg); if(!cat){ go("explorar"); return; }
@@ -916,9 +933,11 @@ function renderTema(){
       <div class="tema-id"><span class="tema-ico">${svg(P[cat.id]||P.chat,30)}</span><div><h1>${esc(T.corto)}</h1><p>${esc(cat.desc||"")}</p></div></div>
     </div>
     <div class="tema-body">
+      ${empiezaHTML(cat)}
+      <h2 class="h-sub" style="margin:28px 0 0">Las ${todas.length} de ${esc(T.corto)}, por nota</h2>
       <div class="chips tema-filters" role="group" aria-label="Filtrar">${[["gratis","Gratis útil"],["facil","Fácil"],["movil","En el móvil"]].map(([k,l])=>`<button type="button" class="chip" data-tf="${k}" aria-pressed="${temaF[k]}">${l}</button>`).join("")}</div>
-      <p class="small" style="margin:6px 0 0">${lista.length===todas.length ? `Las ${todas.length} IAs de este tema, ordenadas por nota` : `${lista.length} de ${todas.length} IAs con esos filtros`}</p>
-      ${top ? `<button type="button" class="feat" data-open="${esc(top.id)}"><span class="feat-badge">La nº 1 en ${esc(T.corto)}${lista.length<todas.length?" con esos filtros":""}</span>
+      ${lista.length<todas.length ? `<p class="small" style="margin:6px 0 0">${lista.length} de ${todas.length} con esos filtros</p>` : ""}
+      ${top ? `<button type="button" class="feat" data-open="${esc(top.id)}"><span class="feat-badge">Mejor nota${lista.length<todas.length?" con esos filtros":""}</span>
         <span class="feat-row">${icono(top,"lg")}<span class="t"><span class="feat-name">${esc(top.nombre)}</span><span class="feat-desc">${esc(top.desc)}</span></span>${ring(top.nota,56,true)}</span>
         <span class="feat-tags"><span class="dtag">${gratisDot(top)}</span><span class="dtag">${NIVEL[top.nivel]||""}</span><span class="dtag">${esc(MEJOR[top.mejorEn]||"")}</span>${caro(top)?`<span class="dtag warn">⚠ ${esc(CONSUMO[top.consumo].corto)}</span>`:""}</span></button>`
         : `<p class="empty">Ninguna IA de este tema cumple esos filtros. Prueba a quitar alguno.</p>`}

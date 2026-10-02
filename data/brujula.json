@@ -133,7 +133,29 @@
      "afiliado": "",
      "precioMes": 20,
      "consumo": "fijo",
-     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan.",
+     "tambienEn": [
+      {
+       "cat": "imagen",
+       "txt": "Crea y edita imágenes dentro del chat (con GPT Image 2)."
+      },
+      {
+       "cat": "voz",
+       "txt": "Puedes hablar con él en voz alta, como en una llamada."
+      },
+      {
+       "cat": "trabajo",
+       "txt": "Analiza tus Excel y te devuelve archivos Word, Excel o PDF."
+      },
+      {
+       "cat": "estudio",
+       "txt": "Te explica cualquier tema con ejemplos y te pone ejercicios."
+      },
+      {
+       "cat": "codigo",
+       "txt": "Incluye Codex, su agente de programación, en la app de escritorio."
+      }
+     ]
     },
     {
      "id": "chat-02",
@@ -143,7 +165,7 @@
      "precioTxt": "Gratis · Pro 20 $/mes",
      "nivel": 1,
      "nota": 94,
-     "desc": "Escribe con mucha naturalidad y razona bien con documentos largos, datos y código.",
+     "desc": "Escribe con mucha naturalidad, razona bien con documentos largos y datos, y desde la app crea webs y apps completas sin que sepas programar.",
      "para": "Quien escribe mucho o trabaja con textos largos.",
      "ejemplos": [
       "Corregir y mejorar un texto",
@@ -172,7 +194,8 @@
      "pros": [
       "Escribe con mucha naturalidad",
       "Muy bueno con documentos largos y código",
-      "Explica con claridad"
+      "Explica con claridad",
+      "Crea y publica webs y apps pidiéndolo con palabras"
      ],
      "contras": [
       "El plan gratis se queda corto si lo usas mucho",
@@ -182,7 +205,25 @@
      "afiliado": "",
      "precioMes": 20,
      "consumo": "fijo",
-     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan.",
+     "tambienEn": [
+      {
+       "cat": "codigo",
+       "txt": "Desde la app crea y publica webs y apps completas pidiéndoselo con palabras, sin saber programar."
+      },
+      {
+       "cat": "trabajo",
+       "txt": "Prepara documentos, hojas de cálculo y presentaciones listas para descargar."
+      },
+      {
+       "cat": "estudio",
+       "txt": "Explica documentos largos y apuntes con mucha claridad y te pone preguntas de examen."
+      },
+      {
+       "cat": "musica",
+       "txt": "Escribe letras de canciones con buen ritmo y rima."
+      }
+     ]
     },
     {
      "id": "chat-03",
@@ -231,7 +272,25 @@
      "afiliado": "",
      "precioMes": 22,
      "consumo": "fijo",
-     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan."
+     "consumoTxt": "Cuota fija. Tiene límites de uso, pero para un uso normal no se notan; si lo usas muchísimo te pedirá esperar unas horas o subir de plan.",
+     "tambienEn": [
+      {
+       "cat": "imagen",
+       "txt": "Crea y edita imágenes con Nano Banana 2, gratis dentro de la app."
+      },
+      {
+       "cat": "video",
+       "txt": "Con Google AI Pro crea vídeos cortos con Veo."
+      },
+      {
+       "cat": "estudio",
+       "txt": "Resume vídeos de YouTube con solo pegar el enlace."
+      },
+      {
+       "cat": "trabajo",
+       "txt": "Integrado en Gmail, Docs y Drive si usas Google."
+      }
+     ]
     },
     {
      "id": "chat-04",
@@ -426,7 +485,13 @@
      "afiliado": "",
      "precioMes": 0,
      "consumo": "gratis",
-     "consumoTxt": "No tiene costes ocultos: se puede usar gratis."
+     "consumoTxt": "No tiene costes ocultos: se puede usar gratis.",
+     "tambienEn": [
+      {
+       "cat": "imagen",
+       "txt": "Crea imágenes gratis dentro de WhatsApp e Instagram."
+      }
+     ]
     },
     {
      "id": "chat-08",
@@ -1485,7 +1550,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "chat"
+   "id": "chat",
+   "empieza": {
+    "titulo": "¿Es tu primera vez? Empieza por una de estas",
+    "picks": [
+     [
+      "ChatGPT",
+      "El más completo y el más fácil de empezar. Sirve para casi todo."
+     ],
+     [
+      "Gemini",
+      "Gratis y dentro de Google: cómodo si usas Gmail o un móvil Android."
+     ],
+     [
+      "Meta AI",
+      "Ya lo tienes en WhatsApp, gratis y sin instalar nada."
+     ]
+    ]
+   }
   },
   {
    "orden": 2,
@@ -2876,7 +2958,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "imagen"
+   "id": "imagen",
+   "empieza": {
+    "titulo": "¿Empiezas? Prueba estas",
+    "picks": [
+     [
+      "Nano Banana 2",
+      "Gratis dentro de Gemini: pides la imagen con palabras o subes una foto y le dices qué cambiar."
+     ],
+     [
+      "ChatGPT",
+      "Si ya lo usas, crea y edita imágenes dentro del mismo chat."
+     ],
+     [
+      "Canva (Magic Media)",
+      "Para carteles, invitaciones o posts: generas la imagen y la pones en una plantilla."
+     ]
+    ]
+   }
   },
   {
    "orden": 3,
@@ -4252,7 +4351,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "video"
+   "id": "video",
+   "empieza": {
+    "titulo": "¿Empiezas? Prueba estas",
+    "picks": [
+     [
+      "CapCut",
+      "Para editar tus vídeos y ponerles subtítulos automáticos, gratis y desde el móvil."
+     ],
+     [
+      "Kling 3.0",
+      "Para crear clips con IA a partir de una frase o una imagen. Da créditos gratis cada día."
+     ],
+     [
+      "Canva (vídeo)",
+      "Vídeos sencillos para redes con plantillas, sin saber editar."
+     ]
+    ]
+   }
   },
   {
    "orden": 4,
@@ -5611,7 +5727,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "musica"
+   "id": "musica",
+   "empieza": {
+    "titulo": "¿Empiezas? Prueba estas",
+    "picks": [
+     [
+      "Suno",
+      "Describe la canción y te la hace entera, con voz y letra, en un minuto."
+     ],
+     [
+      "Claude",
+      "Si quieres escribir tú la letra, te ayuda con el ritmo y la rima; luego la pegas en Suno."
+     ],
+     [
+      "Moises",
+      "Para tocar o cantar: quita la voz o un instrumento de cualquier canción."
+     ]
+    ]
+   }
   },
   {
    "orden": 5,
@@ -6960,7 +7093,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "voz"
+   "id": "voz",
+   "empieza": {
+    "titulo": "¿Empiezas? Prueba estas",
+    "picks": [
+     [
+      "Voz de ChatGPT",
+      "Habla con la IA en voz alta, como en una llamada."
+     ],
+     [
+      "Speechify",
+      "Te lee en voz alta cualquier PDF, web o texto desde el móvil."
+     ],
+     [
+      "Adobe Podcast",
+      "Hace que una grabación con el móvil suene como en un estudio. Gratis."
+     ]
+    ]
+   }
   },
   {
    "orden": 6,
@@ -8314,7 +8464,25 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "codigo"
+   "id": "codigo",
+   "empieza": {
+    "titulo": "¿No sabes programar? Empieza por estas",
+    "nota": "Las de la lista de abajo con nivel «Intermedio» o «Avanzado», como Claude Code o Cursor, están pensadas para programadores.",
+    "picks": [
+     [
+      "Claude",
+      "Desde la app de Claude le pides la web o la app con palabras y la crea y la publica por ti. Así se ha hecho Cualia."
+     ],
+     [
+      "Lovable",
+      "Describes la web o app en español y la construye completa, lista para publicar."
+     ],
+     [
+      "Replit",
+      "Si quieres aprender a programar: lo haces desde el navegador y su asistente te explica cada paso."
+     ]
+    ]
+   }
   },
   {
    "orden": 7,
@@ -9676,7 +9844,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "estudio"
+   "id": "estudio",
+   "empieza": {
+    "titulo": "¿Empiezas? Prueba estas",
+    "picks": [
+     [
+      "Gemini Notebook",
+      "Sube tus apuntes y pregúntale: responde solo con tu material."
+     ],
+     [
+      "ChatGPT",
+      "Te explica lo que no entiendas con ejemplos y te pone preguntas de examen."
+     ],
+     [
+      "Google Lens",
+      "Apunta con la cámara a un ejercicio, un texto o un cartel y te lo explica o traduce."
+     ]
+    ]
+   }
   },
   {
    "orden": 8,
@@ -11047,7 +11232,24 @@
     }
    ],
    "actualizado": "2026-09-29",
-   "id": "trabajo"
+   "id": "trabajo",
+   "empieza": {
+    "titulo": "¿Empiezas? Prueba estas",
+    "picks": [
+     [
+      "ChatGPT",
+      "Redacta correos, resume documentos, analiza tu Excel y te devuelve archivos Word, Excel o PDF."
+     ],
+     [
+      "Canva (Magic Studio)",
+      "Presentaciones, carteles y documentos con plantillas y ayuda de la IA."
+     ],
+     [
+      "Gamma",
+      "Escribe el tema y crea una presentación bonita en segundos."
+     ]
+    ]
+   }
   }
  ],
  "packs": [

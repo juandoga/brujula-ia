@@ -53,6 +53,7 @@ for c in d["cats"]:
         h["_cat"] = c["nombre"]; por_nombre[h["nombre"]] = h
 
 # Páginas por IA
+CATN = {c["id"]: c["nombre"] for c in d["cats"]}
 for c in d["cats"]:
     for h in c["herramientas"]:
         n = h.get("notas", {})
@@ -69,6 +70,7 @@ for c in d["cats"]:
 <div class="pc"><div class="card pro"><h2>Ventajas</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('pros',[]))}</ul></div>
 <div class="card con"><h2>Desventajas</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('contras',[]))}</ul></div></div>
 <h2>Para quién es</h2><p>{e(h['para'])}</p>
+{('<h2>También sirve para</h2><ul>'+''.join(f'<li><b>{e(CATN.get(t["cat"],""))}:</b> {e(t["txt"])}</li>' for t in h['tambienEn'])+'</ul>') if h.get('tambienEn') else ''}
 <h2>Ejemplos de uso</h2><ul>{''.join(f'<li>{e(x)}</li>' for x in h.get('ejemplos',[]))}</ul>
 <h2>Nota de Cualia: {h['nota']}/100</h2><p>Calidad {n.get('calidad')}/10 · Versatilidad {n.get('versatilidad')}/10 · Facilidad {n.get('facilidad')}/10 · Precio {n.get('precio')}/10. <a href="{SITE}/#guia">Cómo se calcula</a>.</p>
 {('<h2>Novedad</h2><p>'+e(h['novedad'])+'</p>') if h.get('novedad') else ''}
